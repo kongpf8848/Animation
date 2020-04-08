@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/page_root"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/bg_tittle_bar">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="fill_parent"
+        android:layout_height="388.0dip"
+        android:scaleType="fitXY"
+        android:src="@drawable/guide4_bg"/>
+
+    <ImageView
+        android:id="@+id/pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/image"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="-235.0dip"
+        android:alpha="0.0"
+        android:scaleType="center"
+        android:src="@drawable/guide4_pic"/>
+
+    <ImageView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/image"
+        android:layout_marginRight="-360.0dip"
+        android:layout_marginTop="35.0dip"
+        android:alpha="0.0"
+        android:scaleType="center"
+        android:src="@drawable/guide4_text"/>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="85.0dip">
+
+        <ImageView
+            android:id="@+id/lines"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15.0dip"
+            android:layout_marginTop="0.0dip"
+            android:scaleType="center"
+            android:src="@drawable/guide4_line"/>
+
+        <ImageView
+            android:id="@+id/discusssion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="206.0dip"
+            android:layout_marginTop="67.0dip"
+            android:scaleType="center"
+            android:src="@drawable/guide4_discussion"/>
+
+        <ImageView
+            android:id="@+id/homework"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="57.0dip"
+            android:layout_marginTop="43.0dip"
+            android:scaleType="center"
+            android:src="@drawable/guide4_homework"/>
+
+        <ImageView
+            android:id="@+id/teacher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="190.0dip"
+            android:layout_marginTop="10.0dip"
+            android:scaleType="center"
+            android:src="@drawable/guide4_teacher"/>
+
+        <ImageView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="46.0dip"
+            android:layout_marginTop="4.0dip"
+            android:scaleType="center"
+            android:src="@drawable/guide4_time"/>
+
+        <ImageView
+            android:id="@+id/video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="98.0dip"
+            android:layout_marginTop="22.0dip"
+            android:scaleType="center"
+            android:src="@drawable/guide4_video"/>
+
+        <ImageView
+            android:id="@+id/student_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0.0dip"
+            android:layout_marginTop="43.0dip"
+            android:scaleType="center"
+            android:src="@drawable/guide4_student"/>
+
+        <ImageView
+            android:id="@+id/student_middle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="152.0dip"
+            android:layout_marginTop="43.0dip"
+            android:scaleType="center"
+            android:src="@drawable/guide4_student"/>
+
+        <ImageView
+            android:id="@+id/student_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="253.0dip"
+            android:layout_marginTop="45.0dip"
+            android:scaleType="center"
+            android:src="@drawable/guide4_student"/>
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/enter_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25.0dip"
+        android:src="@drawable/guide_enter"/>
+
+
+
+    <LinearLayout
+        android:id="@+id/apkbind_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/enter_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10.0dip"
+        android:visibility="gone">
+
+        <CheckBox
+            android:id="@+id/apkbind_checkbox"
+            style="@style/ApkbindCheckboxTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:visibility="visible"/>
+
+        <TextView
+            android:id="@+id/apkbind_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:textColor="@color/white"
+            android:textSize="13.0dip"/>
+    </LinearLayout>
+</RelativeLayout>

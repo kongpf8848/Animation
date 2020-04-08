@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cupid_shoot_bg"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_cupid">
+
+    <Button
+        android:id="@+id/btn_rule"
+        android:layout_width="50.0dip"
+        android:layout_height="50.0dip"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="2.0dip"
+        android:background="@drawable/bg_btn_cupid_rule"
+        android:text="规则"
+        android:textColor="#ffffffff"
+        android:textSize="14.0sp" />
+
+    <ImageView
+        android:id="@+id/img_cupid_heart_yellow"
+        android:layout_width="190.0dip"
+        android:layout_height="109.0dip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30.0dip"
+        android:src="@drawable/cupid_heart_yellow" />
+
+    <ImageView
+        android:id="@+id/img_cupid_heart_blue"
+        android:layout_width="120.0dip"
+        android:layout_height="76.0dip"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/img_cupid_heart_yellow"
+        android:layout_marginTop="10.0dip"
+        android:src="@drawable/cupid_heart_blue" />
+
+    <ImageView
+        android:id="@+id/img_cupid_heart_red"
+        android:layout_width="180.0dip"
+        android:layout_height="112.0dip"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/img_cupid_heart_yellow"
+        android:src="@drawable/cupid_heart_red" />
+
+    <ImageView
+        android:id="@+id/img_cupid_shoot"
+        android:layout_width="80.0dip"
+        android:layout_height="92.0dip"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="100.0dip"
+        android:layout_marginLeft="20.0dip"
+        android:src="@drawable/cupid_shoot" />
+
+    <RelativeLayout
+        android:id="@+id/cupid_shoot_tip_layout"
+        android:layout_width="170.0dip"
+        android:layout_height="60.0dip"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="150.0dip"
+        android:layout_marginLeft="30.0dip"
+        android:layout_toRightOf="@id/img_cupid_shoot"
+        android:background="@drawable/bg_cupid_tips"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/cupid_shoot_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:maxLines="10"
+            android:paddingLeft="32.0dip"
+            android:paddingRight="16.0dip"
+            android:textColor="#ff565656"
+            android:textSize="12.0sp"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/cupid_rule_tip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10.0dip"
+        android:text="@string/cupid_rule_info"
+        android:textColor="#ff565656" />
+
+    <LinearLayout
+        android:id="@+id/cupid_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/cupid_heart_result"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/cupid_result_text"
+            style="@style/item_txt_middle"
+            android:layout_width="200.0dip"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip"
+            android:singleLine="false"
+            android:textColor="#ffffffff" />
+    </LinearLayout>
+</RelativeLayout>

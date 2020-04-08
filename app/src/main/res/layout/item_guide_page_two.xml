@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/page_root"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/bg_tittle_bar">
+
+    <ImageView
+        android:id="@id/image"
+        android:layout_width="fill_parent"
+        android:layout_height="388.0dip"
+        android:scaleType="fitXY"
+        android:src="@drawable/guide2_bg"/>
+
+    <ImageView
+        android:id="@id/pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/image"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="-235.0dip"
+        android:alpha="0.0"
+        android:scaleType="center"
+        android:src="@drawable/guide2_pic"/>
+
+    <ImageView
+        android:id="@id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/image"
+        android:layout_marginRight="-360.0dip"
+        android:layout_marginTop="35.0dip"
+        android:alpha="0.0"
+        android:scaleType="center"
+        android:src="@drawable/guide2_text"/>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="85.0dip">
+
+        <TextView
+            android:id="@+id/ZhongKeDa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17.0dip"
+            android:layout_marginTop="5.0dip"
+            android:alpha="0.0"
+            android:text="中国科学技术大学"
+            android:textColor="#995c9dbf"
+            android:textSize="12.0sp"/>
+
+        <TextView
+            android:id="@+id/DongNanDaXue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35.0dip"
+            android:layout_marginTop="37.0dip"
+            android:alpha="0.0"
+            android:text="东南大学"
+            android:textColor="#a05c9dbf"
+            android:textSize="14.0sp"/>
+
+        <TextView
+            android:id="@+id/HuNanDaXue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0.0dip"
+            android:layout_marginTop="60.0dip"
+            android:alpha="0.0"
+            android:text="湖南大学"
+            android:textColor="#aa5c9dbf"
+            android:textSize="12.0sp"/>
+
+        <TextView
+            android:id="@+id/HaGongDa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="133.0dip"
+            android:layout_marginTop="0.0dip"
+            android:alpha="0.0"
+            android:text="哈尔滨工业大学"
+            android:textColor="#ee5c9dbf"
+            android:textSize="16.0sp"/>
+
+        <TextView
+            android:id="@+id/ZheJiangDaXue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="103.0dip"
+            android:layout_marginTop="26.0dip"
+            android:alpha="0.0"
+            android:text="浙江大学"
+            android:textColor="#ee5c9dbf"
+            android:textSize="19.0sp"/>
+
+        <TextView
+            android:id="@+id/BeiJingDaXue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="67.0dip"
+            android:layout_marginTop="58.0dip"
+            android:alpha="0.0"
+            android:text="北京大学"
+            android:textColor="#ff5c9dbf"
+            android:textSize="21.0sp"/>
+
+        <TextView
+            android:id="@+id/ShangHaiJiaoDa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="187.0dip"
+            android:layout_marginTop="40.0dip"
+            android:alpha="0.0"
+            android:text="上海交通大学"
+            android:textColor="#995c9dbf"
+            android:textSize="15.0sp"/>
+
+        <TextView
+            android:id="@+id/WuHanDaXue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="162.0dip"
+            android:layout_marginTop="64.0dip"
+            android:alpha="0.0"
+            android:text="武汉大学"
+            android:textColor="#885c9dbf"
+            android:textSize="12.0sp"/>
+    </FrameLayout>
+
+
+</RelativeLayout>

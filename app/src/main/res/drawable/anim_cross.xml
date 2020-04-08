@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false"
+    >
+
+    <item android:duration="50" android:drawable="@drawable/bg_cross_progress_1" />
+    <item android:duration="50" android:drawable="@drawable/bg_cross_progress_2" />
+    <item android:duration="50" android:drawable="@drawable/bg_cross_progress_3" />
+    <item android:duration="50" android:drawable="@drawable/bg_cross_progress_4" />
+    <item android:duration="50" android:drawable="@drawable/bg_cross_progress_5" />
+    <item android:duration="50" android:drawable="@drawable/bg_cross_progress_6" />
+    <item android:duration="50" android:drawable="@drawable/bg_cross_progress_7" />
+    <item android:duration="50" android:drawable="@drawable/bg_cross_progress_8" />
+    <item android:duration="50" android:drawable="@drawable/bg_cross_progress_9" />
+    <item android:duration="50" android:drawable="@drawable/bg_cross_progress_10" />
+    <item android:duration="50" android:drawable="@drawable/bg_cross_progress_11" />
+    <item android:duration="50" android:drawable="@drawable/bg_cross_progress_12" />
+    <item android:duration="50" android:drawable="@drawable/bg_cross_progress_13" />
+    <item android:duration="50" android:drawable="@drawable/bg_cross_progress_14" />
+    <item android:duration="50" android:drawable="@drawable/bg_cross_progress_15" />
+    <item android:duration="50" android:drawable="@drawable/bg_cross_progress_16" />
+    <item android:duration="50" android:drawable="@drawable/bg_cross_progress_17" />
+    <item android:duration="50" android:drawable="@drawable/bg_cross_progress_18" />
+    <item android:duration="50" android:drawable="@drawable/bg_cross_progress_19" />
+    <item android:duration="50" android:drawable="@drawable/bg_cross_progress_20" />
+
+</animation-list>

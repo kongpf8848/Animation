@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@+id/iv_activity_splash_img" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/splash_bg" android:scaleType="centerCrop" />
+    <ImageView android:id="@+id/iv_activity_splash_pic" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/splash_mb" android:scaleType="centerCrop" />
+</FrameLayout>

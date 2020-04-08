@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#99000000"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/fpt_dialog_top"
+        android:layout_width="296dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/fpt_dialog_bg"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="24dp" >
+
+
+        <ImageView
+            android:id="@+id/finger_imageview"
+            android:layout_width="66dp"
+            android:layout_height="55dp"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="指纹图"
+            android:scaleType="fitCenter"
+            android:src="@drawable/finger" />
+
+        <TextView
+            android:id="@+id/fpt_dialog_hint_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="24dp"
+            android:text="请刷(keystore)指纹"
+            android:textColor="#666666"
+            android:textSize="14sp" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="296dp"
+            android:layout_height="2px"
+            android:background="#eaeaea" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="296dp"
+            android:layout_height="52dp"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/fpt_dialog_bottom_cancel"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/fpt_dialog_bottom_bg"
+                android:padding="0dp"
+                android:text="取消"
+                android:textColor="#333333"
+                android:textSize="15sp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

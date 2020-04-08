@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="40" android:drawable="@drawable/spinner_blue0001" />
+    <item android:duration="40" android:drawable="@drawable/spinner_blue0002" />
+    <item android:duration="40" android:drawable="@drawable/spinner_blue0003" />
+    <item android:duration="40" android:drawable="@drawable/spinner_blue0004" />
+    <item android:duration="40" android:drawable="@drawable/spinner_blue0005" />
+    <item android:duration="40" android:drawable="@drawable/spinner_blue0006" />
+    <item android:duration="40" android:drawable="@drawable/spinner_blue0007" />
+    <item android:duration="40" android:drawable="@drawable/spinner_blue0008" />
+    <item android:duration="40" android:drawable="@drawable/spinner_blue0009" />
+    <item android:duration="40" android:drawable="@drawable/spinner_blue0010" />
+    <item android:duration="40" android:drawable="@drawable/spinner_blue0011" />
+    <item android:duration="40" android:drawable="@drawable/spinner_blue0012" />
+    <item android:duration="40" android:drawable="@drawable/spinner_blue0013" />
+    <item android:duration="40" android:drawable="@drawable/spinner_blue0014" />
+    <item android:duration="40" android:drawable="@drawable/spinner_blue0015" />
+    <item android:duration="40" android:drawable="@drawable/spinner_blue0016" />
+    <item android:duration="40" android:drawable="@drawable/spinner_blue0017" />
+    <item android:duration="40" android:drawable="@drawable/spinner_blue0018" />
+    <item android:duration="40" android:drawable="@drawable/spinner_blue0019" />
+    <item android:duration="40" android:drawable="@drawable/spinner_blue0020" />
+    <item android:duration="40" android:drawable="@drawable/spinner_blue0021" />
+    <item android:duration="40" android:drawable="@drawable/spinner_blue0022" />
+    <item android:duration="40" android:drawable="@drawable/spinner_blue0023" />
+    <item android:duration="40" android:drawable="@drawable/spinner_blue0024" />
+    <item android:duration="40" android:drawable="@drawable/spinner_blue0025" />
+    <item android:duration="40" android:drawable="@drawable/spinner_blue0026" />
+    <item android:duration="40" android:drawable="@drawable/spinner_blue0027" />
+    <item android:duration="40" android:drawable="@drawable/spinner_blue0028" />
+    <item android:duration="40" android:drawable="@drawable/spinner_blue0029" />
+    <item android:duration="40" android:drawable="@drawable/spinner_blue0030" />
+    <item android:duration="40" android:drawable="@drawable/spinner_blue0031" />
+    <item android:duration="40" android:drawable="@drawable/spinner_blue0032" />
+    <item android:duration="40" android:drawable="@drawable/spinner_blue0033" />
+    <item android:duration="40" android:drawable="@drawable/spinner_blue0034" />
+    <item android:duration="40" android:drawable="@drawable/spinner_blue0035" />
+    <item android:duration="40" android:drawable="@drawable/spinner_blue0036" />
+    <item android:duration="40" android:drawable="@drawable/spinner_blue0037" />
+    <item android:duration="40" android:drawable="@drawable/spinner_blue0038" />
+    <item android:duration="40" android:drawable="@drawable/spinner_blue0039" />
+    <item android:duration="40" android:drawable="@drawable/spinner_blue0040" />
+    <item android:duration="40" android:drawable="@drawable/spinner_blue0041" />
+    <item android:duration="40" android:drawable="@drawable/spinner_blue0042" />
+    <item android:duration="40" android:drawable="@drawable/spinner_blue0043" />
+    <item android:duration="40" android:drawable="@drawable/spinner_blue0044" />
+    <item android:duration="40" android:drawable="@drawable/spinner_blue0045" />
+    <item android:duration="40" android:drawable="@drawable/spinner_blue0046" />
+    <item android:duration="40" android:drawable="@drawable/spinner_blue0047" />
+    <item android:duration="40" android:drawable="@drawable/spinner_blue0048" />
+    <item android:duration="40" android:drawable="@drawable/spinner_blue0049" />
+    <item android:duration="40" android:drawable="@drawable/spinner_blue0050" />
+</animation-list>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/page_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_tittle_bar">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="fill_parent"
+        android:layout_height="388.0dip"
+        android:scaleType="fitXY"
+        android:src="@drawable/guide1_bg"/>
+
+    <ImageView
+        android:id="@+id/pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/image"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="-235.0dip"
+        android:alpha="0.0"
+        android:scaleType="center"
+        android:src="@drawable/guide1_pic"/>
+
+    <ImageView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/image"
+        android:layout_marginRight="-360.0dip"
+        android:layout_marginTop="35.0dip"
+        android:alpha="0.0"
+        android:scaleType="center"
+        android:src="@drawable/guide1_text"/>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="98.0dip"
+        android:layout_marginTop="82.0dip">
+
+        <ImageView
+            android:id="@+id/sun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0.0"
+            android:scaleType="center"
+            android:src="@drawable/guide1_sun"/>
+    </FrameLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#111"
+    >
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+     >
+			
+        <ImageView
+            android:id="@+id/shakeBg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"        
+            android:src="@drawable/shakehideimg_man2" />
+        
+        <LinearLayout
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_centerInParent="true"
+        	android:orientation="vertical" >
+        	
+            <RelativeLayout
+                android:id="@+id/shakeImgUp"   
+        		android:layout_width="fill_parent"
+        		android:layout_height="190dp"        		
+        		android:background="#111">        		
+                <ImageView            		
+            		android:layout_width="wrap_content"
+            		android:layout_height="wrap_content"
+            		android:layout_alignParentBottom="true"
+            		android:layout_centerHorizontal="true"             			        
+            		android:src="@drawable/shake_logo_up"
+            		 />                
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/shakeImgDown"
+        		android:layout_width="fill_parent"
+        		android:layout_height="190dp"
+        		android:background="#111">
+                <ImageView
+            		android:layout_width="wrap_content"
+            		android:layout_height="wrap_content"
+            		android:layout_centerHorizontal="true"
+            		android:src="@drawable/shake_logo_down"
+            		 />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/shake_title_bar" 
+  		android:layout_width="fill_parent"
+  		android:layout_height="45dp"
+  		android:gravity="center_vertical"  >
+  			<TextView
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_centerVertical="true"
+				android:layout_marginLeft="15dp"
+            	android:text="返回"
+            	android:textSize="16sp"
+            	android:textColor="#fff"
+            	android:onClick="onBack"
+				/>
+      		<TextView
+        		android:layout_width="wrap_content" 
+        		android:layout_height="wrap_content" 
+        		android:text="摇一摇"
+        		android:layout_centerInParent="true"
+        		android:textSize="20sp"		
+				android:textColor="#ffffff" /> 
+			<ImageButton 
+			    android:layout_width="67dp" 
+        		android:layout_height="wrap_content"
+        		android:layout_alignParentRight="true" 
+        		android:layout_centerVertical="true"
+        		android:layout_marginRight="5dp"
+        		android:src="@drawable/mm_title_btn_menu_normal"
+				android:background="@android:color/transparent"
+				android:onClick="onShake"
+			    />      
+	</RelativeLayout>
+    
+
+
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:ordering="sequentially"
+    >
+
+   <objectAnimator
+       android:duration="2000"
+       android:propertyName="translationX"
+       android:valueFrom="-500"
+       android:valueTo="0"
+       android:valueType="floatType"
+       />
+
+    <set android:ordering="together">
+        <objectAnimator
+            android:duration="2000"
+            android:propertyName="rotation"
+            android:valueFrom="0"
+            android:valueTo="360"
+            android:valueType="floatType"
+            />
+
+        <set android:ordering="sequentially">
+            <objectAnimator
+                android:duration="1000"
+                android:propertyName="alpha"
+                android:valueType="floatType"
+                android:valueFrom="1"
+                android:valueTo="0"
+                />
+            <objectAnimator
+                android:duration="1000"
+                android:propertyName="alpha"
+                android:valueType="floatType"
+                android:valueFrom="0"
+                android:valueTo="1"
+                />
+        </set>
+    </set>
+
+</set>

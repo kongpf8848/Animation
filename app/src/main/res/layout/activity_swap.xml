@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/ll_root"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="20dp"
+        android:gravity="center_vertical"
+        >
+
+        <Button
+            android:id="@+id/btn_attention"
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:text="关注"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:background="@drawable/shape_btn_attention"
+            android:tag="attention"
+            />
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_weight="1"
+            />
+
+        <Button
+            android:id="@+id/btn_private"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:background="@drawable/shape_btn_private"
+            android:text="私信"
+            android:tag="chat"
+            />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

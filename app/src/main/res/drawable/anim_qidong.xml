@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false"
+    >
+    <item android:duration="150" android:drawable="@drawable/qidong_1" />
+    <item android:duration="150" android:drawable="@drawable/qidong_2" />
+    <item android:duration="150" android:drawable="@drawable/qidong_3" />
+    <item android:duration="150" android:drawable="@drawable/qidong_4" />
+    <item android:duration="150" android:drawable="@drawable/qidong_5" />
+
+</animation-list>

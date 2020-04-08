@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout
+        android:layout_width="180.0dip"
+        android:layout_height="180.0dip"
+        android:layout_centerInParent="true"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/anim_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/anim_bolo" />
+
+        <TextView
+            android:id="@+id/tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/anim_iv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8.0dip"
+            android:gravity="center_horizontal"
+            android:textColor="#ff2e2e2e"
+            android:textSize="10.666595sp"
+            android:text="加载中..."
+            />
+    </RelativeLayout>
+</RelativeLayout>

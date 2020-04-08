@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff">
+
+    <ImageView
+        android:id="@+id/augc_img_skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10.0dip"
+        android:layout_marginTop="10.0dip"
+        android:clickable="true"
+        android:focusable="false"
+        android:src="@mipmap/img_user_guide_skip"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/augc_img_women"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80.0dip"
+        android:layout_marginTop="120.0dip"
+        android:clickable="false"
+        android:focusable="false"
+        android:src="@mipmap/img_user_guide_women"
+        android:visibility="invisible"
+         />
+
+
+
+    <ImageView
+        android:id="@+id/augc_img_hello_chinese"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20.0dip"
+        android:layout_marginTop="130.0dip"
+        android:layout_toRightOf="@id/augc_img_women"
+        android:clickable="false"
+        android:focusable="false"
+        android:src="@mipmap/img_user_guide_hello_chinese"
+        android:visibility="invisible"
+      />
+
+    <ImageView
+        android:id="@+id/augc_img_men"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/augc_img_women"
+        android:layout_marginRight="80.0dip"
+        android:layout_marginTop="0.0dip"
+        android:clickable="false"
+        android:focusable="false"
+        android:src="@mipmap/img_user_guide_men"
+        android:visibility="invisible"
+        />
+
+
+
+    <ImageView
+        android:id="@+id/augc_img_hello_english"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/augc_img_women"
+        android:layout_marginRight="20.0dip"
+        android:layout_marginTop="25.0dip"
+        android:layout_toLeftOf="@id/augc_img_men"
+        android:clickable="false"
+        android:focusable="false"
+        android:src="@mipmap/img_user_guide_hello_english"
+        android:visibility="invisible"
+      />
+
+    <ImageView
+        android:id="@+id/augc_img_bottom_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100.0dip"
+        android:clickable="false"
+        android:focusable="false"
+        android:src="@mipmap/img_user_guide_bottom_description" />
+</RelativeLayout>
