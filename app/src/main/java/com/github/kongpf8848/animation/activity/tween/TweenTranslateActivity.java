@@ -2,7 +2,7 @@ package com.github.kongpf8848.animation.activity.tween;
 
 import android.view.View;
 
-import com.github.kongpf8848.xsdk.ui.activity.BaseActivity;
+import com.github.kongpf8848.animation.activity.BaseActivity;
 import com.github.kongpf8848.animation.R;
 import com.github.kongpf8848.animation.activity.tween.translate.FidoActivity;
 import com.github.kongpf8848.animation.activity.tween.translate.HeartActivity;

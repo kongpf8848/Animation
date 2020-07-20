@@ -8,7 +8,7 @@ import android.view.animation.AnimationUtils;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 
-import com.github.kongpf8848.xsdk.ui.activity.BaseActivity;
+import com.github.kongpf8848.animation.activity.BaseActivity;
 import com.github.kongpf8848.animation.R;
 import com.github.kongpf8848.animation.ShakeListener;
 

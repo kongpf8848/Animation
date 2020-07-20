@@ -8,7 +8,7 @@ import android.os.MessageQueue;
 import android.view.View;
 import android.widget.ImageView;
 
-import com.github.kongpf8848.xsdk.ui.activity.BaseActivity;
+import com.github.kongpf8848.animation.activity.BaseActivity;
 import com.github.kongpf8848.animation.R;
 
 import butterknife.BindView;

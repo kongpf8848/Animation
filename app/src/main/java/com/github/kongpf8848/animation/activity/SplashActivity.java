@@ -1,7 +1,6 @@
 package com.github.kongpf8848.animation.activity;
 
 import android.content.Context;
-import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Looper;
@@ -13,21 +12,14 @@ import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.RelativeLayout;
 
-import com.github.kongpf8848.xsdk.ui.activity.BaseActivity;
-import com.github.kongpf8848.animation.bean.GuideEntity;
 import com.github.kongpf8848.animation.R;
 import com.github.kongpf8848.animation.adapter.ViewPagerAdapter;
+import com.github.kongpf8848.animation.bean.GuideEntity;
 import com.kongpf.commonhelper.ScreenHelper;
 
 import net.lucode.hackware.magicindicator.MagicIndicator;
 import net.lucode.hackware.magicindicator.ViewPagerHelper;
-import net.lucode.hackware.magicindicator.buildins.UIUtil;
 import net.lucode.hackware.magicindicator.buildins.circlenavigator.CircleNavigator;
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.CommonNavigator;
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.abs.CommonNavigatorAdapter;
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.abs.IPagerIndicator;
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.abs.IPagerTitleView;
-import net.lucode.hackware.magicindicator.buildins.commonnavigator.indicators.LinePagerIndicator;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -48,21 +40,21 @@ public class SplashActivity extends BaseActivity implements View.OnClickListener
     private ViewPagerAdapter adapter;
     private int height;
 
+
+
     @Override
     protected int getLayoutId() {
         return R.layout.activity_guide;
     }
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        try {
-            getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-            super.onCreate(savedInstanceState);
-        }
-        catch (Exception e){
-            e.printStackTrace();
-        }
+    protected boolean enableStatusBar() {
+        return false;
+    }
 
+    @Override
+    protected void customInitStatusBar() {
+        initStatusBar(R.id.btn_close);
     }
 
     @Override
@@ -110,8 +102,8 @@ public class SplashActivity extends BaseActivity implements View.OnClickListener
         initGuide2();
         initGuide3();
         initGuide4();
-        this.mMagicIndicator = (MagicIndicator) this.findViewById(R.id.magic_indicator);
-        this.viewPager = (ViewPager)this.findViewById(R.id.pager);
+        this.mMagicIndicator = this.findViewById(R.id.magic_indicator);
+        this.viewPager = this.findViewById(R.id.pager);
         this.adapter = new ViewPagerAdapter(this.viewList);
         this.viewPager.setAdapter(this.adapter);
         this.viewPager.addOnPageChangeListener(new ViewPager.SimpleOnPageChangeListener() {

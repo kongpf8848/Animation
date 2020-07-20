@@ -13,7 +13,7 @@ import android.view.animation.AccelerateDecelerateInterpolator;
 import android.widget.FrameLayout;
 import android.widget.TextView;
 
-import com.github.kongpf8848.xsdk.ui.activity.BaseActivity;
+import com.github.kongpf8848.animation.activity.BaseActivity;
 import com.github.kongpf8848.animation.R;
 import com.github.kongpf8848.animation.widget.MyImageView;
 

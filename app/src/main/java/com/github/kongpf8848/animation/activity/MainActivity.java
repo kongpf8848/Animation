@@ -1,7 +1,6 @@
 package com.github.kongpf8848.animation.activity;
 
 import android.view.View;
-import com.github.kongpf8848.xsdk.ui.activity.BaseActivity;
 import com.github.kongpf8848.animation.R;
 
 import butterknife.OnClick;

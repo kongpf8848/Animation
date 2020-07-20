@@ -13,6 +13,7 @@ ext {
     leakcanary_version = "1.5.1"
     butterknife_version = "8.4.0"
     dagger_version = "2.15"
+    immersionbar_version = "3.0.0"
 
 
     dependencies = ["junit"                   : "junit:junit:4.12",
@@ -25,7 +26,7 @@ ext {
                     "percent"                 : "com.android.support:percent:$support_version",
                     "multidex"                : "com.android.support:multidex:1.0.2",
                     "constraint-layout"       : "com.android.support.constraint:constraint-layout:1.1.3",
-					"lifecycle-extensions"    : "android.arch.lifecycle:extensions:1.1.1",
+                    "lifecycle-extensions"    : "android.arch.lifecycle:extensions:1.1.1",
                     "common-java8"            : "android.arch.lifecycle:common-java8:1.1.1",
                     "okhttp"                  : "com.squareup.okhttp3:okhttp:3.11.0",
                     "okhttp3-integration"     : "com.github.bumptech.glide:okhttp3-integration:4.9.0",
@@ -34,7 +35,7 @@ ext {
                     "umeng-analytics"         : "com.umeng.analytics:analytics:latest.integration",
                     "FlycoTabLayout"          : "com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar",
                     "glide"                   : "com.github.bumptech.glide:glide:4.9.0",
-                    "glide-compiler"         : "com.github.bumptech.glide:compiler:4.9.0",
+                    "glide-compiler"          : "com.github.bumptech.glide:compiler:4.9.0",
                     "roundedimageview"        : "com.makeramen:roundedimageview:2.3.0",
                     "dfm"                     : "com.github.ctiao:dfm:0.4.4",
                     "rxbinding"               : "com.jakewharton.rxbinding2:rxbinding:2.0.0",
@@ -69,14 +70,18 @@ ext {
                     "stetho-okhttp3"          : "com.facebook.stetho:stetho-okhttp3:1.4.2",
                     "stetho-js-rhino"         : "com.facebook.stetho:stetho-js-rhino:1.4.2",
                     "fresco"                  : "com.facebook.fresco:fresco:1.1.0",
-					"lottie"                  : "com.airbnb.android:lottie:2.6.0",
-                    "mockito-core": "org.mockito:mockito-core:1.10.19",
-                    "xrecyclerview": "com.jcodecraeer:xrecyclerview:1.2.7",
-                    "xsdk": "com.github.kongpf8848:xsdk:1.0.18",
-                    "RxHttp": "com.github.kongpf8848:RxHttp:1.0.5",
-                    "permissionhelper":"com.github.kongpf8848:permissionhelper:1.0.0",
-                    "commons-lang3":"org.apache.commons:commons-lang3:3.4",
-                    "MagicIndicator":"com.github.hackware1993:MagicIndicator:1.5.0"
+                    "lottie"                  : "com.airbnb.android:lottie:2.6.0",
+                    "mockito-core"            : "org.mockito:mockito-core:1.10.19",
+                    "xrecyclerview"           : "com.jcodecraeer:xrecyclerview:1.2.7",
+                    "xsdk"                    : "com.github.kongpf8848:xsdk:1.0.18",
+                    "RxHttp"                  : "com.github.kongpf8848:RxHttp:1.0.5",
+                    "permissionhelper"        : "com.github.kongpf8848:permissionhelper:1.0.0",
+                    "commons-lang3"           : "org.apache.commons:commons-lang3:3.4",
+                    "MagicIndicator"          : "com.github.hackware1993:MagicIndicator:1.5.0",
+
+                    "immersionbar"            : "com.gyf.immersionbar:immersionbar:${immersionbar_version}",
+                    "immersionbar-components" : "com.gyf.immersionbar:immersionbar-components:3.0.0",
+                    "immersionbar-ktx"        : "com.gyf.immersionbar:immersionbar-ktx:3.0.0"
 
     ]
 }

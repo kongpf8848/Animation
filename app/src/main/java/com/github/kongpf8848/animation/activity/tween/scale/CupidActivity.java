@@ -15,7 +15,7 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.github.kongpf8848.xsdk.ui.activity.BaseActivity;
+import com.github.kongpf8848.animation.activity.BaseActivity;
 import com.github.kongpf8848.animation.R;
 
 import butterknife.BindView;
@@ -24,7 +24,7 @@ import butterknife.OnClick;
 /**
  * Created by jack on 2016/8/5.
  */
-public class CupidActivity extends BaseActivity  {
+public class CupidActivity extends BaseActivity {
     @BindView(R.id.cupid_result_text)
     TextView cupid_result_text;
     @BindView(R.id.cupid_result)

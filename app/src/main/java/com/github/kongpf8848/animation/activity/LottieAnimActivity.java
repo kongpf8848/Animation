@@ -4,7 +4,6 @@ import android.view.View;
 
 import com.github.kongpf8848.animation.R;
 import com.github.kongpf8848.animation.activity.lottie.AutoHomeActivity;
-import com.github.kongpf8848.xsdk.ui.activity.BaseActivity;
 
 import butterknife.OnClick;
 

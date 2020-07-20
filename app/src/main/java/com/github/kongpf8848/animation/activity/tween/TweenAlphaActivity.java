@@ -3,8 +3,8 @@ package com.github.kongpf8848.animation.activity.tween;
 import android.content.Intent;
 import android.view.View;
 
-import com.github.kongpf8848.xsdk.ui.activity.BaseActivity;
 import com.github.kongpf8848.animation.R;
+import com.github.kongpf8848.animation.activity.BaseActivity;
 import com.github.kongpf8848.animation.activity.tween.alpha.OtherActivity;
 import com.github.kongpf8848.animation.activity.tween.alpha.TranslateActivity;
 

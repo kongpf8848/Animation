@@ -4,8 +4,8 @@ import android.os.Bundle;
 import android.view.animation.AccelerateInterpolator;
 import android.widget.ImageView;
 
-import com.github.kongpf8848.xsdk.ui.activity.BaseActivity;
 import com.github.kongpf8848.animation.R;
+import com.github.kongpf8848.animation.activity.BaseActivity;
 import com.nineoldandroids.animation.ObjectAnimator;
 import com.nineoldandroids.animation.ValueAnimator;
 

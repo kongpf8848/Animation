@@ -2,7 +2,7 @@ package com.github.kongpf8848.animation.activity.tween.alpha;
 
 import android.view.KeyEvent;
 
-import com.github.kongpf8848.xsdk.ui.activity.BaseActivity;
+import com.github.kongpf8848.animation.activity.BaseActivity;
 import com.github.kongpf8848.animation.R;
 
 /**

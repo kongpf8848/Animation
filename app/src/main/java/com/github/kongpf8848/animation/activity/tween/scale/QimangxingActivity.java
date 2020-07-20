@@ -1,12 +1,11 @@
 package com.github.kongpf8848.animation.activity.tween.scale;
 
-import android.os.Bundle;
 import android.view.animation.Animation;
 import android.view.animation.ScaleAnimation;
 import android.widget.ImageView;
 
-import com.github.kongpf8848.xsdk.ui.activity.BaseActivity;
 import com.github.kongpf8848.animation.R;
+import com.github.kongpf8848.animation.activity.BaseActivity;
 
 import butterknife.BindView;
 

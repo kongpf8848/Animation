@@ -1,6 +1,6 @@
 package com.github.kongpf8848.animation.activity.property;
 
-import com.github.kongpf8848.xsdk.ui.activity.BaseActivity;
+import com.github.kongpf8848.animation.activity.BaseActivity;
 import com.github.kongpf8848.animation.R;
 
 /**

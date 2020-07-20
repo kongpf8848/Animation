@@ -43,6 +43,7 @@ dependencies {
     implementation rootProject.ext.dependencies["xsdk"]
     implementation rootProject.ext.dependencies["MagicIndicator"]
     implementation rootProject.ext.dependencies["lottie"]
+    implementation rootProject.ext.dependencies["immersionbar"]
 
 
 }

@@ -7,8 +7,8 @@ import android.os.Looper;
 import android.os.MessageQueue;
 import android.widget.ImageView;
 
-import com.github.kongpf8848.xsdk.ui.activity.BaseActivity;
 import com.github.kongpf8848.animation.R;
+import com.github.kongpf8848.animation.activity.BaseActivity;
 import com.nineoldandroids.animation.ValueAnimator;
 
 import java.util.Random;

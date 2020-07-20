@@ -10,7 +10,7 @@ import android.view.View;
 import com.github.kongpf8848.animation.R;
 import com.github.kongpf8848.animation.fragment.TitleFragment;
 import com.github.kongpf8848.animation.widget.AnimationRadioView;
-import com.github.kongpf8848.xsdk.ui.activity.BaseActivity;
+import com.github.kongpf8848.animation.activity.BaseActivity;
 import com.github.kongpf8848.xsdk.ui.adapter.FragmentAdapter;
 
 import net.lucode.hackware.magicindicator.MagicIndicator;
