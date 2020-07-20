@@ -134,32 +134,4 @@
 
 
 
-    <LinearLayout
-        android:id="@+id/apkbind_layout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/enter_button"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10.0dip"
-        android:gravity="center_vertical"
-        android:orientation="horizontal"
-        android:padding="10.0dip"
-        android:visibility="gone">
-
-        <CheckBox
-            android:id="@+id/apkbind_checkbox"
-            style="@style/ApkbindCheckboxTheme"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:checked="false"
-            android:visibility="visible"/>
-
-        <TextView
-            android:id="@+id/apkbind_desc"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10.0dip"
-            android:textColor="@color/white"
-            android:textSize="13.0dip"/>
-    </LinearLayout>
 </RelativeLayout>

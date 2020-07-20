@@ -27,9 +27,6 @@
         <item name="android:textSize">14sp</item>
     </style>
 
-    <style name="ApkbindCheckboxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
-        <item name="android:button">@drawable/apkbind_check_box_selector</item>
-    </style>
 
     <style name="fido" parent="@android:style/Theme.Translucent.NoTitleBar">
         <item name="android:windowNoTitle">true</item>
