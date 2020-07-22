@@ -17,7 +17,7 @@ Android各种动画效果
 工作原理：在一定时间间隔内，通过不断调用set方法对值进行改变，并不断将该值赋给对象的属性，从而实现该对象在该属性上的动画效果
 
 # Lottie动画
-Lottie 是 Airbnb 出的一套跨平台的动画完整解决方案，它能够帮助程序员直接加载 JSON 格式的文件在 iOS、Android 和 React Native之上，实现 100% 与设计稿相同的动画效果，而无需关心中间的实现细节。设计师只需要使用 After Effectes 设计出动画之后，通过使用 Lottic 提供的 Bodymovin 将设计好的动画导出成 JSON 格式的文件交付给开发即可完成。 [Lottie网站](https://lottiefiles.com)
+Lottie 是 Airbnb 出的一套跨平台的动画完整解决方案，它能够帮助程序员直接加载 JSON 格式的文件在 iOS、Android 和 React Native之上，实现 100% 与设计稿相同的动画效果，而无需关心中间的实现细节。设计师只需要使用 After Effectes 设计出动画之后，通过使用 Lottie 提供的 Bodymovin 将设计好的动画导出成 JSON 格式的文件交付给开发即可完成。 [Lottie网站](https://lottiefiles.com)
 
 # Tgs动画
 IM软件Telegram 推出的新的Sticker贴纸格式，这个全新的 Sticker 贴纸格式为 .tgs，其实就是基于lottie json文件改造而来的一种格式
