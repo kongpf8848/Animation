@@ -7,10 +7,10 @@ Android各种动画效果
 # 补间动画（Tween Animation）
 |动画类型|XML配置方式|Java代码实现方式|
 |:---:|:---:|:---:|
-| 渐变透明度动画| <alpha /> |AlphaAnimation
-| 缩放动画 | <scale /> |ScaleAnimation
-| 旋转动画| <rotate /> |RotateAnimation
-| 平移动画 |<translate /> |TranslateAnimation
+| 渐变透明度动画|alpha |AlphaAnimation|
+| 缩放动画|scale|ScaleAnimation|
+| 旋转动画|rotate |RotateAnimation|
+| 平移动画|translate |TranslateAnimation|
 
 # 属性动画
 直接更改View 的属性来实现的动画。
