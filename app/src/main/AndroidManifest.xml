@@ -146,6 +146,11 @@
             android:label="汽车之家"
             />
 
+        <!---Tgs动画-->
+        <activity android:name=".activity.TgsActivity" android:screenOrientation="portrait"
+            android:label="Tgs"
+            />
+
 
     </application>
 

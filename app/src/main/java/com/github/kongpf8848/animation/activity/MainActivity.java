@@ -36,4 +36,10 @@ public class MainActivity extends BaseActivity {
         startActivity(LottieAnimActivity.class);
     }
 
+    @OnClick(R.id.button5)
+    public void onButton5(View view)
+    {
+        startActivity(TgsActivity.class);
+    }
+
 }
