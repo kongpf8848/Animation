@@ -145,6 +145,9 @@
         <activity android:name=".activity.lottie.AutoHomeActivity" android:screenOrientation="portrait"
             android:label="汽车之家"
             />
+        <activity android:name=".activity.lottie.BossActivity" android:screenOrientation="portrait"
+            android:label="BOSS直聘"
+            />
 
         <!---Tgs动画-->
         <activity android:name=".activity.TgsActivity" android:screenOrientation="portrait"

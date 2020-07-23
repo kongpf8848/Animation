@@ -70,7 +70,7 @@ ext {
                     "stetho-okhttp3"          : "com.facebook.stetho:stetho-okhttp3:1.4.2",
                     "stetho-js-rhino"         : "com.facebook.stetho:stetho-js-rhino:1.4.2",
                     "fresco"                  : "com.facebook.fresco:fresco:1.1.0",
-                    "lottie"                  : "com.airbnb.android:lottie:2.6.0",
+                    "lottie"                  : "com.airbnb.android:lottie:2.7.0",
                     "mockito-core"            : "org.mockito:mockito-core:1.10.19",
                     "xrecyclerview"           : "com.jcodecraeer:xrecyclerview:1.2.7",
                     "xsdk"                    : "com.github.kongpf8848:xsdk:1.0.18",
