@@ -10,21 +10,21 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.github.kongpf8848.animation.R;
-import com.github.kongpf8848.animation.bean.EmotionItemBean;
+import com.github.kongpf8848.animation.bean.StickerItem;
 import com.github.kongpf8848.animation.widget.MyStickerEmojiCell;
 
 import java.util.List;
 
-public class EmojiNewAdapter extends RecyclerView.Adapter<EmojiNewAdapter.ViewHolder> {
+public class StickerAdapter extends RecyclerView.Adapter<StickerAdapter.ViewHolder> {
 
-    private List<EmotionItemBean>list;
+    private List<StickerItem>list;
     private Context context;
-    public EmojiNewAdapter(Context context) {
+    public StickerAdapter(Context context) {
 
         this.context=context;
     }
 
-    public void setList(List<EmotionItemBean> list) {
+    public void setList(List<StickerItem> list) {
         this.list = list;
     }
 
@@ -38,7 +38,7 @@ public class EmojiNewAdapter extends RecyclerView.Adapter<EmojiNewAdapter.ViewHo
     @Override
     public void onBindViewHolder(@NonNull final ViewHolder holder, int position) {
 
-        final EmotionItemBean data=list.get(position);
+        final StickerItem data=list.get(position);
         holder.iv_emoji.setSticker(data,holder.itemView,true);
 
     }
@@ -55,7 +55,7 @@ public class EmojiNewAdapter extends RecyclerView.Adapter<EmojiNewAdapter.ViewHo
         }
     }
 
-    public EmotionItemBean getItem(int position){
+    public StickerItem getItem(int position){
         return list.get(position);
     }
 

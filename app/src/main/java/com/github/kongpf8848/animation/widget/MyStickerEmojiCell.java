@@ -15,7 +15,7 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.github.kongpf8848.animation.bean.EmotionItemBean;
+import com.github.kongpf8848.animation.bean.StickerItem;
 import com.github.kongpf8848.animation.helper.EmojiUtils;
 import com.kongpf.commonhelper.ScreenHelper;
 
@@ -23,7 +23,7 @@ import org.telegram.ui.Components.RLottieImageView;
 
 public class MyStickerEmojiCell extends FrameLayout {
     private RLottieImageView imageView;
-    private EmotionItemBean sticker;
+    private StickerItem sticker;
     private Object parentObject;
     private TextView emojiTextView;
     private float alpha = 1;
@@ -56,7 +56,7 @@ public class MyStickerEmojiCell extends FrameLayout {
         setFocusable(true);
     }
 
-    public EmotionItemBean getSticker() {
+    public StickerItem getSticker() {
         return sticker;
     }
 
@@ -73,7 +73,7 @@ public class MyStickerEmojiCell extends FrameLayout {
     }
 
 
-    public void setSticker(EmotionItemBean document, Object parent, boolean showEmoji) {
+    public void setSticker(StickerItem document, Object parent, boolean showEmoji) {
         if (document != null) {
             sticker = document;
             parentObject = parent;

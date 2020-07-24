@@ -36,7 +36,7 @@ public class BossActivity extends BaseActivity {
     MagicIndicator magicIndicator;
 
     private static final String[] CHANNELS = new String[]{"职位", "发现", "消息","我的"};
-    private static final String[] ANIMATIONS = new String[]{"lottie_position.json", "lottie_company.json","lottie_message.json","lottie_me.json"};
+    private static final String[] ANIMATIONS = new String[]{"lottie_position.json", "lottie_discover.json","lottie_message.json","lottie_me.json"};
 
     @Override
     protected int getLayoutId() {

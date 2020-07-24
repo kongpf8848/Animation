@@ -151,7 +151,7 @@
 
         <!---Tgs动画-->
         <activity android:name=".activity.TgsActivity" android:screenOrientation="portrait"
-            android:label="Tgs"
+            android:label="Telegram Sticker"
             />
 
 

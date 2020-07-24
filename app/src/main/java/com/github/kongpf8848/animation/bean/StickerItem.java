@@ -2,18 +2,17 @@ package com.github.kongpf8848.animation.bean;
 
 import androidx.annotation.Nullable;
 
-public class EmotionItemBean extends EmojiCell {
+public class StickerItem {
 
     private int id;
-    private String mUrl;
+    protected String Name;
+    protected String File;
 
-
-    public EmotionItemBean(String name,String file, int id,String url) {
-        super(name,file);
+    public StickerItem(int id, String name, String file) {
         this.id=id;
-        this.mUrl=url;
+        this.Name = name;
+        this.File = file;
     }
-
 
     public int getId() {
         return id;
@@ -23,13 +22,20 @@ public class EmotionItemBean extends EmojiCell {
         this.id = id;
     }
 
-
-    public String getUrl() {
-        return mUrl;
+    public String getName() {
+        return Name;
     }
 
-    public void setUrl(String url) {
-        this.mUrl = url;
+    public void setName(String name) {
+        this.Name = name;
+    }
+
+    public String getFile() {
+        return File;
+    }
+
+    public void setFile(String file) {
+        this.File = file;
     }
 
 
@@ -39,7 +45,7 @@ public class EmotionItemBean extends EmojiCell {
             return true;
         }
         else if(obj!=null && this.getClass()==obj.getClass()){
-            EmotionItemBean other=(EmotionItemBean)obj;
+            StickerItem other=(StickerItem)obj;
             return this.id==other.id;
         }
         return false;

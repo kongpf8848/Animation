@@ -1,6 +1,7 @@
 package com.github.kongpf8848.animation.activity;
 
 import android.graphics.Rect;
+
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -8,8 +9,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.View;
 
 import com.github.kongpf8848.animation.R;
-import com.github.kongpf8848.animation.adapter.EmojiNewAdapter;
-import com.github.kongpf8848.animation.bean.EmotionItemBean;
+import com.github.kongpf8848.animation.adapter.StickerAdapter;
+import com.github.kongpf8848.animation.bean.StickerItem;
 
 import java.util.Arrays;
 import java.util.List;
@@ -38,33 +39,33 @@ public class TgsActivity extends BaseActivity {
             }
         });
 
-        EmojiNewAdapter adapter = new EmojiNewAdapter(this);
+        StickerAdapter adapter = new StickerAdapter(this);
         adapter.setList(getDatas());
         recyclerView.setAdapter(adapter);
     }
 
-    private List<EmotionItemBean> getDatas() {
+    private List<StickerItem> getDatas() {
         return Arrays.asList(
-                new EmotionItemBean("\u2764\ufe0f", "2_1901206392136531994.tgs", 1, ""),
-                new EmotionItemBean("\ud83d\udc4d", "2_1901206392136531995.tgs", 2, ""),
-                new EmotionItemBean("\ud83d\ude18", "2_1901206392136531997.tgs", 3, ""),
-                new EmotionItemBean("\ud83e\udd2c", "2_1901206392136531999.tgs", 4, ""),
-                new EmotionItemBean("\ud83c\udf37", "2_1901206392136532002.tgs", 5, ""),
-                new EmotionItemBean("\ud83e\udda0", "2_1901206392136532003.tgs", 6, ""),
-                new EmotionItemBean("\ud83d\ude2f", "2_1901206392136532005.tgs", 7,""),
-                new EmotionItemBean("\ud83d\ude02", "2_1901206392136532006.tgs",8, ""),
-                new EmotionItemBean("\ud83e\udd14", "2_1901206392136532007.tgs", 9,""),
-                new EmotionItemBean("\ud83d\ude45", "2_1901206392136532008.tgs", 10,""),
-                new EmotionItemBean("\ud83e\udd73", "2_1901206392136532009.tgs", 11,""),
-                new EmotionItemBean("\ud83d\ude28", "2_1901206392136532010.tgs",12, ""),
-                new EmotionItemBean("\ud83d\ude15", "2_1901206392136532011.tgs", 13,""),
-                new EmotionItemBean("\u23f3",       "2_1901206392136532012.tgs", 14,""),
-                new EmotionItemBean("\ud83d\udc4b", "2_1901206392136532014.tgs", 15,""),
-                new EmotionItemBean("\ud83d\udc48", "2_1901206392136532015.tgs", 16,""),
-                new EmotionItemBean("\ud83d\ude34", "2_1901206392136532016.tgs", 17,""),
-                new EmotionItemBean("\ud83d\ude09", "2_1901206392136532017.tgs", 18,""),
-                new EmotionItemBean("\ud83d\ude29", "2_1901206392136532018.tgs", 19,""),
-                new EmotionItemBean("\u2753",       "2_1901206392136532019.tgs", 20,"")
+                new StickerItem(1, "\u2764\ufe0f",  "2_1901206392136531994.tgs"),
+                new StickerItem(2, "\ud83d\udc4d",  "2_1901206392136531995.tgs"),
+                new StickerItem(3, "\ud83d\ude18",  "2_1901206392136531997.tgs"),
+                new StickerItem(4, "\ud83e\udd2c",  "2_1901206392136531999.tgs"),
+                new StickerItem(5, "\ud83c\udf37",  "2_1901206392136532002.tgs"),
+                new StickerItem(6, "\ud83e\udda0",  "2_1901206392136532003.tgs"),
+                new StickerItem(7, "\ud83d\ude2f",  "2_1901206392136532005.tgs"),
+                new StickerItem(8, "\ud83d\ude02",  "2_1901206392136532006.tgs"),
+                new StickerItem(9, "\ud83e\udd14",  "2_1901206392136532007.tgs"),
+                new StickerItem(10, "\ud83d\ude45", "2_1901206392136532008.tgs"),
+                new StickerItem(11, "\ud83e\udd73", "2_1901206392136532009.tgs"),
+                new StickerItem(12, "\ud83d\ude28", "2_1901206392136532010.tgs"),
+                new StickerItem(13, "\ud83d\ude15", "2_1901206392136532011.tgs"),
+                new StickerItem(14, "\u23f3",       "2_1901206392136532012.tgs"),
+                new StickerItem(15, "\ud83d\udc4b", "2_1901206392136532014.tgs"),
+                new StickerItem(16, "\ud83d\udc48", "2_1901206392136532015.tgs"),
+                new StickerItem(17, "\ud83d\ude34", "2_1901206392136532016.tgs"),
+                new StickerItem(18, "\ud83d\ude09", "2_1901206392136532017.tgs"),
+                new StickerItem(19, "\ud83d\ude29", "2_1901206392136532018.tgs"),
+                new StickerItem(20, "\u2753",       "2_1901206392136532019.tgs")
 
         );
     }
