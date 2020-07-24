@@ -1,6 +1,6 @@
 package com.github.kongpf8848.animation.bean;
 
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 
 public class EmotionItemBean extends EmojiCell {
 

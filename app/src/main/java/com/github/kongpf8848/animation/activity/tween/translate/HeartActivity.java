@@ -38,7 +38,7 @@ public class HeartActivity extends BaseActivity implements LiveHeartTask.HeartLi
 
     @Override
     protected void initData() {
-        heart_layout=ButterKnife.findById(this,R.id.heart_layout);
+        heart_layout=findViewById(R.id.heart_layout);
         LiveHeartTaskManagerThread downloadTaskManagerThread = new LiveHeartTaskManagerThread();
         new Thread(downloadTaskManagerThread).start();
         startAnimation();

@@ -35,7 +35,7 @@
             android:textSize="12sp" />
 
 
-        <android.support.constraint.ConstraintLayout
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/csl_find_flow_detail_right_bottom"
             android:layout_width="0dp"
             android:layout_height="45dp"
@@ -117,7 +117,7 @@
 
             </LinearLayout>
 
-        </android.support.constraint.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
     </LinearLayout>
 
 </LinearLayout>

@@ -2,14 +2,12 @@ package com.github.kongpf8848.animation.activity;
 
 import android.content.Context;
 import android.graphics.Color;
-import android.os.Bundle;
 import android.os.Looper;
 import android.os.MessageQueue;
-import android.support.v4.view.ViewPager;
+import androidx.viewpager.widget.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.WindowManager;
 import android.widget.RelativeLayout;
 
 import com.github.kongpf8848.animation.R;

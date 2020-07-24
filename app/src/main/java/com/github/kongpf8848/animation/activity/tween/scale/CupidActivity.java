@@ -1,18 +1,11 @@
 package com.github.kongpf8848.animation.activity.tween.scale;
 
-import android.content.pm.ActivityInfo;
-import android.os.Bundle;
-import android.os.Handler;
-import android.os.Message;
-import android.support.v7.app.AppCompatActivity;
-import android.view.MotionEvent;
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
-import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.github.kongpf8848.animation.activity.BaseActivity;
