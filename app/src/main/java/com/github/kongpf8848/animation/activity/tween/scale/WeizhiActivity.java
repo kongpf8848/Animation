@@ -9,7 +9,6 @@ import android.widget.ImageView;
 
 import com.github.kongpf8848.animation.R;
 import com.github.kongpf8848.animation.activity.BaseActivity;
-import com.nineoldandroids.animation.ValueAnimator;
 
 import java.util.Random;
 
@@ -54,7 +53,6 @@ public class WeizhiActivity extends BaseActivity {
         super.onDestroy();
         this.mIvActivitySplashImg.clearAnimation();
         this.mIvActivitySplashPic.clearAnimation();
-        ValueAnimator.clearAllAnimations();
     }
 
 

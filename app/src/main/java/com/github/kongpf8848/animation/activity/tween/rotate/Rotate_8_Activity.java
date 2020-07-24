@@ -1,13 +1,13 @@
 package com.github.kongpf8848.animation.activity.tween.rotate;
 
-import android.os.Bundle;
+import android.animation.ObjectAnimator;
+import android.animation.ValueAnimator;
 import android.view.animation.AccelerateInterpolator;
 import android.widget.ImageView;
 
 import com.github.kongpf8848.animation.R;
 import com.github.kongpf8848.animation.activity.BaseActivity;
-import com.nineoldandroids.animation.ObjectAnimator;
-import com.nineoldandroids.animation.ValueAnimator;
+
 
 import butterknife.BindView;
 
