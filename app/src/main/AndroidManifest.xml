@@ -149,6 +149,11 @@
             android:label="BOSS直聘"
             />
 
+        <!---ViewPager动画-->
+        <activity android:name=".activity.viewpager.WeChatActivity" android:screenOrientation="portrait"
+            android:label="Wechat"
+            />
+
         <!---Tgs动画-->
         <activity android:name=".activity.TgsActivity" android:screenOrientation="portrait"
             android:label="Telegram Sticker"
