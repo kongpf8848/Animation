@@ -1,5 +1,5 @@
 # Animation
-Android各种动画效果
+Android各种动画效果,无动画，不精彩。
 
 # 逐帧动画（Frame Animation）
 一帧一帧进行播放，它的原理与Gif类似
