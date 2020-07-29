@@ -2,15 +2,16 @@ package com.github.kongpf8848.animation.activity.lottie;
 
 import android.content.Context;
 import android.os.Bundle;
-import androidx.fragment.app.Fragment;
-import androidx.viewpager.widget.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 
+import androidx.fragment.app.Fragment;
+import androidx.viewpager.widget.ViewPager;
+
 import com.github.kongpf8848.animation.R;
+import com.github.kongpf8848.animation.activity.BaseActivity;
 import com.github.kongpf8848.animation.fragment.TitleFragment;
 import com.github.kongpf8848.animation.widget.AnimationRadioView;
-import com.github.kongpf8848.animation.activity.BaseActivity;
 import com.github.kongpf8848.xsdk.ui.adapter.FragmentAdapter;
 
 import net.lucode.hackware.magicindicator.MagicIndicator;
@@ -41,6 +42,7 @@ public class AutoHomeActivity extends BaseActivity {
     protected int getLayoutId() {
         return R.layout.activity_lottie_autohome;
     }
+
 
     protected void initData() {
         super.initData();

@@ -159,7 +159,9 @@
             android:label="Telegram Sticker"
             />
 
-
+        <activity android:name=".activity.TestActivity" android:screenOrientation="portrait"
+            android:label="Test"
+            />
     </application>
 
 </manifest>
