@@ -13,7 +13,7 @@
     <style name="AppTheme" parent="BaseTheme">
     </style>
 
-    <style name="AppTheme.Splash" parent="BaseTheme">
+    <style name="AppTheme.NoActionBar" parent="BaseTheme">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>

@@ -3,6 +3,7 @@ package com.github.kongpf8848.animation.activity;
 import android.view.View;
 
 import com.github.kongpf8848.animation.R;
+import com.github.kongpf8848.animation.activity.viewpager.XhsActivity;
 
 import butterknife.OnClick;
 
@@ -46,7 +47,7 @@ public class MainActivity extends BaseActivity {
     @OnClick(R.id.button6)
     public void onButton6(View view)
     {
-        startActivity(TestActivity.class);
+        startActivity(XhsActivity.class);
     }
 
 }

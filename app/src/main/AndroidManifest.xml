@@ -22,7 +22,7 @@
         android:name=".BaseApplication"
         >
         <activity android:name=".activity.SplashActivity" android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.Splash"
+            android:theme="@style/AppTheme.NoActionBar"
             >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -152,6 +152,10 @@
         <!---ViewPager动画-->
         <activity android:name=".activity.viewpager.WeChatActivity" android:screenOrientation="portrait"
             android:label="Wechat"
+            />
+        <activity android:name=".activity.viewpager.XhsActivity" android:screenOrientation="portrait"
+            android:label="小红书"
+            android:theme="@style/AppTheme.NoActionBar"
             />
 
         <!---Tgs动画-->
