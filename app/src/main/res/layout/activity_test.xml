@@ -9,25 +9,32 @@
         android:orientation="vertical">
 
         <LinearLayout
-            android:layout_width="100dp"
+            android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:orientation="vertical"
             android:gravity="center"
-            >
+            android:orientation="vertical">
 
-             <View
-                 android:id="@+id/view_line1"
-                 android:layout_width="15dp"
-                 android:layout_height="2dp"
-                 android:background="#999999"
-                 />
-            <View
-                android:id="@+id/view_line2"
-                android:layout_width="15dp"
-                android:layout_height="2dp"
-                android:background="#999999"
-                android:layout_marginTop="9dp"
-                />
+            <FrameLayout
+                android:layout_width="15.0dip"
+                android:layout_height="15.0dip"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <View
+                    android:id="@+id/v_top"
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="1.0dip"
+                    android:background="#ff969696" />
+
+                <View
+                    android:id="@+id/v_bottom"
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="1.0dip"
+                    android:background="#969696" />
+            </FrameLayout>
         </LinearLayout>
 
         <Button
@@ -35,17 +42,14 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="button1"
-            />
+            android:text="button1" />
 
         <Button
             android:id="@+id/button2"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="button2"
-            />
-
+            android:text="button2" />
 
 
     </LinearLayout>

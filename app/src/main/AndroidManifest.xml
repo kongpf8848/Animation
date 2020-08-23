@@ -150,6 +150,9 @@
             />
 
         <!---ViewPager动画-->
+        <activity android:name=".activity.ViewPagerActivity" android:screenOrientation="portrait"
+            android:label="ViewPager动画"
+            />
         <activity android:name=".activity.viewpager.WeChatActivity" android:screenOrientation="portrait"
             android:label="Wechat"
             />

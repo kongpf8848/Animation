@@ -13,9 +13,9 @@ import butterknife.OnClick;
 
 public class TestActivity extends BaseActivity {
 
-    @BindView(R.id.view_line1)
+    @BindView(R.id.v_top)
     View view_line1;
-    @BindView(R.id.view_line2)
+    @BindView(R.id.v_bottom)
     View view_line2;
 
     @Override
@@ -27,7 +27,7 @@ public class TestActivity extends BaseActivity {
     public void onButton1(View view) {
 
         view_line1.setPivotX(0);
-        view_line1.setPivotY(0);
+        view_line1.setPivotY(2);
         ObjectAnimator objectAnimator1=ObjectAnimator.ofFloat(view_line1,"rotation",0f,45f);
         view_line2.setPivotX(0);
         view_line2.setPivotY(0);
@@ -39,6 +39,7 @@ public class TestActivity extends BaseActivity {
         AnimatorSet animatorSet=new AnimatorSet();
         animatorSet.setDuration(500);
         animatorSet.playTogether(objectAnimator1,objectAnimator2,objectAnimator1Width,objectAnimator2Width);
+        //animatorSet.playTogether(objectAnimator1,objectAnimator2);
         animatorSet.start();
     }
 
