@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:id="@id/page_root"
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:background="@drawable/bg_tittle_bar">
+<com.github.kongpf8848.animation.splash.SplashView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@id/page_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_tittle_bar">
 
     <ImageView
         android:id="@id/image"
@@ -61,8 +62,10 @@
             android:layout_height="wrap_content"
             android:alpha="0.0"
             android:scaleType="center"
-            android:src="@drawable/guide3_balloon"/>
+            android:src="@drawable/guide3_balloon"
+            app:splash="true"
+            />
     </FrameLayout>
 
 
-</RelativeLayout>
+</com.github.kongpf8848.animation.splash.SplashView>

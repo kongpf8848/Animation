@@ -30,7 +30,7 @@
         android:layout_alignParentEnd="true"
         android:layout_marginTop="15.0dip"
         android:layout_marginEnd="15.0dip"
-        android:onClick="onClick"
+        android:onClick="enterMain"
         android:scaleType="centerCrop"
         android:src="@drawable/selector_close_btn_circle"
         android:contentDescription="@string/app_name"

@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:id="@+id/page_root"
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:background="@drawable/bg_tittle_bar">
+<com.github.kongpf8848.animation.splash.SplashView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/page_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_tittle_bar">
 
     <ImageView
         android:id="@+id/image"
@@ -48,7 +49,9 @@
             android:layout_marginLeft="15.0dip"
             android:layout_marginTop="0.0dip"
             android:scaleType="center"
-            android:src="@drawable/guide4_line"/>
+            android:src="@drawable/guide4_line"
+            app:splash="true"
+            />
 
         <ImageView
             android:id="@+id/discusssion"
@@ -57,7 +60,9 @@
             android:layout_marginLeft="206.0dip"
             android:layout_marginTop="67.0dip"
             android:scaleType="center"
-            android:src="@drawable/guide4_discussion"/>
+            android:src="@drawable/guide4_discussion"
+            app:splash="true"
+            />
 
         <ImageView
             android:id="@+id/homework"
@@ -66,7 +71,9 @@
             android:layout_marginLeft="57.0dip"
             android:layout_marginTop="43.0dip"
             android:scaleType="center"
-            android:src="@drawable/guide4_homework"/>
+            android:src="@drawable/guide4_homework"
+            app:splash="true"
+            />
 
         <ImageView
             android:id="@+id/teacher"
@@ -75,7 +82,9 @@
             android:layout_marginLeft="190.0dip"
             android:layout_marginTop="10.0dip"
             android:scaleType="center"
-            android:src="@drawable/guide4_teacher"/>
+            android:src="@drawable/guide4_teacher"
+            app:splash="true"
+            />
 
         <ImageView
             android:id="@+id/time"
@@ -84,7 +93,9 @@
             android:layout_marginLeft="46.0dip"
             android:layout_marginTop="4.0dip"
             android:scaleType="center"
-            android:src="@drawable/guide4_time"/>
+            android:src="@drawable/guide4_time"
+            app:splash="true"
+            />
 
         <ImageView
             android:id="@+id/video"
@@ -93,7 +104,9 @@
             android:layout_marginLeft="98.0dip"
             android:layout_marginTop="22.0dip"
             android:scaleType="center"
-            android:src="@drawable/guide4_video"/>
+            android:src="@drawable/guide4_video"
+            app:splash="true"
+            />
 
         <ImageView
             android:id="@+id/student_left"
@@ -102,7 +115,9 @@
             android:layout_marginLeft="0.0dip"
             android:layout_marginTop="43.0dip"
             android:scaleType="center"
-            android:src="@drawable/guide4_student"/>
+            android:src="@drawable/guide4_student"
+            app:splash="true"
+            />
 
         <ImageView
             android:id="@+id/student_middle"
@@ -111,7 +126,9 @@
             android:layout_marginLeft="152.0dip"
             android:layout_marginTop="43.0dip"
             android:scaleType="center"
-            android:src="@drawable/guide4_student"/>
+            android:src="@drawable/guide4_student"
+            app:splash="true"
+            />
 
         <ImageView
             android:id="@+id/student_right"
@@ -120,7 +137,9 @@
             android:layout_marginLeft="253.0dip"
             android:layout_marginTop="45.0dip"
             android:scaleType="center"
-            android:src="@drawable/guide4_student"/>
+            android:src="@drawable/guide4_student"
+            app:splash="true"
+            />
     </FrameLayout>
 
     <ImageView
@@ -130,8 +149,10 @@
         android:layout_below="@id/text"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="25.0dip"
-        android:src="@drawable/guide_enter"/>
+        android:src="@drawable/guide_enter"
+        android:onClick="enterMain"
+        />
 
 
 
-</RelativeLayout>
+</com.github.kongpf8848.animation.splash.SplashView>

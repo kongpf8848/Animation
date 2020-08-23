@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:id="@+id/page_root"
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:background="@drawable/bg_tittle_bar">
+<com.github.kongpf8848.animation.splash.SplashView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/page_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_tittle_bar">
 
     <ImageView
         android:id="@id/image"
@@ -50,7 +51,9 @@
             android:alpha="0.0"
             android:text="中国科学技术大学"
             android:textColor="#995c9dbf"
-            android:textSize="12.0sp"/>
+            android:textSize="12.0sp"
+            app:splash="true"
+            />
 
         <TextView
             android:id="@+id/DongNanDaXue"
@@ -61,7 +64,9 @@
             android:alpha="0.0"
             android:text="东南大学"
             android:textColor="#a05c9dbf"
-            android:textSize="14.0sp"/>
+            android:textSize="14.0sp"
+            app:splash="true"
+            />
 
         <TextView
             android:id="@+id/HuNanDaXue"
@@ -72,7 +77,9 @@
             android:alpha="0.0"
             android:text="湖南大学"
             android:textColor="#aa5c9dbf"
-            android:textSize="12.0sp"/>
+            android:textSize="12.0sp"
+            app:splash="true"
+            />
 
         <TextView
             android:id="@+id/HaGongDa"
@@ -83,7 +90,9 @@
             android:alpha="0.0"
             android:text="哈尔滨工业大学"
             android:textColor="#ee5c9dbf"
-            android:textSize="16.0sp"/>
+            android:textSize="16.0sp"
+            app:splash="true"
+            />
 
         <TextView
             android:id="@+id/ZheJiangDaXue"
@@ -94,7 +103,9 @@
             android:alpha="0.0"
             android:text="浙江大学"
             android:textColor="#ee5c9dbf"
-            android:textSize="19.0sp"/>
+            android:textSize="19.0sp"
+            app:splash="true"
+            />
 
         <TextView
             android:id="@+id/BeiJingDaXue"
@@ -105,7 +116,9 @@
             android:alpha="0.0"
             android:text="北京大学"
             android:textColor="#ff5c9dbf"
-            android:textSize="21.0sp"/>
+            android:textSize="21.0sp"
+            app:splash="true"
+            />
 
         <TextView
             android:id="@+id/ShangHaiJiaoDa"
@@ -116,7 +129,9 @@
             android:alpha="0.0"
             android:text="上海交通大学"
             android:textColor="#995c9dbf"
-            android:textSize="15.0sp"/>
+            android:textSize="15.0sp"
+            app:splash="true"
+            />
 
         <TextView
             android:id="@+id/WuHanDaXue"
@@ -127,8 +142,10 @@
             android:alpha="0.0"
             android:text="武汉大学"
             android:textColor="#885c9dbf"
-            android:textSize="12.0sp"/>
+            android:textSize="12.0sp"
+            app:splash="true"
+            />
     </FrameLayout>
 
 
-</RelativeLayout>
+</com.github.kongpf8848.animation.splash.SplashView>

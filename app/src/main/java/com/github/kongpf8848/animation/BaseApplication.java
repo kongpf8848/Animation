@@ -15,8 +15,6 @@ public class BaseApplication extends Application
     {
         super.onCreate();
         applicationContext=this;
-
-        System.loadLibrary("tmessages.30");
         Thread.setDefaultUncaughtExceptionHandler(new Thread.UncaughtExceptionHandler() {
             @Override
             public void uncaughtException(Thread t, Throwable e) {
@@ -24,6 +22,12 @@ public class BaseApplication extends Application
                 Log.d("Crash", "uncaughtException() called with: t = [" + t + "], e = [" + e.getMessage() + "]");
             }
         });
+
+        try {
+            System.loadLibrary("tmessages.30");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     public static Context getContext(){

@@ -1,18 +1,17 @@
 package com.github.kongpf8848.animation.activity;
 
-import android.content.Context;
 import android.graphics.Color;
 import android.os.Looper;
-import android.os.MessageQueue;
+
 import androidx.viewpager.widget.ViewPager;
+
 import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
-import android.widget.RelativeLayout;
 
 import com.github.kongpf8848.animation.R;
 import com.github.kongpf8848.animation.adapter.ViewPagerAdapter;
-import com.github.kongpf8848.animation.bean.GuideEntity;
+import com.github.kongpf8848.animation.splash.SplashLayoutInflater;
+import com.github.kongpf8848.animation.splash.SplashView;
 import com.kongpf.commonhelper.ScreenHelper;
 
 import net.lucode.hackware.magicindicator.MagicIndicator;
@@ -26,23 +25,19 @@ import java.util.List;
  * Created by pengf on 2016/12/15.
  */
 
-public class SplashActivity extends BaseActivity implements View.OnClickListener {
+public class SplashActivity extends BaseActivity {
 
-    private boolean bFromAbout = false;
-    private List<View> viewList = new ArrayList<View>();
-    private List<GuideEntity.GuideItem> guideItemList = new ArrayList<GuideEntity.GuideItem>();
-    private LayoutInflater layoutInflater;
-
-    private MagicIndicator mMagicIndicator;
-    private ViewPager viewPager;
-    private ViewPagerAdapter adapter;
-    private int height;
-
-
+    private List<SplashView> viewList = new ArrayList<>();
+    private int[] layoutIdList = new int[]{
+            R.layout.item_guide_page_one,
+            R.layout.item_guide_page_two,
+            R.layout.item_guide_page_three,
+            R.layout.item_guide_page_four
+    };
 
     @Override
     protected int getLayoutId() {
-        return R.layout.activity_guide;
+        return R.layout.activity_splash;
     }
 
     @Override
@@ -58,170 +53,83 @@ public class SplashActivity extends BaseActivity implements View.OnClickListener
     @Override
     protected void initData() {
         super.initData();
-        this.height= ScreenHelper.getScreenHeight(this);
-        this.bFromAbout = getIntent().getBooleanExtra("key_is_about", false);
-        layoutInflater=(LayoutInflater)this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        init();
-
-        Looper.myQueue().addIdleHandler(new MessageQueue.IdleHandler() {
-            @Override
-            public boolean queueIdle() {
-                GuideEntity.a(guideItemList.get(viewPager.getCurrentItem()));
-                return false;
-            }
+        initGuide();
+        initViewPager();
+        Looper.myQueue().addIdleHandler(() -> {
+             startAnimation(0);
+            return false;
         });
     }
 
-
-    public void onWindowFocusChanged(boolean hasFocus)
-    {
-        super.onWindowFocusChanged(hasFocus);
-        g();
-    }
-
-    private void g()
-    {
-
-       if (height < 1280)
-        {
-            int i = (int)(0.6F * height) - ScreenHelper.dp2px(this, 388.0F);
-            RelativeLayout.LayoutParams localLayoutParams = (RelativeLayout.LayoutParams)this.viewPager.getLayoutParams();
-            if (localLayoutParams != null)
-            {
-                localLayoutParams.setMargins(0, i, 0, 0);
-                this.viewPager.setLayoutParams(localLayoutParams);
-            }
+    /**
+     * 初始化向导页面
+     */
+    private void initGuide() {
+        LayoutInflater inflater=LayoutInflater.from(this);
+        for (int layoutId : layoutIdList) {
+            final List<View>list=new ArrayList<>();
+            SplashView splashView = (SplashView)
+                    new SplashLayoutInflater(inflater, this, () -> list)
+                    .inflate(layoutId, null);
+            splashView.setViews(list);
+            this.viewList.add(splashView);
         }
     }
 
-    private void init()
-    {
-        initGuide1();
-        initGuide2();
-        initGuide3();
-        initGuide4();
-        this.mMagicIndicator = this.findViewById(R.id.magic_indicator);
-        this.viewPager = this.findViewById(R.id.pager);
-        this.adapter = new ViewPagerAdapter(this.viewList);
-        this.viewPager.setAdapter(this.adapter);
-        this.viewPager.addOnPageChangeListener(new ViewPager.SimpleOnPageChangeListener() {
-
+    /**
+     * 初始化ViewPager
+     */
+    private void initViewPager() {
+        MagicIndicator magicIndicator = this.findViewById(R.id.magic_indicator);
+        ViewPager viewPager = this.findViewById(R.id.pager);
+        ViewPagerAdapter adapter = new ViewPagerAdapter(this.viewList);
+        viewPager.setAdapter(adapter);
+        viewPager.addOnPageChangeListener(new ViewPager.SimpleOnPageChangeListener() {
             @Override
-            public void onPageSelected(int position)
-            {
-                  for(int i=0;i<viewList.size();i++)
-                  {
-                      if(i==position)
-                      {
-                          GuideEntity.a(guideItemList.get(i));
-                      }
-                      else
-                      {
-                          GuideEntity.b(guideItemList.get(i));
-                      }
-                  }
+            public void onPageSelected(int position) {
+                for (int index = 0; index < viewList.size(); index++) {
+                    if (index == position) {
+                        startAnimation(index);
+                    } else {
+                        resetAnimation(index);
+                    }
+                }
             }
 
         });
 
-        CircleNavigator circleNavigator=new CircleNavigator(this);
+        CircleNavigator circleNavigator = new CircleNavigator(this);
         circleNavigator.setCircleColor(Color.WHITE);
-        circleNavigator.setStrokeWidth(ScreenHelper.dp2px(this,1));
-        circleNavigator.setCircleCount(4);
-        circleNavigator.setRadius(ScreenHelper.dp2px(this,3));
-        circleNavigator.setCircleSpacing(ScreenHelper.dp2px(this,10));
+        circleNavigator.setStrokeWidth(ScreenHelper.dp2px(this, 1));
+        circleNavigator.setCircleCount(viewList.size());
+        circleNavigator.setRadius(ScreenHelper.dp2px(this, 3));
+        circleNavigator.setCircleSpacing(ScreenHelper.dp2px(this, 10));
         circleNavigator.setTouchable(false);
 
-        mMagicIndicator.setNavigator(circleNavigator);
-        ViewPagerHelper.bind(mMagicIndicator, viewPager);
-
-    }
-    private GuideEntity.GuideItem initGuide1()
-    {
-        GuideEntity.GuideItem guideItem=new GuideEntity.GuideItem();
-        guideItem.viewGroup=(ViewGroup)this.layoutInflater.inflate(R.layout.item_guide_page_one,null);
-        guideItem.pic = guideItem.viewGroup.findViewById(R.id.pic);
-        guideItem.text = guideItem.viewGroup.findViewById(R.id.text);
-        guideItem.views=new ArrayList<View>();
-        guideItem.views.add(guideItem.viewGroup.findViewById(R.id.sun));
-
-        this.guideItemList.add(guideItem);
-        this.viewList.add(guideItem.viewGroup);
-
-        return guideItem;
-
-    }
-    private GuideEntity.GuideItem initGuide2()
-    {
-        GuideEntity.GuideItem guideItem=new GuideEntity.GuideItem();
-        guideItem.viewGroup=(ViewGroup)this.layoutInflater.inflate(R.layout.item_guide_page_two,null);
-        guideItem.pic=guideItem.viewGroup.findViewById(R.id.pic);
-        guideItem.text=guideItem.viewGroup.findViewById(R.id.text);
-
-        guideItem.views=new ArrayList<View>();
-        guideItem.views.add(guideItem.viewGroup.findViewById(R.id.ZhongKeDa));
-        guideItem.views.add(guideItem.viewGroup.findViewById(R.id.DongNanDaXue));
-        guideItem.views.add(guideItem.viewGroup.findViewById(R.id.HuNanDaXue));
-        guideItem.views.add(guideItem.viewGroup.findViewById(R.id.HaGongDa));
-        guideItem.views.add(guideItem.viewGroup.findViewById(R.id.ZheJiangDaXue));
-        guideItem.views.add(guideItem.viewGroup.findViewById(R.id.BeiJingDaXue));
-        guideItem.views.add(guideItem.viewGroup.findViewById(R.id.ShangHaiJiaoDa));
-        guideItem.views.add(guideItem.viewGroup.findViewById(R.id.WuHanDaXue));
-
-        this.guideItemList.add(guideItem);
-        this.viewList.add(guideItem.viewGroup);
-        return guideItem;
-    }
-    private GuideEntity.GuideItem initGuide3()
-    {
-        GuideEntity.GuideItem guideItem=new GuideEntity.GuideItem();
-        guideItem.viewGroup=(ViewGroup)this.layoutInflater.inflate(R.layout.item_guide_page_three,null);
-        guideItem.pic=guideItem.viewGroup.findViewById(R.id.pic);
-        guideItem.text=guideItem.viewGroup.findViewById(R.id.text);
-        guideItem.certificate=guideItem.viewGroup.findViewById(R.id.certificate);
-
-        guideItem.views=new ArrayList<View>();
-        guideItem.views.add(guideItem.viewGroup.findViewById(R.id.balloon));
-
-        this.guideItemList.add(guideItem);
-        this.viewList.add(guideItem.viewGroup);
-        return guideItem;
-    }
-    private GuideEntity.GuideItem initGuide4()
-    {
-        GuideEntity.GuideItem guideItem=new GuideEntity.GuideItem();
-        guideItem.viewGroup=(ViewGroup)this.layoutInflater.inflate(R.layout.item_guide_page_four,null);
-        guideItem.pic=guideItem.viewGroup.findViewById(R.id.pic);
-        guideItem.text=guideItem.viewGroup.findViewById(R.id.text);
-
-        guideItem.views=new ArrayList<View>();
-        guideItem.views.add(guideItem.viewGroup.findViewById(R.id.lines));
-        guideItem.views.add(guideItem.viewGroup.findViewById(R.id.discusssion));
-        guideItem.views.add(guideItem.viewGroup.findViewById(R.id.homework));
-        guideItem.views.add(guideItem.viewGroup.findViewById(R.id.teacher));
-        guideItem.views.add(guideItem.viewGroup.findViewById(R.id.time));
-        guideItem.views.add(guideItem.viewGroup.findViewById(R.id.video));
-        guideItem.views.add(guideItem.viewGroup.findViewById(R.id.student_left));
-        guideItem.views.add(guideItem.viewGroup.findViewById(R.id.student_middle));
-        guideItem.views.add(guideItem.viewGroup.findViewById(R.id.student_right));
-
-        this.guideItemList.add(guideItem);
-        this.viewList.add(guideItem.viewGroup);
-
-        if (!this.bFromAbout)
-        {
-            guideItem.viewGroup.setOnClickListener(this);
-        }
-        else
-        {
-            guideItem.viewGroup.findViewById(R.id.enter_button).setVisibility(View.GONE);
-        }
-
-        return guideItem;
+        magicIndicator.setNavigator(circleNavigator);
+        ViewPagerHelper.bind(magicIndicator, viewPager);
     }
 
-    @Override
-    public void onClick(View v) {
+    /***
+     * 开启动画
+     * @param position
+     */
+    private void startAnimation(int position){
+       viewList.get(position).startAnimation();
+    }
+
+    /**
+     * 重置动画
+     * @param position
+     */
+    private void resetAnimation(int position){
+        viewList.get(position).resetAnimation();
+    }
+
+    /**
+     * 进入主页面
+     */
+    public void enterMain(View v) {
         startActivity(MainActivity.class);
         finish();
     }

@@ -4,6 +4,8 @@ import androidx.viewpager.widget.PagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 import android.view.View;
 
+import org.jetbrains.annotations.NotNull;
+
 import java.util.List;
 
 /**
@@ -11,9 +13,9 @@ import java.util.List;
  */
 
 public class ViewPagerAdapter extends PagerAdapter {
-    public List<View> viewList;
+    public List<? extends View> viewList;
 
-    public ViewPagerAdapter(List<View> viewList) {
+    public ViewPagerAdapter(List<? extends View> viewList) {
         this.viewList = viewList;
     }
 
@@ -30,6 +32,7 @@ public class ViewPagerAdapter extends PagerAdapter {
         return view == object;
     }
 
+    @NotNull
     @Override
     public Object instantiateItem(View container, int position) {
 
