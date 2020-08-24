@@ -1,5 +1,5 @@
 # Animation
-Android各种动画效果,无动画，不精彩。
+Android各种动画效果,无动画,不精彩:smile::smile::smile:
 
 # Apk
 [下载地址](http://d.firim.vip/animation)
