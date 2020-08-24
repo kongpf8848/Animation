@@ -3,6 +3,7 @@ Android各种动画效果,无动画,不精彩:smile::smile::smile:
 
 # Apk
 [下载地址](http://d.firim.vip/animation)
+
 ![二维码](https://github.com/kongpf8848/Animation/blob/master/screenshots/qrcode.png)
 
 # 逐帧动画（Frame Animation）
