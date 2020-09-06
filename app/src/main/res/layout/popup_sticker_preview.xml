@@ -11,26 +11,19 @@
         android:orientation="vertical">
 
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/shape_solid_white_ovl_10dp"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@drawable/sticker_preview_bg"
             android:gravity="center"
-            android:elevation="2dp"
             >
 
             <org.telegram.ui.Components.RLottieImageView
                 android:id="@+id/lottieImageView"
-                android:layout_width="150dp"
-                android:layout_height="150dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 />
         </LinearLayout>
-         <com.github.kongpf8848.animation.widget.TriangleView
-             android:layout_width="30dp"
-             android:layout_height="8dp"
-             app:tlv_color="@color/colorPrimaryDark"
-             app:tlv_mode="inverted"
-             android:layout_gravity="center_horizontal"
-             />
+
 
     </LinearLayout>
 

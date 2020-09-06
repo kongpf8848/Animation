@@ -19,6 +19,7 @@ public class StickerPreviewViewer {
 
     private StickerPreviewPopupWindow popupWindow;
     private int currentPosition=-1;
+    private Runnable openPreviewRunnable;
 
     public static StickerPreviewViewer getInstance() {
         if (Instance == null) {
@@ -30,6 +31,15 @@ public class StickerPreviewViewer {
         }
         return Instance;
     }
+
+    public void reset() {
+        if (openPreviewRunnable != null) {
+            MainHandler.getInstance().removeCallbacks(openPreviewRunnable);
+            openPreviewRunnable = null;
+        }
+        currentPosition=-1;
+    }
+
 
     public boolean onTouch(MotionEvent event, final RecyclerView recyclerView) {
         int action=event.getAction();
@@ -49,7 +59,19 @@ public class StickerPreviewViewer {
                 currentPosition=position;
                 StickerAdapter adapter=(StickerAdapter)recyclerView.getAdapter();
                 StickerItem stickerItem=adapter.getItem(position);
-                showStickerPreview(view,recyclerView.getContext(),stickerItem);
+                if(openPreviewRunnable!=null){
+                    MainHandler.getInstance().removeCallbacks(openPreviewRunnable);
+                    openPreviewRunnable = null;
+                }
+                openPreviewRunnable=new Runnable() {
+                    @Override
+                    public void run() {
+                        showStickerPreview(view,recyclerView.getContext(),stickerItem);
+                    }
+                };
+                MainHandler.getInstance().postDelayed(openPreviewRunnable,200);
+
+
             }
         }
         else if(action==MotionEvent.ACTION_UP || action==MotionEvent.ACTION_CANCEL){
@@ -70,10 +92,11 @@ public class StickerPreviewViewer {
         int[]location=new int[2];
         view.getLocationOnScreen(location);
         popupWindow.showAtLocation(view, Gravity.NO_GRAVITY, location[0]+(view.getWidth()-popupWindow.getMeasuredWidth())/2,
-                location[1]- popupWindow.getMeasuredHeight()- ScreenHelper.dp2px(context,5));
+                location[1]- popupWindow.getMeasuredHeight());
     }
 
     private void hideStickerPreview(){
+        reset();
         if(popupWindow!=null && popupWindow.isShowing()){
             popupWindow.dismiss();
         }

@@ -10,6 +10,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Toast;
 
+import com.github.kongpf8848.animation.MainHandler;
 import com.github.kongpf8848.animation.R;
 import com.github.kongpf8848.animation.StickerPreviewViewer;
 import com.github.kongpf8848.animation.adapter.StickerAdapter;
@@ -26,7 +27,10 @@ public class TgsActivity extends BaseActivity  {
     @BindView(R.id.recyclerview)
     StickerRecyclerView recyclerView;
 
-    private StickerRecyclerView.OnItemClickListener onItemClickListener= (view, position) -> Toast.makeText(TgsActivity.this, "click:"+position, Toast.LENGTH_SHORT).show();
+    private StickerRecyclerView.OnItemClickListener onItemClickListener= (view, position) ->{
+        StickerPreviewViewer.getInstance().reset();
+        Toast.makeText(TgsActivity.this, "click:"+position, Toast.LENGTH_SHORT).show();
+    };
 
     @Override
     protected int getLayoutId() {
