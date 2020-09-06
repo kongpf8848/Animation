@@ -27,6 +27,7 @@ Lottie 是 Airbnb 出的一套跨平台的动画完整解决方案，它能够�
 # Tgs动画
 IM软件Telegram 推出的新的Sticker贴纸格式，这个全新的 Sticker 贴纸格式为 .tgs，其实就是基于lottie json文件改造而来的一种格式
 
+![image](https://github.com/kongpf8848/Animation/blob/master/screenshots/telegram-sticker.gif)
 
 # 部分截图
 ![image](https://github.com/kongpf8848/Animation/blob/master/screenshots/1.gif)
