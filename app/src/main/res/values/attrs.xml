@@ -37,4 +37,16 @@
         <attr name="splash" format="boolean"/>
     </declare-styleable>
 
+    <declare-styleable name="TriangleView">
+        <!--模式-->
+        <attr name="tlv_mode">
+            <!--倒三角-->
+            <enum name="inverted" value="0" />
+            <!--正三角-->
+            <enum name="regular" value="1" />
+        </attr>
+        <!--颜色-->
+        <attr name="tlv_color" format="color|reference" />
+    </declare-styleable>
+
 </resources>

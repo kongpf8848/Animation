@@ -6,21 +6,27 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.view.MotionEvent;
 import android.view.View;
+import android.widget.Toast;
 
 import com.github.kongpf8848.animation.R;
+import com.github.kongpf8848.animation.StickerPreviewViewer;
 import com.github.kongpf8848.animation.adapter.StickerAdapter;
 import com.github.kongpf8848.animation.bean.StickerItem;
+import com.github.kongpf8848.animation.widget.StickerRecyclerView;
 
 import java.util.Arrays;
 import java.util.List;
 
 import butterknife.BindView;
 
-public class TgsActivity extends BaseActivity {
+public class TgsActivity extends BaseActivity  {
 
     @BindView(R.id.recyclerview)
-    RecyclerView recyclerView;
+    StickerRecyclerView recyclerView;
+
+    private StickerRecyclerView.OnItemClickListener onItemClickListener= (view, position) -> Toast.makeText(TgsActivity.this, "click:"+position, Toast.LENGTH_SHORT).show();
 
     @Override
     protected int getLayoutId() {
@@ -39,6 +45,8 @@ public class TgsActivity extends BaseActivity {
             }
         });
 
+        recyclerView.setOnItemClickListener(onItemClickListener);
+        recyclerView.setOnTouchListener((v, event) -> StickerPreviewViewer.getInstance().onTouch(event,recyclerView));
         StickerAdapter adapter = new StickerAdapter(this);
         adapter.setList(getDatas());
         recyclerView.setAdapter(adapter);

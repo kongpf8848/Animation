@@ -5,6 +5,7 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -40,6 +41,7 @@ public class StickerAdapter extends RecyclerView.Adapter<StickerAdapter.ViewHold
 
         final StickerItem data=list.get(position);
         holder.iv_emoji.setSticker(data,holder.itemView,true);
+
 
     }
 

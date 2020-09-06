@@ -8,8 +8,8 @@
       <module fileurl="file://$PROJECT_DIR$/GitHub-Animation.iml" filepath="$PROJECT_DIR$/GitHub-Animation.iml" group="Animation" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/GitHub-Animation-app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/GitHub-Animation-app.iml" group="Animation/app" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/svn-GitHub-Animation.iml" filepath="$PROJECT_DIR$/.idea/modules/svn-GitHub-Animation.iml" group="Animation" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/svn-GitHub-Animation-app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/svn-GitHub-Animation-app.iml" group="Animation/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/workspace-GitHub-Animation.iml" filepath="$PROJECT_DIR$/.idea/modules/workspace-GitHub-Animation.iml" group="Animation" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/workspace-GitHub-Animation-app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/workspace-GitHub-Animation-app.iml" group="Animation/app" />
     </modules>
   </component>
 </project>

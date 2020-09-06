@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_solid_white_ovl_10dp"
+            android:gravity="center"
+            android:elevation="2dp"
+            >
+
+            <org.telegram.ui.Components.RLottieImageView
+                android:id="@+id/lottieImageView"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                />
+        </LinearLayout>
+         <com.github.kongpf8848.animation.widget.TriangleView
+             android:layout_width="30dp"
+             android:layout_height="8dp"
+             app:tlv_color="@color/colorPrimaryDark"
+             app:tlv_mode="inverted"
+             android:layout_gravity="center_horizontal"
+             />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
