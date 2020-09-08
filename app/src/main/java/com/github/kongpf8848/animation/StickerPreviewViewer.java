@@ -11,7 +11,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.github.kongpf8848.animation.adapter.StickerAdapter;
 import com.github.kongpf8848.animation.bean.StickerItem;
 import com.github.kongpf8848.animation.widget.popup.StickerPreviewPopupWindow;
-import com.kongpf.commonhelper.ScreenHelper;
 
 public class StickerPreviewViewer {
 
@@ -85,14 +84,17 @@ public class StickerPreviewViewer {
         if(popupWindow==null){
             popupWindow=new StickerPreviewPopupWindow(context);
         }
-        if(popupWindow.isShowing()){
-            popupWindow.dismiss();
-        }
+
         popupWindow.setData(stickerItem);
         int[]location=new int[2];
         view.getLocationOnScreen(location);
-        popupWindow.showAtLocation(view, Gravity.NO_GRAVITY, location[0]+(view.getWidth()-popupWindow.getMeasuredWidth())/2,
-                location[1]- popupWindow.getMeasuredHeight());
+
+        if(!popupWindow.isShowing()) {
+            popupWindow.showAtLocation(view, Gravity.NO_GRAVITY, location[0]+ (view.getWidth() - popupWindow.getMeasuredWidth()) / 2, location[1]- popupWindow.getMeasuredHeight());
+        }
+        else{
+            popupWindow.update(location[0]+ (view.getWidth() - popupWindow.getMeasuredWidth()) / 2,location[1]-popupWindow.getMeasuredHeight(),-1,-1,true);
+        }
     }
 
     private void hideStickerPreview(){
