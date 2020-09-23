@@ -24,6 +24,14 @@
             android:layout_marginTop="20dp"
             android:text="BOSS直聘"
             />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="每日打卡"
+            />
     </LinearLayout>
 
 </ScrollView>

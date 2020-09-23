@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    >
+
+    <com.github.kongpf8848.animation.widget.AnimationRadioView
+        android:id="@+id/item_tab_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+
+        />
+    <TextView
+        android:id="@+id/item_tab_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:textColor="#333333"
+        android:textSize="12sp"
+        />
+
+</FrameLayout>
