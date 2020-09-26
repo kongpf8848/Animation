@@ -1,34 +1,19 @@
 package com.github.kongpf8848.animation.activity.property;
 
-import android.animation.Animator;
-import android.animation.AnimatorListenerAdapter;
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
-import android.animation.ValueAnimator;
-import android.content.pm.ActivityInfo;
-import android.graphics.Bitmap;
-import android.graphics.PixelFormat;
-import android.graphics.Rect;
 import android.os.Looper;
 import android.os.MessageQueue;
 import android.util.Log;
-import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.ViewPropertyAnimator;
-import android.view.WindowManager;
 import android.view.animation.AccelerateDecelerateInterpolator;
-import android.view.animation.AnimationSet;
 import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
 
 import com.github.kongpf8848.animation.activity.BaseActivity;
 import com.github.kongpf8848.animation.R;
 import com.github.kongpf8848.animation.helper.ViewWrapper;
-import com.kongpf.commonhelper.ScreenHelper;
-import com.kongpf.commonhelper.StatusbarHelper;
 
 
 import butterknife.BindView;
