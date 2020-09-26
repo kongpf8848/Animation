@@ -13,6 +13,6 @@
         android:startOffset="0"
         android:toXScale="1.0"
         android:toYScale="1.0"
-        ></scale>
+        />
 
 </set>
