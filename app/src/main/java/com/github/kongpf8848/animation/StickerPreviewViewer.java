@@ -5,12 +5,14 @@ import android.util.Log;
 import android.view.Gravity;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.ViewGroup;
 
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.github.kongpf8848.animation.adapter.StickerAdapter;
 import com.github.kongpf8848.animation.bean.StickerItem;
 import com.github.kongpf8848.animation.widget.popup.StickerPreviewPopupWindow;
+import com.kongpf.commonhelper.ScreenHelper;
 
 public class StickerPreviewViewer {
 
@@ -50,7 +52,6 @@ public class StickerPreviewViewer {
                 return false;
             }
             int position = recyclerView.getChildAdapterPosition(view);
-            Log.d("JACK8", "position:" + position);
             if(position>=0){
                 if(position==currentPosition){
                     return true;
@@ -88,12 +89,30 @@ public class StickerPreviewViewer {
         popupWindow.setData(stickerItem);
         int[]location=new int[2];
         view.getLocationOnScreen(location);
-
-        if(!popupWindow.isShowing()) {
-            popupWindow.showAtLocation(view, Gravity.NO_GRAVITY, location[0]+ (view.getWidth() - popupWindow.getMeasuredWidth()) / 2, location[1]- popupWindow.getMeasuredHeight());
+        int OVERHANG_SIZE= ScreenHelper.dp2px(context,10f);
+        int anchorX=location[0]+ (view.getWidth() - popupWindow.getMeasuredWidth()) / 2;
+        int anchorY=location[1]- popupWindow.getMeasuredHeight();
+        Log.d("JACK8","location,x:"+anchorX+",y="+anchorY);
+        if(anchorX+popupWindow.getMeasuredWidth()+OVERHANG_SIZE>ScreenHelper.getScreenWidth(context)){
+            anchorX=ScreenHelper.getScreenWidth(context)-popupWindow.getMeasuredWidth()-OVERHANG_SIZE;
+            int margin=ScreenHelper.getScreenWidth(context)-OVERHANG_SIZE-location[0]-(view.getWidth()+popupWindow.getTriangleViewWidth())/2;
+            popupWindow.setTriangleViewLayoutParams(Gravity.END,margin);
+        }
+        else if(anchorX<OVERHANG_SIZE){
+            anchorX=OVERHANG_SIZE;
+            int triangleViewWidth=popupWindow.getTriangleViewWidth();
+            int margin=location[0]+(view.getWidth()-triangleViewWidth)/2-OVERHANG_SIZE;
+            popupWindow.setTriangleViewLayoutParams(Gravity.START,margin);
         }
         else{
-            popupWindow.update(location[0]+ (view.getWidth() - popupWindow.getMeasuredWidth()) / 2,location[1]-popupWindow.getMeasuredHeight(),-1,-1,true);
+            popupWindow.setTriangleViewLayoutParams(Gravity.CENTER,0);
+        }
+
+        if(!popupWindow.isShowing()) {
+            popupWindow.showAtLocation(view, Gravity.NO_GRAVITY, anchorX,anchorY);
+        }
+        else{
+            popupWindow.update(anchorX,anchorY, ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT,true);
         }
     }
 

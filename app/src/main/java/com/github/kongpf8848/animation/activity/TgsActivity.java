@@ -16,6 +16,7 @@ import com.github.kongpf8848.animation.StickerPreviewViewer;
 import com.github.kongpf8848.animation.adapter.StickerAdapter;
 import com.github.kongpf8848.animation.bean.StickerItem;
 import com.github.kongpf8848.animation.widget.StickerRecyclerView;
+import com.kongpf.commonhelper.ScreenHelper;
 
 import java.util.Arrays;
 import java.util.List;
@@ -44,8 +45,8 @@ public class TgsActivity extends BaseActivity  {
             @Override
             public void getItemOffsets(@NonNull Rect outRect, @NonNull View view, @NonNull RecyclerView parent, @NonNull RecyclerView.State state) {
                 super.getItemOffsets(outRect, view, parent, state);
-                outRect.top = (int) (getResources().getDisplayMetrics().density * 10);
-                outRect.bottom = (int) (getResources().getDisplayMetrics().density * 10);
+                outRect.top = ScreenHelper.dp2px(getApplicationContext(),10f);
+                outRect.bottom = ScreenHelper.dp2px(getApplicationContext(),10f);
             }
         });
 

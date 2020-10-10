@@ -24,8 +24,10 @@ import java.lang.annotation.RetentionPolicy;
 public class TriangleView extends View{
 
     private Paint paint;
+    private Paint strokePaint;
     private Path path;
     private int color;
+    private int strokeColor;
     private int mode;
 
     private final int DEFAULT_WIDTH=48;
@@ -62,7 +64,8 @@ public class TriangleView extends View{
 
     private void init(Context context,AttributeSet attrs){
         TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.TriangleView);
-        color = typedArray.getColor(R.styleable.TriangleView_tlv_color, Color.BLACK);
+        color = typedArray.getColor(R.styleable.TriangleView_tlv_fill_color, Color.BLACK);
+        strokeColor = typedArray.getColor(R.styleable.TriangleView_tlv_stroke_color, Color.GRAY);
         mode = typedArray.getInt(R.styleable.TriangleView_tlv_mode, INVERTED);
         typedArray.recycle();
 
@@ -70,6 +73,11 @@ public class TriangleView extends View{
         paint.setColor(color);
         paint.setAntiAlias(true);
         paint.setStyle(Paint.Style.FILL);
+
+        strokePaint = new Paint();
+        strokePaint.setColor(strokeColor);
+        strokePaint.setAntiAlias(true);
+        strokePaint.setStyle(Paint.Style.STROKE);
 
         path= new Path();
     }
@@ -132,5 +140,7 @@ public class TriangleView extends View{
         }
         path.close();
         canvas.drawPath(path, paint);
+        canvas.drawPath(path,strokePaint);
+
     }
 }

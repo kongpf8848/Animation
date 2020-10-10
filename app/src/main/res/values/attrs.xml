@@ -45,8 +45,10 @@
             <!--正三角-->
             <enum name="regular" value="1" />
         </attr>
-        <!--颜色-->
-        <attr name="tlv_color" format="color|reference" />
+        <!--填充颜色-->
+        <attr name="tlv_fill_color" format="color|reference" />
+        <!--描边颜色-->
+        <attr name="tlv_stroke_color" format="color|reference" />
     </declare-styleable>
 
 </resources>

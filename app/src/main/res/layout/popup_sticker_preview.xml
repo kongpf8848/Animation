@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:gravity="center">
 
     <LinearLayout
@@ -12,8 +13,8 @@
         <LinearLayout
             android:layout_width="120dp"
             android:layout_height="120dp"
-            android:background="@drawable/sticker_preview_bg"
-            android:gravity="center"
+            android:background="@drawable/shape_solid_white_ovl_10dp"
+            android:orientation="vertical"
             >
 
             <org.telegram.ui.Components.RLottieImageView
@@ -21,8 +22,15 @@
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 />
-        </LinearLayout>
 
+        </LinearLayout>
+        <com.github.kongpf8848.animation.widget.TriangleView
+            android:id="@+id/tlv_indicator"
+            android:layout_width="16dp"
+            android:layout_height="8dp"
+            android:layout_gravity="bottom|center_horizontal"
+            app:tlv_fill_color="@color/white"
+            />
 
     </LinearLayout>
 
