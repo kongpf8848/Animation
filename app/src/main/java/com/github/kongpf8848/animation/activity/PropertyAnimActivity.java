@@ -12,7 +12,7 @@ import com.github.kongpf8848.animation.activity.property.SwapActivity;
 import butterknife.OnClick;
 
 
-public class PropertyAnimActivity extends BaseActivity {
+public class PropertyAnimActivity extends BaseToolbarActivity {
 
     @Override
     public int getLayoutId() {

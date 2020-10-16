@@ -23,7 +23,7 @@ import java.util.List;
 
 import butterknife.BindView;
 
-public class TgsActivity extends BaseActivity  {
+public class TgsActivity extends BaseToolbarActivity  {
 
     @BindView(R.id.recyclerview)
     StickerRecyclerView recyclerView;
@@ -40,6 +40,7 @@ public class TgsActivity extends BaseActivity  {
 
     @Override
     protected void initData() {
+        super.initData();
         recyclerView.setLayoutManager(new GridLayoutManager(this, 5));
         recyclerView.addItemDecoration(new RecyclerView.ItemDecoration() {
             @Override

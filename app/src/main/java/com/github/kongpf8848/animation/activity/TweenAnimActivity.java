@@ -14,14 +14,13 @@ import butterknife.OnClick;
 /**
  * Created by jack on 2016/8/5.
  */
-public class TweenAnimActivity extends BaseActivity {
+public class TweenAnimActivity extends BaseToolbarActivity {
 
 
     @Override
     protected int getLayoutId() {
         return R.layout.activity_anim_tween;
     }
-
 
     @OnClick(R.id.button1)
     public void onButton1(View view) {

@@ -2,7 +2,7 @@
 
     <!-- Base application theme. -->
 
-    <style name="BaseTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="BaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
@@ -26,7 +26,6 @@
     <style name="item_txt_middle" parent="@style/txt_base">
         <item name="android:textSize">14sp</item>
     </style>
-
 
     <style name="fido" parent="@android:style/Theme.Translucent.NoTitleBar">
         <item name="android:windowNoTitle">true</item>

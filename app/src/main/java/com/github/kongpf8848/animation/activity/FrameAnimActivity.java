@@ -2,6 +2,8 @@ package com.github.kongpf8848.animation.activity;
 
 import android.view.View;
 
+import androidx.appcompat.widget.Toolbar;
+
 import com.github.kongpf8848.animation.R;
 import com.github.kongpf8848.animation.activity.frame.Frame_1_Activity;
 import com.github.kongpf8848.animation.activity.frame.Frame_2_Activity;
@@ -18,7 +20,7 @@ import butterknife.OnClick;
 /**
  * Created by jack on 2016/8/5.
  */
-public class FrameAnimActivity  extends BaseActivity
+public class FrameAnimActivity  extends BaseToolbarActivity
 {
 
     @Override

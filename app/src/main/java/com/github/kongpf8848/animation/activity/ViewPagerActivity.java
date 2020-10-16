@@ -13,7 +13,7 @@ import com.github.kongpf8848.animation.activity.viewpager.XhsActivity;
 import butterknife.OnClick;
 
 
-public class ViewPagerActivity extends BaseActivity {
+public class ViewPagerActivity extends BaseToolbarActivity {
 
     @Override
     public int getLayoutId() {

@@ -9,7 +9,7 @@ import com.github.kongpf8848.animation.activity.lottie.CardActivity;
 
 import butterknife.OnClick;
 
-public class LottieAnimActivity extends BaseActivity {
+public class LottieAnimActivity extends BaseToolbarActivity {
 
     @Override
     protected int getLayoutId() {

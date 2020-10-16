@@ -1,9 +1,15 @@
 package com.github.kongpf8848.animation.activity;
 
+import android.transition.Slide;
+import android.view.Gravity;
 import android.view.View;
+
+import androidx.appcompat.widget.Toolbar;
+import androidx.core.util.Pair;
 
 import com.github.kongpf8848.animation.R;
 import com.github.kongpf8848.animation.activity.viewpager.XhsActivity;
+import com.github.kongpf8848.animation.helper.TransitionHelper;
 
 import butterknife.OnClick;
 
@@ -11,10 +17,27 @@ import butterknife.OnClick;
 public class MainActivity extends BaseActivity {
 
     @Override
+    protected boolean enableStatusBar() {
+        return false;
+    }
+
+    @Override
     public int getLayoutId() {
         return R.layout.activity_main;
     }
 
+    @Override
+    protected void initData() {
+        super.initData();
+        setupToolbar();
+    }
+
+    private void setupToolbar(){
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(false);
+        getSupportActionBar().setDisplayShowTitleEnabled(false);
+    }
 
     @OnClick(R.id.button1)
     public void onButton1(View view) {

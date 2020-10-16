@@ -7,9 +7,17 @@ import androidx.annotation.ColorInt;
 import androidx.annotation.ColorRes;
 import androidx.annotation.IdRes;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityOptionsCompat;
+import androidx.core.util.Pair;
+
+import android.transition.Explode;
+import android.transition.Slide;
+import android.transition.Visibility;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.View;
 import android.view.WindowManager;
+import android.view.animation.BounceInterpolator;
 
 import com.github.kongpf8848.animation.R;
 import com.gyf.immersionbar.ImmersionBar;
@@ -30,6 +38,8 @@ public abstract class BaseActivity extends AppCompatActivity {
         initData();
     }
 
+
+
     /*
       此方法在setContentView之后调用,如需定制，则设置enableWhiteStatusBar为false,然后覆盖customInitStatusBar方法
     */
@@ -40,7 +50,6 @@ public abstract class BaseActivity extends AppCompatActivity {
             if (enableStatusBar()) {
                 ImmersionBar.with(this)
                         .fitsSystemWindows(fitsSystemWindows())
-                        .supportActionBar(supportActionBar())
                         .statusBarColor(statusBarColor())
                         .statusBarDarkFont(statusBarDarkFont())
                         .navigationBarColor(navigationBarColor(), navigationBarAlpha())
@@ -98,9 +107,6 @@ public abstract class BaseActivity extends AppCompatActivity {
         return true;
     }
     protected boolean fitsSystemWindows(){
-        return false;
-    }
-    protected boolean supportActionBar(){
         return true;
     }
     protected int statusBarColor(){
@@ -177,5 +183,18 @@ public abstract class BaseActivity extends AppCompatActivity {
     public void startActivity(Class<?>cls){
         Intent intent=new Intent(this,cls);
         startActivity(intent);
+    }
+
+    public void startActivity(Class target,  Pair<View, String>... sharedElements) {
+        Intent intent = new Intent(this, target);
+        ActivityOptionsCompat transitionActivityOptions = ActivityOptionsCompat.makeSceneTransitionAnimation(this, sharedElements);
+        startActivity(intent, transitionActivityOptions.toBundle());
+    }
+
+    public Visibility buildEnterTransition(@androidx.transition.Slide.GravityFlag int slideEdge) {
+        Explode enterTransition = new Explode();
+        enterTransition.setDuration(500);
+        enterTransition.setInterpolator(new BounceInterpolator());
+        return enterTransition;
     }
 }
