@@ -22,7 +22,7 @@ Android各种动画效果,无动画,不精彩:smile::smile::smile:
 工作原理：在一定时间间隔内，通过不断调用set方法对值进行改变，并不断将该值赋给对象的属性，从而实现该对象在该属性上的动画效果
 
 # 转场动画 (Transition Animiation)
-Google在Android 5.0之后推出的一种动画效果，可以参考![Material-Animations](https://github.com/lgvalle/Material-Animations)
+Google在Android 5.0之后推出的一种动画效果，可以参考[Material-Animations](https://github.com/lgvalle/Material-Animations)
 
 # Lottie动画
 Lottie 是 Airbnb 出的一套跨平台的动画完整解决方案，它能够帮助程序员直接加载 JSON 格式的文件在 iOS、Android 和 React Native之上，实现 100% 与设计稿相同的动画效果，而无需关心中间的实现细节。设计师只需要使用 After Effectes 设计出动画之后，通过使用 Lottie 提供的 Bodymovin 将设计好的动画导出成 JSON 格式的文件交付给开发即可完成。 [Lottie网站](https://lottiefiles.com) [lottie-android](https://github.com/LottieFiles/lottie-android)
