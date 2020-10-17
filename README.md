@@ -17,7 +17,7 @@ Android各种动画效果,无动画,不精彩:smile::smile::smile:
 | 旋转动画|rotate |RotateAnimation|
 | 平移动画|translate |TranslateAnimation|
 
-# 属性动画（Propertity Animimation）
+# 属性动画（Property Animimation）
 直接更改View 的属性来实现的动画。
 工作原理：在一定时间间隔内，通过不断调用set方法对值进行改变，并不断将该值赋给对象的属性，从而实现该对象在该属性上的动画效果
 
