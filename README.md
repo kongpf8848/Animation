@@ -25,7 +25,7 @@ Android各种动画效果,无动画,不精彩:smile::smile::smile:
 Google在Android 5.0之后推出的一种动画效果，可以参考[Material-Animations](https://github.com/lgvalle/Material-Animations)
 
 # Lottie动画
-Lottie 是 Airbnb 出的一套跨平台的动画完整解决方案，它能够帮助程序员直接加载 JSON 格式的文件在 iOS、Android 和 React Native之上，实现 100% 与设计稿相同的动画效果，而无需关心中间的实现细节。设计师只需要使用 After Effectes 设计出动画之后，通过使用 Lottie 提供的 Bodymovin 将设计好的动画导出成 JSON 格式的文件交付给开发即可完成。 [Lottie网站](https://lottiefiles.com) [lottie-android](https://github.com/LottieFiles/lottie-android)
+Lottie 是 Airbnb推出的一套跨平台的动画完整解决方案，它能够帮助开发者直接加载json格式的文件在 iOS、Android 和 React Native之上，实现 100% 与设计稿相同的动画效果，而无需关心中间的实现细节。设计师只需要使用 After Effectes 设计出动画之后，通过使用 Lottie 提供的Bodymovin插件将设计好的动画导出成json格式的文件交付给开发即可完成。 [Lottie网站](https://lottiefiles.com) [lottie-android](https://github.com/LottieFiles/lottie-android)
 
 # Tgs动画
 IM软件Telegram 推出的新的Sticker贴纸格式，这个全新的 Sticker 贴纸格式为 .tgs，其实就是基于lottie json文件改造而来的一种格式
