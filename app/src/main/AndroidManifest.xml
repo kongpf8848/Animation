@@ -169,6 +169,18 @@
             android:label="Telegram Sticker"
             />
 
+        <!-- 转场动画-->
+        <activity android:name=".activity.TransitionActivity" android:screenOrientation="portrait"
+            android:label="转场动画"
+            />
+        <activity android:name=".activity.transition.ShareElementOneActivity" android:screenOrientation="portrait"
+            android:label="共享元素动画"
+            />
+        <activity android:name=".activity.transition.ShareElementTwoActivity" android:screenOrientation="portrait"
+            android:label="共享元素动画"
+            />
+
+
         <activity android:name=".activity.TestActivity" android:screenOrientation="portrait"
             android:label="Test"
             />

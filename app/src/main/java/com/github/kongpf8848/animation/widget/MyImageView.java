@@ -12,6 +12,8 @@ import android.util.AttributeSet;
 public class MyImageView extends AppCompatImageView {
 
 
+    private int index;
+
     public MyImageView(Context context) {
         super(context);
     }
@@ -22,6 +24,14 @@ public class MyImageView extends AppCompatImageView {
 
     public MyImageView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
+    }
+
+    public int getIndex() {
+        return index;
+    }
+
+    public void setIndex(int index) {
+        this.index = index;
     }
 
     public void setAa(float zhy) {

@@ -73,4 +73,9 @@ public class MainActivity extends BaseActivity {
         startActivity(ViewPagerActivity.class);
     }
 
+    @OnClick(R.id.button7)
+    public void onButton7(View view)
+    {
+        startActivity(TransitionActivity.class);
+    }
 }
