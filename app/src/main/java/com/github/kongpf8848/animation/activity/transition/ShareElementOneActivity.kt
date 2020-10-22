@@ -98,6 +98,9 @@ class ShareElementOneActivity : AppCompatActivity() {
         mListData.add(ImageBean(R.drawable.scene_3, "shareImg3"))
         mListData.add(ImageBean(R.drawable.scene_4, "shareImg4"))
         mListData.add(ImageBean(R.drawable.scene_5, "shareImg5"))
+        mListData.add(ImageBean(R.drawable.scene_6, "shareImg6"))
+        mListData.add(ImageBean(R.drawable.scene_7, "shareImg7"))
+        mListData.add(ImageBean(R.drawable.scene_8, "shareImg8"))
     }
 
 
