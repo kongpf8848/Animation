@@ -36,3 +36,4 @@ IM软件Telegram 推出的新的Sticker贴纸格式，这个全新的 Sticker �
 ![image](https://github.com/kongpf8848/Animation/blob/master/screenshots/1.gif)
 ![image](https://github.com/kongpf8848/Animation/blob/master/screenshots/2.gif)
 ![image](https://github.com/kongpf8848/Animation/blob/master/screenshots/3.gif)
+![image](https://github.com/kongpf8848/Animation/blob/master/screenshots/4.gif)
