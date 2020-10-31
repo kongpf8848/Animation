@@ -20,6 +20,7 @@ import kotlinx.android.synthetic.main.activity_transition_share_element_one.*
 
 class ShareElementOneActivity : AppCompatActivity() {
 
+    
 
     private lateinit var mListData: ArrayList<ImageBean>
 
