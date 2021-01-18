@@ -51,4 +51,18 @@
         <attr name="tlv_stroke_color" format="color|reference" />
     </declare-styleable>
 
+
+    <declare-styleable name="AnimLogoView">
+        <attr name="logoName" format="string" />
+        <attr name="autoPlay" format="boolean" />
+        <attr name="offsetAnimDuration" format="integer" />
+        <attr name="gradientAnimDuration" format="integer" />
+        <attr name="gradientColor" format="color" />
+        <attr name="textSize" format="dimension" />
+        <attr name="textColor" format="color" />
+        <attr name="verticalOffset" format="dimension" />
+        <attr name="textPadding" format="dimension" />
+        <attr name="showGradient" format="boolean" />
+    </declare-styleable>
+
 </resources>

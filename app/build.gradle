@@ -13,8 +13,8 @@ android {
         applicationId "com.github.kongpf8848.animation"
         minSdkVersion rootProject.ext.android.minSdkVersion
         targetSdkVersion rootProject.ext.android.targetSdkVersion
-        versionCode 3
-        versionName "1.1.1"
+        versionCode 4
+        versionName "1.1.2"
     }
     signingConfigs {
         release {

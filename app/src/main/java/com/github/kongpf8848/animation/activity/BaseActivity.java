@@ -181,8 +181,15 @@ public abstract class BaseActivity extends AppCompatActivity {
     }
 
     public void startActivity(Class<?>cls){
+        startActivity(cls,false);
+    }
+
+    public void startActivity(Class<?>cls,boolean finishThis){
         Intent intent=new Intent(this,cls);
         startActivity(intent);
+        if(finishThis){
+            finish();
+        }
     }
 
     public void startActivity(Class target,  Pair<View, String>... sharedElements) {

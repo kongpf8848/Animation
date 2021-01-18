@@ -18,6 +18,10 @@
         <item name="windowNoTitle">true</item>
     </style>
 
+    <style name="LogoActivityTheme" parent="@style/AppTheme.NoActionBar">
+        <item name="android:windowBackground">@color/colorPrimary</item>
+    </style>
+
     <style name="txt_base">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
