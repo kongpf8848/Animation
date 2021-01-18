@@ -1,6 +1,7 @@
 package com.github.kongpf8848.animation.activity.viewpager;
 
 import android.graphics.Color;
+import android.os.Bundle;
 import android.widget.ImageView;
 
 import androidx.fragment.app.Fragment;
@@ -31,8 +32,8 @@ public class XhsActivity extends BaseActivity {
     }
 
     @Override
-    protected void initData() {
-        super.initData();
+    protected void onCreateEnd(Bundle savedInstanceState){
+        super.onCreateEnd(savedInstanceState);
         ViewPager viewPager =  findViewById(R.id.view_pager);
         ImageView ivWomen = findViewById(R.id.iv_woman);
         ArrayList<Fragment> fragments = createFragments();

@@ -17,8 +17,10 @@ import androidx.viewpager.widget.ViewPager
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import com.bumptech.glide.request.target.ImageViewTarget
+import com.github.chrisbanes.photoview.PhotoView
 import com.github.kongpf8848.animation.Constants
 import com.github.kongpf8848.animation.R
+import com.github.kongpf8848.animation.activity.BaseActivity
 import com.github.kongpf8848.animation.bean.ImageBean
 import com.github.kongpf8848.animation.widget.MyImageView
 import kotlinx.android.synthetic.main.activity_transition_share_element_two.*
@@ -26,13 +28,13 @@ import net.lucode.hackware.magicindicator.ViewPagerHelper
 import net.lucode.hackware.magicindicator.buildins.circlenavigator.CircleNavigator
 
 
-class ShareElementTwoActivity : AppCompatActivity() {
+class ShareElementTwoActivity : BaseActivity() {
 
     private var mCurrentPosition = 0
     private var mStartingPosition = 0
     private var mIsReturning = false
 
-    var imageViewList = arrayListOf<MyImageView>()
+    var imageViewList = arrayListOf<PhotoView>()
 
     private val mSharedElementCallback: SharedElementCallback = object : SharedElementCallback() {
         override fun onMapSharedElements(names: MutableList<String>, sharedElements: MutableMap<String, View>) {
@@ -48,10 +50,35 @@ class ShareElementTwoActivity : AppCompatActivity() {
         }
     }
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_transition_share_element_two)
-        window.statusBarColor= Color.BLACK
+
+    override fun getLayoutId(): Int {
+        return R.layout.activity_transition_share_element_two
+    }
+
+    override fun statusBarColor(): Int {
+        return android.R.color.black
+    }
+
+    override fun navigationBarColor(): Int {
+        return android.R.color.black
+    }
+
+
+    override fun statusBarDarkFont(): Boolean {
+        return false
+    }
+
+    override fun navigationBarDarkIcon(): Boolean {
+        return false
+    }
+
+    override fun fitsSystemWindows(): Boolean {
+        return false
+    }
+
+    override fun onCreateEnd(savedInstanceState: Bundle?) {
+        super.onCreateEnd(savedInstanceState)
+
 
         postponeEnterTransition()
         setEnterSharedElementCallback(mSharedElementCallback)
@@ -62,8 +89,8 @@ class ShareElementTwoActivity : AppCompatActivity() {
 
 
         list.forEachIndexed { index, imageBean ->
-            val imageView = MyImageView(this@ShareElementTwoActivity)
-            imageView.index = index
+            val imageView = PhotoView(this@ShareElementTwoActivity)
+            imageView.id=index
             imageView.scaleType = ImageView.ScaleType.FIT_CENTER
             ViewCompat.setTransitionName(imageView, list.get(index).name)
             imageViewList.add(imageView)
@@ -78,6 +105,9 @@ class ShareElementTwoActivity : AppCompatActivity() {
             override fun instantiateItem(container: ViewGroup, index: Int): Any {
                 var imageView = imageViewList.get(index);
                 container.addView(imageView, ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT))
+                imageView.setOnOutsidePhotoTapListener {
+                    finish()
+                }
                 Glide.with(this@ShareElementTwoActivity)
                         .asBitmap()
                         .load(list.get(index).resId)
@@ -85,7 +115,7 @@ class ShareElementTwoActivity : AppCompatActivity() {
                         .into(object : ImageViewTarget<Bitmap>(imageView) {
                             override fun setResource(resource: Bitmap?) {
                                 imageView.setImageBitmap(resource)
-                                if (imageView.index == mStartingPosition) {
+                                if (imageView.id == mStartingPosition) {
                                     startPostponedEnterTransition()
                                 }
                             }
@@ -117,18 +147,22 @@ class ShareElementTwoActivity : AppCompatActivity() {
             circleSpacing = 20
             isTouchable = false
         }
-        magic_indicator.setNavigator(circleNavigator)
+        magic_indicator.navigator = circleNavigator
         ViewPagerHelper.bind(magic_indicator, viewPager)
 
         viewPager.addOnPageChangeListener(object : ViewPager.SimpleOnPageChangeListener() {
 
             override fun onPageSelected(position: Int) {
+                if(mCurrentPosition>=0 && mCurrentPosition<imageViewList.size){
+                    imageViewList.get(mCurrentPosition).setScale(1.0f,true)
+                }
                 mCurrentPosition = position
             }
 
         })
         viewPager.currentItem = mCurrentPosition
     }
+
 
     override fun onSaveInstanceState(outState: Bundle) {
         super.onSaveInstanceState(outState)

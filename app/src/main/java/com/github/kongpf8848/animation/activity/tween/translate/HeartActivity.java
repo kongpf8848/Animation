@@ -1,5 +1,6 @@
 package com.github.kongpf8848.animation.activity.tween.translate;
 
+import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.view.View;
@@ -37,7 +38,7 @@ public class HeartActivity extends BaseActivity implements LiveHeartTask.HeartLi
     };
 
     @Override
-    protected void initData() {
+    protected void onCreateEnd(Bundle savedInstanceState){
         heart_layout=findViewById(R.id.heart_layout);
         LiveHeartTaskManagerThread downloadTaskManagerThread = new LiveHeartTaskManagerThread();
         new Thread(downloadTaskManagerThread).start();

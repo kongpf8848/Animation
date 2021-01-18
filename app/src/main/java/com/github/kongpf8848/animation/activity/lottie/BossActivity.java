@@ -43,9 +43,9 @@ public class BossActivity extends BaseActivity {
         return R.layout.activity_lottie_boss;
     }
 
-    protected void initData() {
+    protected void onCreateEnd(Bundle savedInstanceState){
         try {
-            super.initData();
+            super.onCreateEnd(savedInstanceState);
             initViewPager();
             initMagicIndicator();
         } catch (Exception e) {

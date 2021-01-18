@@ -2,6 +2,7 @@ package com.github.kongpf8848.animation.activity.tween.rotate;
 
 import android.animation.ObjectAnimator;
 import android.animation.ValueAnimator;
+import android.os.Bundle;
 import android.view.animation.AccelerateInterpolator;
 import android.widget.ImageView;
 
@@ -28,7 +29,7 @@ public class Rotate_8_Activity extends BaseActivity
     }
 
     @Override
-    protected void initData() {
+    protected void onCreateEnd(Bundle savedInstanceState){
         startAnimation();
     }
 

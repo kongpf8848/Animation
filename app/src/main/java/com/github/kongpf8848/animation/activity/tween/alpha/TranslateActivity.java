@@ -38,7 +38,7 @@ public class TranslateActivity extends BaseActivity {
 
 
     @Override
-    protected void initData() {
+    protected void onCreateEnd(Bundle savedInstanceState){
 
         startAnim();
     }

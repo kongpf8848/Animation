@@ -44,8 +44,8 @@ public class AutoHomeActivity extends BaseActivity {
     }
 
 
-    protected void initData() {
-        super.initData();
+    protected void onCreateEnd(Bundle savedInstanceState){
+        super.onCreateEnd(savedInstanceState);
         initViewPager();
         initMagicIndicator();
     }

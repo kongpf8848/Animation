@@ -1,5 +1,6 @@
 package com.github.kongpf8848.animation.activity;
 
+import android.os.Bundle;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -18,8 +19,8 @@ public abstract class BaseToolbarActivity extends BaseActivity {
     private Toolbar toolbar;
 
     @Override
-    protected void initData() {
-        super.initData();
+    protected void onCreateEnd(Bundle savedInstanceState){
+        super.onCreateEnd(savedInstanceState);
         setupToolbar();
     }
 

@@ -6,6 +6,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Toast;
@@ -39,8 +40,8 @@ public class TgsActivity extends BaseToolbarActivity  {
     }
 
     @Override
-    protected void initData() {
-        super.initData();
+    protected void onCreateEnd(Bundle savedInstanceState){
+        super.onCreateEnd(savedInstanceState);
         recyclerView.setLayoutManager(new GridLayoutManager(this, 5));
         recyclerView.addItemDecoration(new RecyclerView.ItemDecoration() {
             @Override

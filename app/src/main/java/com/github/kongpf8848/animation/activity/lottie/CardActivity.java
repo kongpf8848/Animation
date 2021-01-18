@@ -45,9 +45,9 @@ public class CardActivity extends BaseActivity {
         return R.layout.activity_lottie_card;
     }
 
-    protected void initData() {
+    protected void onCreateEnd(Bundle savedInstanceState){
 
-        super.initData();
+        super.onCreateEnd(savedInstanceState);
         initViewPager();
         initMagicIndicator();
 

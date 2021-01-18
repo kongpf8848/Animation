@@ -1,5 +1,6 @@
 package com.github.kongpf8848.animation.activity.tween.scale;
 
+import android.os.Bundle;
 import android.view.animation.Animation;
 import android.view.animation.ScaleAnimation;
 import android.widget.ImageView;
@@ -24,7 +25,7 @@ public class QimangxingActivity extends BaseActivity {
     }
 
     @Override
-    protected void initData() {
+    protected void onCreateEnd(Bundle savedInstanceState){
         ScaleAnimation scaleAnimation = new ScaleAnimation(1.0F, 1.2F, 1.0F, 1.2F, Animation.RELATIVE_TO_SELF, 0.5F, Animation.RELATIVE_TO_SELF, 0.5F);
         scaleAnimation.setDuration(2000);
         scaleAnimation.setFillAfter(true);

@@ -4,6 +4,7 @@ import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.animation.ValueAnimator;
 import android.content.Context;
+import android.os.Bundle;
 import android.os.IBinder;
 import androidx.annotation.CallSuper;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -31,7 +32,7 @@ public class CommentActivity extends BaseActivity {
     }
 
     @Override
-    protected void initData(){
+    protected void onCreateEnd(Bundle savedInstanceState){
         etFlowDetail = this.findViewById(R.id.et_find_flow_detail);
         constraintLayout =this.findViewById(R.id.csl_find_flow_detail_right_bottom);
         etFlowDetail.post(new Runnable() {

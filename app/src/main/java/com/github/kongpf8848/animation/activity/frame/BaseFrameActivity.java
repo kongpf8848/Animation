@@ -25,8 +25,8 @@ public abstract class BaseFrameActivity extends BaseActivity {
      ImageView imageView;
 
     @Override
-    protected void initData() {
-        super.initData();
+    protected void onCreateEnd(Bundle savedInstanceState){
+        super.onCreateEnd(savedInstanceState);
         Looper.myQueue().addIdleHandler(new MessageQueue.IdleHandler() {
             @Override
             public boolean queueIdle() {

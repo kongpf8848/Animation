@@ -48,8 +48,8 @@ public class WeChatActivity extends BaseActivity {
         return R.layout.activity_lottie_autohome;
     }
 
-    protected void initData() {
-        super.initData();
+    protected void onCreateEnd(Bundle savedInstanceState){
+        super.onCreateEnd(savedInstanceState);
         initViewPager();
         initMagicIndicator();
     }

@@ -2,6 +2,7 @@ package com.github.kongpf8848.animation.activity.property;
 
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
+import android.os.Bundle;
 import android.os.Looper;
 import android.os.MessageQueue;
 import android.util.Log;
@@ -34,8 +35,8 @@ public class SwapActivity extends BaseActivity {
     }
 
     @Override
-    protected void initData() {
-        super.initData();
+    protected void onCreateEnd(Bundle savedInstanceState) {
+        super.onCreateEnd(savedInstanceState);
         Looper.myQueue().addIdleHandler(new MessageQueue.IdleHandler() {
             @Override
             public boolean queueIdle() {

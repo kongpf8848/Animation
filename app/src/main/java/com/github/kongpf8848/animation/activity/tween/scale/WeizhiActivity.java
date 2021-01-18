@@ -3,6 +3,7 @@ package com.github.kongpf8848.animation.activity.tween.scale;
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
 import android.animation.PropertyValuesHolder;
+import android.os.Bundle;
 import android.os.Looper;
 import android.os.MessageQueue;
 import android.widget.ImageView;
@@ -32,8 +33,8 @@ public class WeizhiActivity extends BaseActivity {
     }
 
     @Override
-    protected void initData() {
-        super.initData();
+    protected void onCreateEnd(Bundle savedInstanceState){
+        super.onCreateEnd(savedInstanceState);
         int index = 1 + new Random().nextInt(3);
         int resourceId = getResources().getIdentifier("welcome_icon_" + index, "mipmap", getPackageName());
         this.mIvActivitySplashPic.setImageResource(resourceId);

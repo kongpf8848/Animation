@@ -1,6 +1,7 @@
 package com.github.kongpf8848.animation.activity;
 
 import android.graphics.Color;
+import android.os.Bundle;
 import android.os.Looper;
 
 import androidx.viewpager.widget.ViewPager;
@@ -51,8 +52,8 @@ public class SplashActivity extends BaseActivity {
     }
 
     @Override
-    protected void initData() {
-        super.initData();
+    protected void onCreateEnd(Bundle savedInstanceState){
+        super.onCreateEnd(savedInstanceState);
         initGuide();
         initViewPager();
         Looper.myQueue().addIdleHandler(() -> {

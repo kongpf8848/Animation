@@ -1,5 +1,6 @@
 package com.github.kongpf8848.animation.activity.tween.translate;
 
+import android.os.Bundle;
 import android.os.Handler;
 import android.os.Vibrator;
 import android.view.View;
@@ -33,7 +34,7 @@ public class ShakeActivity extends BaseActivity {
     }
 
     @Override
-    protected void initData() {
+    protected void onCreateEnd(Bundle savedInstanceState){
         mVibrator = (Vibrator) getApplication().getSystemService(VIBRATOR_SERVICE);
         mShakeListener = new ShakeListener(this);
         mShakeListener.setOnShakeListener(new ShakeListener.OnShakeListener() {

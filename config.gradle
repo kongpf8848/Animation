@@ -75,7 +75,7 @@ ext {
                     "permissionhelper"        : "com.github.kongpf8848:permissionhelper:1.0.0",
                     "commons-lang3"           : "org.apache.commons:commons-lang3:3.4",
                     "MagicIndicator"          : "com.github.hackware1993:MagicIndicator:1.5.0",
-
+                    "photoView"               :"com.github.chrisbanes:PhotoView:2.1.3",
                     "immersionbar"            : "com.gyf.immersionbar:immersionbar:${immersionbar_version}",
                     "immersionbar-components" : "com.gyf.immersionbar:immersionbar-components:${immersionbar_version}",
                     "immersionbar-ktx"        : "com.gyf.immersionbar:immersionbar-ktx:${immersionbar_version}"

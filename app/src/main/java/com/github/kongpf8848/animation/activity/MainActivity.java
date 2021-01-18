@@ -1,5 +1,6 @@
 package com.github.kongpf8848.animation.activity;
 
+import android.os.Bundle;
 import android.transition.Slide;
 import android.view.Gravity;
 import android.view.View;
@@ -27,8 +28,8 @@ public class MainActivity extends BaseActivity {
     }
 
     @Override
-    protected void initData() {
-        super.initData();
+    protected void onCreateEnd(Bundle savedInstanceState){
+        super.onCreateEnd(savedInstanceState);
         setupToolbar();
     }
 

@@ -35,7 +35,7 @@ public abstract class BaseActivity extends AppCompatActivity {
         Log.d(getClass().getSimpleName(),"onCreate called");
         setContentView(getLayoutId());
         ButterKnife.bind(this);
-        initData();
+        onCreateEnd(savedInstanceState);
     }
 
 
@@ -132,7 +132,7 @@ public abstract class BaseActivity extends AppCompatActivity {
     }
 
 
-    protected void initData(){
+    protected void onCreateEnd(Bundle savedInstanceState){
 
     }
 
