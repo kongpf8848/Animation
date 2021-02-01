@@ -65,4 +65,14 @@
         <attr name="showGradient" format="boolean" />
     </declare-styleable>
 
+    <declare-styleable name="CircleIndicatorView">
+        <attr name="circleRadius" format="dimension" />
+        <attr name="circleStrokeWidth" format="dimension" />
+        <attr name="circleSpace" format="dimension" />
+        <attr name="circleColor" format="color" />
+        <attr name="circleTouchable" format="boolean" />
+        <attr name="indicatorColor" format="color" />
+        <attr name="indicatorFollowScroll" format="boolean" />
+    </declare-styleable>
+
 </resources>

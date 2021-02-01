@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent">
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -12,13 +13,23 @@
             android:layout_width="fill_parent"
             android:layout_height="fill_parent" />
 
-        <net.lucode.hackware.magicindicator.MagicIndicator
-            android:id="@+id/magic_indicator"
+        <com.github.kongpf8848.animation.widget.CircleIndicatorView
+            android:id="@+id/circle_indicator"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginBottom="10.0dip" />
+            android:layout_marginBottom="10dp"
+            app:circleColor="@color/white"
+            app:indicatorColor="@color/white"
+            app:circleSpace="10dp"
+            app:circleRadius="3dp"
+            app:circleStrokeWidth="1dp"
+            app:circleTouchable="false"
+            app:indicatorFollowScroll="true"
+            />
 
     </RelativeLayout>
 

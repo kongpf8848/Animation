@@ -1,23 +1,17 @@
 package com.github.kongpf8848.animation.activity;
 
-import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Looper;
-
-import androidx.viewpager.widget.ViewPager;
-
 import android.view.LayoutInflater;
 import android.view.View;
+
+import androidx.viewpager.widget.ViewPager;
 
 import com.github.kongpf8848.animation.R;
 import com.github.kongpf8848.animation.adapter.ViewPagerAdapter;
 import com.github.kongpf8848.animation.splash.SplashLayoutInflater;
 import com.github.kongpf8848.animation.splash.SplashView;
-import com.kongpf.commonhelper.ScreenHelper;
-
-import net.lucode.hackware.magicindicator.MagicIndicator;
-import net.lucode.hackware.magicindicator.ViewPagerHelper;
-import net.lucode.hackware.magicindicator.buildins.circlenavigator.CircleNavigator;
+import com.github.kongpf8848.animation.widget.CircleIndicatorView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -81,7 +75,7 @@ public class SplashActivity extends BaseActivity {
      * 初始化ViewPager
      */
     private void initViewPager() {
-        MagicIndicator magicIndicator = this.findViewById(R.id.magic_indicator);
+        CircleIndicatorView circle_indicator = this.findViewById(R.id.circle_indicator);
         ViewPager viewPager = this.findViewById(R.id.pager);
         ViewPagerAdapter adapter = new ViewPagerAdapter(this.viewList);
         viewPager.setAdapter(adapter);
@@ -98,17 +92,7 @@ public class SplashActivity extends BaseActivity {
             }
 
         });
-
-        CircleNavigator circleNavigator = new CircleNavigator(this);
-        circleNavigator.setCircleColor(Color.WHITE);
-        circleNavigator.setStrokeWidth(ScreenHelper.dp2px(this, 1));
-        circleNavigator.setCircleCount(viewList.size());
-        circleNavigator.setRadius(ScreenHelper.dp2px(this, 3));
-        circleNavigator.setCircleSpacing(ScreenHelper.dp2px(this, 10));
-        circleNavigator.setTouchable(false);
-
-        magicIndicator.setNavigator(circleNavigator);
-        ViewPagerHelper.bind(magicIndicator, viewPager);
+        circle_indicator.setUpWithViewPager(viewPager);
     }
 
     /***

@@ -4,13 +4,11 @@ import android.app.Activity
 import android.app.SharedElementCallback
 import android.content.Intent
 import android.graphics.Bitmap
-import android.graphics.Color
 import android.graphics.drawable.Drawable
 import android.os.Bundle
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
-import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.viewpager.widget.PagerAdapter
 import androidx.viewpager.widget.ViewPager
@@ -22,10 +20,7 @@ import com.github.kongpf8848.animation.Constants
 import com.github.kongpf8848.animation.R
 import com.github.kongpf8848.animation.activity.BaseActivity
 import com.github.kongpf8848.animation.bean.ImageBean
-import com.github.kongpf8848.animation.widget.MyImageView
 import kotlinx.android.synthetic.main.activity_transition_share_element_two.*
-import net.lucode.hackware.magicindicator.ViewPagerHelper
-import net.lucode.hackware.magicindicator.buildins.circlenavigator.CircleNavigator
 
 
 class ShareElementTwoActivity : BaseActivity() {
@@ -139,17 +134,6 @@ class ShareElementTwoActivity : BaseActivity() {
 
         }
 
-        val circleNavigator = CircleNavigator(this).apply {
-            circleColor = Color.WHITE
-            strokeWidth = 2
-            circleCount = list.size
-            radius = 10
-            circleSpacing = 20
-            isTouchable = false
-        }
-        magic_indicator.navigator = circleNavigator
-        ViewPagerHelper.bind(magic_indicator, viewPager)
-
         viewPager.addOnPageChangeListener(object : ViewPager.SimpleOnPageChangeListener() {
 
             override fun onPageSelected(position: Int) {
@@ -161,6 +145,8 @@ class ShareElementTwoActivity : BaseActivity() {
 
         })
         viewPager.currentItem = mCurrentPosition
+
+        circle_indicator.setUpWithViewPager(viewPager)
     }
 
 
