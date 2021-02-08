@@ -53,9 +53,9 @@ class GuideActivity : BaseActivity() {
      */
     private fun initGuide() {
         for (layoutId in layoutIdList) {
-            val list= mutableListOf<View?>()
+            val list= mutableListOf<View>()
             val splashView = SplashLayoutInflater(LayoutInflater.from(this), this, object:ParallaxViewImp{
-                override fun getParallaxViews(): MutableList<View?> {
+                override fun getParallaxViews(): MutableList<View> {
                     return list
                 }
             }).inflate(layoutId, null,false) as SplashView

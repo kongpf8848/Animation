@@ -7,9 +7,10 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import com.github.kongpf8848.animation.R
-import com.github.kongpf8848.animation.activity.viewpager.HookLayoutCallback
-import com.github.kongpf8848.animation.activity.viewpager.HookLayoutInflaterFactory
 import com.github.kongpf8848.animation.activity.viewpager.ParallaxViewImp
+import com.github.kongpf8848.animation.hook.HookLayoutCallback
+import com.github.kongpf8848.animation.hook.HookLayoutInflaterFactory
+
 
 class SplashLayoutInflater(original: LayoutInflater?, newContext: Context?, private val mParallaxView: ParallaxViewImp?)
     : LayoutInflater(original, newContext), HookLayoutCallback {
@@ -18,7 +19,7 @@ class SplashLayoutInflater(original: LayoutInflater?, newContext: Context?, priv
         return from(newContext)
     }
 
-    override fun onCreateViewCallback(parent: View?, name: String?, context: Context?, attrs: AttributeSet?, view: View?) {
+    override fun onCreateViewCallback(parent: View?, name: String, context: Context, attrs: AttributeSet, view: View) {
         Log.d("SplashLayoutInflater", "onCreateViewCallback() called with: view = [$view], name = [$name], context = [$context], attrs = [$attrs]")
         val ta = context!!.obtainStyledAttributes(attrs, R.styleable.SplashView)
         val count = ta.indexCount
