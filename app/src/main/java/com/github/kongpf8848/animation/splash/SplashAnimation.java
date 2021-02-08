@@ -8,11 +8,10 @@ import android.view.animation.Transformation;
 import android.widget.FrameLayout;
 import android.widget.RelativeLayout;
 
-import com.github.kongpf8848.animation.BaseApplication;
+import com.github.kongpf8848.animation.TKApplication;
 import com.kongpf.commonhelper.ScreenHelper;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.Random;
 
 public class SplashAnimation extends Animation {
@@ -29,7 +28,7 @@ public class SplashAnimation extends Animation {
 
     public static class TopView
     {
-        int margin = ScreenHelper.dp2px(BaseApplication.getContext(), 10.0F);
+        int margin = ScreenHelper.dp2px(TKApplication.instance, 10.0F);
         public View view;
         public float startAlpha;
         public int topMargin;
@@ -66,7 +65,7 @@ public class SplashAnimation extends Animation {
     public SplashAnimation(SplashView splashView)
     {
         this.mSplashView=splashView;
-        int screenWidth = ScreenHelper.getScreenWidth(BaseApplication.applicationContext);
+        int screenWidth = ScreenHelper.getScreenWidth(TKApplication.instance);
 
         int textWidth = this.mSplashView.text.getMeasuredWidth();
         this.textStart = -(textWidth / 2);

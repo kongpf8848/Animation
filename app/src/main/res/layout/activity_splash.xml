@@ -1,49 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
 
-    <RelativeLayout
+    <com.github.kongpf8848.animation.widget.AnimLogoView
+        android:id="@+id/anim_logo"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <androidx.viewpager.widget.ViewPager
-            android:id="@+id/pager"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent" />
-
-        <com.github.kongpf8848.animation.widget.CircleIndicatorView
-            android:id="@+id/circle_indicator"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="10dp"
-            app:circleColor="@color/white"
-            app:indicatorColor="@color/white"
-            app:circleSpace="10dp"
-            app:circleRadius="3dp"
-            app:circleStrokeWidth="1dp"
-            app:circleTouchable="false"
-            app:indicatorFollowScroll="true"
-            />
-
-    </RelativeLayout>
-
-
-    <ImageView
-        android:id="@+id/btn_close"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="15.0dip"
-        android:layout_marginEnd="15.0dip"
-        android:onClick="enterMain"
-        android:scaleType="centerCrop"
-        android:src="@drawable/selector_close_btn_circle"
-        android:contentDescription="@string/app_name"
+        android:layout_height="match_parent"
+        app:autoPlay="false"
+        app:gradientAnimDuration="2000"
+        app:gradientColor="@color/red"
+        app:logoName="Animation"
+        app:offsetAnimDuration="2000"
+        app:showGradient="true"
+        app:textColor="@color/white"
+        app:textPadding="3dp"
+        app:textSize="30sp"
         />
-</RelativeLayout>
+
+</FrameLayout>

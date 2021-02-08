@@ -16,12 +16,6 @@
     </declare-styleable>
 
 
-    <declare-styleable name="StrokeTextView">
-        <!--描边的颜色 -->
-        <attr name="stroke_color" format="color" />
-        <!-- 描边的宽度 -->
-        <attr name="stroke_width" format="dimension" />
-    </declare-styleable>
 
 
     <declare-styleable name="AnimationView">

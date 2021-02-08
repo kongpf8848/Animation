@@ -23,7 +23,7 @@ import android.text.TextUtils;
 import android.view.HapticFeedbackConstants;
 import android.view.View;
 
-import com.github.kongpf8848.animation.BaseApplication;
+import com.github.kongpf8848.animation.TKApplication;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -428,7 +428,7 @@ public class RLottieDrawable extends BitmapDrawable implements Animatable {
         autoRepeat = 0;
         String jsonString = null;
         try {
-            jsonString = readInputStream(BaseApplication.getContext().getAssets().open(assetName));
+            jsonString = readInputStream(TKApplication.instance.getAssets().open(assetName));
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -492,7 +492,7 @@ public class RLottieDrawable extends BitmapDrawable implements Animatable {
             if (path != null) {
                 inputStream = new FileInputStream(path);
             } else {
-                inputStream = BaseApplication.getContext().getResources().openRawResource(rawRes);
+                inputStream = TKApplication.instance.getResources().openRawResource(rawRes);
             }
         } catch (FileNotFoundException e) {
             e.printStackTrace();

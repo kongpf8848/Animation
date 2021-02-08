@@ -22,8 +22,7 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="橘子娱乐"
-            />
+            android:text="橘子娱乐" />
 
         <Button
             android:id="@+id/button3"
@@ -59,6 +58,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:text="vision" />
+
         <Button
             android:id="@+id/button8"
             android:layout_width="fill_parent"

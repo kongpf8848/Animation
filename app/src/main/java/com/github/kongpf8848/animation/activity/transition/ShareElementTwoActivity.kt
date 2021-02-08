@@ -16,7 +16,7 @@ import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import com.bumptech.glide.request.target.ImageViewTarget
 import com.github.chrisbanes.photoview.PhotoView
-import com.github.kongpf8848.animation.Constants
+import com.github.kongpf8848.animation.helper.Constants
 import com.github.kongpf8848.animation.R
 import com.github.kongpf8848.animation.activity.BaseActivity
 import com.github.kongpf8848.animation.bean.ImageBean

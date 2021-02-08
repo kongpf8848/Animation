@@ -1,21 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <LinearLayout
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.github.kongpf8848.animation.widget.StickerRecyclerView
+        android:id="@+id/recyclerview"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        >
-
-        <com.github.kongpf8848.animation.widget.StickerRecyclerView
-            android:id="@+id/recyclerview"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            />
+        android:layout_height="match_parent" />
 
 
+</LinearLayout>
 
-    </LinearLayout>
-
-</androidx.core.widget.NestedScrollView>

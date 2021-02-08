@@ -26,21 +26,6 @@
             android:text="自定义估值器"
             />
 
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="交换位置属性动画"
-            />
-
-        <Button
-            android:id="@+id/button4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="评论界面"
-            />
     </LinearLayout>
 
 </ScrollView>

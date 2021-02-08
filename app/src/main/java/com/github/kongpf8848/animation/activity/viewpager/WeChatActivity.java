@@ -45,7 +45,7 @@ public class WeChatActivity extends BaseActivity {
 
     @Override
     protected int getLayoutId() {
-        return R.layout.activity_lottie_autohome;
+        return R.layout.activity_lottie_tab;
     }
 
     protected void onCreateEnd(Bundle savedInstanceState){

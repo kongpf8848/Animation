@@ -12,7 +12,7 @@ import androidx.core.util.Pair
 import androidx.core.view.ViewCompat
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.github.kongpf8848.animation.Constants
+import com.github.kongpf8848.animation.helper.Constants
 import com.github.kongpf8848.animation.R
 import com.github.kongpf8848.animation.adapter.ShareElementListAdapter
 import com.github.kongpf8848.animation.bean.ImageBean

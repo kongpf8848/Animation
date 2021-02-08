@@ -19,9 +19,9 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        android:name=".BaseApplication"
+        android:name=".TKApplication"
         >
-        <activity android:name=".activity.LogoActivity" android:screenOrientation="portrait"
+        <activity android:name=".activity.SplashActivity" android:screenOrientation="portrait"
             android:theme="@style/LogoActivityTheme"
             >
             <intent-filter>
@@ -29,7 +29,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.SplashActivity" android:screenOrientation="portrait"
+        <activity android:name=".activity.GuideActivity" android:screenOrientation="portrait"
             />
         <activity android:name=".activity.MainActivity" android:screenOrientation="portrait"
             android:label="动画"
@@ -136,12 +136,6 @@
         <activity android:name=".activity.property.BallActivity" android:screenOrientation="portrait"
             android:label="自定义估值器"
             />
-        <activity android:name=".activity.property.SwapActivity" android:screenOrientation="portrait"
-            android:label="交换位置属性动画"
-            />
-        <activity android:name=".activity.property.CommentActivity" android:screenOrientation="portrait"
-            android:label="评论界面"
-            />
 
         <!---Lottie动画-->
         <activity android:name=".activity.lottie.AutoHomeActivity" android:screenOrientation="portrait"
@@ -161,10 +155,6 @@
         <activity android:name=".activity.viewpager.WeChatActivity" android:screenOrientation="portrait"
             android:label="Wechat"
             />
-        <activity android:name=".activity.viewpager.XhsActivity" android:screenOrientation="portrait"
-            android:label="小红书"
-            android:theme="@style/AppTheme.NoActionBar"
-            />
 
         <!---Tgs动画-->
         <activity android:name=".activity.TgsActivity" android:screenOrientation="portrait"
@@ -183,9 +173,6 @@
             />
 
 
-        <activity android:name=".activity.TestActivity" android:screenOrientation="portrait"
-            android:label="Test"
-            />
     </application>
 
 </manifest>
