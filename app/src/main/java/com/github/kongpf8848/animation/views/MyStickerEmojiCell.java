@@ -77,7 +77,7 @@ public class MyStickerEmojiCell extends FrameLayout {
         if (document != null) {
             sticker = document;
             parentObject = parent;
-            EmojiUtils.loadImageFromAsset(getContext(),document.getFile(),imageView, ScreenHelper.dp2px(getContext(),66),ScreenHelper.dp2px(getContext(),66));
+            EmojiUtils.INSTANCE.loadImageFromAsset(getContext(),document.getFile(),imageView, ScreenHelper.dp2px(getContext(),66),ScreenHelper.dp2px(getContext(),66));
             setText(showEmoji,document.getName());
         }
     }

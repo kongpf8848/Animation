@@ -5,9 +5,7 @@
     <string name="cupid_rule_button">规则</string>
     <string name="cupid_rule_tip">普通男会员需10元24小时发送一次</string>
     <string name="cupid_rule_title">使用说明：</string>
-    <string name="cupid_rule_info">"丘比特每日问候40个符合要求的有缘人
-    女会员： 每日登录免费发送一次
-    男用户： 手机套餐、钻石会员每日免费发送一次 或花费10元每日免费发送一次"</string>
+    <string name="cupid_rule_info">"丘比特每日问候40个符合要求的有缘人\n女会员： 每日登录免费发送一次\n男用户： 手机套餐、钻石会员每日免费发送一次 或花费10元每日免费发送一次"</string>
     <string name="reward">打赏</string>
 
     <string name="phone_login">手机登录</string>

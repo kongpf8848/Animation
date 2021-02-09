@@ -15,9 +15,6 @@ import com.github.kongpf8848.animation.R;
 
 import butterknife.BindView;
 
-/**
- * Created by pengf on 2016/12/9.
- */
 
 public class TranslateActivity extends BaseActivity {
 

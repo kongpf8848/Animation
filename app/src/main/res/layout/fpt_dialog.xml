@@ -43,11 +43,6 @@
         android:layout_height="wrap_content"
         android:orientation="vertical" >
 
-        <LinearLayout
-            android:layout_width="296dp"
-            android:layout_height="2px"
-            android:background="#eaeaea" >
-        </LinearLayout>
 
         <LinearLayout
             android:layout_width="296dp"

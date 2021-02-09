@@ -14,7 +14,7 @@
         android:layout_margin="2.0dip"
         android:background="@drawable/bg_btn_cupid_rule"
         android:text="规则"
-        android:textColor="#ffffffff"
+        android:textColor="@color/white"
         android:textSize="14.0sp" />
 
     <ImageView
@@ -105,6 +105,6 @@
             android:paddingLeft="10.0dip"
             android:paddingRight="10.0dip"
             android:singleLine="false"
-            android:textColor="#ffffffff" />
+            android:textColor="@color/white" />
     </LinearLayout>
 </RelativeLayout>

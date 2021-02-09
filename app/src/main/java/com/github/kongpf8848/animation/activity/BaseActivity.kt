@@ -136,7 +136,7 @@ abstract class BaseActivity : AppCompatActivity() {
 
     protected fun initStatusBar(@IdRes titleBarId: Int, @ColorRes statusBarColor: Int = android.R.color.transparent) {
         ImmersionBar.with(this)
-                .titleBar(titleBarId)
+                .titleBarMarginTop(titleBarId)
                 .statusBarColor(statusBarColor)
                 .navigationBarColor(navigationBarColor(), navigationBarAlpha())
                 .navigationBarDarkIcon(navigationBarDarkIcon())

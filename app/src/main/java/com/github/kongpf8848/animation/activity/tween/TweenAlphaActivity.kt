@@ -5,10 +5,11 @@ import android.view.View
 import butterknife.OnClick
 import com.github.kongpf8848.animation.R
 import com.github.kongpf8848.animation.activity.BaseActivity
+import com.github.kongpf8848.animation.activity.BaseToolbarActivity
 import com.github.kongpf8848.animation.activity.tween.alpha.OtherActivity
 import com.github.kongpf8848.animation.activity.tween.alpha.TranslateActivity
 
-class TweenAlphaActivity : BaseActivity() {
+class TweenAlphaActivity : BaseToolbarActivity() {
 
     override fun getLayoutId(): Int {
         return R.layout.activity_tween_alpha

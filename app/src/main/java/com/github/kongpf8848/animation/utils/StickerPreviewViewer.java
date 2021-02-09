@@ -35,7 +35,7 @@ public class StickerPreviewViewer {
 
     public void reset() {
         if (openPreviewRunnable != null) {
-            MainHandler.getInstance().removeCallbacks(openPreviewRunnable);
+            MainHandler.Companion.getInstance().removeCallbacks(openPreviewRunnable);
             openPreviewRunnable = null;
         }
         currentPosition=-1;
@@ -60,7 +60,7 @@ public class StickerPreviewViewer {
                 StickerAdapter adapter=(StickerAdapter)recyclerView.getAdapter();
                 StickerItem stickerItem=adapter.getItem(position);
                 if(openPreviewRunnable!=null){
-                    MainHandler.getInstance().removeCallbacks(openPreviewRunnable);
+                    MainHandler.Companion.getInstance().removeCallbacks(openPreviewRunnable);
                     openPreviewRunnable = null;
                 }
                 openPreviewRunnable=new Runnable() {
@@ -69,7 +69,7 @@ public class StickerPreviewViewer {
                         showStickerPreview(view,recyclerView.getContext(),stickerItem);
                     }
                 };
-                MainHandler.getInstance().postDelayed(openPreviewRunnable,200);
+                MainHandler.Companion.getInstance().postDelayed(openPreviewRunnable,200);
 
 
             }

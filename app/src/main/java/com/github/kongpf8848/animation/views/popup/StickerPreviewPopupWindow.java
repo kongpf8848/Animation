@@ -35,7 +35,7 @@ public class StickerPreviewPopupWindow extends BasePopupWindow {
     }
 
     public void setData(StickerItem stickerItem){
-        EmojiUtils.loadImageFromAsset(mContext,stickerItem.getFile(),lottieImageView, ScreenHelper.dp2px(mContext,100),ScreenHelper.dp2px(mContext,100));
+        EmojiUtils.INSTANCE.loadImageFromAsset(mContext,stickerItem.getFile(),lottieImageView, ScreenHelper.dp2px(mContext,100),ScreenHelper.dp2px(mContext,100));
     }
 
     public int getTriangleViewWidth(){

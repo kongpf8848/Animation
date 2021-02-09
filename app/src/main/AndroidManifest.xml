@@ -22,7 +22,7 @@
         android:name=".TKApplication"
         >
         <activity android:name=".activity.SplashActivity" android:screenOrientation="portrait"
-            android:theme="@style/LogoActivityTheme"
+            android:theme="@style/SplashActivityTheme"
             >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
