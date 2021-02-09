@@ -6,7 +6,6 @@ import android.view.LayoutInflater
 import android.view.View
 import androidx.viewpager.widget.ViewPager.SimpleOnPageChangeListener
 import com.github.kongpf8848.animation.R
-import com.github.kongpf8848.animation.activity.viewpager.ParallaxViewImp
 import com.github.kongpf8848.animation.adapter.ViewPagerAdapter
 import com.github.kongpf8848.animation.splash.SplashLayoutInflater
 import com.github.kongpf8848.animation.splash.SplashView
@@ -54,12 +53,8 @@ class GuideActivity : BaseActivity() {
     private fun initGuide() {
         for (layoutId in layoutIdList) {
             val list= mutableListOf<View>()
-            val splashView = SplashLayoutInflater(LayoutInflater.from(this), this, object:ParallaxViewImp{
-                override fun getParallaxViews(): MutableList<View> {
-                    return list
-                }
-            }).inflate(layoutId, null,false) as SplashView
-            splashView.setViews(list)
+            val splashView = SplashLayoutInflater(LayoutInflater.from(this), this,list).inflate(layoutId, null,false) as SplashView
+            splashView.views=(list)
             viewList.add(splashView)
         }
     }

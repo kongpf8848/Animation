@@ -9,10 +9,10 @@ import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.ItemDecoration
 import com.github.kongpf8848.animation.R
-import com.github.kongpf8848.animation.helper.StickerPreviewViewer
+import com.github.kongpf8848.animation.utils.StickerPreviewViewer
 import com.github.kongpf8848.animation.adapter.StickerAdapter
 import com.github.kongpf8848.animation.bean.StickerItem
-import com.github.kongpf8848.animation.widget.StickerRecyclerView
+import com.github.kongpf8848.animation.views.StickerRecyclerView
 import com.kongpf.commonhelper.ScreenHelper
 import kotlinx.android.synthetic.main.activity_tgs.*
 

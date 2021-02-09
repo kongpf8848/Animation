@@ -11,7 +11,7 @@ import android.widget.Toast;
 
 import com.github.kongpf8848.animation.activity.BaseActivity;
 import com.github.kongpf8848.animation.R;
-import com.github.kongpf8848.animation.helper.ShakeListener;
+import com.github.kongpf8848.animation.utils.ShakeListener;
 
 import butterknife.BindView;
 

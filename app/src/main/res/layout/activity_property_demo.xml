@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <com.github.kongpf8848.animation.widget.MyImageView
+    <com.github.kongpf8848.animation.views.MyImageView
         android:id="@+id/iv_boy"
         android:layout_width="200dp"
         android:layout_height="200dp"

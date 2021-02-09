@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <com.github.kongpf8848.animation.widget.StickerRecyclerView
+    <com.github.kongpf8848.animation.views.StickerRecyclerView
         android:id="@+id/recyclerview"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />

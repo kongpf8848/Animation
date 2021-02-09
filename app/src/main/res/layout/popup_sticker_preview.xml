@@ -24,7 +24,7 @@
                 />
 
         </LinearLayout>
-        <com.github.kongpf8848.animation.widget.TriangleView
+        <com.github.kongpf8848.animation.views.TriangleView
             android:id="@+id/tlv_indicator"
             android:layout_width="16dp"
             android:layout_height="8dp"

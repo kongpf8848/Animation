@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/colorPrimary">
 
-    <com.github.kongpf8848.animation.widget.AnimLogoView
+    <com.github.kongpf8848.animation.views.AnimLogoView
         android:id="@+id/anim_logo"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

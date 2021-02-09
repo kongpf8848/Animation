@@ -9,7 +9,7 @@ import androidx.fragment.app.Fragment
 import com.github.kongpf8848.animation.R
 import com.github.kongpf8848.animation.activity.BaseActivity
 import com.github.kongpf8848.animation.fragment.TitleFragment
-import com.github.kongpf8848.animation.widget.AnimationRadioView
+import com.github.kongpf8848.animation.views.AnimationRadioView
 import com.github.kongpf8848.xsdk.ui.adapter.FragmentAdapter
 import kotlinx.android.synthetic.main.activity_lottie_tab.*
 import net.lucode.hackware.magicindicator.ViewPagerHelper

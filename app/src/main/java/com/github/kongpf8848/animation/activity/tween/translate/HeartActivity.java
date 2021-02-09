@@ -3,20 +3,15 @@ package com.github.kongpf8848.animation.activity.tween.translate;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
-import android.view.View;
-import android.widget.Button;
 
 import com.github.kongpf8848.animation.activity.BaseActivity;
-import com.github.kongpf8848.animation.heart.LiveHeartTaskManager;
 import com.github.kongpf8848.animation.heart.LiveHeartTaskManagerThread;
 import com.github.kongpf8848.animation.R;
 import com.github.kongpf8848.animation.heart.LiveHeartTask;
-import com.github.kongpf8848.animation.widget.HeartLayout;
+import com.github.kongpf8848.animation.views.HeartLayout;
 
 import java.util.Timer;
 import java.util.TimerTask;
-
-import butterknife.ButterKnife;
 
 /**
  * Created by pengf on 2017/1/2.

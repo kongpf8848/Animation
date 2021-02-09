@@ -10,7 +10,7 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent" />
 
-    <com.github.kongpf8848.animation.widget.CircleIndicatorView
+    <com.github.kongpf8848.animation.views.CircleIndicatorView
         android:id="@+id/circle_indicator"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

@@ -5,7 +5,7 @@
     android:gravity="center"
     android:orientation="vertical">
 
-    <com.github.kongpf8848.animation.widget.AnimationRadioView
+    <com.github.kongpf8848.animation.views.AnimationRadioView
         android:id="@+id/item_tab_image"
         android:layout_width="24dp"
         android:layout_height="24dp"

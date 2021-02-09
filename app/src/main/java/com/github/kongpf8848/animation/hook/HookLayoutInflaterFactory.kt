@@ -9,7 +9,6 @@ import android.view.LayoutInflater
 import android.view.LayoutInflater.Factory2
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import java.lang.ref.WeakReference
 import java.util.*
 
 /**
