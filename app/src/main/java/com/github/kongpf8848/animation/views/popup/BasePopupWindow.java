@@ -1,7 +1,4 @@
-/**
- * Secret
- * Copyright (C) 2019 Secret
- */
+
 package com.github.kongpf8848.animation.views.popup;
 
 import android.content.Context;

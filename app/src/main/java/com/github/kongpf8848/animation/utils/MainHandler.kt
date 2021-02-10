@@ -18,6 +18,5 @@ class MainHandler : Handler(Looper.getMainLooper()) {
 
     companion object {
         fun getInstance()=MainHandler.holder
-
     }
 }

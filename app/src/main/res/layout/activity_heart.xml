@@ -9,7 +9,7 @@
         android:layout_height="match_parent"
         android:layout_marginBottom="10dp">
 
-        <com.github.kongpf8848.animation.views.HeartLayout
+        <com.github.kongpf8848.animation.heart.HeartLayout
             android:id="@+id/heart_layout"
             android:layout_width="100dp"
             android:layout_height="wrap_content"

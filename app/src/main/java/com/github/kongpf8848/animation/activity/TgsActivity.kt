@@ -41,9 +41,11 @@ class TgsActivity : BaseToolbarActivity() {
             StickerItem(20, "\u2753", "2_1901206392136532019.tgs")
     )
 
-    private val onItemClickListener = StickerRecyclerView.OnItemClickListener { _: View?, position: Int ->
-        StickerPreviewViewer.getInstance().reset()
-        Toast.makeText(this@TgsActivity, "click:$position", Toast.LENGTH_SHORT).show()
+    private val onItemClickListener = object:StickerRecyclerView.OnItemClickListener{
+        override fun onItemClick(view: View, position: Int) {
+            StickerPreviewViewer.getInstance().reset()
+            Toast.makeText(this@TgsActivity, "click:$position", Toast.LENGTH_SHORT).show()
+        }
     }
 
     override fun getLayoutId(): Int {

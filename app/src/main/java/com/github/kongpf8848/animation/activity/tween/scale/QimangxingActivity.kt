@@ -5,12 +5,12 @@ import android.view.animation.Animation
 import android.view.animation.ScaleAnimation
 import com.github.kongpf8848.animation.R
 import com.github.kongpf8848.animation.activity.BaseActivity
-import kotlinx.android.synthetic.main.activity_scale_qimangxing.*
+import kotlinx.android.synthetic.main.activity_qimangxing.*
 
 class QimangxingActivity : BaseActivity() {
 
     override fun getLayoutId(): Int {
-        return R.layout.activity_scale_qimangxing
+        return R.layout.activity_qimangxing
     }
 
     override fun fitsSystemWindows(): Boolean {

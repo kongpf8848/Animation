@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.github.kongpf8848.animation.views;
+package com.github.kongpf8848.animation.heart;
 
 import android.content.Context;
 import android.graphics.Bitmap;

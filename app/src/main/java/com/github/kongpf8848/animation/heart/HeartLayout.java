@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.github.kongpf8848.animation.views;
+package com.github.kongpf8848.animation.heart;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -26,8 +26,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.RelativeLayout;
 
-import com.github.kongpf8848.animation.heart.AbstractPathAnimator;
-import com.github.kongpf8848.animation.heart.PathAnimator;
 import com.github.kongpf8848.animation.R;
 
 import java.lang.ref.WeakReference;

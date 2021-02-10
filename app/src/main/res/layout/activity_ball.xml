@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <com.github.kongpf8848.animation.views.MyAnimView
+    <com.github.kongpf8848.animation.views.Ball
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 </LinearLayout>
