@@ -64,7 +64,7 @@ class TgsActivity : BaseToolbarActivity() {
                 }
             })
             setOnItemClickListener(onItemClickListener)
-            setOnTouchListener { v: View?, event: MotionEvent? -> StickerPreviewViewer.getInstance().onTouch(event, this) }
+            setOnTouchListener { v: View?, event: MotionEvent -> StickerPreviewViewer.getInstance().onTouch(event, this) }
             adapter = StickerAdapter(this@TgsActivity,datas)
         }
 

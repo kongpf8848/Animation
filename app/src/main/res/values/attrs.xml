@@ -43,7 +43,7 @@
     </declare-styleable>
 
 
-    <declare-styleable name="AnimLogoView">
+    <declare-styleable name="AnimationLogoView">
         <attr name="logoName" format="string" />
         <attr name="autoPlay" format="boolean" />
         <attr name="offsetAnimDuration" format="integer" />

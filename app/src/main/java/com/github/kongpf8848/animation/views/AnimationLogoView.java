@@ -1,5 +1,4 @@
 package com.github.kongpf8848.animation.views;
-
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.animation.ValueAnimator;
@@ -18,13 +17,11 @@ import android.util.Log;
 import android.util.SparseArray;
 import android.view.View;
 import android.view.animation.AccelerateDecelerateInterpolator;
-
 import androidx.annotation.Nullable;
-
 import com.github.kongpf8848.animation.R;
 
+public class AnimationLogoView extends View {
 
-public class AnimLogoView extends View {
     private static final String DEFAULT_LOGO = "Animation";
     private static final int DEFAULT_TEXT_PADDING = 10;
     private static final int ANIM_LOGO_DURATION = 1500;
@@ -55,27 +52,27 @@ public class AnimLogoView extends View {
     private int mLogoOffset;
     private Animator.AnimatorListener mGradientListener;
 
-    public AnimLogoView(Context context) {
+    public AnimationLogoView(Context context) {
         this(context, null);
     }
 
-    public AnimLogoView(Context context, @Nullable AttributeSet attrs) {
+    public AnimationLogoView(Context context, @Nullable AttributeSet attrs) {
         this(context, attrs, 0);
     }
 
-    public AnimLogoView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
+    public AnimationLogoView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
-        TypedArray ta = context.obtainStyledAttributes(attrs, R.styleable.AnimLogoView);
-        String logoName = ta.getString(R.styleable.AnimLogoView_logoName);
-        isAutoPlay = ta.getBoolean(R.styleable.AnimLogoView_autoPlay, true);
-        isShowGradient = ta.getBoolean(R.styleable.AnimLogoView_showGradient, false);
-        mOffsetDuration = ta.getInt(R.styleable.AnimLogoView_offsetAnimDuration, ANIM_LOGO_DURATION);
-        mGradientDuration = ta.getInt(R.styleable.AnimLogoView_gradientAnimDuration, ANIM_LOGO_GRADIENT_DURATION);
-        mTextColor = ta.getColor(R.styleable.AnimLogoView_textColor, ANIM_LOGO_TEXT_COLOR);
-        mGradientColor = ta.getColor(R.styleable.AnimLogoView_gradientColor, ANIM_LOGO_GRADIENT_COLOR);
-        mTextPadding = ta.getDimensionPixelSize(R.styleable.AnimLogoView_textPadding, DEFAULT_TEXT_PADDING);
-        mTextSize = ta.getDimensionPixelSize(R.styleable.AnimLogoView_textSize, ANIM_LOGO_TEXT_SIZE);
-        mLogoOffset = ta.getDimensionPixelOffset(R.styleable.AnimLogoView_verticalOffset, 0);
+        TypedArray ta = context.obtainStyledAttributes(attrs, R.styleable.AnimationLogoView);
+        String logoName = ta.getString(R.styleable.AnimationLogoView_logoName);
+        isAutoPlay = ta.getBoolean(R.styleable.AnimationLogoView_autoPlay, true);
+        isShowGradient = ta.getBoolean(R.styleable.AnimationLogoView_showGradient, false);
+        mOffsetDuration = ta.getInt(R.styleable.AnimationLogoView_offsetAnimDuration, ANIM_LOGO_DURATION);
+        mGradientDuration = ta.getInt(R.styleable.AnimationLogoView_gradientAnimDuration, ANIM_LOGO_GRADIENT_DURATION);
+        mTextColor = ta.getColor(R.styleable.AnimationLogoView_textColor, ANIM_LOGO_TEXT_COLOR);
+        mGradientColor = ta.getColor(R.styleable.AnimationLogoView_gradientColor, ANIM_LOGO_GRADIENT_COLOR);
+        mTextPadding = ta.getDimensionPixelSize(R.styleable.AnimationLogoView_textPadding, DEFAULT_TEXT_PADDING);
+        mTextSize = ta.getDimensionPixelSize(R.styleable.AnimationLogoView_textSize, ANIM_LOGO_TEXT_SIZE);
+        mLogoOffset = ta.getDimensionPixelOffset(R.styleable.AnimationLogoView_verticalOffset, 0);
         ta.recycle();
         if (TextUtils.isEmpty(logoName)) {
             logoName = DEFAULT_LOGO;// default logo

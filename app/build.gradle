@@ -1,7 +1,10 @@
-apply plugin: 'com.android.application'
-apply plugin: 'kotlin-android'
-apply plugin: 'kotlin-kapt'
-apply plugin: 'kotlin-android-extensions'
+
+plugins{
+    id 'com.android.application'
+    id  'kotlin-android'
+    id 'kotlin-kapt'
+    id 'kotlin-android-extensions'
+}
 
 android {
 
@@ -68,8 +71,5 @@ dependencies {
     implementation BuildDependencies.magicIndicator
     implementation BuildDependencies.lottie
     implementation BuildDependencies.commonHelper
-
-    //implementation "com.github.kongpf8848:xsdk:1.0.18"
-
 
 }
