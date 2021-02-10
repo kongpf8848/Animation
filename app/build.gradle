@@ -2,19 +2,21 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-kapt'
 apply plugin: 'kotlin-android-extensions'
+
 android {
-    compileSdkVersion rootProject.ext.android.compileSdkVersion
-    buildToolsVersion rootProject.ext.android.buildToolsVersion
+
+    compileSdkVersion Config.compileSdkVersion
+    buildToolsVersion Config.buildToolsVersion
 
     aaptOptions.cruncherEnabled = false
     aaptOptions.useNewCruncher = false
 
     defaultConfig {
-        applicationId "com.github.kongpf8848.animation"
-        minSdkVersion rootProject.ext.android.minSdkVersion
-        targetSdkVersion rootProject.ext.android.targetSdkVersion
-        versionCode 5
-        versionName "1.1.3"
+        applicationId Config.applicationId
+        minSdkVersion Config.minSdkVersion
+        targetSdkVersion Config.targetSdkVersion
+        versionCode Config.versionCode
+        versionName Config.versionName
     }
     signingConfigs {
         release {
@@ -37,32 +39,37 @@ android {
     }
 
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility Config.sourceCompatibilityVersion
+        targetCompatibility Config.targetCompatibilityVersion
     }
 
 }
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    testImplementation rootProject.ext.dependencies["junit"]
-    implementation rootProject.ext.dependencies["appcompat-v7"]
-    implementation rootProject.ext.dependencies["design"]
-    implementation rootProject.ext.dependencies["palette-v7"]
-    implementation rootProject.ext.dependencies["retrofit"]
-    implementation rootProject.ext.dependencies["rxandroid"]
-    implementation rootProject.ext.dependencies["okhttp"]
-    implementation rootProject.ext.dependencies["okio"]
-    implementation rootProject.ext.dependencies["rxjava2"]
-    implementation rootProject.ext.dependencies["constraint-layout"]
+    testImplementation BuildDependencies.junit
 
-    implementation rootProject.ext.dependencies["common-helper"]
-    implementation rootProject.ext.dependencies["butterknife"]
-    kapt rootProject.ext.dependencies["butterknife-compiler"]
-    implementation rootProject.ext.dependencies["xsdk"]
-    implementation rootProject.ext.dependencies["MagicIndicator"]
-    implementation rootProject.ext.dependencies["lottie"]
-    implementation rootProject.ext.dependencies["immersionbar"]
-    implementation rootProject.ext.dependencies["photoView"]
+    implementation AndroidX.appCompat
+    implementation AndroidX.multidex
+    implementation AndroidX.material
+    implementation AndroidX.recyclerview
+    implementation AndroidX.cardview
+    implementation AndroidX.annotationX
+    implementation AndroidX.constraintlayout
+    implementation AndroidX.core
+    implementation AndroidX.coreKtx
+
+    implementation BuildDependencies.photoView
+    implementation BuildDependencies.immersionbar
+    implementation BuildDependencies.glide
+    kapt BuildDependencies.glideCompiler
+    implementation BuildDependencies.butterknife
+    kapt BuildDependencies.butterknifeCompiler
+    implementation BuildDependencies.magicIndicator
+    implementation BuildDependencies.lottie
+    implementation BuildDependencies.commonHelper
+
+    //implementation "com.github.kongpf8848:xsdk:1.0.18"
+
 
 }

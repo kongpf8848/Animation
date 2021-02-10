@@ -17,7 +17,7 @@ class StickerAdapter(private val context: Context, private val list: List<Sticke
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val data = list[position]
-        holder.itemView.iv_emoji.setSticker(data, holder.itemView, true)
+        holder.itemView.iv_emoji.setSticker(data)
     }
 
 

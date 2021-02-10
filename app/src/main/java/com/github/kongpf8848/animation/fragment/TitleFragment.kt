@@ -6,7 +6,6 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.annotation.Nullable
 import com.github.kongpf8848.animation.R
-import com.github.kongpf8848.xsdk.ui.fragment.BaseFragment
 import kotlinx.android.synthetic.main.fragment_title.*
 
 class TitleFragment : BaseFragment() {

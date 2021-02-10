@@ -4,7 +4,7 @@ import android.view.View
 import androidx.viewpager.widget.PagerAdapter
 import androidx.viewpager.widget.ViewPager
 
-class ViewPagerAdapter(var viewList: List<View>) : PagerAdapter() {
+class ViewPagerAdapter(val viewList: List<View>) : PagerAdapter() {
 
     override fun getCount(): Int {
         return viewList.size
