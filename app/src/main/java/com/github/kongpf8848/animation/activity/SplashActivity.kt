@@ -26,7 +26,7 @@ class SplashActivity : BaseActivity() {
     override fun onCreateEnd(savedInstanceState: Bundle?) {
         super.onCreateEnd(savedInstanceState)
         tv_version.text="V${ApkHelper.getAppVersionName(this)}"
-        
+
         anim_logo.apply {
             addOffsetAnimListener(object : AnimatorListenerAdapter() {
                 override fun onAnimationEnd(animation: Animator) {
