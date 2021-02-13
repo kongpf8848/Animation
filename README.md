@@ -7,7 +7,24 @@ Android各种动画效果,无动画,不精彩:smile::smile::smile:
 ![二维码](https://github.com/kongpf8848/Animation/blob/master/screenshots/qrcode.png)
 
 # 逐帧动画（Frame Animation）
-一帧一帧进行播放，它的原理与Gif类似
+一帧一帧进行播放，它的原理与Gif类似，按序播放一组预先定义好的图片序列，如:
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false" xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="100" android:drawable="@drawable/loading01" />
+    <item android:duration="100" android:drawable="@drawable/loading02" />
+    <item android:duration="100" android:drawable="@drawable/loading03" />
+    <item android:duration="100" android:drawable="@drawable/loading04" />
+    <item android:duration="100" android:drawable="@drawable/loading05" />
+    <item android:duration="100" android:drawable="@drawable/loading06" />
+    <item android:duration="100" android:drawable="@drawable/loading07" />
+    <item android:duration="100" android:drawable="@drawable/loading08" />
+    <item android:duration="100" android:drawable="@drawable/loading09" />
+    <item android:duration="100" android:drawable="@drawable/loading10" />
+    <item android:duration="100" android:drawable="@drawable/loading11" />
+    <item android:duration="100" android:drawable="@drawable/loading12" />
+</animation-list>
+```
 
 # 补间动画（Tween Animation）
 |动画类型|XML配置方式|Java代码实现方式|

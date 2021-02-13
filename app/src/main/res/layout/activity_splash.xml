@@ -21,4 +21,15 @@
         app:textSize="30sp"
         />
 
+    <TextView
+        android:id="@+id/tv_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="20dp"
+        tools:text="V1.0.1"
+        />
+
 </FrameLayout>
