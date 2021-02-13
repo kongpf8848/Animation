@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="#ffffffff">
+    android:background="@color/white">
 
     <ImageView
         android:id="@+id/augc_img_skip"
@@ -56,8 +56,6 @@
         android:src="@mipmap/img_user_guide_men"
         android:visibility="invisible"
         />
-
-
 
     <ImageView
         android:id="@+id/augc_img_hello_english"

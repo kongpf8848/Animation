@@ -14,11 +14,12 @@ import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.github.kongpf8848.animation.utils.Constants
 import com.github.kongpf8848.animation.R
+import com.github.kongpf8848.animation.activity.BaseActivity
 import com.github.kongpf8848.animation.adapter.ShareElementListAdapter
 import com.github.kongpf8848.animation.bean.ImageBean
 import kotlinx.android.synthetic.main.activity_transition_share_element_one.*
 
-class ShareElementOneActivity : AppCompatActivity() {
+class ShareElementOneActivity : BaseActivity() {
 
 
 
@@ -47,9 +48,13 @@ class ShareElementOneActivity : AppCompatActivity() {
             }
         }
     }
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_transition_share_element_one)
+
+    override fun getLayoutId(): Int {
+       return R.layout.activity_transition_share_element_one
+    }
+
+    override fun onCreateEnd(savedInstanceState: Bundle?) {
+        super.onCreateEnd(savedInstanceState)
         setExitSharedElementCallback(mSharedElementCallback)
         init()
     }
@@ -63,11 +68,11 @@ class ShareElementOneActivity : AppCompatActivity() {
             recyclerView.scrollToPosition(currentPosition)
         }
         postponeEnterTransition();
-        recyclerView.getViewTreeObserver().addOnPreDrawListener(object: ViewTreeObserver.OnPreDrawListener{
+        recyclerView.viewTreeObserver.addOnPreDrawListener(object: ViewTreeObserver.OnPreDrawListener{
             override fun onPreDraw(): Boolean {
-                recyclerView.getViewTreeObserver().removeOnPreDrawListener(this);
-                recyclerView.requestLayout();
-                startPostponedEnterTransition();
+                recyclerView.viewTreeObserver.removeOnPreDrawListener(this)
+                recyclerView.requestLayout()
+                startPostponedEnterTransition()
                 return true;
             }
         });

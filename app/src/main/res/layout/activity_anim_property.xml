@@ -23,7 +23,7 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="自定义估值器"
+            android:text="估值器"
             />
 
     </LinearLayout>

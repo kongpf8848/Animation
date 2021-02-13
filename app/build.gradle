@@ -50,6 +50,7 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
+
     testImplementation BuildDependencies.junit
 
     implementation AndroidX.appCompat
@@ -71,5 +72,6 @@ dependencies {
     implementation BuildDependencies.magicIndicator
     implementation BuildDependencies.lottie
     implementation BuildDependencies.commonHelper
+    implementation BuildDependencies.circleImageView
 
 }

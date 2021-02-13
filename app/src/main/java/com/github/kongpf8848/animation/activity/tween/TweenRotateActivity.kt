@@ -4,7 +4,7 @@ import android.view.View
 import butterknife.OnClick
 import com.github.kongpf8848.animation.R
 import com.github.kongpf8848.animation.activity.BaseToolbarActivity
-import com.github.kongpf8848.animation.activity.tween.rotate.Rotate_8_Activity
+import com.github.kongpf8848.animation.activity.tween.rotate.MusicActivity
 
 class TweenRotateActivity : BaseToolbarActivity() {
 
@@ -15,6 +15,6 @@ class TweenRotateActivity : BaseToolbarActivity() {
     @OnClick(R.id.button1)
     fun onButton1(view: View?)
     {
-        startActivity(Rotate_8_Activity::class.java)
+        startActivity(MusicActivity::class.java)
     }
 }

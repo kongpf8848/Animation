@@ -56,6 +56,7 @@ object Versions {
     const val MAGIC_INDICATOR_VERSION="1.5.0"
     const val LOTTIE_VERSION="3.4.0"
     const val COMMON_HELPER_VERSION="1.0.21"
+    const val CIRCLE_IMAGEVIEW_VERSION="2.1.0"
 
 }
 
@@ -77,6 +78,7 @@ object BuildDependencies {
     const val magicIndicator ="com.github.hackware1993:MagicIndicator:${Versions.MAGIC_INDICATOR_VERSION}"
     const val lottie="com.airbnb.android:lottie:${Versions.LOTTIE_VERSION}"
     const val commonHelper="com.kongpf.commonhelper:common-helper:${Versions.COMMON_HELPER_VERSION}"
+    const val circleImageView="de.hdodenhof:circleimageview:${Versions.CIRCLE_IMAGEVIEW_VERSION}"
 
 }
 
@@ -119,7 +121,6 @@ object AndroidX {
     const val lifecycleProcess = "androidx.lifecycle:lifecycle-process:${Versions.ANDROIDX_LIFECYCLE_VERSION}"
     const val lifecycleReactivestreamsKtx= "androidx.lifecycle:lifecycle-reactivestreams-ktx:${Versions.ANDROIDX_LIFECYCLE_VERSION}"
     const val arcCoreTesting="androidx.arch.core:core-testing:${Versions.ANDROIDX_LIFECYCLE_ARCH_VERSION}"
-
 }
 
 

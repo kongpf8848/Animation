@@ -13,7 +13,7 @@
         app:autoPlay="false"
         app:gradientAnimDuration="2000"
         app:gradientColor="@color/red"
-        app:logoName="Animation"
+        app:logoName="@string/app_name"
         app:offsetAnimDuration="2000"
         app:showGradient="true"
         app:textColor="@color/white"

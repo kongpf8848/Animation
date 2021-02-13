@@ -38,7 +38,7 @@ abstract class BasePopupWindow @JvmOverloads constructor(protected var mContext:
 
     protected open fun init() { }
 
-    protected fun updateMeasureInfo() {
+    private fun updateMeasureInfo() {
         mPopView!!.measure(View.MeasureSpec.UNSPECIFIED, View.MeasureSpec.UNSPECIFIED)
         measuredWidth = mPopView.measuredWidth
         measuredHeight = mPopView.measuredHeight

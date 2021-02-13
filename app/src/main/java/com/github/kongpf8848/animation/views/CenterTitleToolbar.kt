@@ -5,7 +5,9 @@ import android.content.res.ColorStateList
 import android.text.TextUtils
 import android.util.AttributeSet
 import android.view.Gravity
+import android.view.MotionEvent
 import android.view.ViewGroup
+import android.widget.ImageButton
 import android.widget.TextView
 import androidx.annotation.NonNull
 import androidx.appcompat.R
@@ -16,9 +18,9 @@ import androidx.appcompat.widget.Toolbar
  * Title居中的Toolbar
  */
 class CenterTitleToolbar @JvmOverloads constructor(
-    context: Context,
-    attrs: AttributeSet? = null,
-    defStyleAttr: Int = 0
+        context: Context,
+        attrs: AttributeSet? = null,
+        defStyleAttr: Int = 0
 ) : Toolbar(context, attrs, defStyleAttr) {
 
     private var mTitleTextAppearance = 0
@@ -38,6 +40,23 @@ class CenterTitleToolbar @JvmOverloads constructor(
         }
         ta.recycle()
 
+        val fieldNav = Toolbar::class.java.getDeclaredField("mNavButtonView")
+        fieldNav.isAccessible = true
+        val navButton=fieldNav.get(this) as ImageButton?
+        fieldNav.isAccessible=false
+        navButton?.apply {
+            setOnTouchListener { _, event ->
+                when (event.action) {
+                    MotionEvent.ACTION_DOWN -> {
+                        animate().scaleX(1.3f).scaleY(1.3f).setDuration(400).start()
+                    }
+                    MotionEvent.ACTION_UP, MotionEvent.ACTION_CANCEL -> {
+                        animate().scaleX(1.0f).scaleY(1.0f).setDuration(400).start()
+                    }
+                }
+                false
+            }
+        }
 
     }
 
@@ -49,18 +68,19 @@ class CenterTitleToolbar @JvmOverloads constructor(
                 isSingleLine = true
                 ellipsize = TextUtils.TruncateAt.END
                 addView(
-                    this,
-                    LayoutParams(
-                        ViewGroup.LayoutParams.WRAP_CONTENT,
-                        ViewGroup.LayoutParams.WRAP_CONTENT,
-                        Gravity.CENTER
-                    )
+                        this,
+                        LayoutParams(
+                                ViewGroup.LayoutParams.WRAP_CONTENT,
+                                ViewGroup.LayoutParams.WRAP_CONTENT,
+                                Gravity.CENTER
+                        )
                 )
             }
         }
         if (mTitleTextAppearance != 0) {
             mTitleTextView?.setTextAppearance(context, mTitleTextAppearance)
         }
+        mTitleTextView?.text = title
         mTitleText = title
 
     }

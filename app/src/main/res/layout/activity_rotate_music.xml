@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        >
+
+        <View
+            android:id="@+id/song_shadow"
+            android:layout_width="300.0dip"
+            android:layout_height="300.0dip"
+            android:layout_marginTop="35.0dip"
+            android:background="@mipmap/home_bg_shadow"
+            app:layout_constraintBottom_toBottomOf="@+id/song_image"
+            app:layout_constraintEnd_toEndOf="@+id/song_image"
+            app:layout_constraintStart_toStartOf="@+id/song_image"
+            app:layout_constraintTop_toTopOf="@+id/song_image"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/song_image"
+            android:layout_width="299.0dip"
+            android:layout_height="299.0dip"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/father"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed"
+            />
+
+        <ImageView
+            android:id="@+id/song_cover"
+            android:layout_width="300.0dip"
+            android:layout_height="300.0dip"
+            android:src="@mipmap/home_ic_player"
+            app:layout_constraintBottom_toBottomOf="@+id/song_image"
+            app:layout_constraintEnd_toEndOf="@+id/song_image"
+            app:layout_constraintStart_toStartOf="@+id/song_image"
+            app:layout_constraintTop_toTopOf="@+id/song_image"/>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

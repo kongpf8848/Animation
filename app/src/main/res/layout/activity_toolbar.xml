@@ -5,24 +5,10 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-
-    <androidx.appcompat.widget.Toolbar
+    <com.github.kongpf8848.animation.views.CenterTitleToolbar
         android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="@color/colorPrimaryDark"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
-
-        <TextView
-            android:id="@+id/tv_title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical|start"
-            android:textColor="@color/white"
-            android:textSize="16sp" />
-
-    </androidx.appcompat.widget.Toolbar>
+        style="@style/TKToolbarStyle"
+        />
 
     <FrameLayout
         android:id="@+id/fl_content"

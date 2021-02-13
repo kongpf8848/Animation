@@ -36,6 +36,18 @@
         <item name="android:windowAnimationStyle">@null</item>
     </style>
 
+    <style name="TKToolbarStyle" parent="@style/Widget.AppCompat.Toolbar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?attr/actionBarSize</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:clickable">true</item>
+        <item name="navigationIcon">@drawable/ic_svg_back_white_24</item>
+        <item name="titleTextAppearance">@style/TKToolbarTitleAppearance</item>
+    </style>
+    <style name="TKToolbarTitleAppearance" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
 
 
 </resources>

@@ -9,7 +9,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="rotate 8"
+        android:text="音乐播放"
         />
 
 

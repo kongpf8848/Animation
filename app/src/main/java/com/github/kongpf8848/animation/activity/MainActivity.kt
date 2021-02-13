@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.View
 import butterknife.OnClick
 import com.github.kongpf8848.animation.R
+import kotlinx.android.synthetic.main.activity_toolbar.*
 
 class MainActivity : BaseToolbarActivity() {
 
@@ -17,7 +18,7 @@ class MainActivity : BaseToolbarActivity() {
 
     override fun onCreateEnd(savedInstanceState: Bundle?) {
         super.onCreateEnd(savedInstanceState)
-        supportActionBar?.setDisplayHomeAsUpEnabled(false)
+        toolbar?.navigationIcon=null
     }
 
 

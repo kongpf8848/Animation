@@ -125,7 +125,7 @@
         <activity android:name=".activity.tween.TweenRotateActivity" android:screenOrientation="portrait"
             android:label="旋转动画"
             />
-        <activity android:name=".activity.tween.rotate.Rotate_8_Activity" android:screenOrientation="portrait"
+        <activity android:name=".activity.tween.rotate.MusicActivity" android:screenOrientation="portrait"
             android:label="旋转动画"
             />
 

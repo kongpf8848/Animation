@@ -1,9 +1,6 @@
 package com.github.kongpf8848.animation.views
 
-import android.animation.AnimatorSet
-import android.animation.ArgbEvaluator
-import android.animation.ObjectAnimator
-import android.animation.ValueAnimator
+import android.animation.*
 import android.content.Context
 import android.graphics.Canvas
 import android.graphics.Color
@@ -12,7 +9,6 @@ import android.graphics.PointF
 import android.util.AttributeSet
 import android.view.View
 import android.view.animation.BounceInterpolator
-import com.github.kongpf8848.animation.evaluator.PointFEvaluator
 
 class Ball @JvmOverloads constructor(context: Context?, attrs: AttributeSet? = null, defStyleAttr: Int = 0) : View(context, attrs, defStyleAttr) {
 

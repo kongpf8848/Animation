@@ -47,10 +47,7 @@ abstract class BaseToolbarActivity : BaseActivity() {
     }
 
     private fun setupToolbar() {
-        setSupportActionBar(toolbar)
-        supportActionBar?.setDisplayHomeAsUpEnabled(true)
-        supportActionBar?.setDisplayShowTitleEnabled(false)
-        toolbar?.setNavigationOnClickListener { finish() }
-        tv_title.text = title
+        toolbar.title = title
+        toolbar.setNavigationOnClickListener { finish() }
     }
 }

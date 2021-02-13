@@ -32,7 +32,7 @@ class CupidActivity : BaseActivity() {
     private fun doAnimation() {
 
         cupid_result_text.setText(R.string.cupid_result_success)
-        val animation = AnimationUtils.loadAnimation(this, R.anim.anim_jiayuan_scale_big)
+        val animation = AnimationUtils.loadAnimation(this, R.anim.anim_scale_jiayuan)
         animation.setAnimationListener(object : Animation.AnimationListener {
             override fun onAnimationStart(animation: Animation) {
 
