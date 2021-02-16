@@ -50,9 +50,10 @@ IM软件Telegram 推出的新的Sticker贴纸格式，这个全新的 Sticker �
 ![image](https://github.com/kongpf8848/Animation/blob/master/screenshots/telegram-sticker.gif)
 
 # 部分截图
-![image](https://github.com/kongpf8848/Animation/blob/master/screenshots/splash.webp)
-![image](https://github.com/kongpf8848/Animation/blob/master/screenshots/guide.webp)
-![image](https://github.com/kongpf8848/Animation/blob/master/screenshots/rotate.webp)
-![image](https://github.com/kongpf8848/Animation/blob/master/screenshots/autohome.webp)
-![image](https://github.com/kongpf8848/Animation/blob/master/screenshots/telegram.webp)
-![image](https://github.com/kongpf8848/Animation/blob/master/screenshots/cupid.webp)
+| Splash | Guide | Rotate |
+|:-:|:-:|:-:|
+|![image](https://github.com/kongpf8848/Animation/blob/master/screenshots/splash.webp) | ![image](https://github.com/kongpf8848/Animation/blob/master/screenshots/guide.webp) | ![image](https://github.com/kongpf8848/Animation/blob/master/screenshots/rotate.webp) |
+
+| Autohome | Telegram | Cupid |
+|:-:|:-:|:-:|
+|![image](https://github.com/kongpf8848/Animation/blob/master/screenshots/autohome.webp) | ![image](https://github.com/kongpf8848/Animation/blob/master/screenshots/telegram.webp) | ![image](https://github.com/kongpf8848/Animation/blob/master/screenshots/cupid.webp) |
