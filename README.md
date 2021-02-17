@@ -15,6 +15,10 @@ Android各种动画效果,无动画,不精彩:smile::smile::smile:
 |:-:|:-:|:-:|
 |![image](https://github.com/kongpf8848/Animation/blob/master/screenshots/autohome.webp) | ![image](https://github.com/kongpf8848/Animation/blob/master/screenshots/telegram.webp) | ![image](https://github.com/kongpf8848/Animation/blob/master/screenshots/cupid.webp) |
 
+| Gallery | Weizhi | Fanyijun |
+|:-:|:-:|:-:|
+|![image](https://github.com/kongpf8848/Animation/blob/master/screenshots/gallery.webp) | ![image](https://github.com/kongpf8848/Animation/blob/master/screenshots/weizhi.webp) | ![image](https://github.com/kongpf8848/Animation/blob/master/screenshots/fanyijun.webp) |
+
 ## 逐帧动画（Frame Animation）
 一帧一帧进行播放，它的原理与Gif类似，按序播放一组预先定义好的图片序列，如:
 ```xml
