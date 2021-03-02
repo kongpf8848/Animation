@@ -6,6 +6,7 @@ import com.github.kongpf8848.animation.R
 import com.github.kongpf8848.animation.base.BaseToolbarActivity
 import com.github.kongpf8848.animation.activity.tween.rotate.MusicActivity
 import com.github.kongpf8848.animation.dialog.RingProgressDialog
+import com.github.kongpf8848.animation.dialog.ShareDialog
 
 class TweenRotateActivity : BaseToolbarActivity() {
 
@@ -23,5 +24,11 @@ class TweenRotateActivity : BaseToolbarActivity() {
     fun onButton2(view: View?)
     {
         RingProgressDialog(this).show("RingProgressDialog")
+    }
+
+    @OnClick(R.id.button3)
+    fun onButton3(view: View?)
+    {
+        ShareDialog(this).show("ShareDialog")
     }
 }
