@@ -6,7 +6,6 @@ import android.os.Bundle
 
 import android.view.View
 import android.view.ViewTreeObserver
-import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityOptionsCompat
 import androidx.core.util.Pair
 import androidx.core.view.ViewCompat
@@ -14,7 +13,7 @@ import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.github.kongpf8848.animation.utils.Constants
 import com.github.kongpf8848.animation.R
-import com.github.kongpf8848.animation.activity.BaseActivity
+import com.github.kongpf8848.animation.base.BaseActivity
 import com.github.kongpf8848.animation.adapter.ShareElementListAdapter
 import com.github.kongpf8848.animation.bean.ImageBean
 import kotlinx.android.synthetic.main.activity_transition_share_element_one.*

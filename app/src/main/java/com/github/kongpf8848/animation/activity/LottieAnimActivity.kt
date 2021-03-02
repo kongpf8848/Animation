@@ -6,6 +6,7 @@ import com.github.kongpf8848.animation.R
 import com.github.kongpf8848.animation.activity.lottie.AutoHomeActivity
 import com.github.kongpf8848.animation.activity.lottie.BossActivity
 import com.github.kongpf8848.animation.activity.lottie.CardActivity
+import com.github.kongpf8848.animation.base.BaseToolbarActivity
 
 class LottieAnimActivity : BaseToolbarActivity() {
 

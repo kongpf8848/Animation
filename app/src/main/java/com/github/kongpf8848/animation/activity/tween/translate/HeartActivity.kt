@@ -4,7 +4,7 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.Message
 import com.github.kongpf8848.animation.R
-import com.github.kongpf8848.animation.activity.BaseActivity
+import com.github.kongpf8848.animation.base.BaseActivity
 import com.github.kongpf8848.animation.heart.LiveHeartTask.HeartListener
 import com.github.kongpf8848.animation.heart.LiveHeartTaskManagerThread
 import kotlinx.android.synthetic.main.activity_heart.*

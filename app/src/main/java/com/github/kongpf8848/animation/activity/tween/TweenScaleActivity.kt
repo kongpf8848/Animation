@@ -3,7 +3,7 @@ package com.github.kongpf8848.animation.activity.tween
 import android.view.View
 import butterknife.OnClick
 import com.github.kongpf8848.animation.R
-import com.github.kongpf8848.animation.activity.BaseToolbarActivity
+import com.github.kongpf8848.animation.base.BaseToolbarActivity
 import com.github.kongpf8848.animation.activity.tween.scale.CupidActivity
 import com.github.kongpf8848.animation.activity.tween.scale.QimangxingActivity
 import com.github.kongpf8848.animation.activity.tween.scale.WeizhiActivity

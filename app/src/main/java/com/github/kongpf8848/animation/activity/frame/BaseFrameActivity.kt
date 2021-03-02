@@ -5,7 +5,7 @@ import android.os.Bundle
 import android.os.Looper
 import android.widget.ImageView
 import com.github.kongpf8848.animation.R
-import com.github.kongpf8848.animation.activity.BaseActivity
+import com.github.kongpf8848.animation.base.BaseActivity
 
 abstract class BaseFrameActivity : BaseActivity() {
 

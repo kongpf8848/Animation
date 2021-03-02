@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.os.Looper
 import android.util.Log
 import com.github.kongpf8848.animation.R
+import com.github.kongpf8848.animation.base.BaseActivity
 import com.kongpf.commonhelper.ApkHelper
 import kotlinx.android.synthetic.main.activity_splash.*
 

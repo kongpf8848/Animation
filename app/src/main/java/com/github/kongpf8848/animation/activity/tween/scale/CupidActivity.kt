@@ -5,7 +5,7 @@ import android.view.View
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
 import com.github.kongpf8848.animation.R
-import com.github.kongpf8848.animation.activity.BaseActivity
+import com.github.kongpf8848.animation.base.BaseActivity
 import kotlinx.android.synthetic.main.activity_cupid_shoot.*
 
 class CupidActivity : BaseActivity() {

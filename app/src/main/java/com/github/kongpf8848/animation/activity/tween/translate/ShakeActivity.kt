@@ -6,7 +6,7 @@ import android.os.Vibrator
 import android.view.animation.AnimationUtils
 import android.widget.Toast
 import com.github.kongpf8848.animation.R
-import com.github.kongpf8848.animation.activity.BaseActivity
+import com.github.kongpf8848.animation.base.BaseActivity
 import com.github.kongpf8848.animation.utils.MainHandler
 import com.github.kongpf8848.animation.utils.ShakeListener
 import kotlinx.android.synthetic.main.activity_shake.*

@@ -8,7 +8,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import com.github.kongpf8848.animation.R
-import com.github.kongpf8848.animation.activity.BaseActivity
+import com.github.kongpf8848.animation.base.BaseActivity
 import com.github.kongpf8848.animation.adapter.FragmentAdapter
 import com.github.kongpf8848.animation.fragment.TitleFragment
 import com.google.android.material.animation.ArgbEvaluatorCompat

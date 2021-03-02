@@ -4,6 +4,7 @@ import android.view.View
 import butterknife.OnClick
 import com.github.kongpf8848.animation.R
 import com.github.kongpf8848.animation.activity.viewpager.WeChatActivity
+import com.github.kongpf8848.animation.base.BaseToolbarActivity
 
 class ViewPagerActivity : BaseToolbarActivity() {
 

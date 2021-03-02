@@ -7,6 +7,7 @@ import com.github.kongpf8848.animation.activity.tween.TweenAlphaActivity
 import com.github.kongpf8848.animation.activity.tween.TweenRotateActivity
 import com.github.kongpf8848.animation.activity.tween.TweenScaleActivity
 import com.github.kongpf8848.animation.activity.tween.TweenTranslateActivity
+import com.github.kongpf8848.animation.base.BaseToolbarActivity
 
 class TweenAnimActivity : BaseToolbarActivity() {
 

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#884b4b4b"
+            android:gravity="center"
+            android:padding="15.0dip">
+
+            <ProgressBar style="@style/Progressbar_ring" />
+
+            <TextView
+                android:id="@+id/dialog_tv_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5.0dip"
+                android:text="加载中..."
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+</layout>

@@ -1,14 +1,13 @@
-package com.github.kongpf8848.animation.activity
+package com.github.kongpf8848.animation.base
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.FrameLayout
-import android.widget.TextView
 import androidx.annotation.LayoutRes
-import androidx.appcompat.widget.Toolbar
 import com.github.kongpf8848.animation.R
+import com.github.kongpf8848.animation.base.BaseActivity
 import kotlinx.android.synthetic.main.activity_toolbar.*
 
 abstract class BaseToolbarActivity : BaseActivity() {

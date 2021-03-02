@@ -7,7 +7,7 @@ import android.os.Bundle
 import android.os.Looper
 import android.view.View
 import com.github.kongpf8848.animation.R
-import com.github.kongpf8848.animation.activity.BaseActivity
+import com.github.kongpf8848.animation.base.BaseActivity
 import kotlinx.android.synthetic.main.activity_weizhi.*
 import java.util.*
 

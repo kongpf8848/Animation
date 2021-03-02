@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.RecyclerView.ItemDecoration
 import com.github.kongpf8848.animation.R
 import com.github.kongpf8848.animation.utils.StickerPreviewViewer
 import com.github.kongpf8848.animation.adapter.StickerAdapter
+import com.github.kongpf8848.animation.base.BaseToolbarActivity
 import com.github.kongpf8848.animation.bean.StickerItem
 import com.github.kongpf8848.animation.views.StickerRecyclerView
 import com.kongpf.commonhelper.ScreenHelper

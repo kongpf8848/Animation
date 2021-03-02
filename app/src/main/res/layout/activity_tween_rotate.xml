@@ -12,5 +12,11 @@
         android:text="音乐播放"
         />
 
-
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="loading对话框"
+        />
 </LinearLayout>

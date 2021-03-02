@@ -4,7 +4,7 @@ import android.animation.*
 import android.os.Bundle
 import android.view.View
 import com.github.kongpf8848.animation.R
-import com.github.kongpf8848.animation.activity.BaseActivity
+import com.github.kongpf8848.animation.base.BaseActivity
 import kotlinx.android.synthetic.main.activity_user_guide_cartoon.*
 
 class TranslateActivity : BaseActivity() {

@@ -1,7 +1,7 @@
 package com.github.kongpf8848.animation.activity.property
 
 import com.github.kongpf8848.animation.R
-import com.github.kongpf8848.animation.activity.BaseActivity
+import com.github.kongpf8848.animation.base.BaseActivity
 
 class BallActivity : BaseActivity() {
 

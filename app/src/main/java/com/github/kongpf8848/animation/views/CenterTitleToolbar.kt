@@ -14,6 +14,9 @@ import androidx.appcompat.widget.AppCompatTextView
 import androidx.appcompat.widget.Toolbar
 import androidx.core.widget.TextViewCompat
 
+/**
+ * Title居中的Toolbar
+ */
 class CenterTitleToolbar @JvmOverloads constructor(context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0) : Toolbar(context, attrs, defStyleAttr) {
 
     private var mTitleTextAppearance = 0

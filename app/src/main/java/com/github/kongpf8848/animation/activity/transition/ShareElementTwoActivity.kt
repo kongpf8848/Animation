@@ -18,7 +18,7 @@ import com.bumptech.glide.request.target.ImageViewTarget
 import com.github.chrisbanes.photoview.PhotoView
 import com.github.kongpf8848.animation.utils.Constants
 import com.github.kongpf8848.animation.R
-import com.github.kongpf8848.animation.activity.BaseActivity
+import com.github.kongpf8848.animation.base.BaseActivity
 import com.github.kongpf8848.animation.bean.ImageBean
 import kotlinx.android.synthetic.main.activity_transition_share_element_two.*
 

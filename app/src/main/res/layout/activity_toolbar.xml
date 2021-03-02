@@ -8,6 +8,7 @@
     <com.github.kongpf8848.animation.views.CenterTitleToolbar
         android:id="@+id/toolbar"
         style="@style/TKToolbarStyle"
+        app:title="Documents"
         />
 
     <FrameLayout

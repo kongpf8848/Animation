@@ -7,6 +7,7 @@ import android.view.View
 import androidx.viewpager.widget.ViewPager.SimpleOnPageChangeListener
 import com.github.kongpf8848.animation.R
 import com.github.kongpf8848.animation.adapter.ViewPagerAdapter
+import com.github.kongpf8848.animation.base.BaseActivity
 import com.github.kongpf8848.animation.splash.SplashLayoutInflater
 import com.github.kongpf8848.animation.splash.SplashView
 import kotlinx.android.synthetic.main.activity_guide.*

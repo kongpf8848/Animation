@@ -1,4 +1,4 @@
-package com.github.kongpf8848.animation.fragment
+package com.github.kongpf8848.animation.base
 
 import android.content.Context
 import android.os.Bundle

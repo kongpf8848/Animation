@@ -5,6 +5,7 @@ import butterknife.OnClick
 import com.github.kongpf8848.animation.R
 import com.github.kongpf8848.animation.activity.property.BallActivity
 import com.github.kongpf8848.animation.activity.property.PropertyDemoActivity
+import com.github.kongpf8848.animation.base.BaseToolbarActivity
 
 class PropertyAnimActivity : BaseToolbarActivity() {
 

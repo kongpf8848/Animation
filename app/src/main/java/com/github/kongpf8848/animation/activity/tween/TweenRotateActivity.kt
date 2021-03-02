@@ -3,8 +3,9 @@ package com.github.kongpf8848.animation.activity.tween
 import android.view.View
 import butterknife.OnClick
 import com.github.kongpf8848.animation.R
-import com.github.kongpf8848.animation.activity.BaseToolbarActivity
+import com.github.kongpf8848.animation.base.BaseToolbarActivity
 import com.github.kongpf8848.animation.activity.tween.rotate.MusicActivity
+import com.github.kongpf8848.animation.dialog.RingProgressDialog
 
 class TweenRotateActivity : BaseToolbarActivity() {
 
@@ -16,5 +17,11 @@ class TweenRotateActivity : BaseToolbarActivity() {
     fun onButton1(view: View?)
     {
         startActivity(MusicActivity::class.java)
+    }
+
+    @OnClick(R.id.button2)
+    fun onButton2(view: View?)
+    {
+        RingProgressDialog(this).show("RingProgressDialog")
     }
 }

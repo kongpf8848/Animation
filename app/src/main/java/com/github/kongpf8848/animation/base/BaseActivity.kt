@@ -1,4 +1,4 @@
-package com.github.kongpf8848.animation.activity
+package com.github.kongpf8848.animation.base
 
 import android.content.Intent
 import android.os.Build

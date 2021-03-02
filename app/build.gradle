@@ -56,6 +56,11 @@ android {
         targetCompatibility Config.targetCompatibilityVersion
     }
 
+
+    dataBinding {
+        enabled = true
+    }
+
     android.applicationVariants.all { variant ->
         variant.outputs.each { output ->
             output.outputFileName = "Animation_${variant.buildType.name}_${versionCode}_${versionName}.apk"
