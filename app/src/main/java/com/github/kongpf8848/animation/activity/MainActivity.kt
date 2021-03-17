@@ -57,4 +57,9 @@ class MainActivity : BaseToolbarActivity() {
     fun onButton7(view: View?) {
         startActivity(TransitionActivity::class.java)
     }
+
+    @OnClick(R.id.button8)
+    fun onButton8(view: View?) {
+        startActivity(GifActivity::class.java)
+    }
 }

@@ -61,6 +61,13 @@
             android:layout_marginTop="20dp"
             android:text="转场动画" />
 
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="GIF动画" />
+
     </LinearLayout>
 
 </ScrollView>
