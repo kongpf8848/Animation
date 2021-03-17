@@ -20,6 +20,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:name=".TKApplication"
+        android:networkSecurityConfig="@xml/network_security_config"
         >
         <activity android:name=".activity.SplashActivity" android:screenOrientation="portrait"
             android:theme="@style/SplashActivityTheme"
@@ -178,6 +179,9 @@
             />
         <activity android:name=".activity.gif.GlideActivity" android:screenOrientation="portrait"
             android:label="Glide加载GIF"
+            />
+        <activity android:name=".activity.gif.GiflibActivity" android:screenOrientation="portrait"
+            android:label="giflib加载Gif"
             />
 
     </application>

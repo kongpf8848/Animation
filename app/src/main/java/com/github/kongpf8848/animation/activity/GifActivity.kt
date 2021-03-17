@@ -3,6 +3,7 @@ package com.github.kongpf8848.animation.activity
 import android.view.View
 import butterknife.OnClick
 import com.github.kongpf8848.animation.R
+import com.github.kongpf8848.animation.activity.gif.GiflibActivity
 import com.github.kongpf8848.animation.activity.gif.GlideActivity
 import com.github.kongpf8848.animation.activity.lottie.AutoHomeActivity
 import com.github.kongpf8848.animation.activity.lottie.BossActivity
@@ -22,7 +23,7 @@ class GifActivity : BaseToolbarActivity() {
 
     @OnClick(R.id.button2)
     fun onButton2(view: View?) {
-
+        startActivity(GiflibActivity::class.java)
     }
 
 }
