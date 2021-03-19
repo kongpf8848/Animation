@@ -6,6 +6,7 @@ import com.github.kongpf8848.animation.R
 import com.github.kongpf8848.animation.activity.lottie.AutoHomeActivity
 import com.github.kongpf8848.animation.activity.lottie.BossActivity
 import com.github.kongpf8848.animation.activity.lottie.CardActivity
+import com.github.kongpf8848.animation.activity.lottie.XhsActivity
 import com.github.kongpf8848.animation.base.BaseToolbarActivity
 
 class LottieAnimActivity : BaseToolbarActivity() {
@@ -27,5 +28,10 @@ class LottieAnimActivity : BaseToolbarActivity() {
     @OnClick(R.id.button3)
     fun onButton3(view: View?) {
         startActivity(CardActivity::class.java)
+    }
+
+    @OnClick(R.id.button4)
+    fun onButton4(view: View?) {
+        startActivity(XhsActivity::class.java)
     }
 }

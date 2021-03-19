@@ -32,6 +32,14 @@
             android:layout_marginTop="20dp"
             android:text="每日打卡"
             />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="小红书"
+            />
     </LinearLayout>
 
 </ScrollView>

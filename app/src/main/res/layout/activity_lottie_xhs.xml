@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        >
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:lottie_imageAssetsFolder="anim/emotion/loading_images"
+            app:lottie_fileName="anim/emotion/emotion_loading_gif.json"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true" />
+
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:lottie_imageAssetsFolder="anim/pk_loading_avatar/images"
+            app:lottie_fileName="anim/pk_loading_avatar/data.json"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:lottie_imageAssetsFolder="anim/spring_boom/images"
+            app:lottie_fileName="anim/spring_boom/data.json"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:lottie_imageAssetsFolder="anim/spring_fish/images"
+            app:lottie_fileName="anim/spring_fish/data.json"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:lottie_imageAssetsFolder="anim/spring_light/images"
+            app:lottie_fileName="anim/spring_light/data.json"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true" />
+
+    </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</ScrollView>
