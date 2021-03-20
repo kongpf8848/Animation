@@ -1,21 +1,21 @@
 # Animation
 Android各种动画效果,无动画,不精彩:smile::smile::smile:
 
-## Apk
+## Demo
 [下载地址](http://d.firim.vip/animation)
 
 ![二维码](https://github.com/kongpf8848/Animation/blob/master/screenshots/qrcode.png)
 
-## 部分截图
-| Splash | Guide | Rotate |
+## ScreenShots
+| 闪屏页 | 引导页 | 小红书 |
 |:-:|:-:|:-:|
-|![image](https://github.com/kongpf8848/Animation/blob/master/screenshots/splash.webp) | ![image](https://github.com/kongpf8848/Animation/blob/master/screenshots/guide.webp) | ![image](https://github.com/kongpf8848/Animation/blob/master/screenshots/rotate.webp) |
+|![image](https://github.com/kongpf8848/Animation/blob/master/screenshots/splash.webp) | ![image](https://github.com/kongpf8848/Animation/blob/master/screenshots/guide.webp) | ![image](https://github.com/kongpf8848/Animation/blob/master/screenshots/xhs.webp) |
 
-| Autohome | Telegram | Cupid |
+| 汽车之家 | 电报(Telegram) | 丘比特之箭 |
 |:-:|:-:|:-:|
 |![image](https://github.com/kongpf8848/Animation/blob/master/screenshots/autohome.webp) | ![image](https://github.com/kongpf8848/Animation/blob/master/screenshots/telegram.webp) | ![image](https://github.com/kongpf8848/Animation/blob/master/screenshots/cupid.webp) |
 
-| Gallery | Weizhi | Fanyijun |
+| 图片浏览 | 微知 | 翻译君 |
 |:-:|:-:|:-:|
 |![image](https://github.com/kongpf8848/Animation/blob/master/screenshots/gallery.webp) | ![image](https://github.com/kongpf8848/Animation/blob/master/screenshots/weizhi.webp) | ![image](https://github.com/kongpf8848/Animation/blob/master/screenshots/fanyijun.webp) |
 
