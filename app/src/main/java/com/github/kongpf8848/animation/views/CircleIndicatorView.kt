@@ -13,7 +13,6 @@ import android.view.View
 import android.view.ViewConfiguration
 import androidx.viewpager.widget.ViewPager
 import com.github.kongpf8848.animation.R
-import java.lang.IllegalStateException
 import kotlin.math.abs
 import kotlin.math.ceil
 
@@ -41,13 +40,14 @@ class CircleIndicatorView @JvmOverloads constructor(
     private var mDownY = 0f
     private var mTouchSlop = 0
 
+    private var mCirclePaintStyle = 0
     private var mCircleColor = 0
     private var mIndicatorColor = 0
     private var mSelectedPosition: Int = 0
     private val mCirclePaint = Paint()
     private val mIndicatorPaint = Paint()
 
-    private var mViewPager:ViewPager?=null
+    private var mViewPager: ViewPager? = null
     private var mOnCicleClickListener: OnCircleClickListener? = null
 
     init {
@@ -58,6 +58,7 @@ class CircleIndicatorView @JvmOverloads constructor(
                 R.styleable.CircleIndicatorView_circleRadius,
                 dp2px(context, 4f)
         )
+        mCirclePaintStyle = typedArray.getInt(R.styleable.CircleIndicatorView_circlePaintStyle, 0)
         mStrokeWidth = typedArray.getDimension(
                 R.styleable.CircleIndicatorView_circleStrokeWidth,
                 dp2px(context, 1f)
@@ -80,14 +81,14 @@ class CircleIndicatorView @JvmOverloads constructor(
         typedArray.recycle()
 
         mCirclePaint.apply {
-            isDither=true
+            isDither = true
             isAntiAlias = true
-            style = Paint.Style.STROKE
+            style = if (mCirclePaintStyle == 0) Paint.Style.FILL else Paint.Style.STROKE
             color = mCircleColor
             strokeWidth = mStrokeWidth
         }
         mIndicatorPaint.apply {
-            isDither=true
+            isDither = true
             isAntiAlias = true
             style = Paint.Style.FILL_AND_STROKE
             color = mIndicatorColor
@@ -125,16 +126,18 @@ class CircleIndicatorView @JvmOverloads constructor(
     override fun onDraw(canvas: Canvas) {
         super.onDraw(canvas)
         Log.d(TAG, "onDraw() called with: canvas = $canvas")
-        for (i in mCircles.indices) {
-            val indicator = mCircles[i]
-            canvas.drawCircle(indicator.x, indicator.y, mRadius, mCirclePaint)
-        }
-        if (mIndicator.x == 0f && mIndicator.y == 0f) {
-            mIndicator.x = mCircles[mSelectedPosition].x
-            mIndicator.y = mCircles[mSelectedPosition].y
-        }
-        if (mIndicator.x > 0f && mIndicator.y > 0f) {
-            canvas.drawCircle(mIndicator.x, mIndicator.y, mRadius, mIndicatorPaint)
+        if (mCircles.size > 0) {
+            for (i in mCircles.indices) {
+                val indicator = mCircles[i]
+                canvas.drawCircle(indicator.x, indicator.y, mRadius, mCirclePaint)
+            }
+            if (mIndicator.x == 0f && mIndicator.y == 0f) {
+                mIndicator.x = mCircles[mSelectedPosition].x
+                mIndicator.y = mCircles[mSelectedPosition].y
+            }
+            if (mIndicator.x > 0f && mIndicator.y > 0f) {
+                canvas.drawCircle(mIndicator.x, mIndicator.y, mRadius, mIndicatorPaint)
+            }
         }
     }
 
@@ -151,7 +154,7 @@ class CircleIndicatorView @JvmOverloads constructor(
                         var max = Float.MAX_VALUE
                         var index = 0
                         for (i in mCircles.indices) {
-                            val pointF=mCircles[i]
+                            val pointF = mCircles[i]
                             val offset = abs(pointF.x - event.x)
                             if (offset < max) {
                                 max = offset
@@ -215,7 +218,8 @@ class CircleIndicatorView @JvmOverloads constructor(
      * 绑定ViewPager
      */
     fun setUpWithViewPager(viewPager: ViewPager) {
-        if(viewPager.adapter==null){
+        Log.d(TAG, "setUpWithViewPager() called with: viewPager = $viewPager")
+        if (viewPager.adapter == null) {
             throw IllegalStateException("you must setAdapter first!!!")
         }
         if (mViewPager != null) {
@@ -227,7 +231,6 @@ class CircleIndicatorView @JvmOverloads constructor(
             mSelectedPosition = viewPager.currentItem
             mCount = viewPager.adapter!!.count
         }
-
     }
 
     override fun onPageScrollStateChanged(state: Int) {

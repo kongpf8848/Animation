@@ -43,7 +43,8 @@ object Versions {
     const val ANDROIDX_LIFECYCLE_ARCH_VERSION="2.1.0"
     const val ANDROIDX_VIEWPAGER_VERSION="1.1.0"
 
-
+    const val RXJAVA2_VERSION = "2.1.9"
+    const val RXANDROID_VERSION = "2.0.2"
     const val GSON_VERSION = "2.8.2"
     const val JUNIT_VERSION = "4.12"
     const val IMMERSIONBAR_VERSION = "3.0.0"
@@ -56,6 +57,8 @@ object Versions {
     const val LOTTIE_VERSION="3.4.0"
     const val COMMON_HELPER_VERSION="1.0.21"
     const val CIRCLE_IMAGEVIEW_VERSION="2.1.0"
+    const val TYPE_BUILDER_VERSION="1.0"
+    const val ULTRA_VIEWPAGER_VERSION="1.0.7.7"
 
 }
 
@@ -67,7 +70,7 @@ object BuildDependencies {
     const val immersionbarKtx = "com.gyf.immersionbar:immersionbar-ktx:${Versions.IMMERSIONBAR_VERSION}"
     const val kotlinStdlibJdk7 = "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${Versions.KOTLIN_VERSION}"
     const val kotlinxCoroutinesAndroid = "org.jetbrains.kotlinx:kotlinx-coroutines-android:${Versions.KOTLINX_COROUTINES_ANDROID_VERSION}"
-
+    const val gson = "com.google.code.gson:gson:${Versions.GSON_VERSION}"
     const val butterknife="com.jakewharton:butterknife:${Versions.BUTTERKNIFE_VERSION}"
     const val butterknifeCompiler="com.jakewharton:butterknife-compiler:${Versions.BUTTERKNIFE_VERSION}"
     const val glide = "com.github.bumptech.glide:glide:${Versions.GLIDE_VERSION}"
@@ -78,7 +81,10 @@ object BuildDependencies {
     const val lottie="com.airbnb.android:lottie:${Versions.LOTTIE_VERSION}"
     const val commonHelper="com.kongpf.commonhelper:common-helper:${Versions.COMMON_HELPER_VERSION}"
     const val circleImageView="de.hdodenhof:circleimageview:${Versions.CIRCLE_IMAGEVIEW_VERSION}"
-
+    const val typeBuilder="com.github.ikidou:TypeBuilder:${Versions.TYPE_BUILDER_VERSION}"
+    const val rxjava2 = "io.reactivex.rxjava2:rxjava:${Versions.RXJAVA2_VERSION}"
+    const val rxAndroid = "io.reactivex.rxjava2:rxandroid:${Versions.RXANDROID_VERSION}"
+    const val ultraViewpager="com.alibaba.android:ultraviewpager:${Versions.ULTRA_VIEWPAGER_VERSION}@aar"
 }
 
 object AndroidX {

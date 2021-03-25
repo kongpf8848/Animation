@@ -25,7 +25,9 @@
         app:circleStrokeWidth="1dp"
         app:circleTouchable="false"
         app:indicatorColor="@color/white"
-        app:indicatorFollowScroll="true" />
+        app:indicatorFollowScroll="true"
+        app:circlePaintStyle="STROKE"
+        />
 
 
     <ImageView

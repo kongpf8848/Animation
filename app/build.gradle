@@ -107,5 +107,11 @@ dependencies {
     implementation BuildDependencies.lottie
     implementation BuildDependencies.commonHelper
     implementation BuildDependencies.circleImageView
-
+    implementation BuildDependencies.typeBuilder
+    implementation BuildDependencies.gson
+    implementation BuildDependencies.rxjava2
+    implementation BuildDependencies.rxAndroid
+    implementation (BuildDependencies.ultraViewpager) {
+        transitive = true
+    }
 }

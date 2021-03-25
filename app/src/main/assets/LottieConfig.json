@@ -1,0 +1,39 @@
+{
+  "radius": 2020,
+  "totalPageNum": 4,
+  "lottieBgName": "guide_lottie_bg",
+  "pageAnimTime": 350,
+  "buttonAnimTime": 350,
+  "lottieTitle": [
+    {
+      "lottieName": "title_lottie_0"
+    },
+    {
+      "lottieName": "title_lottie_1"
+    },
+    {
+      "lottieName": "title_lottie_2"
+    },
+    {
+      "lottieName": "title_lottie_3"
+    }
+  ],
+  "lottieMain": [
+    {
+      "lottieName": "main_lottie_0"
+    },
+    {
+      "lottieName": "main_lottie_1"
+    },
+    {
+      "lottieName": "main_lottie_2"
+    },
+    {
+      "lottieName": "main_lottie_3",
+      "repeatInterval": {
+        "start": 0.288,
+        "end": 1
+      }
+    }
+  ]
+}

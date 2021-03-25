@@ -3,10 +3,7 @@ package com.github.kongpf8848.animation.activity
 import android.view.View
 import butterknife.OnClick
 import com.github.kongpf8848.animation.R
-import com.github.kongpf8848.animation.activity.lottie.AutoHomeActivity
-import com.github.kongpf8848.animation.activity.lottie.BossActivity
-import com.github.kongpf8848.animation.activity.lottie.CardActivity
-import com.github.kongpf8848.animation.activity.lottie.XhsActivity
+import com.github.kongpf8848.animation.activity.lottie.*
 import com.github.kongpf8848.animation.base.BaseToolbarActivity
 
 class LottieAnimActivity : BaseToolbarActivity() {
@@ -33,5 +30,10 @@ class LottieAnimActivity : BaseToolbarActivity() {
     @OnClick(R.id.button4)
     fun onButton4(view: View?) {
         startActivity(XhsActivity::class.java)
+    }
+
+    @OnClick(R.id.button5)
+    fun onButton5(view: View?) {
+        startActivity(PdjGuideActivity::class.java)
     }
 }

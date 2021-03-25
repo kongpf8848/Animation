@@ -59,6 +59,10 @@
     <declare-styleable name="CircleIndicatorView">
         <attr name="circleRadius" format="dimension" />
         <attr name="circleStrokeWidth" format="dimension" />
+        <attr name="circlePaintStyle" format="enum">
+            <enum name="FILL" value="0" />
+            <enum name="STROKE" value="1" />
+        </attr>
         <attr name="circleSpace" format="dimension" />
         <attr name="circleColor" format="color" />
         <attr name="circleTouchable" format="boolean" />
