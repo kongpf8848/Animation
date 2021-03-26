@@ -11,9 +11,9 @@ Android各种动画效果,无动画,不精彩:smile::smile::smile:
 |:-:|:-:|:-:|
 |![image](https://github.com/kongpf8848/Animation/blob/master/screenshots/splash.webp) | ![image](https://github.com/kongpf8848/Animation/blob/master/screenshots/guide.webp) | ![image](https://github.com/kongpf8848/Animation/blob/master/screenshots/xhs.webp) |
 
-| 汽车之家 | 电报(Telegram) | 京东到家 |
+| 汽车之家 | 电报(Telegram) | 丘比特之箭 |
 |:-:|:-:|:-:|
-|![image](https://github.com/kongpf8848/Animation/blob/master/screenshots/autohome.webp) | ![image](https://github.com/kongpf8848/Animation/blob/master/screenshots/telegram.webp) | ![image](https://github.com/kongpf8848/Animation/blob/master/screenshots/pdj_guide.webp) |
+|![image](https://github.com/kongpf8848/Animation/blob/master/screenshots/autohome.webp) | ![image](https://github.com/kongpf8848/Animation/blob/master/screenshots/telegram.webp) | ![image](https://github.com/kongpf8848/Animation/blob/master/screenshots/cupid.webp) |
 
 | 图片浏览 | 微知 | 翻译君 |
 |:-:|:-:|:-:|
