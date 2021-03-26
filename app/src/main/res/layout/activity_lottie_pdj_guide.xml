@@ -5,8 +5,6 @@
     android:layout_height="fill_parent"
     android:background="@android:color/white">
 
-
-
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/lottie_bg"
         android:layout_width="wrap_content"
@@ -14,8 +12,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent" />
-
-
 
     <com.tmall.ultraviewpager.UltraViewPager
         android:id="@+id/viewpager"

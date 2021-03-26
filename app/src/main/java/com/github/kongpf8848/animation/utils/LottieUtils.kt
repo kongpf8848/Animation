@@ -8,7 +8,7 @@ import com.airbnb.lottie.LottieDrawable
 
 object LottieUtils{
 
-    fun loadAssetFile(context: Context, lottieImageView:LottieAnimationView, fileName:String,repeatCount:Int= LottieDrawable.INFINITE,autoPlay:Boolean=true){
+    fun loadAssetsLottieZipFile(context: Context, lottieImageView:LottieAnimationView, fileName:String, repeatCount:Int= LottieDrawable.INFINITE, autoPlay:Boolean=true){
         val lottieCompose= if(fileName.endsWith(".zip")){
             LottieCompositionFactory.fromAssetSync(context, fileName).value
          }

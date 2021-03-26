@@ -27,7 +27,7 @@ import com.github.kongpf8848.animation.utils.LottieUtils
 import com.github.kongpf8848.animation.utils.RxJavaUtils
 import com.kongpf.commonhelper.ScreenHelper
 import com.tmall.ultraviewpager.UltraViewPager
-import kotlinx.android.synthetic.main.pdj_guide_lottie.*
+import kotlinx.android.synthetic.main.activity_lottie_pdj_guide.*
 import java.lang.reflect.Field
 
 
@@ -75,7 +75,7 @@ class PdjGuideActivity : BaseActivity(), ViewPager.OnPageChangeListener {
     }
 
     override fun getLayoutId(): Int {
-        return R.layout.pdj_guide_lottie
+        return R.layout.activity_lottie_pdj_guide
     }
 
     override fun onCreateEnd(savedInstanceState: Bundle?) {
@@ -144,7 +144,7 @@ class PdjGuideActivity : BaseActivity(), ViewPager.OnPageChangeListener {
         lottie_bg.layoutParams.width = realWidth
         lottie_bg.layoutParams.height = realHeight
 
-        LottieUtils.loadAssetFile(context = applicationContext, lottieImageView = lottie_bg, fileName = config.lottieBgName, repeatCount = 0, autoPlay = true)
+        LottieUtils.loadAssetsLottieZipFile(context = applicationContext, lottieImageView = lottie_bg, fileName = config.lottieBgName, repeatCount = 0, autoPlay = true)
 
         setViewPagerDuration(viewpager.viewPager, config.pageAnimTime.toInt())
         viewpager.setOffscreenPageLimit(config.totalPageNum)
@@ -156,11 +156,11 @@ class PdjGuideActivity : BaseActivity(), ViewPager.OnPageChangeListener {
         viewpager.setPageTransformer(false, GuideTransformer(this@PdjGuideActivity, config.radius))
 
         for(position in 0 until config.totalPageNum){
-            val view = LayoutInflater.from(this@PdjGuideActivity).inflate(R.layout.pdj_guide_lottie_item, null, false)
+            val view = LayoutInflater.from(this@PdjGuideActivity).inflate(R.layout.item_lottie_pdj_guide, null, false)
             val lottieAnimationView: LottieAnimationView = view.findViewById(R.id.pdj_guide_lottie_item)
             lottieAnimationView.layoutParams.width = realWidth
             lottieAnimationView.layoutParams.height = realHeight
-            LottieUtils.loadAssetFile(context = applicationContext, lottieImageView = lottieAnimationView, fileName = config.lottieMain[position].lottieName, repeatCount = 0, autoPlay = false)
+            LottieUtils.loadAssetsLottieZipFile(context = applicationContext, lottieImageView = lottieAnimationView, fileName = config.lottieMain[position].lottieName, repeatCount = 0, autoPlay = false)
             lottieList.add(lottieAnimationView)
             viewList.add(view)
         }
@@ -227,7 +227,7 @@ class PdjGuideActivity : BaseActivity(), ViewPager.OnPageChangeListener {
             val flag=(lottie_title.tag as Boolean)
             if(!flag) {
                 lottie_title.tag=true
-                LottieUtils.loadAssetFile(context = applicationContext, lottieImageView = lottie_title, fileName = lottieConfig!!.lottieTitle[position].lottieName, repeatCount = 0, autoPlay = false)
+                LottieUtils.loadAssetsLottieZipFile(context = applicationContext, lottieImageView = lottie_title, fileName = lottieConfig!!.lottieTitle[position].lottieName, repeatCount = 0, autoPlay = false)
                 lottie_title.playAnimation()
             }
 

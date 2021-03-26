@@ -37,7 +37,7 @@ class GuideTransformer(context: Context, private val mRadius: Int) : ViewPager.P
             return
         }
         page.rotation = mMaxRotate
-        page.pivotX = 0.toFloat()
+        page.pivotX = 0f
         page.pivotY = page.height.toFloat()
     }
 
