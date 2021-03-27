@@ -1,6 +1,7 @@
 package com.github.kongpf8848.animation.utils
 
 import android.content.Context
+import android.util.Log
 import android.view.View
 import androidx.viewpager.widget.ViewPager
 import com.kongpf.commonhelper.ScreenHelper
@@ -16,29 +17,35 @@ class GuideTransformer(context: Context, private val mRadius: Int) : ViewPager.P
     }
 
     override fun transformPage(page: View, position: Float) {
-        if (mRadius == 0) return
-
-        if (position < -1.0f) {
-            page.rotation = -1.0f * mMaxRotate
-            page.pivotX = page.width.toFloat()
-            page.pivotY = page.height.toFloat()
+        Log.d("GuideTransformer", "transformPage() called with: page = $page, position = $position,rotate:${mMaxRotate}")
+        if (mRadius == 0) {
             return
         }
-        if (position <= 1.0f) {
-            if (position < 0.0f) {
-                page.pivotX = page.width * (0.5f + 0.5f * -position)
+
+        when {
+            position < -1.0f -> {
+                page.rotation = -1.0f * mMaxRotate
+                page.pivotX = page.width.toFloat()
                 page.pivotY = page.height.toFloat()
-                page.rotation = position * mMaxRotate
                 return
             }
-            page.pivotX = 0.5f * page.width * (1.0f - position)
-            page.pivotY = page.height.toFloat()
-            page.rotation = position * mMaxRotate
-            return
+            position <= 1.0f -> {
+                if (position < 0.0f) {
+                    page.pivotX = page.width * (0.5f + 0.5f * -position)
+                    page.pivotY = page.height.toFloat()
+                    page.rotation = position * mMaxRotate
+                } else {
+                    page.pivotX = 0.5f * page.width * (1.0f - position)
+                    page.pivotY = page.height.toFloat()
+                    page.rotation = position * mMaxRotate
+                }
+            }
+            else -> {
+                page.rotation = mMaxRotate
+                page.pivotX = 0f
+                page.pivotY = page.height.toFloat()
+            }
         }
-        page.rotation = mMaxRotate
-        page.pivotX = 0f
-        page.pivotY = page.height.toFloat()
     }
 
 }
