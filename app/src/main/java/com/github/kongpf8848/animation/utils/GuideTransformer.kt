@@ -1,7 +1,6 @@
 package com.github.kongpf8848.animation.utils
 
 import android.content.Context
-import android.util.Log
 import android.view.View
 import androidx.viewpager.widget.ViewPager
 import com.kongpf.commonhelper.ScreenHelper
@@ -17,7 +16,6 @@ class GuideTransformer(context: Context, private val mRadius: Int) : ViewPager.P
     }
 
     override fun transformPage(page: View, position: Float) {
-        Log.d("GuideTransformer", "transformPage() called with: page = $page, position = $position,rotate:${mMaxRotate}")
         if (mRadius == 0) {
             return
         }
@@ -27,7 +25,6 @@ class GuideTransformer(context: Context, private val mRadius: Int) : ViewPager.P
                 page.rotation = -1.0f * mMaxRotate
                 page.pivotX = page.width.toFloat()
                 page.pivotY = page.height.toFloat()
-                return
             }
             position <= 1.0f -> {
                 if (position < 0.0f) {
