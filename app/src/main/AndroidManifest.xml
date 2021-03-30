@@ -137,6 +137,9 @@
         <activity android:name=".activity.property.BallActivity" android:screenOrientation="portrait"
             android:label="自定义估值器"
             />
+        <activity android:name=".activity.property.PingoLoginActivity" android:screenOrientation="portrait"
+            android:label="随遇"
+            />
 
         <!---Lottie动画-->
         <activity android:name=".activity.lottie.AutoHomeActivity" android:screenOrientation="portrait"

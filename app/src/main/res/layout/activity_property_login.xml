@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white">
+
+
+        <ImageView
+            android:id="@+id/bg_one_image"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:src="@mipmap/login_bg_first"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/bg_two_image"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:src="@mipmap/login_bg_second"
+            android:scaleType="centerCrop" />
+        <ImageView
+            android:id="@+id/bg_three_image"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:src="@mipmap/login_bg_third"
+            android:scaleType="centerCrop" />
+
+
+    </FrameLayout>
+</FrameLayout>
