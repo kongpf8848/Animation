@@ -26,6 +26,14 @@
             android:text="估值器"
             />
 
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="随遇"
+            />
+
     </LinearLayout>
 
 </ScrollView>
