@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_navi_parent"
+    android:layout_width="fill_parent"
+    android:layout_height="51.0dip"
+    android:background="@color/white"
+   >
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_navi_chats"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center_horizontal"
+            android:onClick="onViewClicked"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/fl_chat_container"
+                android:layout_width="50.0dip"
+                android:layout_height="wrap_content">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/iv_navi_chats"
+                    android:layout_width="fill_parent"
+                    android:layout_height="51.0dip"
+                    android:src="@drawable/ic_tab_chats" />
+            </FrameLayout>
+
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:id="@+id/ll_navi_market"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center_horizontal"
+            android:onClick="onViewClicked"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="50.0dip"
+                android:layout_height="wrap_content">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/iv_navi_market"
+                    android:layout_width="fill_parent"
+                    android:layout_height="51.0dip"
+                    android:src="@drawable/ic_tab_markets" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_navi_community"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center_horizontal"
+            android:onClick="onViewClicked"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <FrameLayout
+                    android:id="@+id/fl_community_container"
+                    android:layout_width="50.0dip"
+                    android:layout_height="wrap_content">
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/iv_navi_community"
+                        android:layout_width="fill_parent"
+                        android:layout_height="51.0dip"
+                        android:src="@drawable/ic_tab_community" />
+                </FrameLayout>
+
+                <ImageView
+                    android:id="@+id/view_community_badge"
+                    android:layout_width="8.0dip"
+                    android:layout_height="8.0dip"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="5.0dip"
+                    android:layout_marginRight="10.0dip"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/shape_circle_f7334b"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_navi_me"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center_horizontal"
+            android:onClick="onViewClicked"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="50.0dip"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_me_red_point_mark"
+                    android:layout_width="8.0dip"
+                    android:layout_height="8.0dip"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="5.0dip"
+                    android:layout_marginRight="10.0dip"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/shape_circle_f7334b"
+                    android:visibility="gone" />
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/iv_navi_me"
+                    android:layout_width="fill_parent"
+                    android:layout_height="51.0dip"
+                    android:src="@drawable/ic_tab_me" />
+            </FrameLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:layout_alignParentTop="true"
+        android:background="#ffe7e7e7" />
+</RelativeLayout>

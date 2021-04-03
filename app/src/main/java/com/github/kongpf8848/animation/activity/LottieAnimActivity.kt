@@ -36,4 +36,9 @@ class LottieAnimActivity : BaseToolbarActivity() {
     fun onButton5(view: View?) {
         startActivity(PdjGuideActivity::class.java)
     }
+
+    @OnClick(R.id.button6)
+    fun onButton6(view: View?) {
+        startActivity(HuoChatActivity::class.java)
+    }
 }

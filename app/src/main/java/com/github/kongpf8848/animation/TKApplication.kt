@@ -2,7 +2,7 @@ package com.github.kongpf8848.animation
 
 import android.app.Application
 import android.util.Log
-
+import com.github.kongpf8848.animation.utils.LogUtils
 
 class TKApplication : Application() {
 
@@ -18,6 +18,7 @@ class TKApplication : Application() {
         } catch (e: Exception) {
             e.printStackTrace()
         }
+        LogUtils.init(this,BuildConfig.DEBUG)
     }
 
     companion object {

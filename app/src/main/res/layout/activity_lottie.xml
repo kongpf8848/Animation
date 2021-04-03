@@ -48,6 +48,14 @@
             android:layout_marginTop="20dp"
             android:text="京东到家"
             />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="火信"
+            />
     </LinearLayout>
 
 </ScrollView>

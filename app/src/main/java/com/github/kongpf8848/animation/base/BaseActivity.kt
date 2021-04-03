@@ -105,7 +105,7 @@ abstract class BaseActivity : AppCompatActivity() {
                 customInitStatusBar()
             }
         } catch (ex: Exception) {
-            LogHelper.d("initStatusBar Exception:" + ex.message)
+            ex.printStackTrace()
         }
     }
 
