@@ -5,6 +5,7 @@ import butterknife.OnClick
 import com.github.kongpf8848.animation.R
 import com.github.kongpf8848.animation.base.BaseToolbarActivity
 import com.github.kongpf8848.animation.activity.tween.rotate.MusicActivity
+import com.github.kongpf8848.animation.activity.tween.rotate.RotateLoadingActivity
 import com.github.kongpf8848.animation.dialog.RingProgressDialog
 import com.github.kongpf8848.animation.dialog.ShareDialog
 
@@ -31,4 +32,11 @@ class TweenRotateActivity : BaseToolbarActivity() {
     {
         ShareDialog(this).show("ShareDialog")
     }
+
+    @OnClick(R.id.button4)
+    fun onButton4(view: View?)
+    {
+        startActivity(RotateLoadingActivity::class.java)
+    }
+
 }

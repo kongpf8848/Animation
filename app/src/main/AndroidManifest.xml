@@ -129,6 +129,9 @@
         <activity android:name=".activity.tween.rotate.MusicActivity" android:screenOrientation="portrait"
             android:label="旋转动画"
             />
+        <activity android:name=".activity.tween.rotate.RotateLoadingActivity" android:screenOrientation="portrait"
+            android:label="RoateLoading动画"
+            />
 
         <!---属性动画-->
         <activity android:name=".activity.property.PropertyDemoActivity" android:screenOrientation="portrait"
