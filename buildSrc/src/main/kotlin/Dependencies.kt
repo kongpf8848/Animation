@@ -59,6 +59,7 @@ object Versions {
     const val CIRCLE_IMAGEVIEW_VERSION="2.1.0"
     const val TYPE_BUILDER_VERSION="1.0"
     const val ULTRA_VIEWPAGER_VERSION="1.0.7.7"
+    const val SVGA_PLAYER_VERSION="2.0.0"
 
 }
 
@@ -85,6 +86,7 @@ object BuildDependencies {
     const val rxjava2 = "io.reactivex.rxjava2:rxjava:${Versions.RXJAVA2_VERSION}"
     const val rxAndroid = "io.reactivex.rxjava2:rxandroid:${Versions.RXANDROID_VERSION}"
     const val ultraViewpager="com.alibaba.android:ultraviewpager:${Versions.ULTRA_VIEWPAGER_VERSION}@aar"
+    const val SVGAPlayer="com.github.svga:SVGAPlayer-Android:${Versions.SVGA_PLAYER_VERSION}"
 }
 
 object AndroidX {

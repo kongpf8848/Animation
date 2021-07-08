@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_tab_rent"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+
+        <com.opensource.svgaplayer.SVGAImageView
+            android:id="@+id/svg_tab_rent"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="7dp"
+            app:source="svga/tab_home_select.svga"
+            app:autoPlay="false"
+            app:loopCount="1"
+            app:antiAlias="true"
+            />
+
+        <ImageView
+            android:id="@+id/iv_tab_rent"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="7dp"
+            android:src="@drawable/selector_ziroom_tab_rent_icon"
+            />
+
+        <TextView
+            android:id="@+id/tv_tab_rent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/iv_tab_rent"
+            android:layout_marginTop="2dp"
+            android:textSize="12sp"
+            android:textColor="@color/selector_ziroom_tab_text_color"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_tab_yu"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+
+        <com.opensource.svgaplayer.SVGAImageView
+            android:id="@+id/svg_tab_yu"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="7dp"
+            app:source="svga/tab_search_select.svga"
+            app:autoPlay="false"
+            app:loopCount="1"
+            app:antiAlias="true"
+            />
+
+        <ImageView
+            android:id="@+id/iv_tab_yu"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="7dp"
+            android:src="@drawable/selector_ziroom_tab_yu_icon"
+            />
+
+        <TextView
+            android:id="@+id/tv_tab_yu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/iv_tab_yu"
+            android:layout_marginTop="2dp"
+            android:textSize="12sp"
+            android:textColor="@color/selector_ziroom_tab_text_color"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_tab_service"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+
+        <com.opensource.svgaplayer.SVGAImageView
+            android:id="@+id/svg_tab_service"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="7dp"
+            app:source="svga/tab_service_select.svga"
+            app:autoPlay="false"
+            app:loopCount="1"
+            app:antiAlias="true"
+            />
+
+
+        <ImageView
+            android:id="@+id/iv_tab_service"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="7dp"
+            android:src="@drawable/selector_ziroom_tab_service_icon"
+            />
+
+        <TextView
+            android:id="@+id/tv_tab_service"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/iv_tab_service"
+            android:layout_marginTop="2dp"
+            android:textSize="12sp"
+            android:textColor="@color/selector_ziroom_tab_text_color"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_tab_lvju"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <com.opensource.svgaplayer.SVGAImageView
+            android:id="@+id/svg_tab_lvju"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="7dp"
+            app:source="svga/tab_lvju_select.svga"
+            app:autoPlay="false"
+            app:loopCount="1"
+            app:antiAlias="true"
+            />
+
+        <ImageView
+            android:id="@+id/iv_tab_lvju"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="7dp"
+            android:src="@drawable/selector_ziroom_tab_lvju_icon"
+            />
+
+        <TextView
+            android:id="@+id/tv_tab_lvju"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/iv_tab_lvju"
+            android:layout_marginTop="2dp"
+            android:textSize="12sp"
+            android:textColor="@color/selector_ziroom_tab_text_color"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_tab_my"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+
+        <com.opensource.svgaplayer.SVGAImageView
+            android:id="@+id/svg_tab_my"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="7dp"
+            app:source="svga/tab_my_select.svga"
+            app:autoPlay="false"
+            app:loopCount="1"
+            app:antiAlias="true"
+            />
+
+
+        <ImageView
+            android:id="@+id/iv_tab_my"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="7dp"
+            android:src="@drawable/selector_ziroom_tab_my_icon"
+            />
+
+        <TextView
+            android:id="@+id/tv_tab_my"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/iv_tab_my"
+            android:layout_marginTop="2dp"
+            android:textSize="12sp"
+            android:textColor="@color/selector_ziroom_tab_text_color"
+            />
+
+    </RelativeLayout>
+
+</merge>

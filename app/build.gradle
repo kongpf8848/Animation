@@ -114,4 +114,5 @@ dependencies {
     implementation (BuildDependencies.ultraViewpager) {
         transitive = true
     }
+    implementation BuildDependencies.SVGAPlayer
 }

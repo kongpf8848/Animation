@@ -199,6 +199,18 @@
         <activity android:name=".activity.gif.GiflibActivity" android:screenOrientation="portrait"
             android:label="giflib加载Gif"
             />
+        <activity android:name=".activity.gif.FrameSequenceActivity" android:screenOrientation="portrait"
+            android:label="FrameSequence加载Gif"
+            />
+
+        <!--SVGA动画-->
+        <activity android:name=".activity.SVGAActivity" android:screenOrientation="portrait"
+            android:label="SVGA动画"
+            />
+
+        <activity android:name=".activity.svga.ZiroomActivity" android:screenOrientation="portrait"
+            android:label="Ziroom"
+            />
 
     </application>
 

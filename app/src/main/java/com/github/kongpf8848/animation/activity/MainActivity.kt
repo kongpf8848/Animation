@@ -62,4 +62,9 @@ class MainActivity : BaseToolbarActivity() {
     fun onButton8(view: View?) {
         startActivity(GifActivity::class.java)
     }
+
+    @OnClick(R.id.button9)
+    fun onButton9(view: View?) {
+        startActivity(SVGAActivity::class.java)
+    }
 }

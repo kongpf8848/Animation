@@ -11,6 +11,15 @@ import kotlinx.android.synthetic.main.fragment_title.*
 
 class TitleFragment : BaseFragment() {
 
+    companion object{
+        fun getInstance(title:String):TitleFragment{
+            return TitleFragment().apply {
+                arguments = Bundle().apply {
+                    putString("title", title)
+                }
+            }
+        }
+    }
     override fun onCreateView(inflater: LayoutInflater, @Nullable container: ViewGroup?, @Nullable savedInstanceState: Bundle?): View? {
        return inflater.inflate(R.layout.fragment_title,container,false)
     }

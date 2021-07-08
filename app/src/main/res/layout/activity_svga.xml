@@ -15,24 +15,9 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="使用Glide加载GIF"
+            android:text="仿自如APP底部导航动画"
             />
 
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="使用giflib加载GIF"
-            />
-
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="使用FrameSequence加载GIF"
-            />
     </LinearLayout>
 
 </ScrollView>
