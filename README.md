@@ -15,9 +15,9 @@ Android各种动画效果,无动画,不精彩:smile::smile::smile:
 |:-:|:-:|:-:|
 |![image](https://github.com/kongpf8848/Animation/blob/master/screenshots/autohome.webp) | ![image](https://github.com/kongpf8848/Animation/blob/master/screenshots/telegram.webp) | ![image](https://github.com/kongpf8848/Animation/blob/master/screenshots/pdj_guide.webp) |
 
-| 图片浏览 | 微知 | 翻译君 |
+| 图片浏览 | 自如 | 翻译君 |
 |:-:|:-:|:-:|
-|![image](https://github.com/kongpf8848/Animation/blob/master/screenshots/gallery.webp) | ![image](https://github.com/kongpf8848/Animation/blob/master/screenshots/weizhi.webp) | ![image](https://github.com/kongpf8848/Animation/blob/master/screenshots/fanyijun.webp) |
+|![image](https://github.com/kongpf8848/Animation/blob/master/screenshots/gallery.webp) | ![image](https://github.com/kongpf8848/Animation/blob/master/screenshots/ziroom.webp) | ![image](https://github.com/kongpf8848/Animation/blob/master/screenshots/fanyijun.webp) |
 
 ## 逐帧动画（Frame Animation）
 一帧一帧进行播放，它的原理与Gif类似，按序播放一组预先定义好的图片序列，如:
@@ -69,3 +69,5 @@ GIF(Graphics Interchange Format)是由CompuServe公司开发的一种图像文�
 * 使用[giflib](https://android.googlesource.com/platform/external/giflib/+/android-9.0.0_r16)类库在native层解码GIF，使用[FrameSequenceDrawable](https://android.googlesource.com/platform/frameworks/ex/+/android-9.0.0_r16/framesequence)的双缓冲机制进行绘制展示GIF中的每一帧图像
 * 使用[android-gif-drawable](https://github.com/koral--/android-gif-drawable)类库,其底层也是使用giflib进行GIF解码
 
+## SVGA动画
+SVGA是一种同时兼容iOS/Android/Flutter/Web平台的动画格式。[SVGA官网](http://svga.io/)
