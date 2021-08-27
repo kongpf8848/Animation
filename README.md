@@ -1,10 +1,11 @@
+
+[![APK](https://img.shields.io/badge/APK-Animation-brightgreen.svg)](http://d.firim.vip/animation)
+[![License](https://img.shields.io/badge/License-Apache%202-brightgreen.svg)](https://www.apache.org/licenses/LICENSE-2.0)
+
 # Animation
-Android各种动画效果,无动画,不精彩:smile::smile::smile:
 
-## Demo
-[下载地址](http://d.firim.vip/animation)
+Android各种动画效果合集，无动画，不精彩:smile::smile::smile:
 
-![二维码](https://github.com/kongpf8848/Animation/blob/master/screenshots/qrcode.png)
 
 ## ScreenShots
 | 闪屏页 | 引导页 | 小红书 |
@@ -58,7 +59,7 @@ Google在Android 5.0之后推出的一种动画效果，就是以某种方式从
 Lottie 是 Airbnb推出的一套跨平台的动画完整解决方案，它能够帮助开发者直接加载json格式的文件在 iOS、Android 和 React Native之上，实现 100% 与设计稿相同的动画效果，而无需关心中间的实现细节。设计师只需要使用 After Effectes 设计出动画之后，通过使用 Lottie 提供的Bodymovin插件将设计好的动画导出成json格式的文件交付给开发即可完成。 [Lottie网站](https://lottiefiles.com) [lottie-android](https://github.com/LottieFiles/lottie-android)
 
 ## Tgs动画
-IM软件Telegram 推出的新的Sticker贴纸格式，这个全新的 Sticker 贴纸格式为 .tgs，其实就是基于lottie json文件改造而来的一种格式
+IM软件Telegram 推出的新的Sticker贴纸格式，这个全新的 Sticker 贴纸格式为 .tgs，其实就是基于lottie json文件改造而来的一种格式。[Telegram官网](https://telegram.org) [GitHub](https://github.com/DrKLO/Telegram)
 
 ![image](https://github.com/kongpf8848/Animation/blob/master/screenshots/telegram-sticker.gif)
 
