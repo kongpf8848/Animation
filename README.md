@@ -3,9 +3,7 @@
 [![License](https://img.shields.io/badge/License-Apache%202-brightgreen.svg)](https://www.apache.org/licenses/LICENSE-2.0)
 
 # Animation
-
-Android各种动画效果合集，无动画，不精彩:smile::smile::smile:
-
+Android各种动画效果合集，项目包含了丰富的动画实例(逐帧动画，补间动画，Lottie动画，GIF动画，SVGA动画)，体验动画之美，让Android动起来:smile::smile::smile:
 
 ## ScreenShots
 | 闪屏页 | 引导页 | 小红书 |
