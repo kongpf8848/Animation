@@ -21,6 +21,8 @@
         android:theme="@style/AppTheme"
         android:name=".TKApplication"
         android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:largeHeap="true"
         >
         <activity android:name=".activity.SplashActivity" android:screenOrientation="portrait"
             android:theme="@style/SplashActivityTheme"

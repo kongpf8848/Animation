@@ -1,6 +1,5 @@
 #rlottie base on Telegram 7.9.3
 cmake_minimum_required(VERSION 3.4.1)
-message(+++++++++++++++++++++++++++++++++++++cmake:${CMAKE_LIBRARY_OUTPUT_DIRECTORY}${CMA})
 set(CMAKE_CXX_FLAGS "-std=c++14 -DANDROID")
 set(CMAKE_C_FLAGS "-w -std=c11 -DANDROID -D_LARGEFILE_SOURCE=1")
 set(CMAKE_ASM_FLAGS "${CFLAGS} -x assembler-with-cpp")

@@ -1,7 +1,6 @@
 import org.gradle.api.JavaVersion
 
 object Config{
-
     const val compileSdkVersion = 30
     const val buildToolsVersion = "30.0.2"
     const val applicationId="com.github.kongpf8848.animation"
@@ -9,9 +8,8 @@ object Config{
     const val targetSdkVersion = 30
     val sourceCompatibilityVersion = JavaVersion.VERSION_1_8
     val targetCompatibilityVersion = JavaVersion.VERSION_1_8
-    const val versionCode = 8
-    const val versionName = "1.1.6"
-
+    const val versionCode = 9
+    const val versionName = "1.1.7"
 }
 
 object Versions {
