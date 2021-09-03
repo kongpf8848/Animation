@@ -23,7 +23,8 @@ android {
 
         externalNativeBuild {
             cmake {
-                cppFlags ""
+                version '3.10.2'
+                arguments '-DANDROID_STL=c++_static', '-DANDROID_PLATFORM=android-16', "-j=16"
             }
         }
     }

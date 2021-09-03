@@ -3,6 +3,7 @@ package com.github.kongpf8848.animation
 import android.app.Application
 import android.util.Log
 import com.github.kongpf8848.animation.utils.LogUtils
+import org.telegram.messenger.AndroidUtilities
 
 class TKApplication : Application() {
 
@@ -14,11 +15,12 @@ class TKApplication : Application() {
             Log.d("Crash", "uncaughtException() called with: t = [" + t + "], e = [" + e.message + "]")
         }
         try {
-            System.loadLibrary("tmessages.30")
+            System.loadLibrary("tmessages.40")
         } catch (e: Exception) {
             e.printStackTrace()
         }
         LogUtils.init(this,BuildConfig.DEBUG)
+        AndroidUtilities.init(this)
     }
 
     companion object {

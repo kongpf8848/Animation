@@ -1,10 +1,12 @@
 package org.telegram.ui.Components;
 
 import android.content.Context;
-import androidx.annotation.Nullable;
-import androidx.appcompat.widget.AppCompatImageView;
 import android.util.AttributeSet;
 
+import androidx.annotation.Nullable;
+import androidx.appcompat.widget.AppCompatImageView;
+
+import org.telegram.messenger.AndroidUtilities;
 
 import java.util.HashMap;
 
@@ -29,6 +31,10 @@ public class RLottieImageView extends AppCompatImageView {
         super(context, attrs, defStyleAttr);
     }
 
+    public void clearLayerColors() {
+        layerColors.clear();
+    }
+
     public void setLayerColor(String layer, int color) {
         if (layerColors == null) {
             layerColors = new HashMap<>();
@@ -45,13 +51,12 @@ public class RLottieImageView extends AppCompatImageView {
         }
     }
 
-
     public void setAnimation(int resId, int w, int h) {
         setAnimation(resId, w, h, null);
     }
 
     public void setAnimation(int resId, int w, int h, int[] colorReplacement) {
-        setAnimation(new RLottieDrawable(resId, "" + resId, w, h, false, colorReplacement));
+        setAnimation(new RLottieDrawable(getContext(),resId, "" + resId, AndroidUtilities.dp(w), AndroidUtilities.dp(h), false, colorReplacement));
     }
 
     public void setAnimation(RLottieDrawable lottieDrawable) {
@@ -68,6 +73,14 @@ public class RLottieImageView extends AppCompatImageView {
         }
         drawable.setAllowDecodeSingleFrame(true);
         setImageDrawable(drawable);
+    }
+
+    public void clearAnimationDrawable() {
+        if (drawable != null) {
+            drawable.stop();
+        }
+        drawable = null;
+        setImageDrawable(null);
     }
 
     @Override
@@ -104,6 +117,12 @@ public class RLottieImageView extends AppCompatImageView {
             return;
         }
         drawable.setProgress(progress);
+    }
+
+    @Override
+    public void setImageResource(int resId) {
+        super.setImageResource(resId);
+        drawable = null;
     }
 
     public void playAnimation() {
