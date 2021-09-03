@@ -1,5 +1,5 @@
 
-[![APK](https://img.shields.io/badge/APK-Animation-brightgreen.svg)](http://d.firim.vip/animation)
+[![最新版本](https://img.shields.io/badge/最新版本-1.1.7-brightgreen.svg)](http://d.3appstore.com/animation)
 [![License](https://img.shields.io/badge/License-Apache%202-brightgreen.svg)](https://www.apache.org/licenses/LICENSE-2.0)
 
 # Animation
