@@ -1,8 +1,8 @@
+# Animation
 
 [![最新版本](https://img.shields.io/badge/最新版本-1.1.7-brightgreen.svg)](http://d.3appstore.com/animation)
 [![License](https://img.shields.io/badge/License-Apache%202-brightgreen.svg)](https://www.apache.org/licenses/LICENSE-2.0)
 
-# Animation
 Android各种动画效果合集，项目包含了丰富的动画实例(逐帧动画，补间动画，Lottie动画，GIF动画，SVGA动画)，体验动画之美，让Android动起来:smile::smile::smile:
 
 ## ScreenShots
