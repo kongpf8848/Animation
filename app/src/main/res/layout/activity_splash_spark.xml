@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_splash_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_background_gradient">
+
+    <FrameLayout
+        android:id="@+id/splash_clouds"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <com.github.kongpf8848.animation.views.ScrollingImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            app:speed="0.3dp"
+            app:src="@drawable/splash_clouds_back" />
+        <com.github.kongpf8848.animation.views.ScrollingImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="bottom"
+            app:speed="0.6dp"
+            app:src="@drawable/splash_clouds_middle" />
+        <com.github.kongpf8848.animation.views.ScrollingImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="bottom"
+            app:speed="0.9dp"
+            app:src="@drawable/splash_clouds_front" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/splash_form_container"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/splash_clouds"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:background="@android:color/white" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

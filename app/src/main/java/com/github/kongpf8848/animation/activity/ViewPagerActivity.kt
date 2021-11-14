@@ -17,4 +17,9 @@ class ViewPagerActivity : BaseToolbarActivity() {
         startActivity(WeChatActivity::class.java)
     }
 
+    @OnClick(R.id.button2)
+    fun onButton2(view: View?) {
+        startActivity(SparkSplashActivity::class.java)
+    }
+
 }

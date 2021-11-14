@@ -1,0 +1,35 @@
+package com.github.kongpf8848.animation.activity
+
+import android.animation.Animator
+import android.animation.AnimatorListenerAdapter
+import android.os.Bundle
+import android.os.Looper
+import android.util.Log
+import com.github.kongpf8848.animation.R
+import com.github.kongpf8848.animation.base.BaseActivity
+import com.github.kongpf8848.animation.fragment.WhatsNewFragment
+import com.kongpf.commonhelper.ApkHelper
+import kotlinx.android.synthetic.main.activity_splash.*
+
+class SparkSplashActivity : BaseActivity() {
+
+    override fun getLayoutId(): Int {
+        return R.layout.activity_splash_spark
+    }
+
+    override fun statusBarColor(): Int {
+        return R.color.white
+    }
+
+    override fun statusBarDarkFont(): Boolean {
+        return true
+    }
+
+    override fun onCreateEnd(savedInstanceState: Bundle?) {
+        super.onCreateEnd(savedInstanceState)
+        val ft=supportFragmentManager.beginTransaction()
+        ft.replace(R.id.splash_form_container,WhatsNewFragment.newInstance(),WhatsNewFragment::class.java.name)
+        ft.commitAllowingStateLoss()
+        supportFragmentManager.executePendingTransactions()
+    }
+}

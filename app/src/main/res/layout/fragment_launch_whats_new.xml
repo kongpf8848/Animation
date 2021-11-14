@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/whats_new_view_pager"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0"
+        android:gravity="center_vertical" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="96.0dip"
+        android:layout_gravity="bottom">
+
+        <com.github.kongpf8848.animation.views.circleindicator.CircleIndicator
+            android:id="@+id/whats_new_view_pager_indicator"
+            android:layout_width="fill_parent"
+            android:layout_height="16.0dip"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="80.0dip"
+            app:ci_drawable="@drawable/whats_new_view_pager_indicator_selected"
+            app:ci_drawable_unselected="@drawable/whats_new_view_pager_indicator"
+            app:ci_width="5.0dip" />
+
+        <TextView
+            android:id="@+id/whats_new_skip_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/blue"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="start|bottom|center"
+            android:text="跳过" />
+
+        <TextView
+            android:id="@+id/whats_new_next_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/blue"
+            android:layout_gravity="end|bottom|center"
+            android:text="继续" />
+
+        <Button
+            android:id="@+id/whats_new_button_got_it"
+            android:layout_width="280.0dip"
+            android:layout_height="44.0dip"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="12.0dip"
+            android:background="@color/blue"
+            android:foreground="?selectableItemBackgroundBorderless"
+            android:lineSpacingExtra="4.0sp"
+            android:text="继续"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+    </FrameLayout>
+</LinearLayout>
