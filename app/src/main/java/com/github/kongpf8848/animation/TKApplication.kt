@@ -10,15 +10,15 @@ class TKApplication : Application() {
     override fun onCreate() {
         super.onCreate()
         instance = this
-        Thread.setDefaultUncaughtExceptionHandler { t, e ->
-            e.printStackTrace()
-            Log.d("Crash", "uncaughtException() called with: t = [" + t + "], e = [" + e.message + "]")
-        }
-        try {
-            System.loadLibrary("tmessages.40")
-        } catch (e: Exception) {
-            e.printStackTrace()
-        }
+//        Thread.setDefaultUncaughtExceptionHandler { t, e ->
+//            e.printStackTrace()
+//            Log.d("Crash", "uncaughtException() called with: t = [" + t + "], e = [" + e.message + "]")
+//        }
+//        try {
+//            System.loadLibrary("tmessages.40")
+//        } catch (e: Exception) {
+//            e.printStackTrace()
+//        }
         LogUtils.init(this,BuildConfig.DEBUG)
         AndroidUtilities.init(this)
     }
