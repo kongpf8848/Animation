@@ -58,6 +58,10 @@ android {
         abortOnError false
     }
 
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+
     compileOptions {
         sourceCompatibility Config.sourceCompatibilityVersion
         targetCompatibility Config.targetCompatibilityVersion
