@@ -24,5 +24,9 @@
     <dimen name="small_area_marginright">10dp</dimen>
     <dimen name="small_area_marginbetween">10dp</dimen>
 
+    <dimen name="chat_progress_padding">2dp</dimen>
+    <dimen name="chat_progress_bg_stroke_width">2dp</dimen>
+    <dimen name="chat_progress_stroke_width">2dp</dimen>
+
 
 </resources>

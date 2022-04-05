@@ -131,4 +131,10 @@
 
     </declare-styleable>
 
+    <declare-styleable name="ChatProgressView">
+        <attr name="bgColor" format="color|reference" />
+        <attr name="bgStrokeColor" format="color|reference" />
+        <attr name="progressColor" format="color|reference" />
+    </declare-styleable>
+
 </resources>
