@@ -45,7 +45,7 @@ class MainActivity : BaseToolbarActivity() {
 
     @OnClick(R.id.button5)
     fun onButton5(view: View?) {
-        startActivity(TgsActivity::class.java)
+        startActivity(TelegramActivity::class.java)
     }
 
     @OnClick(R.id.button6)

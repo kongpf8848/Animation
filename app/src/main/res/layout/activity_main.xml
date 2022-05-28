@@ -45,7 +45,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="Tgs动画" />
+            android:text="Telegram动画" />
 
         <Button
             android:id="@+id/button6"

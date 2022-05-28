@@ -1,4 +1,4 @@
-package com.github.kongpf8848.animation.activity
+package com.github.kongpf8848.animation.activity.telegram
 
 import android.graphics.Rect
 import android.os.Bundle

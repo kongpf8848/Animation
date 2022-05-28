@@ -179,12 +179,6 @@
             android:label="Spark"
             />
 
-
-        <!---Tgs动画-->
-        <activity android:name=".activity.TgsActivity" android:screenOrientation="portrait"
-            android:label="Telegram Sticker"
-            />
-
         <!-- 转场动画-->
         <activity android:name=".activity.TransitionActivity" android:screenOrientation="portrait"
             android:label="转场动画"
@@ -218,6 +212,18 @@
         <activity android:name=".activity.svga.ZiroomActivity" android:screenOrientation="portrait"
             android:label="Ziroom"
             />
+
+        <!--Telegram动画-->
+        <activity android:name=".activity.TelegramActivity" android:screenOrientation="portrait"
+            android:label="Telegram"
+            />
+        <activity android:name=".activity.telegram.IntroActivity" android:screenOrientation="portrait"
+            android:label="Telegram Intro"
+            />
+        <activity android:name=".activity.telegram.TgsActivity" android:screenOrientation="portrait"
+            android:label="Telegram Sticker"
+            />
+
 
     </application>
 

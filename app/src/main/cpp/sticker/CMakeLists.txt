@@ -90,6 +90,7 @@ set(NATIVE_LIB "tmessages.40")
 
 #tmessages
 add_library(${NATIVE_LIB} SHARED
+        ${PROJECT_SOURCE_DIR}/sticker/intro/IntroRenderer.c
         ${PROJECT_SOURCE_DIR}/sticker/jni.c
         ${PROJECT_SOURCE_DIR}/sticker/lottie.cpp)
 

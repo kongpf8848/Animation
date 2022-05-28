@@ -5,6 +5,15 @@
       <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
     </configurations>
   </component>
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/jack/workspace/GitHub/Animation/app/src/main/res/drawable/telegram_start.xml" value="0.1055" />
+        <entry key="..\:/jack/workspace/GitHub/Animation/app/src/main/res/layout/activity_main.xml" value="0.21557971014492755" />
+        <entry key="..\:/jack/workspace/GitHub/Animation/app/src/main/res/layout/activity_telegram.xml" value="0.21557971014492755" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
