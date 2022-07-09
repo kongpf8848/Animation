@@ -22,12 +22,12 @@ class TweenAnimActivity : BaseToolbarActivity() {
 
     @OnClick(R.id.button2)
     fun onButton2(view: View?) {
-        startActivity(TweenScaleActivity::class.java)
+        startActivity(TweenTranslateActivity::class.java)
     }
 
     @OnClick(R.id.button3)
     fun onButton3(view: View?) {
-        startActivity(TweenTranslateActivity::class.java)
+        startActivity(TweenScaleActivity::class.java)
     }
 
     @OnClick(R.id.button4)

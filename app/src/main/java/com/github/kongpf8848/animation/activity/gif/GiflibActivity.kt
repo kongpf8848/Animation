@@ -24,7 +24,7 @@ class GiflibActivity:BaseToolbarActivity(){
 
     private fun loadImage(){
         GlideApp.with(this).`as`(FrameSequenceDrawable::class.java)
-                .load("http://2zhoumu-comic-public-test.oss-cn-hangzhou.aliyuncs.com/cover/comic/gc1100004.gif")
+                .load(R.raw.test)
                 .into(iv_gif)
     }
 }

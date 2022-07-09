@@ -1,13 +1,26 @@
 package com.github.kongpf8848.animation.activity
 
 import android.os.Bundle
-import android.view.View
-import butterknife.OnClick
+import android.view.animation.*
+import androidx.recyclerview.widget.GridLayoutManager
 import com.github.kongpf8848.animation.R
+import com.github.kongpf8848.animation.adapter.MainAdapter
 import com.github.kongpf8848.animation.base.BaseToolbarActivity
+import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_toolbar.*
 
 class MainActivity : BaseToolbarActivity() {
+
+    private val items = listOf(
+            Triple("逐帧动画",R.drawable.logo_frame, FrameAnimActivity::class.java),
+            Triple("补间动画", R.drawable.logo_tween,TweenAnimActivity::class.java),
+            Triple("属性动画", R.drawable.logo_property,PropertyAnimActivity::class.java),
+            Triple("Lottie动画", R.drawable.logo_lottie,LottieAnimActivity::class.java),
+            Triple("Telegram动画",R.drawable.logo_telegram, TelegramActivity::class.java),
+            Triple("转场动画", R.drawable.logo_transition,TransitionActivity::class.java),
+            Triple("GIF动画",R.drawable.logo_gif, GifActivity::class.java),
+            Triple("SVGA动画", R.drawable.logo_svga,SVGAActivity::class.java)
+    )
 
     override fun enableStatusBar(): Boolean {
         return false
@@ -19,52 +32,18 @@ class MainActivity : BaseToolbarActivity() {
 
     override fun onCreateEnd(savedInstanceState: Bundle?) {
         super.onCreateEnd(savedInstanceState)
-        toolbar?.navigationIcon=null
-    }
+        toolbar?.navigationIcon = null
 
-
-    @OnClick(R.id.button1)
-    fun onButton1(view: View?) {
-        startActivity(FrameAnimActivity::class.java)
-    }
-
-    @OnClick(R.id.button2)
-    fun onButton2(view: View?) {
-        startActivity(TweenAnimActivity::class.java)
-    }
-
-    @OnClick(R.id.button3)
-    fun onButton3(view: View?) {
-        startActivity(PropertyAnimActivity::class.java)
-    }
-
-    @OnClick(R.id.button4)
-    fun onButton4(view: View?) {
-        startActivity(LottieAnimActivity::class.java)
-    }
-
-    @OnClick(R.id.button5)
-    fun onButton5(view: View?) {
-        startActivity(TelegramActivity::class.java)
-    }
-
-    @OnClick(R.id.button6)
-    fun onButton6(view: View?) {
-        startActivity(ViewPagerActivity::class.java)
-    }
-
-    @OnClick(R.id.button7)
-    fun onButton7(view: View?) {
-        startActivity(TransitionActivity::class.java)
-    }
-
-    @OnClick(R.id.button8)
-    fun onButton8(view: View?) {
-        startActivity(GifActivity::class.java)
-    }
-
-    @OnClick(R.id.button9)
-    fun onButton9(view: View?) {
-        startActivity(SVGAActivity::class.java)
+        rv_main.apply {
+            layoutManager = GridLayoutManager(this@MainActivity, 2, GridLayoutManager.VERTICAL, false)
+            adapter = MainAdapter(items)
+            layoutAnimation = LayoutAnimationController(AnimationSet(true).apply {
+                addAnimation(AlphaAnimation(0.0f, 1.0f))
+                addAnimation(TranslateAnimation(Animation.RELATIVE_TO_SELF, 0.0f,
+                        Animation.RELATIVE_TO_SELF, 0.0f, Animation.RELATIVE_TO_SELF,
+                        -1.0f, Animation.RELATIVE_TO_SELF, 0.0f))
+                duration=500
+            })
+        }
     }
 }
