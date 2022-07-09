@@ -5,6 +5,8 @@
 
 Android各种动画效果合集，项目包含了丰富的动画实例(逐帧动画，补间动画，Lottie动画，GIF动画，SVGA动画)，体验动画之美，让Android动起来:smile::smile::smile:
 
+[APK下载](http://d.3appstore.com/animation)
+
 ## ScreenShots
 | 闪屏页 | 引导页 | 小红书 |
 |:-:|:-:|:-:|
@@ -67,3 +69,4 @@ GIF(Graphics Interchange Format)是由CompuServe公司开发的一种图像文�
 
 ## SVGA动画
 SVGA是一种同时兼容iOS/Android/Flutter/Web平台的动画格式。[SVGA官网](http://svga.io/)
+![image](https://github.com/kongpf8848/Animation/blob/master/intro_svga.jpg)
