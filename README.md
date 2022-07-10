@@ -60,6 +60,9 @@ Lottie 是 Airbnb推出的一套跨平台的动画完整解决方案，它能够
 
 ## Tgs动画
 IM软件Telegram 推出的新的Sticker贴纸格式，这个全新的 Sticker 贴纸格式为 .tgs，其实就是基于lottie json文件改造而来的一种格式。[Telegram官网](https://telegram.org) [GitHub](https://github.com/DrKLO/Telegram)
+| 1 | 2 |
+|:-:|:-:|
+|![image](https://github.com/kongpf8848/Animation/blob/master/images/intro_telegram_1.png)|![image](https://github.com/kongpf8848/Animation/blob/master/images/intro_telegram_2.png)|
 ## GIF动画
 GIF(Graphics Interchange Format)是由CompuServe公司开发的一种图像文件格式，可以将多幅图像保存到一个图像文件，展示的时候将多幅图像数据逐帧读出并显示到屏幕上，从而形成动画效果。在Android中播放GIF通常有以下几种方式：
 * ~~使用Android SDK中自带的android.graphics.Movie类(已过时)~~
