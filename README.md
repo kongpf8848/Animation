@@ -10,15 +10,15 @@ Android各种动画效果合集，项目包含了丰富的动画实例(逐帧动
 ## ScreenShots
 | 闪屏页 | 引导页 | 小红书 |
 |:-:|:-:|:-:|
-|![image](https://github.com/kongpf8848/Animation/blob/master/screenshots/splash.webp) | ![image](https://github.com/kongpf8848/Animation/blob/master/screenshots/guide.webp) | ![image](https://github.com/kongpf8848/Animation/blob/master/screenshots/xhs.webp) |
+|![image](https://github.com/kongpf8848/Animation/blob/master/images/splash.webp) | ![image](https://github.com/kongpf8848/Animation/blob/master/images/guide.webp) | ![image](https://github.com/kongpf8848/Animation/blob/master/images/xhs.webp) |
 
 | 汽车之家 | 电报(Telegram) | 京东到家 |
 |:-:|:-:|:-:|
-|![image](https://github.com/kongpf8848/Animation/blob/master/screenshots/autohome.webp) | ![image](https://github.com/kongpf8848/Animation/blob/master/screenshots/telegram.webp) | ![image](https://github.com/kongpf8848/Animation/blob/master/screenshots/pdj_guide.webp) |
+|![image](https://github.com/kongpf8848/Animation/blob/master/images/autohome.webp) | ![image](https://github.com/kongpf8848/Animation/blob/master/images/telegram.webp) | ![image](https://github.com/kongpf8848/Animation/blob/master/images/pdj_guide.webp) |
 
 | 图片浏览 | 自如 | 翻译君 |
 |:-:|:-:|:-:|
-|![image](https://github.com/kongpf8848/Animation/blob/master/screenshots/gallery.webp) | ![image](https://github.com/kongpf8848/Animation/blob/master/screenshots/ziroom.webp) | ![image](https://github.com/kongpf8848/Animation/blob/master/screenshots/fanyijun.webp) |
+|![image](https://github.com/kongpf8848/Animation/blob/master/images/gallery.webp) | ![image](https://github.com/kongpf8848/Animation/blob/master/images/ziroom.webp) | ![image](https://github.com/kongpf8848/Animation/blob/master/images/fanyijun.webp) |
 
 ## 逐帧动画（Frame Animation）
 一帧一帧进行播放，它的原理与Gif类似，按序播放一组预先定义好的图片序列，如:
@@ -51,7 +51,7 @@ Android各种动画效果合集，项目包含了丰富的动画实例(逐帧动
 ## 属性动画（Property Animation）
 直接更改对象的属性来实现的动画。
 工作原理：在一定时间间隔内，通过不断调用set方法对值进行改变，并不断将该值赋给对象的属性，从而实现该对象在该属性上的动画效果，详情的属性动画介绍可参考[官方文档](https://developer.android.google.cn/guide/topics/graphics/prop-animation)
-
+![image](https://github.com/kongpf8848/Animation/blob/master/images/intro_property.png)
 ## 转场动画 (Transition Animation)
 Google在Android 5.0之后推出的一种动画效果，就是以某种方式从一个场景以动画的形式过渡到另一个场景，可以参考[Material-Animations](https://github.com/lgvalle/Material-Animations)
 
@@ -69,4 +69,4 @@ GIF(Graphics Interchange Format)是由CompuServe公司开发的一种图像文�
 
 ## SVGA动画
 SVGA是一种同时兼容iOS/Android/Flutter/Web平台的动画格式。[SVGA官网](http://svga.io/)
-![image](https://github.com/kongpf8848/Animation/blob/master/intro_svga.jpg)
+![image](https://github.com/kongpf8848/Animation/blob/master/images/intro_svga.jpg)
