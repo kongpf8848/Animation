@@ -135,7 +135,7 @@ target_link_libraries(${NATIVE_LIB}
         EGL
         android
         OpenSLES
-        cpufeatures
+        ##cpufeatures
         )
 
 if (${ANDROID_ABI} STREQUAL "x86" OR ${ANDROID_ABI} STREQUAL "x86_64")
