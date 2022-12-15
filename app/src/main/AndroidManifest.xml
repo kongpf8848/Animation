@@ -26,6 +26,7 @@
         >
         <activity android:name=".activity.SplashActivity" android:screenOrientation="portrait"
             android:theme="@style/SplashActivityTheme"
+            android:exported="true"
             >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -120,8 +121,7 @@
             android:excludeFromRecents="true"
             android:theme="@style/fido"
             android:label="Fido"
-            >
-        </activity>
+            />
 
 
         <!--旋转动画-->
