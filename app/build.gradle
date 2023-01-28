@@ -85,6 +85,14 @@ android {
         }
     }
 
+    flavorDimensions "default"
+    productFlavors {
+        google {
+        }
+        official{
+        }
+    }
+
 }
 
 dependencies {
