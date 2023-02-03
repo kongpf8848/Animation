@@ -8,8 +8,8 @@ object Config{
     const val targetSdkVersion = 31
     val sourceCompatibilityVersion = JavaVersion.VERSION_1_8
     val targetCompatibilityVersion = JavaVersion.VERSION_1_8
-    const val versionCode = 10
-    const val versionName = "1.1.8"
+    const val versionCode = 15
+    const val versionName = "1.1.13"
 }
 
 object Versions {
@@ -58,6 +58,7 @@ object Versions {
     const val TYPE_BUILDER_VERSION="1.0"
     const val ULTRA_VIEWPAGER_VERSION="1.0.7.7"
     const val SVGA_PLAYER_VERSION="2.0.0"
+    const val BILLING_VERSION = "5.1.0"
 
 }
 
@@ -85,6 +86,7 @@ object BuildDependencies {
     const val rxAndroid = "io.reactivex.rxjava2:rxandroid:${Versions.RXANDROID_VERSION}"
     const val ultraViewpager="com.alibaba.android:ultraviewpager:${Versions.ULTRA_VIEWPAGER_VERSION}@aar"
     const val SVGAPlayer="com.github.svga:SVGAPlayer-Android:${Versions.SVGA_PLAYER_VERSION}"
+    const val billing="com.android.billingclient:billing:${Versions.BILLING_VERSION}"
 }
 
 object AndroidX {

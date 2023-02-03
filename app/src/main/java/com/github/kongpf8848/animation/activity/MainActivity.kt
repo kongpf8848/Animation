@@ -3,6 +3,7 @@ package com.github.kongpf8848.animation.activity
 import android.os.Bundle
 import android.view.animation.*
 import androidx.recyclerview.widget.GridLayoutManager
+import com.android.billingclient.api.SkuDetailsParams
 import com.github.kongpf8848.animation.R
 import com.github.kongpf8848.animation.adapter.MainAdapter
 import com.github.kongpf8848.animation.base.BaseToolbarActivity
@@ -33,6 +34,7 @@ class MainActivity : BaseToolbarActivity() {
     override fun onCreateEnd(savedInstanceState: Bundle?) {
         super.onCreateEnd(savedInstanceState)
         toolbar?.navigationIcon = null
+
 
         rv_main.apply {
             layoutManager = GridLayoutManager(this@MainActivity, 2, GridLayoutManager.VERTICAL, false)

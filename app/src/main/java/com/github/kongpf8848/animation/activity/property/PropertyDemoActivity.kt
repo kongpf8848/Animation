@@ -4,10 +4,12 @@ import android.animation.AnimatorInflater
 import android.animation.ObjectAnimator
 import android.animation.PropertyValuesHolder
 import android.animation.ValueAnimator
+import android.content.Intent
 import android.view.View
 import android.view.animation.AccelerateDecelerateInterpolator
 import butterknife.OnClick
 import com.github.kongpf8848.animation.R
+import com.github.kongpf8848.animation.activity.BillActivity
 import com.github.kongpf8848.animation.base.BaseActivity
 import kotlinx.android.synthetic.main.activity_property_demo.*
 
@@ -64,6 +66,8 @@ class PropertyDemoActivity : BaseActivity() {
 
     @OnClick(R.id.button7)
     fun onButton7() {
-        iv_boy.animate().scaleX(1.1f).scaleY(1.1f).setDuration(1000).start()
+        //iv_boy.animate().scaleX(1.1f).scaleY(1.1f).setDuration(1000).start()
+        val intent=Intent(this,BillActivity::class.java)
+        startActivity(intent)
     }
 }

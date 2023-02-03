@@ -128,4 +128,5 @@ dependencies {
         transitive = true
     }
     implementation BuildDependencies.SVGAPlayer
+    implementation BuildDependencies.billing
 }
