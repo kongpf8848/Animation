@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<abc>
+</abc>
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<androidx.constraintlayout.motion.widget.MotionLayout-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    android:id="@+id/login_form_content_layout"-->
+<!--    android:background="@ref/0x0106000d"-->
+<!--    android:focusable="true"-->
+<!--    android:focusableInTouchMode="true"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    app:currentState="@ref/0x7f0a030b"-->
+<!--    app:layoutDescription="@xml/motion_scene_fragment_launch_login_form">-->
+
+<!--    <View-->
+<!--        android:id="@+id/transition_background"-->
+<!--        android:background="#ff007cff"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--    <com.airbnb.lottie.LottieAnimationView-->
+<!--        android:id="@ref/0x7f0a0392"-->
+<!--        android:layout_width="dimension(79617)"-->
+<!--        android:layout_height="dimension(76801)"-->
+<!--        android:layout_marginBottom="dimension(1)"-->
+<!--        app:layout_constraintBottom_toTopOf="@ref/0x7f0a039a"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="1054280256.000000"-->
+<!--        app:layout_constraintVertical_chainStyle="2" />-->
+
+<!--    <com.airbnb.lottie.LottieAnimationView-->
+<!--        android:id="@ref/0x7f0a039a"-->
+<!--        android:layout_width="dimension(66561)"-->
+<!--        android:layout_height="dimension(29185)"-->
+<!--        android:scaleType="6"-->
+<!--        android:adjustViewBounds="true"-->
+<!--        app:layout_constraintBottom_toBottomOf="0"-->
+<!--        app:layout_constraintEnd_toEndOf="@ref/0x7f0a0392"-->
+<!--        app:layout_constraintStart_toStartOf="@ref/0x7f0a0392"-->
+<!--        app:layout_constraintTop_toBottomOf="@ref/0x7f0a0392" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@ref/0x7f0a038f"-->
+<!--        android:clickable="false"-->
+<!--        android:layout_width="dimension(6145)"-->
+<!--        android:layout_height="dimension(6145)"-->
+<!--        android:alpha="0.000000"-->
+<!--        android:layout_marginStart="@ref/0x7f070051"-->
+<!--        app:layout_constraintBottom_toBottomOf="@ref/0x7f0a03a2"-->
+<!--        app:layout_constraintStart_toStartOf="0"-->
+<!--        app:layout_constraintTop_toTopOf="@ref/0x7f0a03a2"-->
+<!--        app:srcCompat="@ref/0x7f0800a8"-->
+<!--        app:tint="@ref/0x7f0603cb" />-->
+
+<!--    <View-->
+<!--        android:id="@ref/0x7f0a03a3"-->
+<!--        android:layout_width="-2"-->
+<!--        android:layout_height="dimension(256)"-->
+<!--        app:layout_constraintEnd_toEndOf="0"-->
+<!--        app:layout_constraintStart_toStartOf="0"-->
+<!--        app:layout_constraintTop_toTopOf="0" />-->
+
+<!--    <View-->
+<!--        android:id="@ref/0x7f0a0390"-->
+<!--        android:layout_width="-2"-->
+<!--        android:layout_height="dimension(256)"-->
+<!--        app:layout_constraintBottom_toBottomOf="0"-->
+<!--        app:layout_constraintEnd_toEndOf="0"-->
+<!--        app:layout_constraintStart_toStartOf="0" />-->
+
+<!--    <TextView-->
+<!--        android:textSize="dimension(5122)"-->
+<!--        android:textStyle="0x0"-->
+<!--        android:textColor="@ref/0x7f0603cb"-->
+<!--        android:gravity="0x1"-->
+<!--        android:id="@ref/0x7f0a03a2"-->
+<!--        android:layout_width="-2"-->
+<!--        android:layout_height="-2"-->
+<!--        android:layout_marginTop="dimension(4097)"-->
+<!--        android:text="@ref/0x7f130395"-->
+<!--        android:alpha="0.000000"-->
+<!--        android:fontFamily="@ref/0x7f09000a"-->
+<!--        app:layout_constraintEnd_toEndOf="0"-->
+<!--        app:layout_constraintStart_toStartOf="0"-->
+<!--        app:layout_constraintTop_toBottomOf="@ref/0x7f0a03a3" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@ref/0x7f0a0399"-->
+<!--        android:layout_width="@ref/0x7f0702fa"-->
+<!--        android:layout_height="@ref/0x7f0702fa"-->
+<!--        app:layout_constraintBottom_toBottomOf="0"-->
+<!--        app:layout_constraintEnd_toEndOf="0"-->
+<!--        app:layout_constraintStart_toStartOf="0"-->
+<!--        app:layout_constraintTop_toTopOf="0"-->
+<!--        app:layout_constraintVertical_chainStyle="2"-->
+<!--        app:srcCompat="@ref/0x7f08022d" />-->
+
+<!--    <androidx.constraintlayout.widget.Guideline-->
+<!--        android:orientation="horizontal"-->
+<!--        android:id="@ref/0x7f0a039b"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintGuide_percent="1057132352.000000" />-->
+
+<!--    <com.google.android.material.textfield.TextInputLayout-->
+<!--        android:enabled="false"-->
+<!--        android:textColorHint="@ref/0x7f0603cb"-->
+<!--        android:id="@ref/0x7f0a0397"-->
+<!--        android:layout_width="dimension(1)"-->
+<!--        android:layout_height="-2"-->
+<!--        android:layout_marginBottom="dimension(2049)"-->
+<!--        android:hint="@ref/0x7f130398"-->
+<!--        android:alpha="0.000000"-->
+<!--        android:layout_marginStart="dimension(4097)"-->
+<!--        android:layout_marginEnd="dimension(4097)"-->
+<!--        app:boxStrokeColor="@ref/0x7f0600ee"-->
+<!--        app:boxStrokeErrorColor="@ref/0x7f060397"-->
+<!--        app:boxStrokeWidth="dimension(513)"-->
+<!--        app:endIconDrawable="@ref/0x7f08018c"-->
+<!--        app:endIconMode="2"-->
+<!--        app:endIconTint="@ref/0x7f0603cb"-->
+<!--        app:errorEnabled="true"-->
+<!--        app:errorIconDrawable="@ref/0x00000000"-->
+<!--        app:errorTextColor="@ref/0x7f060397"-->
+<!--        app:expandedHintEnabled="false"-->
+<!--        app:hintTextColor="@ref/0x7f0603cb"-->
+<!--        app:layout_constraintBottom_toTopOf="@ref/0x7f0a039b"-->
+<!--        app:layout_constraintEnd_toEndOf="0"-->
+<!--        app:layout_constraintStart_toStartOf="0"-->
+<!--        style="@attr/0x7f040478">-->
+
+<!--        <EditText-->
+<!--            android:textSize="dimension(4098)"-->
+<!--            android:textStyle="0x0"-->
+<!--            android:textColor="@ref/0x7f0603cb"-->
+<!--            android:textColorHint="@ref/0x7f0600ef"-->
+<!--            android:id="@ref/0x7f0a0394"-->
+<!--            android:paddingTop="dimension(6913)"-->
+<!--            android:layout_width="-1"-->
+<!--            android:layout_height="-2"-->
+<!--            android:hint="@ref/0x7f1302eb"-->
+<!--            android:inputType="0x21"-->
+<!--            android:imeOptions="0x6"-->
+<!--            android:textCursorDrawable="@ref/0x7f080365"-->
+<!--            android:fontFamily="@ref/0x7f090008"-->
+<!--            android:backgroundTint="@ref/0x0106000d" />-->
+<!--    </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--    <View-->
+<!--        android:id="@ref/0x7f0a039d"-->
+<!--        android:background="@ref/0x7f0603cb"-->
+<!--        android:layout_width="dimension(14337)"-->
+<!--        android:layout_height="dimension(257)"-->
+<!--        android:alpha="0.000000"-->
+<!--        android:layout_marginEnd="dimension(1025)"-->
+<!--        app:layout_constraintBottom_toBottomOf="@ref/0x7f0a03a0"-->
+<!--        app:layout_constraintEnd_toStartOf="@ref/0x7f0a03a0"-->
+<!--        app:layout_constraintTop_toTopOf="@ref/0x7f0a03a0" />-->
+
+<!--    <TextView-->
+<!--        android:textColor="@ref/0x7f0603cb"-->
+<!--        android:id="@ref/0x7f0a03a0"-->
+<!--        android:layout_width="-2"-->
+<!--        android:layout_height="-2"-->
+<!--        android:layout_marginTop="dimension(6145)"-->
+<!--        android:text="@ref/0x7f1300de"-->
+<!--        android:includeFontPadding="false"-->
+<!--        android:alpha="0.000000"-->
+<!--        app:layout_constraintEnd_toEndOf="0"-->
+<!--        app:layout_constraintStart_toStartOf="0"-->
+<!--        app:layout_constraintTop_toBottomOf="@ref/0x7f0a0397"-->
+<!--        style="@attr/0x7f04046b" />-->
+
+<!--    <View-->
+<!--        android:id="@ref/0x7f0a039f"-->
+<!--        android:background="@ref/0x7f0603cb"-->
+<!--        android:layout_width="dimension(14337)"-->
+<!--        android:layout_height="dimension(257)"-->
+<!--        android:alpha="0.000000"-->
+<!--        android:layout_marginStart="dimension(1025)"-->
+<!--        app:layout_constraintBottom_toBottomOf="@ref/0x7f0a03a0"-->
+<!--        app:layout_constraintStart_toEndOf="@ref/0x7f0a03a0"-->
+<!--        app:layout_constraintTop_toTopOf="@ref/0x7f0a03a0" />-->
+
+<!--    <com.google.android.material.button.MaterialButton-->
+<!--        android:id="@ref/0x7f0a0398"-->
+<!--        android:clickable="false"-->
+<!--        android:layout_width="-1"-->
+<!--        android:layout_height="-2"-->
+<!--        android:layout_marginTop="dimension(6145)"-->
+<!--        android:minHeight="dimension(14337)"-->
+<!--        android:text="@ref/0x7f1301dc"-->
+<!--        android:alpha="0.000000"-->
+<!--        android:layout_marginStart="dimension(4097)"-->
+<!--        android:layout_marginEnd="dimension(4097)"-->
+<!--        android:elevation="dimension(1281)"-->
+<!--        app:layout_constraintEnd_toEndOf="0"-->
+<!--        app:layout_constraintStart_toStartOf="0"-->
+<!--        app:layout_constraintTop_toBottomOf="@ref/0x7f0a03a0"-->
+<!--        style="@ref/0x7f140285" />-->
+
+<!--    <com.google.android.material.button.MaterialButton-->
+<!--        android:id="@ref/0x7f0a0391"-->
+<!--        android:visibility="1"-->
+<!--        android:clickable="false"-->
+<!--        android:layout_width="dimension(1)"-->
+<!--        android:layout_height="-2"-->
+<!--        android:layout_marginBottom="dimension(4097)"-->
+<!--        android:text="@ref/0x7f1300c0"-->
+<!--        android:layout_marginStart="dimension(4097)"-->
+<!--        android:layout_marginEnd="dimension(4097)"-->
+<!--        app:layout_constraintBottom_toTopOf="@ref/0x7f0a0390"-->
+<!--        app:layout_constraintEnd_toEndOf="0"-->
+<!--        app:layout_constraintStart_toStartOf="0"-->
+<!--        style="@ref/0x7f140281" />-->
+
+<!--    <TextView-->
+<!--        android:enabled="false"-->
+<!--        android:textColor="@ref/0x7f0600f1"-->
+<!--        android:textColorLink="@ref/0x7f0600f2"-->
+<!--        android:gravity="0x11"-->
+<!--        android:id="@ref/0x7f0a03a1"-->
+<!--        android:layout_width="dimension(1)"-->
+<!--        android:layout_height="-2"-->
+<!--        android:layout_marginBottom="dimension(3073)"-->
+<!--        android:text="@ref/0x7f130397"-->
+<!--        android:lineSpacingExtra="dimension(770)"-->
+<!--        android:alpha="0.000000"-->
+<!--        android:layout_marginStart="dimension(6145)"-->
+<!--        android:layout_marginEnd="dimension(6145)"-->
+<!--        android:breakStrategy="0"-->
+<!--        app:layout_constraintBottom_toTopOf="@ref/0x7f0a0390"-->
+<!--        app:layout_constraintEnd_toEndOf="0"-->
+<!--        app:layout_constraintStart_toStartOf="0"-->
+<!--        style="@attr/0x7f04044b" />-->
+
+<!--    <ProgressBar-->
+<!--        android:layout_gravity="0x11"-->
+<!--        android:id="@ref/0x7f0a039c"-->
+<!--        android:layout_width="dimension(15361)"-->
+<!--        android:layout_height="dimension(15361)"-->
+<!--        android:alpha="0.000000"-->
+<!--        android:indeterminateTint="@ref/0x7f0603cb"-->
+<!--        app:layout_constraintBottom_toTopOf="@ref/0x7f0a038c"-->
+<!--        app:layout_constraintEnd_toEndOf="0"-->
+<!--        app:layout_constraintStart_toStartOf="0"-->
+<!--        app:layout_constraintTop_toBottomOf="@ref/0x7f0a039b"-->
+<!--        app:layout_constraintVertical_bias="0.000000"-->
+<!--        app:layout_constraintVertical_chainStyle="2" />-->
+
+<!--    <Button-->
+<!--        android:textColor="@ref/0x7f0603cb"-->
+<!--        android:id="@ref/0x7f0a038c"-->
+<!--        android:clickable="false"-->
+<!--        android:layout_width="-2"-->
+<!--        android:layout_height="-2"-->
+<!--        android:layout_marginTop="dimension(3073)"-->
+<!--        android:text="@ref/0x7f130085"-->
+<!--        android:alpha="0.000000"-->
+<!--        app:layout_constraintBottom_toBottomOf="0"-->
+<!--        app:layout_constraintEnd_toEndOf="0"-->
+<!--        app:layout_constraintStart_toStartOf="0"-->
+<!--        app:layout_constraintTop_toBottomOf="@ref/0x7f0a039c"-->
+<!--        style="@ref/0x7f1402a3" />-->
+<!--</androidx.constraintlayout.motion.widget.MotionLayout>-->

@@ -1,0 +1,574 @@
+<?xml version="1.0" encoding="utf-8"?>
+<abc>
+</abc>
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<MotionScene-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:motion="http://schemas.android.com/apk/res-auto">-->
+
+<!--    <Transition-->
+<!--        android:id="@+id/initialToIntroduction"-->
+<!--        motion:constraintSetEnd="@+id/introduction"-->
+<!--        motion:constraintSetStart="@+id/initial"-->
+<!--        motion:duration="1000"-->
+<!--        motion:motionInterpolator="cubic-bezier(.65,0,.05,1)" />-->
+
+<!--    <Transition-->
+<!--        android:id="@ref/0x7f0a0316"-->
+<!--        motion:constraintSetEnd="@ref/0x7f0a02e2"-->
+<!--        motion:constraintSetStart="@+id/introduction"-->
+<!--        motion:duration="1000"-->
+<!--        motion:motionInterpolator="cubic-bezier(.7,0,.2,1)">-->
+
+<!--        <KeyFrameSet>-->
+
+<!--            <KeyAttribute-->
+<!--                android:alpha="0.000000"-->
+<!--                motion:framePosition="37"-->
+<!--                motion:motionTarget="@ref/0x7f0a03a2" />-->
+
+<!--            <KeyAttribute-->
+<!--                android:alpha="0.000000"-->
+<!--                motion:framePosition="37"-->
+<!--                motion:motionTarget="@ref/0x7f0a03a1" />-->
+
+<!--            <KeyAttribute-->
+<!--                android:alpha="0.000000"-->
+<!--                motion:framePosition="37"-->
+<!--                motion:motionTarget="@ref/0x7f0a0398" />-->
+
+<!--            <KeyAttribute-->
+<!--                android:alpha="0.000000"-->
+<!--                motion:framePosition="37"-->
+<!--                motion:motionTarget="@ref/0x7f0a03a0" />-->
+
+<!--            <KeyAttribute-->
+<!--                android:alpha="0.000000"-->
+<!--                motion:framePosition="37"-->
+<!--                motion:motionTarget="@ref/0x7f0a0397" />-->
+
+<!--            <KeyAttribute-->
+<!--                android:alpha="0.000000"-->
+<!--                motion:framePosition="37"-->
+<!--                motion:motionTarget="@ref/0x7f0a039d" />-->
+
+<!--            <KeyAttribute-->
+<!--                android:alpha="0.000000"-->
+<!--                motion:framePosition="37"-->
+<!--                motion:motionTarget="@ref/0x7f0a039f" />-->
+<!--        </KeyFrameSet>-->
+<!--    </Transition>-->
+
+<!--    <Transition-->
+<!--        android:id="@ref/0x7f0a02e4"-->
+<!--        motion:constraintSetEnd="@ref/0x7f0a03d4"-->
+<!--        motion:constraintSetStart="@ref/0x7f0a02e2"-->
+<!--        motion:duration="300" />-->
+
+<!--    <Transition-->
+<!--        android:id="@ref/0x7f0a02e3"-->
+<!--        motion:constraintSetEnd="@ref/0x7f0a0386"-->
+<!--        motion:constraintSetStart="@ref/0x7f0a02e2"-->
+<!--        motion:duration="300" />-->
+
+<!--    <Transition-->
+<!--        android:id="@ref/0x7f0a0387"-->
+<!--        motion:constraintSetEnd="@ref/0x7f0a03d4"-->
+<!--        motion:constraintSetStart="@ref/0x7f0a0386"-->
+<!--        motion:duration="300" />-->
+
+<!--    <Transition-->
+<!--        android:id="@ref/0x7f0a03d6"-->
+<!--        motion:constraintSetEnd="@ref/0x7f0a0386"-->
+<!--        motion:constraintSetStart="@ref/0x7f0a03d4"-->
+<!--        motion:duration="100" />-->
+
+<!--    <Transition-->
+<!--        android:id="@ref/0x7f0a03d5"-->
+<!--        motion:constraintSetEnd="@ref/0x7f0a02e2"-->
+<!--        motion:constraintSetStart="@ref/0x7f0a03d4"-->
+<!--        motion:duration="300" />-->
+
+<!--    <ConstraintSet-->
+<!--        android:id="@+id/initial">-->
+
+<!--        <Constraint-->
+<!--            android:id="@ref/0x7f0a038f">-->
+
+<!--            <Layout-->
+<!--                android:layout_width="dimension(6145)"-->
+<!--                android:layout_height="dimension(6145)"-->
+<!--                android:layout_marginStart="@ref/0x7f070051"-->
+<!--                motion:layout_constraintBottom_toBottomOf="@ref/0x7f0a03a2"-->
+<!--                motion:layout_constraintStart_toStartOf="0"-->
+<!--                motion:layout_constraintTop_toTopOf="@ref/0x7f0a03a2">-->
+
+<!--            </Layout>-->
+
+<!--            <PropertySet-->
+<!--                android:alpha="0.000000" />-->
+
+<!--            <CustomAttribute-->
+<!--                motion:attributeName="clickable"-->
+<!--                motion:customBoolean="false" />-->
+<!--        </Constraint>-->
+
+<!--        <Constraint-->
+<!--            android:id="@ref/0x7f0a0398">-->
+
+<!--            <Layout-->
+<!--                android:layout_width="-1"-->
+<!--                android:layout_height="-2"-->
+<!--                android:layout_marginTop="dimension(6145)"-->
+<!--                android:minHeight="dimension(14337)"-->
+<!--                android:layout_marginStart="dimension(4097)"-->
+<!--                android:layout_marginEnd="dimension(4097)"-->
+<!--                motion:layout_constraintEnd_toEndOf="0"-->
+<!--                motion:layout_constraintStart_toStartOf="0"-->
+<!--                motion:layout_constraintTop_toBottomOf="@ref/0x7f0a03a0">-->
+
+<!--            </Layout>-->
+
+<!--            <PropertySet-->
+<!--                android:alpha="0.000000" />-->
+
+<!--            <CustomAttribute-->
+<!--                motion:attributeName="clickable"-->
+<!--                motion:customBoolean="false" />-->
+<!--        </Constraint>-->
+
+<!--        <Constraint-->
+<!--            android:id="@ref/0x7f0a0397">-->
+
+<!--            <Layout-->
+<!--                android:layout_width="dimension(1)"-->
+<!--                android:layout_height="-2"-->
+<!--                android:layout_marginBottom="dimension(2049)"-->
+<!--                android:layout_marginStart="dimension(4097)"-->
+<!--                android:layout_marginEnd="dimension(4097)"-->
+<!--                motion:layout_constraintBottom_toTopOf="@ref/0x7f0a039b"-->
+<!--                motion:layout_constraintEnd_toEndOf="0"-->
+<!--                motion:layout_constraintStart_toStartOf="0">-->
+
+<!--            </Layout>-->
+
+<!--            <PropertySet-->
+<!--                android:alpha="0.000000" />-->
+
+<!--            <CustomAttribute-->
+<!--                motion:attributeName="enabled"-->
+<!--                motion:customBoolean="false" />-->
+<!--        </Constraint>-->
+
+<!--        <Constraint-->
+<!--            android:id="@ref/0x7f0a03a1">-->
+
+<!--            <Layout-->
+<!--                android:layout_width="dimension(1)"-->
+<!--                android:layout_height="-2"-->
+<!--                android:layout_marginBottom="dimension(3073)"-->
+<!--                android:layout_marginStart="dimension(6145)"-->
+<!--                android:layout_marginEnd="dimension(6145)"-->
+<!--                motion:layout_constraintBottom_toTopOf="@ref/0x7f0a0390"-->
+<!--                motion:layout_constraintEnd_toEndOf="0"-->
+<!--                motion:layout_constraintStart_toStartOf="0">-->
+
+<!--            </Layout>-->
+
+<!--            <PropertySet-->
+<!--                android:alpha="0.000000"-->
+<!--                motion:visibilityMode="1" />-->
+
+<!--            <CustomAttribute-->
+<!--                motion:attributeName="enabled"-->
+<!--                motion:customBoolean="false" />-->
+<!--        </Constraint>-->
+
+<!--        <Constraint-->
+<!--            android:id="@ref/0x7f0a0391">-->
+
+<!--            <Layout-->
+<!--                android:layout_width="dimension(1)"-->
+<!--                android:layout_height="-2"-->
+<!--                android:layout_marginBottom="dimension(4097)"-->
+<!--                android:layout_marginStart="dimension(4097)"-->
+<!--                android:layout_marginEnd="dimension(4097)"-->
+<!--                motion:layout_constraintBottom_toTopOf="@ref/0x7f0a0390"-->
+<!--                motion:layout_constraintEnd_toEndOf="0"-->
+<!--                motion:layout_constraintStart_toStartOf="0">-->
+
+<!--            </Layout>-->
+
+<!--            <PropertySet-->
+<!--                android:visibility="1" />-->
+
+<!--            <CustomAttribute-->
+<!--                motion:attributeName="clickable"-->
+<!--                motion:customBoolean="false" />-->
+<!--        </Constraint>-->
+
+<!--        <Constraint-->
+<!--            android:id="@ref/0x7f0a038c">-->
+
+<!--            <Layout-->
+<!--                android:layout_width="-2"-->
+<!--                android:layout_height="-2"-->
+<!--                android:layout_marginTop="dimension(3073)"-->
+<!--                motion:layout_constraintBottom_toBottomOf="0"-->
+<!--                motion:layout_constraintEnd_toEndOf="0"-->
+<!--                motion:layout_constraintStart_toStartOf="0"-->
+<!--                motion:layout_constraintTop_toBottomOf="@ref/0x7f0a039c">-->
+
+<!--            </Layout>-->
+
+<!--            <PropertySet-->
+<!--                android:alpha="0.000000" />-->
+
+<!--            <CustomAttribute-->
+<!--                motion:attributeName="clickable"-->
+<!--                motion:customBoolean="false" />-->
+<!--        </Constraint>-->
+<!--    </ConstraintSet>-->
+
+<!--    <ConstraintSet-->
+<!--        android:id="@+id/introduction"-->
+<!--        motion:deriveConstraintsFrom="@+id/initial">-->
+
+<!--        <Constraint-->
+<!--            android:id="@ref/0x7f0a0399">-->
+
+<!--            <Layout-->
+<!--                android:layout_width="@ref/0x7f0702fa"-->
+<!--                android:layout_height="@ref/0x7f0702fa"-->
+<!--                motion:layout_constraintBottom_toBottomOf="@ref/0x7f0a0392"-->
+<!--                motion:layout_constraintEnd_toEndOf="@ref/0x7f0a0392"-->
+<!--                motion:layout_constraintStart_toStartOf="@ref/0x7f0a0392"-->
+<!--                motion:layout_constraintTop_toTopOf="@ref/0x7f0a0392"-->
+<!--                motion:layout_constraintVertical_bias="1056964608.000000"-->
+<!--                motion:layout_constraintVertical_chainStyle="2">-->
+
+<!--            </Layout>-->
+<!--        </Constraint>-->
+
+<!--        <Constraint-->
+<!--            android:id="@ref/0x7f0a0392">-->
+
+<!--            <PropertySet-->
+<!--                android:alpha="1065353216.000000" />-->
+<!--        </Constraint>-->
+
+<!--        <Constraint-->
+<!--            android:id="@ref/0x7f0a07d7">-->
+
+<!--            <PropertySet-->
+<!--                android:alpha="0.000000" />-->
+<!--        </Constraint>-->
+<!--    </ConstraintSet>-->
+
+<!--    <ConstraintSet-->
+<!--        android:id="@ref/0x7f0a02e2"-->
+<!--        motion:deriveConstraintsFrom="@+id/introduction">-->
+
+<!--        <Constraint-->
+<!--            android:id="@ref/0x7f0a03a2">-->
+
+<!--            <PropertySet-->
+<!--                android:alpha="0.000000" />-->
+<!--        </Constraint>-->
+
+<!--        <Constraint-->
+<!--            android:id="@ref/0x7f0a0392">-->
+
+<!--            <PropertySet-->
+<!--                android:alpha="0.000000" />-->
+<!--        </Constraint>-->
+
+<!--        <Constraint-->
+<!--            android:id="@ref/0x7f0a039a">-->
+
+<!--            <PropertySet-->
+<!--                android:alpha="0.000000" />-->
+<!--        </Constraint>-->
+
+<!--        <Constraint-->
+<!--            android:id="@ref/0x7f0a03a1">-->
+
+<!--            <PropertySet-->
+<!--                android:alpha="1065353216.000000"-->
+<!--                motion:visibilityMode="1" />-->
+
+<!--            <CustomAttribute-->
+<!--                motion:attributeName="enabled"-->
+<!--                motion:customBoolean="true" />-->
+<!--        </Constraint>-->
+
+<!--        <Constraint-->
+<!--            android:id="@ref/0x7f0a0398">-->
+
+<!--            <CustomAttribute-->
+<!--                motion:attributeName="clickable"-->
+<!--                motion:customBoolean="true" />-->
+
+<!--            <PropertySet-->
+<!--                android:alpha="1065353216.000000" />-->
+<!--        </Constraint>-->
+
+<!--        <Constraint-->
+<!--            android:id="@ref/0x7f0a039f">-->
+
+<!--            <PropertySet-->
+<!--                android:alpha="1045220544.000000" />-->
+<!--        </Constraint>-->
+
+<!--        <Constraint-->
+<!--            android:id="@ref/0x7f0a03a0">-->
+
+<!--            <PropertySet-->
+<!--                android:alpha="1061997760.000000" />-->
+<!--        </Constraint>-->
+
+<!--        <Constraint-->
+<!--            android:id="@ref/0x7f0a039d">-->
+
+<!--            <PropertySet-->
+<!--                android:alpha="1045220544.000000" />-->
+<!--        </Constraint>-->
+
+<!--        <Constraint-->
+<!--            android:id="@ref/0x7f0a0397">-->
+
+<!--            <CustomAttribute-->
+<!--                motion:attributeName="enabled"-->
+<!--                motion:customBoolean="true" />-->
+
+<!--            <PropertySet-->
+<!--                android:alpha="1065353216.000000" />-->
+<!--        </Constraint>-->
+
+<!--        <Constraint-->
+<!--            android:id="@ref/0x7f0a0399"-->
+<!--            android:scaleX="1060823360.000000"-->
+<!--            android:scaleY="1060823360.000000">-->
+
+<!--            <Layout-->
+<!--                android:layout_width="@ref/0x7f0702fa"-->
+<!--                android:layout_height="@ref/0x7f0702fa"-->
+<!--                motion:layout_constraintBottom_toTopOf="@ref/0x7f0a0397"-->
+<!--                motion:layout_constraintEnd_toEndOf="@ref/0x7f0a0392"-->
+<!--                motion:layout_constraintStart_toStartOf="@ref/0x7f0a0392"-->
+<!--                motion:layout_constraintTop_toBottomOf="@ref/0x7f0a03a2"-->
+<!--                motion:layout_constraintVertical_chainStyle="2">-->
+
+<!--            </Layout>-->
+
+<!--            <PropertySet-->
+<!--                android:alpha="1065353216.000000" />-->
+<!--        </Constraint>-->
+
+<!--        <Constraint-->
+<!--            android:id="@ref/0x7f0a0391">-->
+
+<!--            <PropertySet-->
+<!--                android:visibility="1" />-->
+
+<!--            <CustomAttribute-->
+<!--                motion:attributeName="clickable"-->
+<!--                motion:customBoolean="false" />-->
+<!--        </Constraint>-->
+<!--    </ConstraintSet>-->
+
+<!--    <ConstraintSet-->
+<!--        android:id="@ref/0x7f0a03d4"-->
+<!--        motion:deriveConstraintsFrom="@ref/0x7f0a02e2">-->
+
+<!--        <Constraint-->
+<!--            android:id="@ref/0x7f0a0397">-->
+
+<!--            <Layout-->
+<!--                android:layout_width="dimension(1)"-->
+<!--                android:layout_height="-2"-->
+<!--                android:layout_marginBottom="dimension(16385)"-->
+<!--                android:layout_marginStart="dimension(4097)"-->
+<!--                android:layout_marginEnd="dimension(4097)"-->
+<!--                motion:layout_constraintBottom_toTopOf="@ref/0x7f0a039b"-->
+<!--                motion:layout_constraintEnd_toEndOf="0"-->
+<!--                motion:layout_constraintStart_toStartOf="0">-->
+
+<!--            </Layout>-->
+<!--        </Constraint>-->
+
+<!--        <Constraint-->
+<!--            android:id="@ref/0x7f0a0399">-->
+
+<!--            <PropertySet-->
+<!--                android:alpha="0.000000" />-->
+<!--        </Constraint>-->
+
+<!--        <Constraint-->
+<!--            android:id="@ref/0x7f0a0398">-->
+
+<!--            <CustomAttribute-->
+<!--                motion:attributeName="clickable"-->
+<!--                motion:customBoolean="false" />-->
+
+<!--            <PropertySet-->
+<!--                android:alpha="0.000000" />-->
+<!--        </Constraint>-->
+
+<!--        <Constraint-->
+<!--            android:id="@ref/0x7f0a039d">-->
+
+<!--            <PropertySet-->
+<!--                android:alpha="0.000000" />-->
+<!--        </Constraint>-->
+
+<!--        <Constraint-->
+<!--            android:id="@ref/0x7f0a03a0">-->
+
+<!--            <PropertySet-->
+<!--                android:alpha="0.000000" />-->
+<!--        </Constraint>-->
+
+<!--        <Constraint-->
+<!--            android:id="@ref/0x7f0a039f">-->
+
+<!--            <PropertySet-->
+<!--                android:alpha="0.000000" />-->
+<!--        </Constraint>-->
+
+<!--        <Constraint-->
+<!--            android:id="@ref/0x7f0a03a1">-->
+
+<!--            <PropertySet-->
+<!--                android:alpha="0.000000"-->
+<!--                motion:visibilityMode="1" />-->
+
+<!--            <CustomAttribute-->
+<!--                motion:attributeName="enabled"-->
+<!--                motion:customBoolean="false" />-->
+<!--        </Constraint>-->
+
+<!--        <Constraint-->
+<!--            android:id="@ref/0x7f0a038f">-->
+
+<!--            <PropertySet-->
+<!--                android:alpha="1065353216.000000" />-->
+
+<!--            <CustomAttribute-->
+<!--                motion:attributeName="clickable"-->
+<!--                motion:customBoolean="true" />-->
+<!--        </Constraint>-->
+
+<!--        <Constraint-->
+<!--            android:id="@ref/0x7f0a0391">-->
+
+<!--            <PropertySet-->
+<!--                android:visibility="0" />-->
+
+<!--            <CustomAttribute-->
+<!--                motion:attributeName="clickable"-->
+<!--                motion:customBoolean="true" />-->
+<!--        </Constraint>-->
+<!--    </ConstraintSet>-->
+
+<!--    <ConstraintSet-->
+<!--        android:id="@ref/0x7f0a0386"-->
+<!--        motion:deriveConstraintsFrom="@ref/0x7f0a02e2">-->
+
+<!--        <Constraint-->
+<!--            android:id="@ref/0x7f0a038f">-->
+
+<!--            <PropertySet-->
+<!--                android:alpha="1065353216.000000" />-->
+
+<!--            <CustomAttribute-->
+<!--                motion:attributeName="clickable"-->
+<!--                motion:customBoolean="false" />-->
+<!--        </Constraint>-->
+
+<!--        <Constraint-->
+<!--            android:id="@ref/0x7f0a0397">-->
+
+<!--            <PropertySet-->
+<!--                android:alpha="0.000000" />-->
+
+<!--            <CustomAttribute-->
+<!--                motion:attributeName="enabled"-->
+<!--                motion:customBoolean="false" />-->
+<!--        </Constraint>-->
+
+<!--        <Constraint-->
+<!--            android:id="@ref/0x7f0a0398">-->
+
+<!--            <CustomAttribute-->
+<!--                motion:attributeName="clickable"-->
+<!--                motion:customBoolean="false" />-->
+
+<!--            <PropertySet-->
+<!--                android:alpha="0.000000" />-->
+<!--        </Constraint>-->
+
+<!--        <Constraint-->
+<!--            android:id="@ref/0x7f0a03a1">-->
+
+<!--            <PropertySet-->
+<!--                android:alpha="0.000000"-->
+<!--                motion:visibilityMode="1" />-->
+
+<!--            <CustomAttribute-->
+<!--                motion:attributeName="enabled"-->
+<!--                motion:customBoolean="false" />-->
+<!--        </Constraint>-->
+
+<!--        <Constraint-->
+<!--            android:id="@ref/0x7f0a039d">-->
+
+<!--            <PropertySet-->
+<!--                android:alpha="0.000000" />-->
+<!--        </Constraint>-->
+
+<!--        <Constraint-->
+<!--            android:id="@ref/0x7f0a0391">-->
+
+<!--            <PropertySet-->
+<!--                android:visibility="1" />-->
+
+<!--            <CustomAttribute-->
+<!--                motion:attributeName="clickable"-->
+<!--                motion:customBoolean="false" />-->
+<!--        </Constraint>-->
+
+<!--        <Constraint-->
+<!--            android:id="@ref/0x7f0a03a0">-->
+
+<!--            <PropertySet-->
+<!--                android:alpha="0.000000" />-->
+<!--        </Constraint>-->
+
+<!--        <Constraint-->
+<!--            android:id="@ref/0x7f0a039f">-->
+
+<!--            <PropertySet-->
+<!--                android:alpha="0.000000" />-->
+<!--        </Constraint>-->
+
+<!--        <Constraint-->
+<!--            android:id="@ref/0x7f0a039c">-->
+
+<!--            <PropertySet-->
+<!--                android:alpha="1065353216.000000" />-->
+<!--        </Constraint>-->
+
+<!--        <Constraint-->
+<!--            android:id="@ref/0x7f0a038c">-->
+
+<!--            <PropertySet-->
+<!--                android:alpha="1065353216.000000" />-->
+
+<!--            <CustomAttribute-->
+<!--                motion:attributeName="clickable"-->
+<!--                motion:customBoolean="true" />-->
+<!--        </Constraint>-->
+<!--    </ConstraintSet>-->
+<!--</MotionScene>-->

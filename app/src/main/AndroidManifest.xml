@@ -161,6 +161,10 @@
             android:label="火信"
             />
 
+        <activity android:name=".activity.lottie.SparkActivity" android:screenOrientation="portrait"
+            android:label="Spark"
+            />
+
         <!---ViewPager动画-->
         <activity android:name=".activity.ViewPagerActivity" android:screenOrientation="portrait"
             android:label="ViewPager动画"

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.motion.widget.MotionLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/motion_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layoutDescription="@xml/activity_lottie_spark_scene">
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/login_flow_full_background"
+        android:scaleType="centerCrop"
+       />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/login_form_circle_lottie"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/login_form_logo_lottie"
+        app:lottie_rawRes="@raw/login_flow_circle_animation"
+        app:layout_constraintVertical_bias="1054280256.000000"
+        app:layout_constraintVertical_chainStyle="spread_inside"
+        />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/login_form_logo_lottie"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/login_form_circle_lottie"
+        app:lottie_rawRes="@raw/login_flow_logo_animation"
+        />
+
+
+    <ImageView
+        android:id="@+id/moon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_launcher"
+     />
+
+</androidx.constraintlayout.motion.widget.MotionLayout>
+

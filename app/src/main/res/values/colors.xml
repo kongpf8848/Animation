@@ -13,4 +13,6 @@
     <color name="ic_launcher_background">#3DDC84</color>
     <color name="chat_progress_bg">#999999</color>
     <color name="chat_progress_bg_stroke">#888888</color>
+
+    <color name="spark_blue">#ff007cff</color>
 </resources>

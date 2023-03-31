@@ -1,6 +1,7 @@
 package com.github.kongpf8848.animation.activity
 
 import android.view.View
+import android.view.ViewGroup
 import butterknife.OnClick
 import com.github.kongpf8848.animation.R
 import com.github.kongpf8848.animation.activity.lottie.*
@@ -40,5 +41,11 @@ class LottieAnimActivity : BaseToolbarActivity() {
     @OnClick(R.id.button6)
     fun onButton6(view: View?) {
         startActivity(HuoChatActivity::class.java)
+
+    }
+
+    @OnClick(R.id.button7)
+    fun onButton7(view: View?) {
+        startActivity(SparkActivity::class.java)
     }
 }
