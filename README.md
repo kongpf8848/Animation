@@ -6,9 +6,13 @@
 Android各种动画效果合集，项目包含了丰富的动画实例(逐帧动画，补间动画，Lottie动画，GIF动画，SVGA动画)，体验动画之美，让Android动起来:smile::smile::smile:
 
 ## 下载
-| Google Play | Free Download |
-|:-:|:-:|
-|[![Google Play](https://github.com/kongpf8848/Animation/blob/master/images/google-play.png)](https://play.google.com/store/apps/details?id=com.github.kongpf8848.animation)|[![Free Download](https://github.com/kongpf8848/Animation/blob/master/images/free-download.png?raw=true)](http://hey.scandown.com/animation)|
+
+[<img src="https://github.com/kongpf8848/Animation/blob/master/images/google-play.png"
+     alt="Get it on Google Play"
+     height="80">](https://play.google.com/store/apps/details?id=com.github.kongpf8848.animation)
+[<img src="https://github.com/kongpf8848/Animation/blob/master/images/free-download.png?raw=true"
+     alt="Free Download"
+     height="80">](http://hey.scandown.com/animation)
 
 ## 截图
 | 闪屏页 | 引导页 | 小红书 |
