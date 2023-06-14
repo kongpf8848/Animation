@@ -211,7 +211,7 @@ class PdjGuideActivity : BaseActivity(), ViewPager.OnPageChangeListener {
         if (position >= 0 && position < lottieList.size) {
             val lottieAnimationView = lottieList[position]
             lottieAnimationView.addAnimatorListener(object : AnimatorListenerAdapter() {
-                override fun onAnimationEnd(animation: Animator?) {
+                override fun onAnimationEnd(animation: Animator) {
                     super.onAnimationEnd(animation)
                     if (mState == 0) {
                         if (position < lottieConfig!!.totalPageNum - 1) {
@@ -289,7 +289,7 @@ class PdjGuideActivity : BaseActivity(), ViewPager.OnPageChangeListener {
                 cancel()
                 setFloatValues(-translationOffset,0.0f)
                 addListener(object:AnimatorListenerAdapter(){
-                    override fun onAnimationEnd(animation: Animator?) {
+                    override fun onAnimationEnd(animation: Animator) {
                         super.onAnimationEnd(animation)
                         iv_start.visibility=View.GONE
                     }

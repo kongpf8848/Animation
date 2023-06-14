@@ -9,7 +9,6 @@ plugins{
 android {
 
     compileSdkVersion Config.compileSdkVersion
-    buildToolsVersion Config.buildToolsVersion
 
     aaptOptions.cruncherEnabled = false
     aaptOptions.useNewCruncher = false

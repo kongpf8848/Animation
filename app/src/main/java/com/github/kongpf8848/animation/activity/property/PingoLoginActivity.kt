@@ -68,7 +68,7 @@ class PingoLoginActivity : BaseActivity() {
         objectAnimator2 = ObjectAnimator.ofPropertyValuesHolder(bg_two_image, alpha2, scaleX2, scaleY2).setDuration(4000)
         objectAnimator3 = ObjectAnimator.ofPropertyValuesHolder(bg_three_image, alpha3, scaleX1, scaleY1).setDuration(3000)
         objectAnimator3?.addListener(object: AnimatorListenerAdapter() {
-            override fun onAnimationEnd(animation: Animator?) {
+            override fun onAnimationEnd(animation: Animator) {
                 super.onAnimationEnd(animation)
                 startAnimation()
             }
