@@ -17,6 +17,9 @@
     <string name="ziroom_tab_lvju">业主委托</string>
     <string name="ziroom_tab_my">我的</string>
 
+    <string name="connect">Login</string>
+    <string name="buttonCreateAccount">Create an account</string>
+
     <!--Intro view-->
     <string name="Page1Title">Telegram</string>
     <string name="Page2Title">Fast</string>
@@ -32,4 +35,15 @@
     <string name="Page6Message">**Telegram** lets you access your messages\nfrom multiple devices.</string>
     <string name="StartMessaging">Start Messaging</string>
 
+    <string name="onBoardingDescription2">Customize your shortcuts freely in the app settings.</string>
+    <string name="onBoardingDescription3">Archive, delete, move or favorite multiple messages at once.</string>
+    <string name="onBoardingDescription4">Create a free address or connect to an existing Infomaniak account.</string>
+    <string name="onBoardingTitle1">Choose your theme</string>
+    <string name="onBoardingTitle2">Save time with swipe actions</string>
+    <string name="onBoardingTitle3">Press a message for a few seconds to select multiple messages</string>
+    <string name="onBoardingTitle4">Get started!</string>
+
+    <string name="accentColorBlueTitle">Blue</string>
+    <string name="accentColorPinkTitle">Pink</string>
+    <string name="accentColorSystemTitle">System color</string>
 </resources>

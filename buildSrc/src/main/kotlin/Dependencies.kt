@@ -1,11 +1,10 @@
 import org.gradle.api.JavaVersion
 
 object Config{
-    const val compileSdkVersion = 33
-    const val buildToolsVersion = "31.0.0"
+    const val compileSdkVersion = 32
     const val applicationId="com.github.kongpf8848.animation"
     const val minSdkVersion = 21
-    const val targetSdkVersion = 33
+    const val targetSdkVersion = 32
     val sourceCompatibilityVersion = JavaVersion.VERSION_1_8
     val targetCompatibilityVersion = JavaVersion.VERSION_1_8
     const val versionCode = 17
@@ -21,7 +20,7 @@ object Versions {
     const val ANDROIDX_LEGACY_V4_VERSION = "1.0.0"
     const val ANDROIDX_LEGACY_V13_VERSION = "1.0.0"
     const val ANDROIDX_MULTIDEX_VERSION = "2.0.1"
-    const val ANDROIDX_MATERIAL_VERSION = "1.3.0"
+    const val ANDROIDX_MATERIAL_VERSION = "1.9.0"
     const val ANDROIDX_RECYCLERVIEW_VERSION = "1.1.0"
     const val ANDROIDX_PREFERENCE_VERSION = "1.1.1"
     const val ANDROIDX_CARDVIEW_VERSION = "1.0.0"

@@ -137,4 +137,23 @@
         <attr name="progressColor" format="color|reference" />
     </declare-styleable>
 
+
+    <declare-styleable name="CuteIndicator">
+        <!--默认圆点指示符颜色-->
+        <attr name="IndicatorColor" format="color"/>
+        <!--选中圆点指示符颜色-->
+        <attr name="IndicatorSelectedColor" format="color"/>
+        <!--默认圆点指示符宽度-->
+        <attr name="IndicatorWidth" format="dimension"/>
+        <!--默认圆点指示符高度-->
+        <attr name="IndicatorHeight" format="dimension"/>
+        <!--选中圆点指示符宽度-->
+        <attr name="IndicatorSelectedWidth" format="dimension"/>
+        <!---圆点与圆点之间的间隔-->
+        <attr name="IndicatorMargin" format="dimension" />
+        <!---是否显示动画-->
+        <attr name="IndicatorShowAnimation" format="boolean" />
+    </declare-styleable>
+
+
 </resources>

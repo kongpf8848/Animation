@@ -161,7 +161,7 @@
             android:label="火信"
             />
 
-        <activity android:name=".activity.lottie.SparkActivity" android:screenOrientation="portrait"
+        <activity android:name=".activity.lottie.KMailActivity" android:screenOrientation="portrait"
             android:label="Spark"
             />
 

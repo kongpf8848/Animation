@@ -37,7 +37,7 @@ class StickerRecyclerView @JvmOverloads constructor(context: Context, attrs: Att
     private inner class RecyclerListViewItemClickListener(context: Context?) : OnItemTouchListener {
 
         init {
-            gestureDetector = GestureDetectorCompat(context, object : SimpleOnGestureListener() {
+            gestureDetector = GestureDetectorCompat(context!!, object : SimpleOnGestureListener() {
                 override fun onSingleTapUp(e: MotionEvent): Boolean {
                     val childView = findChildViewUnder(e.x, e.y)
                     if (childView != null && onItemClickListener != null) {

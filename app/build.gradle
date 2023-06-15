@@ -1,4 +1,3 @@
-
 plugins{
     id 'com.android.application'
     id  'kotlin-android'
@@ -7,6 +6,7 @@ plugins{
 }
 
 android {
+    namespace 'com.github.kongpf8848.animation'
 
     compileSdkVersion Config.compileSdkVersion
 
@@ -66,9 +66,9 @@ android {
         targetCompatibility Config.targetCompatibilityVersion
     }
 
-
-    dataBinding {
-        enabled = true
+    buildFeatures {
+        dataBinding true
+        viewBinding true
     }
 
     externalNativeBuild {
@@ -84,11 +84,13 @@ android {
         }
     }
 
-    flavorDimensions "default"
+    flavorDimensions "distribution"
     productFlavors {
         google {
+            dimension 'distribution'
         }
         official{
+            dimension 'distribution'
         }
     }
 
@@ -108,6 +110,9 @@ dependencies {
     implementation AndroidX.constraintlayout
     implementation AndroidX.core
     implementation AndroidX.coreKtx
+    implementation AndroidX.lifecycleViewmodelKtx
+    implementation AndroidX.lifecycleLivedataKtx
+    implementation AndroidX.lifecycleRuntimeKtx
 
     implementation BuildDependencies.photoView
     implementation BuildDependencies.immersionbar
@@ -128,4 +133,7 @@ dependencies {
     }
     implementation BuildDependencies.SVGAPlayer
     implementation BuildDependencies.billing
+
+    api "androidx.navigation:navigation-fragment-ktx:2.5.3"
+    api "androidx.navigation:navigation-ui-ktx:2.5.3"
 }

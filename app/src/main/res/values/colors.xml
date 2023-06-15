@@ -15,4 +15,49 @@
     <color name="chat_progress_bg_stroke">#888888</color>
 
     <color name="spark_blue">#ff007cff</color>
+
+
+    <array name="pinkColors">
+        <item name="pinkColor1">#BC0055</item>
+        <item name="pinkColor2">#BD95A7</item>
+        <item name="pinkColor3">#DFBDCC</item>
+        <item name="pinkColor4">#824D65</item>
+        <item name="pinkColor5">#BF4C80</item>
+        <item name="pinkColor6">#FF5B97</item>
+        <item name="pinkColor7">#FF4388</item>
+        <item name="pinkColor8">#D81B60</item>
+        <item name="pinkColor9">#E10B59</item>
+        <item name="pinkColor10">#693D51</item>
+        <item name="pinkColor11">#F7E8EF</item>
+        <item name="pinkColor12">#FAF0F0</item>
+    </array>
+
+    <array name="blueColors">
+        <item name="blueColor1">#0098FF</item>
+        <item name="blueColor2">#3981AA</item>
+        <item name="blueColor3">#84BAD8</item>
+        <item name="blueColor4">#10405B</item>
+        <item name="blueColor5">#289CDD</item>
+        <item name="blueColor6">#69C9FF</item>
+        <item name="blueColor7">#5AC4FF</item>
+        <item name="blueColor8">#0A85C9</item>
+        <item name="blueColor9">#0875A5</item>
+        <item name="blueColor10">#0B3547</item>
+        <item name="blueColor11">#EAF8FE</item>
+        <item name="blueColor12">#F7FCFF</item>
+    </array>
+
+    <color name="commonColor1">#F5F5F5</color>
+    <color name="commonColor2">#E0E0E0</color>
+    <color name="commonColor3">#FAFAFA</color>
+    <color name="commonColor4">#C6AC9F</color>
+    <color name="commonColor5">#FFFFFF</color>
+    <color name="commonColor6">#340E00</color>
+    <color name="commonColor7">#CCCCCC</color>
+    <color name="commonColor8">#C4C4C4</color>
+    <color name="commonColor9">#FFFFFF</color>
+    <color name="commonColor10">#F8F8F8</color>
+    <color name="commonColor11">#D9D9D9</color>
+
+    <color name="elevatedBackground">#FAFAFA</color>
 </resources>
