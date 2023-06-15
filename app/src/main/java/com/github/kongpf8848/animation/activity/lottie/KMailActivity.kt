@@ -1,5 +1,6 @@
 package com.github.kongpf8848.animation.activity.lottie
 
+import android.graphics.Color
 import android.os.Build
 import android.os.Bundle
 import androidx.activity.viewModels
@@ -25,17 +26,12 @@ open class KMailActivity: BaseActivity() {
         return R.layout.activity_lottie_kmail
     }
 
-    override fun statusBarColor(): Int {
-        return R.color.spark_blue
-    }
-
-    override fun navigationBarColor(): Int {
-        return R.color.spark_blue
-    }
-
-
-    override fun statusBarDarkFont(): Boolean {
+    override fun enableStatusBar(): Boolean {
         return false
+    }
+
+    override fun customInitStatusBar() {
+        setStatusBarColorNavigationColorInt(Color.TRANSPARENT,false,Color.WHITE,true)
     }
 
     override fun onCreateEnd(savedInstanceState: Bundle?) {

@@ -134,6 +134,14 @@ abstract class BaseActivity : AppCompatActivity() {
         ImmersionBar.with(this).statusBarColorInt(color).statusBarDarkFont(isDarkFont).init()
     }
 
+    protected fun setStatusBarColorNavigationColorInt(@ColorInt statusBarColor: Int, isDarkStatus: Boolean,@ColorInt navigationBarColor: Int, isDarkNav: Boolean) {
+        ImmersionBar.with(this).statusBarColorInt(statusBarColor)
+            .statusBarDarkFont(isDarkStatus)
+            .navigationBarColorInt(navigationBarColor)
+            .navigationBarDarkIcon(isDarkNav)
+            .init()
+    }
+
     protected fun initStatusBar(@IdRes titleBarId: Int, @ColorRes statusBarColor: Int = android.R.color.transparent) {
         ImmersionBar.with(this)
                 .titleBarMarginTop(titleBarId)

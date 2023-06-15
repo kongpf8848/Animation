@@ -38,8 +38,4 @@ class IntroPagerAdapter(
             }
         }
     }
-
-    private companion object {
-        const val LOGIN_SCREEN = 3
-    }
 }
