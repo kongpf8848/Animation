@@ -60,4 +60,30 @@
     <color name="commonColor11">#D9D9D9</color>
 
     <color name="elevatedBackground">#FAFAFA</color>
+
+    <color name="pink_mail_primary_light">#BC0055</color>
+    <color name="pink_mail_primary_dark">#EF8BA4</color>
+    <color name="pink_mail_container_light">#F7E8EF</color>
+    <color name="pink_mail_container_dark">#5D0F2B</color>
+    <color name="pink_mail_on_primary_light">#FEF8F7</color>
+    <color name="pink_mail_on_primary_dark">#3F0018</color>
+
+    <color name="blue_mail_primary_light">#0098FF</color>
+    <color name="blue_mail_primary_dark">#4CB7FF</color>
+    <color name="blue_mail_container_light">#F4F6FD</color>
+    <color name="blue_mail_container_dark">#0F3256</color>
+    <color name="blue_mail_on_primary_light">#FBFBFE</color>
+    <color name="blue_mail_on_primary_dark">#061C35</color>
+
+    <color name="pinkMail">@color/pink_mail_primary_light</color>
+    <color name="pinkMailInverse">@color/pink_mail_primary_dark</color>
+    <color name="pinkMailOnPrimary">@color/pink_mail_on_primary_light</color>
+    <color name="pinkMailContainer">@color/pink_mail_container_light</color>
+    <color name="pinkOnboardingSecondaryBackground">@color/pinkMailContainer</color>
+
+    <color name="blueMail">#0098FF</color>
+    <color name="blueMailInverse">@color/blue_mail_primary_dark</color>
+    <color name="blueMailOnPrimary">@color/blue_mail_on_primary_light</color>
+    <color name="blueMailContainer">@color/blue_mail_container_light</color>
+    <color name="blueOnboardingSecondaryBackground">@color/blueMailContainer</color>
 </resources>

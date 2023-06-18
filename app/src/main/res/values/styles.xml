@@ -8,17 +8,46 @@
         <item name="colorAccent">@color/colorAccent</item>
 
         <item name="android:textAllCaps">false</item>
+        <item name="colorPrimaryContainer">#AAE8EF</item>
+        <item name="floatingActionButtonStyle">@style/FloatingActionButtonStyle</item>
     </style>
 
     <style name="AppTheme" parent="BaseTheme">
     </style>
 
-    <style name="AppTheme.Pink">
+    <style name="FloatingActionButtonStyle" parent="Widget.Material3.FloatingActionButton.Primary">
+        <item name="materialThemeOverlay">@style/FloatingActionButtonThemeOverlay</item>
+    </style>
 
+    <style name="FloatingActionButtonThemeOverlay">
+        <item name="colorContainer">?android:attr/colorPrimary</item>
+        <item name="colorOnContainer">?attr/colorOnPrimary</item>
+    </style>
+
+    <style name="AppTheme.Pink">
+        <item name="colorPrimary">@color/pinkMail</item>
+        <item name="colorPrimaryInverse">@color/pinkMailInverse</item>
+        <item name="colorOnPrimary">@color/pinkMailOnPrimary</item>
+
+        <item name="colorPrimaryContainer">@color/pinkMailContainer</item>
+        <item name="colorOnPrimaryContainer">@color/pinkMail</item>
+
+        <item name="colorAccent">@color/pinkMail</item>
+
+        <item name="colorControlNormal">@color/pinkMail</item>
     </style>
 
     <style name="AppTheme.Blue">
+        <item name="colorPrimary">@color/blueMail</item>
+        <item name="colorPrimaryInverse">@color/blueMailInverse</item>
+        <item name="colorOnPrimary">@color/blueMailOnPrimary</item>
 
+        <item name="colorPrimaryContainer">@color/blueMailContainer</item>
+        <item name="colorOnPrimaryContainer">@color/blueMail</item>
+
+        <item name="colorAccent">@color/blueMail</item>
+
+        <item name="colorControlNormal">@color/blueMail</item>
     </style>
 
     <style name="AppTheme.NoActionBar" parent="BaseTheme">
@@ -90,7 +119,7 @@
         <item name="android:paddingLeft">24dp</item>
         <item name="android:paddingRight">24dp</item>
         <item name="android:textAllCaps">false</item>
-        <item name="android:textColor">#BC0055</item>
+        <item name="android:textColor">?attr/colorOnPrimary</item>
         <item name="backgroundTint">#FEF8F7</item>
         <item name="cornerRadius">16dp</item>
         <item name="layout_constraintWidth_max">500dp</item>

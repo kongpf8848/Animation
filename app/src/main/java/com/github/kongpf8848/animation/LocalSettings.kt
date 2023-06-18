@@ -54,7 +54,7 @@ class LocalSettings private constructor(context: Context) {
 
         fun getOnboardingSecondaryBackground(context: Context): Int {
             val baseThemeContext = ContextThemeWrapper(context, theme)
-            return ContextCompat.getColor(baseThemeContext,R.color.colorPrimary)
+            return ContextCompat.getColor(baseThemeContext,R.color.onboarding_secondary_background)
         }
 
         fun getRipple(context: Context): Int {
@@ -64,8 +64,6 @@ class LocalSettings private constructor(context: Context) {
 
         override fun toString() = name.lowercase()
     }
-    //endregion
-
 
     companion object {
 

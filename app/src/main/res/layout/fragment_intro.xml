@@ -47,7 +47,6 @@
         android:id="@+id/logo"
         android:layout_width="wrap_content"
         android:layout_height="60dp"
-        android:layout_marginTop="30dp"
         android:importantForAccessibility="no"
         android:src="@drawable/ic_logo_infomaniak_mail"
         app:layout_constraintBottom_toTopOf="@id/iconLayout"

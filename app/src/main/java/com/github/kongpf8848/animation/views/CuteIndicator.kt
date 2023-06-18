@@ -11,6 +11,7 @@ import android.view.View
 import androidx.core.graphics.ColorUtils
 import androidx.viewpager.widget.ViewPager
 import com.github.kongpf8848.animation.R
+import kotlin.random.Random
 
 
 /**
@@ -69,6 +70,7 @@ class CuteIndicator @JvmOverloads constructor(
 
     override fun onDraw(canvas: Canvas) {
         super.onDraw(canvas)
+        Log.d(TAG, "onDraw() called with: canvas = $canvas")
         if (mIndicatorCount <= 0) {
             return
         }
@@ -162,6 +164,11 @@ class CuteIndicator @JvmOverloads constructor(
 
     private fun dp2px(dp: Float): Float {
         return dp * context.resources.displayMetrics.density
+    }
+
+    fun setSelectedColor(color:Int){
+        this.mIndicatorSelectedColor=color
+        invalidate()
     }
 
 }

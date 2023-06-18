@@ -33,12 +33,12 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             android:layout_margin="16dp"
-            app:IndicatorColor="@color/black"
+            app:IndicatorColor="#E0E0E0"
             app:IndicatorSelectedColor="?android:attr/colorPrimary"
             app:IndicatorWidth="8dp"
             app:IndicatorHeight="8dp"
-            app:IndicatorSelectedWidth="17dp"
-            app:IndicatorMargin="5dp"
+            app:IndicatorSelectedWidth="16dp"
+            app:IndicatorMargin="10dp"
             />
 
 

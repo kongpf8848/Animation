@@ -162,7 +162,7 @@
             />
 
         <activity android:name=".activity.lottie.KMailActivity" android:screenOrientation="portrait"
-            android:label="Spark"
+            android:label="KMail"
             />
 
         <!---ViewPager动画-->
