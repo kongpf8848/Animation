@@ -1,6 +1,6 @@
 # Animation
 
-[![最新版本](https://img.shields.io/badge/最新版本-1.1.15-brightgreen.svg)](https://play.google.com/store/apps/details?id=com.github.kongpf8848.animation)
+[![最新版本](https://img.shields.io/badge/最新版本-1.1.16-brightgreen.svg)](https://play.google.com/store/apps/details?id=com.github.kongpf8848.animation)
 [![License](https://img.shields.io/badge/License-Apache%202-brightgreen.svg)](https://www.apache.org/licenses/LICENSE-2.0)
 
 Android各种动画效果合集，项目包含了丰富的动画实例(逐帧动画，补间动画，Lottie动画，GIF动画，SVGA动画)，体验动画之美，让Android动起来:smile::smile::smile:
@@ -15,9 +15,9 @@ Android各种动画效果合集，项目包含了丰富的动画实例(逐帧动
      height="80">](http://hey.scandown.com/animation)
 
 ## 截图
-| 闪屏页 | 引导页 | 小红书 |
+| 闪屏页 | 引导页 | kMail |
 |:-:|:-:|:-:|
-|![image](https://github.com/kongpf8848/Animation/blob/master/images/splash.webp) | ![image](https://github.com/kongpf8848/Animation/blob/master/images/guide.webp) | ![image](https://github.com/kongpf8848/Animation/blob/master/images/xhs.webp) |
+|![image](https://github.com/kongpf8848/Animation/blob/master/images/splash.webp) | ![image](https://github.com/kongpf8848/Animation/blob/master/images/guide.webp) | ![image](https://github.com/kongpf8848/Animation/blob/master/images/kmail.webp) |
 
 | 汽车之家 | 电报(Telegram) | 京东到家 |
 |:-:|:-:|:-:|
