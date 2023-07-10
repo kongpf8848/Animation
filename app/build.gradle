@@ -113,6 +113,8 @@ dependencies {
     implementation AndroidX.lifecycleViewmodelKtx
     implementation AndroidX.lifecycleLivedataKtx
     implementation AndroidX.lifecycleRuntimeKtx
+    implementation AndroidX.navigationFragmentKtx
+    implementation AndroidX.navigationUiKtx
 
     implementation BuildDependencies.photoView
     implementation BuildDependencies.immersionbar
@@ -134,6 +136,4 @@ dependencies {
     implementation BuildDependencies.SVGAPlayer
     implementation BuildDependencies.billing
 
-    api "androidx.navigation:navigation-fragment-ktx:2.5.3"
-    api "androidx.navigation:navigation-ui-ktx:2.5.3"
 }
