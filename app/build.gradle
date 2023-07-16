@@ -11,8 +11,6 @@ android {
     compileSdkVersion Config.compileSdkVersion
     ndkVersion Config.ndkVersion
 
-    aaptOptions.cruncherEnabled = false
-    aaptOptions.useNewCruncher = false
 
     defaultConfig {
         applicationId Config.applicationId
@@ -54,9 +52,6 @@ android {
         }
     }
 
-    lintOptions {
-        abortOnError false
-    }
 
     kotlinOptions {
         jvmTarget = "1.8"
@@ -93,6 +88,10 @@ android {
         official{
             dimension 'distribution'
         }
+    }
+
+    lint {
+        abortOnError false
     }
 
 }
