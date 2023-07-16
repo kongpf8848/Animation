@@ -9,6 +9,7 @@ android {
     namespace 'com.github.kongpf8848.animation'
 
     compileSdkVersion Config.compileSdkVersion
+    ndkVersion Config.ndkVersion
 
     aaptOptions.cruncherEnabled = false
     aaptOptions.useNewCruncher = false
