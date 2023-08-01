@@ -19,7 +19,7 @@ Android各种动画效果合集，项目包含了丰富的动画实例，体验�
      height="80">](http://hey.scandown.com/animation)
 
 ## 截图
-| 闪屏页 | 引导页 | kMail |
+|  |  |  |
 |:-:|:-:|:-:|
 |![image](https://github.com/kongpf8848/Animation/blob/master/images/splash.webp) | ![image](https://github.com/kongpf8848/Animation/blob/master/images/guide.webp) | ![image](https://github.com/kongpf8848/Animation/blob/master/images/kmail.webp) |
 |![image](https://github.com/kongpf8848/Animation/blob/master/images/autohome.webp) | ![image](https://github.com/kongpf8848/Animation/blob/master/images/telegram.webp) | ![image](https://github.com/kongpf8848/Animation/blob/master/images/pdj_guide.webp) |
