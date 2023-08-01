@@ -13,18 +13,19 @@ Android各种动画效果合集，项目包含了丰富的动画实例，体验�
 
 ## 下载
 
-[<img src="https://github.com/kongpf8848/Animation/blob/master/images/google-play.png"
-     alt="Get it on Google Play" 
-     height="80">](https://play.google.com/store/apps/details?id=com.github.kongpf8848.animation)
-[<img src="https://github.com/kongpf8848/Animation/blob/master/images/free-download.png?raw=true"
-     alt="Free Download"
-     height="80">](http://hey.scandown.com/animation)
+[<img src="images/google-play.png" alt="Get it on Google Play" >](https://play.google.com/store/apps/details?id=com.github.kongpf8848.animation)
+[<img src="images/free-download.png?raw=true" alt="Free Download">](http://hey.scandown.com/animation)
 
 ## 截图
-|  |  |  |
-|:-:|:-:|:-:|
-|![image](https://github.com/kongpf8848/Animation/blob/master/images/splash.webp) | ![image](https://github.com/kongpf8848/Animation/blob/master/images/guide.webp) | ![image](https://github.com/kongpf8848/Animation/blob/master/images/kmail.webp) |
-|![image](https://github.com/kongpf8848/Animation/blob/master/images/autohome.webp) | ![image](https://github.com/kongpf8848/Animation/blob/master/images/telegram.webp) | ![image](https://github.com/kongpf8848/Animation/blob/master/images/pdj_guide.webp) |
+
+<div style="display: flex;">
+  <img src="images/splash.webp" width=30%>
+  <img src="images/guide.webp" width=30%>
+  <img src="images/telegram.webp" width=30%>
+  <img src="images/kmail.webp" width=30%>
+  <img src="images/pdj_guide.webp" width=30%>
+  <img src="images/autohome.webp" width=30%>
+</div>
 
 
 ## 逐帧动画
@@ -61,7 +62,7 @@ Android各种动画效果合集，项目包含了丰富的动画实例，体验�
 
 直接更改对象的属性来实现的动画。工作原理：在一定时间间隔内，通过不断调用set方法对值进行改变，并不断将该值赋给对象的属性，从而实现该对象在该属性上的动画效果，详细的属性动画介绍可参考🔗[官方文档](https://developer.android.google.cn/guide/topics/graphics/prop-animation)
 
-![image](https://github.com/kongpf8848/Animation/blob/master/images/intro_property.png)
+![image](images/intro_property.png)
 
 ## 转场动画
 
@@ -74,9 +75,12 @@ Lottie是Airbnb推出的一套跨平台的动画完整解决方案，它能够�
 ## Tgs动画
 
 IM软件Telegram推出的全新的Sticker贴纸格式，贴纸文件格式为.tgs，基于Lottie json文件改造而来。🔗[Telegram官网](https://telegram.org)，🔗[GitHub](https://github.com/DrKLO/Telegram)
-| 1 | 2 |
-|:-:|:-:|
-|![image](https://github.com/kongpf8848/Animation/blob/master/images/intro_telegram_1.png)|![image](https://github.com/kongpf8848/Animation/blob/master/images/intro_telegram_2.png)|
+
+<div style="display: flex;">
+  <img src="images/intro_telegram_1.png" width=30%>
+  <img src="images/intro_telegram_2.png" width=30%>
+</div>
+
 
 ## GIF动画
 
@@ -90,4 +94,4 @@ GIF(Graphics Interchange Format)是由CompuServe公司开发的一种图像文�
 
 SVGA是一种同时兼容Android/iOS/Flutter/Web平台的动画格式。🔗[SVGA官网](http://svga.io/)
 
-![image](https://github.com/kongpf8848/Animation/blob/master/images/intro_svga.jpg)
+![image](images/intro_svga.jpg)
