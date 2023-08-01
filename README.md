@@ -23,12 +23,12 @@ Android各种动画效果合集，项目包含了丰富的动画实例，体验�
 ## 截图
 
 <div style="display: flex;">
-  <img src="images/splash.webp" width=30%>
-  <img src="images/guide.webp" width=30%>
-  <img src="images/telegram.webp" width=30%>
-  <img src="images/kmail.webp" width=30%>
-  <img src="images/pdj_guide.webp" width=30%>
-  <img src="images/autohome.webp" width=30%>
+  <img src="images/splash.webp" width=33%>
+  <img src="images/guide.webp" width=33%>
+  <img src="images/telegram.webp" width=33%>
+  <img src="images/kmail.webp" width=33%>
+  <img src="images/pdj_guide.webp" width=33%>
+  <img src="images/autohome.webp" width=33%>
 </div>
 
 
@@ -81,8 +81,8 @@ Lottie是Airbnb推出的一套跨平台的动画完整解决方案，它能够�
 IM软件Telegram推出的全新的Sticker贴纸格式，贴纸文件格式为.tgs，基于Lottie json文件改造而来。🔗[Telegram官网](https://telegram.org)，🔗[GitHub](https://github.com/DrKLO/Telegram)
 
 <div style="display: flex;">
-  <img src="images/intro_telegram_1.png" width=30%>
-  <img src="images/intro_telegram_2.png" width=30%>
+  <img src="images/intro_telegram_1.png" width=33%>
+  <img src="images/intro_telegram_2.png" width=33%>
 </div>
 
 
