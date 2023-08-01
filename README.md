@@ -5,6 +5,8 @@
 [![最新版本](https://img.shields.io/badge/最新版本-1.1.16-brightgreen.svg)](https://play.google.com/store/apps/details?id=com.github.kongpf8848.animation)
 [![License](https://img.shields.io/badge/License-Apache%202-brightgreen.svg)](https://www.apache.org/licenses/LICENSE-2.0)
 
+中文 | [English](./README_EN.md)
+
 Android各种动画效果合集，项目包含了丰富的动画实例，体验动画之美，让Android动起来😊😄😎
 
 </div>
