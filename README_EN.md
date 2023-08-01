@@ -13,18 +13,23 @@ Collection of various animation effects in Android😊😄😎
 
 ## Download
 
-[<img src="https://github.com/kongpf8848/Animation/blob/master/images/google-play.png"
+[<img src="images/google-play.png"
      alt="Get it on Google Play" 
      height="80">](https://play.google.com/store/apps/details?id=com.github.kongpf8848.animation)
-[<img src="https://github.com/kongpf8848/Animation/blob/master/images/free-download.png?raw=true"
+[<img src="images/free-download.png"
      alt="Free Download"
      height="80">](http://hey.scandown.com/animation)
 
 ## Screenshots
-|  |  |  |
-|:-:|:-:|:-:|
-|![image](https://github.com/kongpf8848/Animation/blob/master/images/splash.webp) | ![image](https://github.com/kongpf8848/Animation/blob/master/images/guide.webp) | ![image](https://github.com/kongpf8848/Animation/blob/master/images/kmail.webp) |
-|![image](https://github.com/kongpf8848/Animation/blob/master/images/autohome.webp) | ![image](https://github.com/kongpf8848/Animation/blob/master/images/telegram.webp) | ![image](https://github.com/kongpf8848/Animation/blob/master/images/pdj_guide.webp) |
+
+<div style="display: flex;">
+  <img src="images/splash.webp" width=33%>
+  <img src="images/guide.webp" width=33%>
+  <img src="images/telegram.webp" width=33%>
+  <img src="images/kmail.webp" width=33%>
+  <img src="images/pdj_guide.webp" width=33%>
+  <img src="images/autohome.webp" width=33%>
+</div>
 
 
 ## Frame Animation
@@ -62,7 +67,7 @@ Playing frame by frame，like GIF， sequentially play a pre-defined sequence of
 
 Animation is implemented by directly changing the properties of the object. Working principle: Within a certain time interval，the value is continuously changed by constantly calling the set method，and this value is continuously assigned to the property of the object，thereby achieving the animation effect of the object on that property. For more information on property animation，please refer to the detailed introduction.[Official document](https://developer.android.google.cn/guide/topics/graphics/prop-animation)
 
-![image](https://github.com/kongpf8848/Animation/blob/master/images/intro_property.png)
+![image](images/intro_property.png)
 
 ## Transition Animation
 
@@ -75,9 +80,11 @@ Lottie is a cross-platform animation solution introduced by Airbnb. It allows de
 ## Tgs Animation
 
 A new sticker format called .tgs has been introduced by the IM software Telegram. This new sticker format is actually based on the lottie JSON file format.[Telegram website](https://telegram.org)
-| 1 | 2 |
-|:-:|:-:|
-|![image](https://github.com/kongpf8848/Animation/blob/master/images/intro_telegram_1.png)|![image](https://github.com/kongpf8848/Animation/blob/master/images/intro_telegram_2.png)|
+
+<div style="display: flex;">
+  <img src="images/intro_telegram_1.png" width=33%>
+  <img src="images/intro_telegram_2.png" width=33%>
+</div>
 
 ## GIF
 
@@ -91,4 +98,4 @@ GIF (Graphics Interchange Format) is an image file format developed by CompuServ
 
 SVGA is an animation format that is compatible with Android/iOS/Flutter/Web platforms.[SVGA website](http://svga.io/)
 
-![image](https://github.com/kongpf8848/Animation/blob/master/images/intro_svga.jpg)
+![image](images/intro_svga.jpg)
