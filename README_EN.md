@@ -23,12 +23,12 @@ Collection of various animation effects in Android😊😄😎
 ## Screenshots
 
 <div style="display: flex;">
-  <img src="images/splash.webp" width=33%>
-  <img src="images/guide.webp" width=33%>
-  <img src="images/telegram.webp" width=33%>
-  <img src="images/kmail.webp" width=33%>
-  <img src="images/pdj_guide.webp" width=33%>
-  <img src="images/autohome.webp" width=33%>
+  <img src="images/splash.webp" width=30%>
+  <img src="images/guide.webp" width=30%>
+  <img src="images/telegram.webp" width=30%>
+  <img src="images/kmail.webp" width=30%>
+  <img src="images/pdj_guide.webp" width=30%>
+  <img src="images/autohome.webp" width=30%>
 </div>
 
 
@@ -82,8 +82,8 @@ Lottie is a cross-platform animation solution introduced by Airbnb. It allows de
 A new sticker format called .tgs has been introduced by the IM software Telegram. This new sticker format is actually based on the lottie JSON file format.[Telegram website](https://telegram.org)
 
 <div style="display: flex;">
-  <img src="images/intro_telegram_1.png" width=33%>
-  <img src="images/intro_telegram_2.png" width=33%>
+  <img src="images/intro_telegram_1.png" width=30%>
+  <img src="images/intro_telegram_2.png" width=30%>
 </div>
 
 ## GIF
