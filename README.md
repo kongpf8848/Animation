@@ -1,14 +1,18 @@
-# Animation
+<div align="center">
+  
+<h1 align="center">Animation</h1>
 
 [![最新版本](https://img.shields.io/badge/最新版本-1.1.16-brightgreen.svg)](https://play.google.com/store/apps/details?id=com.github.kongpf8848.animation)
 [![License](https://img.shields.io/badge/License-Apache%202-brightgreen.svg)](https://www.apache.org/licenses/LICENSE-2.0)
 
-Android各种动画效果合集，项目包含了丰富的动画实例(逐帧动画，补间动画，Lottie动画，GIF动画，SVGA动画)，体验动画之美，让Android动起来:smile::smile::smile:
+Android各种动画效果合集，项目包含了丰富的动画实例，体验动画之美，让Android动起来😊😄😎
+
+</div>
 
 ## 下载
 
 [<img src="https://github.com/kongpf8848/Animation/blob/master/images/google-play.png"
-     alt="Get it on Google Play"
+     alt="Get it on Google Play" 
      height="80">](https://play.google.com/store/apps/details?id=com.github.kongpf8848.animation)
 [<img src="https://github.com/kongpf8848/Animation/blob/master/images/free-download.png?raw=true"
      alt="Free Download"
@@ -18,14 +22,8 @@ Android各种动画效果合集，项目包含了丰富的动画实例(逐帧动
 | 闪屏页 | 引导页 | kMail |
 |:-:|:-:|:-:|
 |![image](https://github.com/kongpf8848/Animation/blob/master/images/splash.webp) | ![image](https://github.com/kongpf8848/Animation/blob/master/images/guide.webp) | ![image](https://github.com/kongpf8848/Animation/blob/master/images/kmail.webp) |
-
-| 汽车之家 | 电报(Telegram) | 京东到家 |
-|:-:|:-:|:-:|
 |![image](https://github.com/kongpf8848/Animation/blob/master/images/autohome.webp) | ![image](https://github.com/kongpf8848/Animation/blob/master/images/telegram.webp) | ![image](https://github.com/kongpf8848/Animation/blob/master/images/pdj_guide.webp) |
 
-| 图片浏览 | 自如 | 翻译君 |
-|:-:|:-:|:-:|
-|![image](https://github.com/kongpf8848/Animation/blob/master/images/gallery.webp) | ![image](https://github.com/kongpf8848/Animation/blob/master/images/ziroom.webp) | ![image](https://github.com/kongpf8848/Animation/blob/master/images/fanyijun.webp) |
 
 ## 逐帧动画（Frame Animation）
 一帧一帧进行播放，它的原理与Gif类似，按序播放一组预先定义好的图片序列，如:
