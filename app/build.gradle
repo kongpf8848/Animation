@@ -80,13 +80,13 @@ android {
         }
     }
 
-    flavorDimensions "distribution"
+    flavorDimensions "channel"
     productFlavors {
         google {
-            dimension 'distribution'
+            dimension 'channel'
         }
         official{
-            dimension 'distribution'
+            dimension 'channel'
         }
     }
 
