@@ -58,7 +58,7 @@ object Versions {
     const val CIRCLE_IMAGEVIEW_VERSION="2.1.0"
     const val TYPE_BUILDER_VERSION="1.0"
     const val ULTRA_VIEWPAGER_VERSION="1.0.7.7"
-    const val SVGA_PLAYER_VERSION="2.0.0"
+    const val SVGA_PLAYER_VERSION="2.6.1"
     const val BILLING_VERSION="5.1.0"
 
 }
