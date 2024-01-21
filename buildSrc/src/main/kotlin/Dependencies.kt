@@ -60,7 +60,8 @@ object Versions {
     const val ULTRA_VIEWPAGER_VERSION="1.0.7.7"
     const val SVGA_PLAYER_VERSION="2.6.1"
     const val BILLING_VERSION="5.1.0"
-
+    const val GOOGLE_FIREBASE_ANALYTICS_VERSION="18.0.3"
+    const val GOOGLE_FIREBASE_CRASHLYTICS_VERSION="18.0.1"
 }
 
 object BuildDependencies {
@@ -88,6 +89,8 @@ object BuildDependencies {
     const val ultraViewpager="com.alibaba.android:ultraviewpager:${Versions.ULTRA_VIEWPAGER_VERSION}@aar"
     const val SVGAPlayer="com.github.svga:SVGAPlayer-Android:${Versions.SVGA_PLAYER_VERSION}"
     const val billing ="com.android.billingclient:billing:${Versions.BILLING_VERSION}"
+    const val firebaseAnalytics="com.google.firebase:firebase-analytics:${Versions.GOOGLE_FIREBASE_ANALYTICS_VERSION}"
+    const val firebaseCrashlytics ="com.google.firebase:firebase-crashlytics:${Versions.GOOGLE_FIREBASE_CRASHLYTICS_VERSION}"
 }
 
 object AndroidX {

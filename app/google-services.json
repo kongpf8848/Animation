@@ -1,0 +1,41 @@
+{
+  "project_info": {
+    "project_number": "89168305903",
+    "firebase_url": "https://animation-54844.firebaseio.com",
+    "project_id": "animation-54844",
+    "storage_bucket": "animation-54844.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:89168305903:android:f0c104471e7f37f1c7451a",
+        "android_client_info": {
+          "package_name": "com.github.kongpf8848.animation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "89168305903-15a8lrguj949dhmc0vgonql2ivioq0ql.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdl_VHO2WdHzvK0naRyV0VRzH9hpqDwpk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "89168305903-15a8lrguj949dhmc0vgonql2ivioq0ql.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      },
+      "admob_app_id": "ca-app-pub-2515116623705756~7676003940"
+    }
+  ],
+  "configuration_version": "1"
+}
