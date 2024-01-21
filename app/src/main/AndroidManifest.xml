@@ -17,6 +17,10 @@
         android:requestLegacyExternalStorage="true"
         android:largeHeap="true"
         >
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-2515116623705756~7676003940" />
+
         <activity android:name=".activity.SplashActivity" android:screenOrientation="portrait"
             android:theme="@style/SplashActivityTheme"
             android:exported="true"

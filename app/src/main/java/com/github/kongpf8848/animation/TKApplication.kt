@@ -1,8 +1,8 @@
 package com.github.kongpf8848.animation
 
 import android.app.Application
-import android.util.Log
 import com.github.kongpf8848.animation.utils.LogUtils
+import com.google.android.gms.ads.MobileAds
 import org.telegram.messenger.AndroidUtilities
 
 class TKApplication : Application() {
@@ -10,10 +10,6 @@ class TKApplication : Application() {
     override fun onCreate() {
         super.onCreate()
         instance = this
-        Thread.setDefaultUncaughtExceptionHandler { t, e ->
-            e.printStackTrace()
-            Log.d("Crash", "uncaughtException() called with: t = [" + t + "], e = [" + e.message + "]")
-        }
         try {
             System.loadLibrary("tmessages.40")
         } catch (e: Exception) {
@@ -21,6 +17,10 @@ class TKApplication : Application() {
         }
         LogUtils.init(this,BuildConfig.DEBUG)
         AndroidUtilities.init(this)
+        MobileAds.initialize(this) {
+            LogUtils.d("JACK8", "initGoogleAds success called")
+        }
+        LogUtils.d("JACK8", "initGoogleAds end")
     }
 
     companion object {

@@ -3,9 +3,16 @@ package com.github.kongpf8848.animation.activity
 import android.os.Bundle
 import android.view.animation.*
 import androidx.recyclerview.widget.GridLayoutManager
+import com.github.kongpf8848.animation.BuildConfig
 import com.github.kongpf8848.animation.R
 import com.github.kongpf8848.animation.adapter.MainAdapter
 import com.github.kongpf8848.animation.base.BaseToolbarActivity
+import com.github.kongpf8848.animation.utils.LogUtils
+import com.google.android.gms.ads.AdListener
+import com.google.android.gms.ads.AdRequest
+import com.google.android.gms.ads.AdSize
+import com.google.android.gms.ads.AdView
+import com.google.android.gms.ads.LoadAdError
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_toolbar.*
 
@@ -33,6 +40,7 @@ class MainActivity : BaseToolbarActivity() {
     override fun onCreateEnd(savedInstanceState: Bundle?) {
         super.onCreateEnd(savedInstanceState)
         toolbar?.navigationIcon = null
+        loadAd()
 
         rv_main.apply {
             layoutManager = GridLayoutManager(this@MainActivity, 2, GridLayoutManager.VERTICAL, false)
@@ -45,5 +53,45 @@ class MainActivity : BaseToolbarActivity() {
                 duration=500
             })
         }
+    }
+
+    private fun loadAd(){
+        if(BuildConfig.DEBUG){
+            return
+        }
+        val adView = AdView(this).apply {
+            adSize = AdSize.BANNER
+            adUnitId="ca-app-pub-2515116623705756/6112792218"
+        }
+        adView.adListener=object: AdListener() {
+            override fun onAdClicked() {
+                LogUtils.d("JACK8", "onAdClicked")
+            }
+
+            override fun onAdClosed() {
+                LogUtils.d("JACK8", "onAdClosed")
+            }
+
+            override fun onAdFailedToLoad(adError: LoadAdError) {
+                LogUtils.d("JACK8", "onAdFailedToLoad:$adError")
+            }
+
+            override fun onAdImpression() {
+                LogUtils.d("JACK8", "onAdClosed")
+            }
+
+            override fun onAdLoaded() {
+                LogUtils.d("JACK8", "onAdLoaded")
+                if (!isDestroyed && !isFinishing) {
+                    ad_container.removeAllViews()
+                    ad_container.addView(adView)
+                }
+            }
+
+            override fun onAdOpened() {
+                LogUtils.d("JACK8", "onAdOpened")
+            }
+        }
+        adView.loadAd(AdRequest.Builder().build())
     }
 }

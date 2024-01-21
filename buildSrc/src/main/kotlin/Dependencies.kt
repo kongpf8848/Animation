@@ -62,6 +62,7 @@ object Versions {
     const val BILLING_VERSION="5.1.0"
     const val GOOGLE_FIREBASE_ANALYTICS_VERSION="18.0.3"
     const val GOOGLE_FIREBASE_CRASHLYTICS_VERSION="18.0.1"
+    const val GOOLGE_ADS_VERSION="20.6.0"
 }
 
 object BuildDependencies {
@@ -91,6 +92,7 @@ object BuildDependencies {
     const val billing ="com.android.billingclient:billing:${Versions.BILLING_VERSION}"
     const val firebaseAnalytics="com.google.firebase:firebase-analytics:${Versions.GOOGLE_FIREBASE_ANALYTICS_VERSION}"
     const val firebaseCrashlytics ="com.google.firebase:firebase-crashlytics:${Versions.GOOGLE_FIREBASE_CRASHLYTICS_VERSION}"
+    const val googleAds="com.google.android.gms:play-services-ads:${Versions.GOOLGE_ADS_VERSION}"
 }
 
 object AndroidX {
