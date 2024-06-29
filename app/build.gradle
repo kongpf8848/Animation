@@ -136,7 +136,6 @@ dependencies {
         transitive = true
     }
     implementation BuildDependencies.SVGAPlayer
-    implementation BuildDependencies.billing
     implementation BuildDependencies.firebaseAnalytics
     implementation BuildDependencies.firebaseCrashlytics
     implementation BuildDependencies.googleAds
