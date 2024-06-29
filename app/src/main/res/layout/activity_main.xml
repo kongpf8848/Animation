@@ -18,10 +18,22 @@
     <FrameLayout
         android:id="@+id/ad_container"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
         />
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/github_link"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:textColorLink="@color/blue"
+        android:autoLink="web"
+        android:layout_marginBottom="20dp"
+        />
 
 </LinearLayout>
 

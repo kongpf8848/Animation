@@ -8,8 +8,8 @@ object Config{
     const val targetSdkVersion = 33
     val sourceCompatibilityVersion = JavaVersion.VERSION_1_8
     val targetCompatibilityVersion = JavaVersion.VERSION_1_8
-    const val versionCode = 18
-    const val versionName = "1.1.17"
+    const val versionCode = 20
+    const val versionName = "1.2.0"
 }
 
 object Versions {
