@@ -2,7 +2,7 @@
   
 <h1 align="center">Animation</h1>
 
-[![Version](https://img.shields.io/badge/Version-1.1.17-brightgreen.svg)](https://play.google.com/store/apps/details?id=com.github.kongpf8848.animation)
+[![Version](https://img.shields.io/badge/Version-1.2.0-brightgreen.svg)](https://play.google.com/store/apps/details?id=com.github.kongpf8848.animation)
 [![License](https://img.shields.io/badge/License-Apache%202-brightgreen.svg)](https://www.apache.org/licenses/LICENSE-2.0)
 
 English | [中文](./README.md)
@@ -18,7 +18,7 @@ Collection of various animation effects in Android😊😄😎
      height="80">](https://play.google.com/store/apps/details?id=com.github.kongpf8848.animation)
 [<img src="images/free-download.png"
      alt="Free Download"
-     height="80">](http://hey.scandown.com/animation)
+     height="80">](https://fir.xcxwo.com/animation)
 
 ## Screenshots
 
