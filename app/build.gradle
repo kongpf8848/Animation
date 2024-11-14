@@ -1,6 +1,6 @@
-plugins{
+plugins {
     id 'com.android.application'
-    id  'kotlin-android'
+    id 'kotlin-android'
     id 'kotlin-kapt'
     id 'kotlin-android-extensions'
     id 'com.google.gms.google-services'
@@ -10,17 +10,15 @@ plugins{
 android {
     namespace 'com.github.kongpf8848.animation'
 
-    compileSdkVersion Config.compileSdkVersion
+    compileSdk Config.compileSdkVersion
     ndkVersion Config.ndkVersion
-
 
     defaultConfig {
         applicationId Config.applicationId
-        minSdkVersion Config.minSdkVersion
-        targetSdkVersion Config.targetSdkVersion
+        minSdk Config.minSdkVersion
+        targetSdk Config.targetSdkVersion
         versionCode Config.versionCode
         versionName Config.versionName
-
         externalNativeBuild {
             cmake {
                 version '3.10.2'
@@ -41,7 +39,7 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
             ndk {
-                abiFilters 'armeabi-v7a','arm64-v8a', 'x86'
+                abiFilters 'armeabi-v7a', 'arm64-v8a', 'x86'
             }
         }
         release {
@@ -49,7 +47,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
             signingConfig signingConfigs.release
             ndk {
-                abiFilters 'armeabi-v7a','arm64-v8a'
+                abiFilters 'armeabi-v7a', 'arm64-v8a'
             }
         }
     }
@@ -87,7 +85,7 @@ android {
         google {
             dimension 'channel'
         }
-        official{
+        official {
             dimension 'channel'
         }
     }
@@ -132,7 +130,7 @@ dependencies {
     implementation BuildDependencies.gson
     implementation BuildDependencies.rxjava2
     implementation BuildDependencies.rxAndroid
-    implementation (BuildDependencies.ultraViewpager) {
+    implementation(BuildDependencies.ultraViewpager) {
         transitive = true
     }
     implementation BuildDependencies.SVGAPlayer

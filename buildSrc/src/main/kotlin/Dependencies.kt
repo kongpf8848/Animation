@@ -1,11 +1,11 @@
 import org.gradle.api.JavaVersion
 
 object Config{
-    const val compileSdkVersion = 33
+    const val compileSdkVersion = 34
     const val ndkVersion="21.4.7075529"
     const val applicationId="com.github.kongpf8848.animation"
     const val minSdkVersion = 21
-    const val targetSdkVersion = 33
+    const val targetSdkVersion = 34
     val sourceCompatibilityVersion = JavaVersion.VERSION_1_8
     val targetCompatibilityVersion = JavaVersion.VERSION_1_8
     const val versionCode = 20
