@@ -2,7 +2,7 @@
   
 <h1 align="center">Animation</h1>
 
-[![最新版本](https://img.shields.io/badge/最新版本-1.2.0-brightgreen.svg)](https://play.google.com/store/apps/details?id=com.github.kongpf8848.animation)
+[![最新版本](https://img.shields.io/badge/最新版本-1.2.1-brightgreen.svg)](https://play.google.com/store/apps/details?id=com.github.kongpf8848.animation)
 [![License](https://img.shields.io/badge/License-Apache%202-brightgreen.svg)](https://www.apache.org/licenses/LICENSE-2.0)
 
 中文 | [English](./README_EN.md)
