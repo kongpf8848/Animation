@@ -16,7 +16,6 @@ import com.github.kongpf8848.animation.R
 import com.github.kongpf8848.animation.base.BaseActivity
 import com.github.kongpf8848.animation.adapter.ShareElementListAdapter
 import com.github.kongpf8848.animation.bean.ImageBean
-import kotlinx.android.synthetic.main.activity_transition_share_element_one.*
 
 class ShareElementOneActivity : BaseActivity() {
 
@@ -26,6 +25,8 @@ class ShareElementOneActivity : BaseActivity() {
 
     private lateinit var mAdapter: ShareElementListAdapter
     private var mTmpReenterState: Bundle? = null
+
+    lateinit var recyclerView:RecyclerView
 
 
     private val mSharedElementCallback: SharedElementCallback = object : SharedElementCallback() {
@@ -54,6 +55,7 @@ class ShareElementOneActivity : BaseActivity() {
 
     override fun onCreateEnd(savedInstanceState: Bundle?) {
         super.onCreateEnd(savedInstanceState)
+        recyclerView=findViewById(R.id.recyclerView)
         setExitSharedElementCallback(mSharedElementCallback)
         init()
     }

@@ -4,17 +4,25 @@ import android.animation.AnimatorInflater
 import android.animation.ObjectAnimator
 import android.animation.PropertyValuesHolder
 import android.animation.ValueAnimator
+import android.os.Bundle
 import android.view.View
 import android.view.animation.AccelerateDecelerateInterpolator
 import butterknife.OnClick
 import com.github.kongpf8848.animation.R
 import com.github.kongpf8848.animation.base.BaseActivity
-import kotlinx.android.synthetic.main.activity_property_demo.*
+import com.github.kongpf8848.animation.views.MyImageView
 
 class PropertyDemoActivity : BaseActivity() {
 
+    lateinit var iv_boy: MyImageView
+
     override fun getLayoutId(): Int {
         return R.layout.activity_property_demo
+    }
+
+    override fun onCreateEnd(savedInstanceState: Bundle?) {
+        super.onCreateEnd(savedInstanceState)
+        iv_boy=findViewById(R.id.iv_boy)
     }
 
     @OnClick(R.id.button1)

@@ -1,15 +1,15 @@
 package com.github.kongpf8848.animation.activity.gif
 
-import android.app.Activity
 import android.graphics.Bitmap
 import android.os.Bundle
 import android.support.rastermill.FrameSequence
 import android.support.rastermill.FrameSequenceDrawable
 import android.view.View
+import android.widget.FrameLayout
 import android.widget.Toast
+import androidx.recyclerview.widget.RecyclerView
 import com.github.kongpf8848.animation.R
 import com.github.kongpf8848.animation.base.BaseActivity
-import kotlinx.android.synthetic.main.activity_gif_frame.*
 import java.util.*
 
 class FrameSequenceActivity : BaseActivity() {
@@ -36,6 +36,12 @@ class FrameSequenceActivity : BaseActivity() {
     }
 
     private val mProvider = CheckingProvider()
+    lateinit var start: View
+    lateinit var stop: View
+    lateinit var vis: View
+    lateinit var invis: View
+    lateinit var circle_mask: View
+
 
     override fun getLayoutId(): Int {
         return R.layout.activity_gif_frame
@@ -44,6 +50,12 @@ class FrameSequenceActivity : BaseActivity() {
     public override fun onCreateEnd(savedInstanceState: Bundle?) {
         super.onCreateEnd(savedInstanceState)
         mResourceId = intent.getIntExtra("resourceId", R.raw.animated_gif)
+        start=findViewById(R.id.start)
+        stop=findViewById(R.id.stop)
+        vis=findViewById(R.id.vis)
+        invis=findViewById(R.id.invis)
+        circle_mask=findViewById(R.id.circle_mask)
+
         start.setOnClickListener { mDrawable?.start() }
         stop.setOnClickListener { mDrawable?.stop() }
         vis.setOnClickListener { mDrawable?.setVisible(true, true) }

@@ -5,15 +5,24 @@ import android.os.Bundle
 import android.view.View
 import com.github.kongpf8848.animation.R
 import com.github.kongpf8848.animation.base.BaseActivity
-import kotlinx.android.synthetic.main.activity_user_guide_cartoon.*
 
 class TranslateActivity : BaseActivity() {
+    lateinit var augc_img_women:View
+    lateinit var augc_img_men:View
+    lateinit var augc_img_hello_chinese:View
+    lateinit var augc_img_hello_english:View
+
+
 
     override fun getLayoutId(): Int {
         return R.layout.activity_user_guide_cartoon
     }
 
     override fun onCreateEnd(savedInstanceState: Bundle?) {
+        augc_img_women=findViewById(R.id.augc_img_women)
+        augc_img_men=findViewById(R.id.augc_img_men)
+        augc_img_hello_chinese=findViewById(R.id.augc_img_hello_chinese)
+        augc_img_hello_english=findViewById(R.id.augc_img_hello_english)
         startAnimation()
     }
 

@@ -27,7 +27,6 @@ import com.github.kongpf8848.animation.utils.LottieUtils
 import com.github.kongpf8848.animation.utils.RxJavaUtils
 import com.kongpf.commonhelper.ScreenHelper
 import com.tmall.ultraviewpager.UltraViewPager
-import kotlinx.android.synthetic.main.activity_lottie_pdj_guide.*
 import java.lang.reflect.Field
 
 
@@ -43,6 +42,13 @@ class PdjGuideActivity : BaseActivity(), ViewPager.OnPageChangeListener {
     private var buttonAlpha: ObjectAnimator? = null
     private var buttonTranslation: ObjectAnimator? = null
     private var translationOffset=0f
+
+    lateinit var iv_start: View
+    lateinit var iv_jump: View
+    lateinit var view_pager: UltraViewPager
+    lateinit var lottie_title: LottieAnimationView
+    lateinit var lottie_bg: LottieAnimationView
+
     /**
      * Drawable转换成Bitmap
      */
@@ -80,6 +86,11 @@ class PdjGuideActivity : BaseActivity(), ViewPager.OnPageChangeListener {
 
     override fun onCreateEnd(savedInstanceState: Bundle?) {
         super.onCreateEnd(savedInstanceState)
+        iv_start=findViewById(R.id.iv_start)
+        iv_jump=findViewById(R.id.iv_jump)
+        view_pager=findViewById(R.id.view_pager)
+        lottie_title=findViewById(R.id.lottie_title)
+        lottie_bg=findViewById(R.id.lottie_bg)
         getLottieConfig()
     }
 
@@ -131,7 +142,7 @@ class PdjGuideActivity : BaseActivity(), ViewPager.OnPageChangeListener {
         realWidth = ScreenHelper.getScreenWidth(applicationContext)
         realHeight = (1334.0f * realWidth / 750.0f).toInt()
 
-        ivJump.setOnClickListener {
+        iv_jump.setOnClickListener {
             finish()
         }
         iv_start.setOnClickListener {
@@ -146,14 +157,14 @@ class PdjGuideActivity : BaseActivity(), ViewPager.OnPageChangeListener {
 
         LottieUtils.loadAssetsLottieZipFile(context = applicationContext, lottieImageView = lottie_bg, fileName = config.lottieBgName, repeatCount = 0, autoPlay = true)
 
-        setViewPagerDuration(viewpager.viewPager, config.pageAnimTime.toInt())
-        viewpager.setOffscreenPageLimit(config.totalPageNum)
-        viewpager.setOnPageChangeListener(this@PdjGuideActivity)
+        setViewPagerDuration(view_pager.viewPager, config.pageAnimTime.toInt())
+        view_pager.setOffscreenPageLimit(config.totalPageNum)
+        view_pager.setOnPageChangeListener(this@PdjGuideActivity)
 
         /**
          * 设置PageTransformer
          */
-        viewpager.setPageTransformer(false, GuideTransformer(this@PdjGuideActivity, config.radius))
+        view_pager.setPageTransformer(false, GuideTransformer(this@PdjGuideActivity, config.radius))
 
         for(position in 0 until config.totalPageNum){
             val view = LayoutInflater.from(this@PdjGuideActivity).inflate(R.layout.item_lottie_pdj_guide, null, false)
@@ -164,19 +175,19 @@ class PdjGuideActivity : BaseActivity(), ViewPager.OnPageChangeListener {
             lottieList.add(lottieAnimationView)
             viewList.add(view)
         }
-        viewpager.adapter = ViewPagerAdapter(viewList)
+        view_pager.adapter = ViewPagerAdapter(viewList)
 
         /**
          * 添加圆点指示符
          */
-        viewpager.initIndicator()
-        viewpager.indicator.setOrientation(UltraViewPager.Orientation.HORIZONTAL)
+        view_pager.initIndicator()
+        view_pager.indicator.setOrientation(UltraViewPager.Orientation.HORIZONTAL)
                 .setNormalIcon(drawableToBitmap(ContextCompat.getDrawable(applicationContext, R.drawable.guide_white_dot)!!))
                 .setFocusIcon(drawableToBitmap(ContextCompat.getDrawable(applicationContext, R.drawable.guide_dark_dot)!!))
                 .setIndicatorPadding(ScreenHelper.dp2px(applicationContext, 5.0F))
                 .setMargin(0, 0, 0, ScreenHelper.dp2px(applicationContext, 20.0F))
-        viewpager.indicator.setGravity(Gravity.BOTTOM or Gravity.CENTER_HORIZONTAL)
-        viewpager.indicator.build()
+        view_pager.indicator.setGravity(Gravity.BOTTOM or Gravity.CENTER_HORIZONTAL)
+        view_pager.indicator.build()
 
         /**
          * 开启动画
@@ -215,7 +226,7 @@ class PdjGuideActivity : BaseActivity(), ViewPager.OnPageChangeListener {
                     super.onAnimationEnd(animation)
                     if (mState == 0) {
                         if (position < lottieConfig!!.totalPageNum - 1) {
-                            viewpager.setCurrentItem(position + 1, true)
+                            view_pager.setCurrentItem(position + 1, true)
                         }
                     }
                 }

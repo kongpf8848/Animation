@@ -3,18 +3,17 @@ package com.github.kongpf8848.animation.activity.svga
 import android.os.Bundle
 import android.os.Looper
 import android.text.TextUtils
-import android.util.Log
 import androidx.fragment.app.Fragment
 import com.github.kongpf8848.animation.R
 import com.github.kongpf8848.animation.base.BaseActivity
 import com.github.kongpf8848.animation.fragment.TitleFragment
 import com.github.kongpf8848.animation.utils.LogUtils
 import com.github.kongpf8848.animation.views.ZiroomTabView
-import kotlinx.android.synthetic.main.activity_svga_ziroom.*
 
 class ZiroomActivity : BaseActivity() {
 
     private var lastFragment: Fragment? = null
+    lateinit var ll_tab_view: ZiroomTabView
 
     override fun getLayoutId(): Int {
         return R.layout.activity_svga_ziroom
@@ -22,6 +21,7 @@ class ZiroomActivity : BaseActivity() {
 
     override fun onCreateEnd(savedInstanceState: Bundle?) {
         super.onCreateEnd(savedInstanceState)
+        ll_tab_view=findViewById(R.id.ll_tab_view)
         ll_tab_view.setOnTabSelectedListener(object:ZiroomTabView.ZiroomTabSelectedListener{
             override fun onTabSelected(position: Int) {
                 LogUtils.d(TAG, "onTabSelected() called with: position = $position")

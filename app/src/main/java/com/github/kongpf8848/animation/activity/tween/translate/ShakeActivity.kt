@@ -3,19 +3,21 @@ package com.github.kongpf8848.animation.activity.tween.translate
 import android.content.Context
 import android.os.Bundle
 import android.os.Vibrator
+import android.view.View
 import android.view.animation.AnimationUtils
 import android.widget.Toast
 import com.github.kongpf8848.animation.R
 import com.github.kongpf8848.animation.base.BaseActivity
 import com.github.kongpf8848.animation.utils.MainHandler
 import com.github.kongpf8848.animation.utils.ShakeListener
-import kotlinx.android.synthetic.main.activity_shake.*
 
 class ShakeActivity : BaseActivity() {
 
     private var mShakeListener: ShakeListener? = null
     private var mVibrator: Vibrator? = null
-
+    lateinit var iv_shake:View
+    lateinit var shakeUp:View
+    lateinit var shakeDown:View
 
     override fun getLayoutId(): Int {
         return R.layout.activity_shake
@@ -39,6 +41,9 @@ class ShakeActivity : BaseActivity() {
     }
 
     override fun onCreateEnd(savedInstanceState: Bundle?) {
+        iv_shake=findViewById(R.id.iv_shake)
+        shakeUp=findViewById(R.id.shakeUp)
+        shakeDown=findViewById(R.id.shakeDown)
         iv_shake.setOnClickListener {
             startAnimiation()
         }

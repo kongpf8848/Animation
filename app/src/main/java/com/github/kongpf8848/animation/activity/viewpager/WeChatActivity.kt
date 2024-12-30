@@ -7,12 +7,13 @@ import android.view.LayoutInflater
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.fragment.app.Fragment
+import androidx.viewpager.widget.ViewPager
 import com.github.kongpf8848.animation.R
 import com.github.kongpf8848.animation.base.BaseActivity
 import com.github.kongpf8848.animation.adapter.FragmentAdapter
 import com.github.kongpf8848.animation.fragment.TitleFragment
 import com.google.android.material.animation.ArgbEvaluatorCompat
-import kotlinx.android.synthetic.main.activity_lottie_tab.*
+import net.lucode.hackware.magicindicator.MagicIndicator
 import net.lucode.hackware.magicindicator.ViewPagerHelper
 import net.lucode.hackware.magicindicator.buildins.commonnavigator.CommonNavigator
 import net.lucode.hackware.magicindicator.buildins.commonnavigator.abs.CommonNavigatorAdapter
@@ -29,12 +30,17 @@ class WeChatActivity : BaseActivity() {
     private val CHANNELS = arrayOf("微信", "通讯录", "发现", "我")
     private val DRAWABLES = intArrayOf(R.drawable.weixin_normal, R.drawable.contact_list_normal, R.drawable.find_normal, R.drawable.weixin_normal)
 
+    lateinit var view_pager:ViewPager
+    lateinit var magic_indicator:MagicIndicator
+
     override fun getLayoutId(): Int {
         return R.layout.activity_lottie_tab
     }
 
     override fun onCreateEnd(savedInstanceState: Bundle?) {
         super.onCreateEnd(savedInstanceState)
+        view_pager=findViewById(R.id.view_pager)
+        magic_indicator=findViewById(R.id.magic_indicator)
         initViewPager()
         initMagicIndicator()
     }

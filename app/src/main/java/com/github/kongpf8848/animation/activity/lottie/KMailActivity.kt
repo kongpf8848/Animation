@@ -1,12 +1,10 @@
 package com.github.kongpf8848.animation.activity.lottie
 
 import android.content.res.ColorStateList
-import android.graphics.Color
 import android.os.Build
 import android.os.Bundle
-import android.util.Log
+import android.view.View
 import androidx.activity.viewModels
-import androidx.core.graphics.ColorUtils
 import androidx.core.view.isInvisible
 import androidx.viewpager2.widget.ViewPager2
 import com.github.kongpf8848.animation.IntroViewModel
@@ -14,15 +12,20 @@ import com.github.kongpf8848.animation.LocalSettings.AccentColor
 import com.github.kongpf8848.animation.R
 import com.github.kongpf8848.animation.adapter.IntroPagerAdapter
 import com.github.kongpf8848.animation.base.BaseActivity
-import com.github.kongpf8848.animation.databinding.ActivityLottieKmailBinding
 import com.github.kongpf8848.animation.removeOverScroll
 import com.github.kongpf8848.animation.utils.UiUtils.animateColorChange
-import kotlinx.android.synthetic.main.activity_lottie_kmail.*
+import com.github.kongpf8848.animation.views.CuteIndicator
+import com.google.android.material.button.MaterialButton
 
 
 open class KMailActivity : BaseActivity() {
 
     private val introViewModel: IntroViewModel by viewModels()
+    lateinit var introViewpager:ViewPager2
+    lateinit var nextButton: View
+    lateinit var connectButton: MaterialButton
+    lateinit var signInButton:MaterialButton
+    lateinit var dotsIndicator: CuteIndicator
 
     override fun getLayoutId(): Int {
         return R.layout.activity_lottie_kmail
@@ -30,6 +33,11 @@ open class KMailActivity : BaseActivity() {
 
     override fun onCreateEnd(savedInstanceState: Bundle?) {
         super.onCreateEnd(savedInstanceState)
+        introViewpager=findViewById(R.id.introViewpager)
+        nextButton=findViewById(R.id.nextButton)
+        connectButton=findViewById(R.id.connectButton)
+        signInButton=findViewById(R.id.signInButton)
+        dotsIndicator=findViewById(R.id.dotsIndicator)
         val introPagerAdapter = IntroPagerAdapter(supportFragmentManager, lifecycle)
         introViewpager.apply {
             adapter = introPagerAdapter

@@ -4,7 +4,6 @@ import android.util.Log
 import android.view.View
 import android.view.ViewGroup
 import androidx.viewpager.widget.PagerAdapter
-import androidx.viewpager.widget.ViewPager
 
 class ViewPagerAdapter(val viewList: List<View>) : PagerAdapter() {
 

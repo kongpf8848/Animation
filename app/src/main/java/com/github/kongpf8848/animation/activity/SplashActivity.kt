@@ -5,12 +5,17 @@ import android.animation.AnimatorListenerAdapter
 import android.os.Bundle
 import android.os.Looper
 import android.util.Log
+import android.widget.TextView
 import com.github.kongpf8848.animation.R
 import com.github.kongpf8848.animation.base.BaseActivity
+import com.github.kongpf8848.animation.views.AnimationLogoView
 import com.kongpf.commonhelper.ApkHelper
-import kotlinx.android.synthetic.main.activity_splash.*
 
 class SplashActivity : BaseActivity() {
+
+    lateinit var tv_version: TextView
+    lateinit var anim_logo: AnimationLogoView
+
 
     override fun getLayoutId(): Int {
         return R.layout.activity_splash
@@ -26,7 +31,9 @@ class SplashActivity : BaseActivity() {
 
     override fun onCreateEnd(savedInstanceState: Bundle?) {
         super.onCreateEnd(savedInstanceState)
-        tv_version.text="V${ApkHelper.getAppVersionName(this)}"
+        tv_version = findViewById(R.id.tv_version)
+        anim_logo = findViewById(R.id.anim_logo)
+        tv_version.text = "V${ApkHelper.getAppVersionName(this)}"
 
         anim_logo.apply {
             addOffsetAnimListener(object : AnimatorListenerAdapter() {

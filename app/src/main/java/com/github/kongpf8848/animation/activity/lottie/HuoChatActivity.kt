@@ -1,9 +1,7 @@
 package com.github.kongpf8848.animation.activity.lottie
 
 import android.os.Bundle
-import android.os.Looper
 import android.text.TextUtils
-import android.util.Log
 import android.view.View
 import androidx.fragment.app.Fragment
 import com.airbnb.lottie.LottieAnimationView
@@ -14,7 +12,6 @@ import com.github.kongpf8848.animation.fragment.CommunityFragment
 import com.github.kongpf8848.animation.fragment.MarketFragment
 import com.github.kongpf8848.animation.fragment.MyFragment
 import com.github.kongpf8848.animation.utils.LogUtils
-import kotlinx.android.synthetic.main.layout_navigation_v3.*
 
 /**
  * 火信
@@ -36,6 +33,11 @@ class HuoChatActivity : BaseActivity() {
             "ic_tab_me.json"
     )
 
+    lateinit var iv_navi_chats: LottieAnimationView
+    lateinit var iv_navi_market: LottieAnimationView
+    lateinit var iv_navi_community: LottieAnimationView
+    lateinit var iv_navi_me: LottieAnimationView
+
     companion object {
         const val TAB_CHAT = 0
         const val TAB_MARKET = 1
@@ -51,6 +53,10 @@ class HuoChatActivity : BaseActivity() {
 
     override fun onCreateEnd(savedInstanceState: Bundle?) {
         super.onCreateEnd(savedInstanceState)
+        iv_navi_chats=findViewById(R.id.iv_navi_chats)
+        iv_navi_market=findViewById(R.id.iv_navi_market)
+        iv_navi_community=findViewById(R.id.iv_navi_community)
+        iv_navi_me=findViewById(R.id.iv_navi_me)
         if (savedInstanceState != null) {
             lastFragment = supportFragmentManager.getFragment(
                     savedInstanceState,

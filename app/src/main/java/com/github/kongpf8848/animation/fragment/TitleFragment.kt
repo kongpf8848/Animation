@@ -4,13 +4,14 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import androidx.annotation.Nullable
 import com.github.kongpf8848.animation.R
 import com.github.kongpf8848.animation.base.BaseFragment
-import kotlinx.android.synthetic.main.fragment_title.*
 
 class TitleFragment : BaseFragment() {
 
+    lateinit var tv_title:TextView
     companion object{
         fun getInstance(title:String):TitleFragment{
             return TitleFragment().apply {
@@ -26,6 +27,7 @@ class TitleFragment : BaseFragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        tv_title=view.findViewById(R.id.tv_title)
         tv_title.text = arguments?.getString("title", "")
     }
 

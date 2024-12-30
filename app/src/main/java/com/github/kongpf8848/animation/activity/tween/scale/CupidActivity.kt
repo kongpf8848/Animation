@@ -4,11 +4,15 @@ import android.os.Bundle
 import android.view.View
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
+import android.widget.TextView
 import com.github.kongpf8848.animation.R
 import com.github.kongpf8848.animation.base.BaseActivity
-import kotlinx.android.synthetic.main.activity_cupid_shoot.*
 
 class CupidActivity : BaseActivity() {
+
+    lateinit var img_cupid_shoot:View
+    lateinit var cupid_result_text:TextView
+    lateinit var cupid_result:View
 
     override fun getLayoutId(): Int {
         return R.layout.activity_cupid_shoot
@@ -24,6 +28,9 @@ class CupidActivity : BaseActivity() {
 
     override fun onCreateEnd(savedInstanceState: Bundle?) {
         super.onCreateEnd(savedInstanceState)
+        img_cupid_shoot=findViewById(R.id.img_cupid_shoot)
+        cupid_result_text=findViewById(R.id.cupid_result_text)
+        cupid_result=findViewById(R.id.cupid_result)
         img_cupid_shoot.setOnClickListener {
             doAnimation()
         }

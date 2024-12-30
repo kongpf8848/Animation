@@ -6,12 +6,15 @@ import android.animation.PropertyValuesHolder
 import android.os.Bundle
 import android.os.Looper
 import android.view.View
+import android.widget.ImageView
 import com.github.kongpf8848.animation.R
 import com.github.kongpf8848.animation.base.BaseActivity
-import kotlinx.android.synthetic.main.activity_weizhi.*
 import java.util.*
 
 class WeizhiActivity : BaseActivity() {
+
+    lateinit var iv_activity_splash_pic:ImageView
+    lateinit var iv_activity_splash_bg:ImageView
 
     override fun getLayoutId(): Int {
         return R.layout.activity_weizhi
@@ -27,6 +30,8 @@ class WeizhiActivity : BaseActivity() {
 
     override fun onCreateEnd(savedInstanceState: Bundle?) {
         super.onCreateEnd(savedInstanceState)
+        iv_activity_splash_pic=findViewById(R.id.iv_activity_splash_pic)
+        iv_activity_splash_bg=findViewById(R.id.iv_activity_splash_bg)
         val index = 1 + Random().nextInt(3)
         val resourceId = resources.getIdentifier("welcome_icon_$index", "mipmap", packageName)
         iv_activity_splash_pic.setImageResource(resourceId)

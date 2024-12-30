@@ -8,20 +8,30 @@ import android.view.View
 import android.view.WindowManager
 import com.github.kongpf8848.animation.R
 import com.github.kongpf8848.animation.base.BaseDialogFragment
-import kotlinx.android.synthetic.main.dialog_share.*
 
-class ShareDialog(context: Context):BaseDialogFragment(ctx =context,
-        width =WindowManager.LayoutParams.MATCH_PARENT,
-        height=WindowManager.LayoutParams.WRAP_CONTENT,
-        gravity = Gravity.BOTTOM
+class ShareDialog(context: Context) : BaseDialogFragment(
+    ctx = context,
+    width = WindowManager.LayoutParams.MATCH_PARENT,
+    height = WindowManager.LayoutParams.WRAP_CONTENT,
+    gravity = Gravity.BOTTOM
 ) {
+    lateinit var iv_qq_zone: View
+    lateinit var iv_qq: View
+    lateinit var iv_wechat: View
+    lateinit var iv_wechat_friend: View
+    lateinit var iv_weibo: View
     override fun getLayoutId(): Int {
         return R.layout.dialog_share
     }
 
     override fun initView() {
         super.initView()
-        listOf(iv_qq_zone,iv_qq,iv_wechat,iv_wechat_friend,iv_weibo).forEach {
+        iv_qq_zone = rootView!!.findViewById(R.id.iv_qq_zone)
+        iv_qq = rootView!!.findViewById(R.id.iv_qq)
+        iv_wechat = rootView!!.findViewById(R.id.iv_wechat)
+        iv_wechat_friend = rootView!!.findViewById(R.id.iv_wechat_friend)
+        iv_weibo = rootView!!.findViewById(R.id.iv_weibo)
+        listOf(iv_qq_zone, iv_qq, iv_wechat, iv_wechat_friend, iv_weibo).forEach {
             doAnimation(it)
         }
     }

@@ -7,15 +7,16 @@ import android.view.ViewGroup
 import android.widget.FrameLayout
 import androidx.annotation.LayoutRes
 import com.github.kongpf8848.animation.R
-import com.github.kongpf8848.animation.base.BaseActivity
-import kotlinx.android.synthetic.main.activity_toolbar.*
+import com.github.kongpf8848.animation.views.CenterTitleToolbar
 
 abstract class BaseToolbarActivity : BaseActivity() {
 
     private var fl_content: FrameLayout? = null
+    lateinit var toolbar: CenterTitleToolbar
 
     override fun onCreateEnd(savedInstanceState: Bundle?) {
         super.onCreateEnd(savedInstanceState)
+        toolbar=findViewById(R.id.toolbar)
         setupToolbar()
     }
 

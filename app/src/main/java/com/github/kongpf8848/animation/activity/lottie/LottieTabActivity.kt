@@ -6,12 +6,13 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.widget.TextView
 import androidx.fragment.app.Fragment
+import androidx.viewpager.widget.ViewPager
 import com.github.kongpf8848.animation.R
 import com.github.kongpf8848.animation.base.BaseActivity
 import com.github.kongpf8848.animation.adapter.FragmentAdapter
 import com.github.kongpf8848.animation.fragment.TitleFragment
 import com.github.kongpf8848.animation.views.AnimationRadioView
-import kotlinx.android.synthetic.main.activity_lottie_tab.*
+import net.lucode.hackware.magicindicator.MagicIndicator
 import net.lucode.hackware.magicindicator.ViewPagerHelper
 import net.lucode.hackware.magicindicator.buildins.commonnavigator.CommonNavigator
 import net.lucode.hackware.magicindicator.buildins.commonnavigator.abs.CommonNavigatorAdapter
@@ -25,12 +26,17 @@ abstract class LottieTabActivity : BaseActivity() {
     abstract fun getTabs(): Map<String, String>
     abstract fun getTabLayoutId():Int
 
+    lateinit var view_pager:ViewPager
+    lateinit var magic_indicator:MagicIndicator
+
     override fun getLayoutId(): Int {
         return R.layout.activity_lottie_tab
     }
 
     override fun onCreateEnd(savedInstanceState: Bundle?) {
         super.onCreateEnd(savedInstanceState)
+        view_pager=findViewById(R.id.view_pager)
+        magic_indicator=findViewById(R.id.magic_indicator)
         initViewPager()
     }
 

@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.github.kongpf8848.animation.R
 import com.github.kongpf8848.animation.bean.StickerItem
-import kotlinx.android.synthetic.main.item_emoji.view.*
+import com.github.kongpf8848.animation.views.StickerEmojiCell
 
 class StickerAdapter(private val context: Context, private val list: List<StickerItem>) : RecyclerView.Adapter<StickerAdapter.ViewHolder>() {
 
@@ -17,7 +17,7 @@ class StickerAdapter(private val context: Context, private val list: List<Sticke
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val data = list[position]
-        holder.itemView.iv_emoji.setSticker(data)
+        holder.itemView.findViewById<StickerEmojiCell>(R.id.iv_emoji).setSticker(data)
     }
 
 

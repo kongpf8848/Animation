@@ -2,19 +2,23 @@ package com.github.kongpf8848.animation.activity
 
 import android.os.Bundle
 import android.view.animation.*
+import android.widget.FrameLayout
+import android.widget.ImageView
 import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import androidx.viewpager.widget.ViewPager
 import com.github.kongpf8848.animation.BuildConfig
 import com.github.kongpf8848.animation.R
 import com.github.kongpf8848.animation.adapter.MainAdapter
 import com.github.kongpf8848.animation.base.BaseToolbarActivity
 import com.github.kongpf8848.animation.utils.LogUtils
+import com.github.kongpf8848.animation.views.CircleIndicatorView
 import com.google.android.gms.ads.AdListener
 import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.AdSize
 import com.google.android.gms.ads.AdView
 import com.google.android.gms.ads.LoadAdError
-import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.activity_toolbar.*
+
 
 class MainActivity : BaseToolbarActivity() {
 
@@ -29,6 +33,9 @@ class MainActivity : BaseToolbarActivity() {
             Triple("SVGA动画", R.drawable.logo_svga,SVGAActivity::class.java)
     )
 
+    lateinit var rv_main: RecyclerView
+    lateinit var ad_container: FrameLayout
+
     override fun enableStatusBar(): Boolean {
         return false
     }
@@ -39,7 +46,9 @@ class MainActivity : BaseToolbarActivity() {
 
     override fun onCreateEnd(savedInstanceState: Bundle?) {
         super.onCreateEnd(savedInstanceState)
-        toolbar?.navigationIcon = null
+        rv_main=findViewById(R.id.rv_main)
+        ad_container=findViewById(R.id.ad_container)
+        toolbar.navigationIcon = null
         loadAd()
 
         rv_main.apply {

@@ -10,14 +10,15 @@ import android.os.Message
 import android.view.View
 import com.github.kongpf8848.animation.R
 import com.github.kongpf8848.animation.base.BaseActivity
-import kotlinx.android.synthetic.main.activity_property_login.*
-
 
 class PingoLoginActivity : BaseActivity() {
 
     private var objectAnimator1: ObjectAnimator? = null
     private var objectAnimator2: ObjectAnimator? = null
     private var objectAnimator3: ObjectAnimator? = null
+    lateinit var bg_one_image:View
+    lateinit var bg_two_image:View
+    lateinit var bg_three_image:View
 
 
     private var handler = object : Handler() {
@@ -55,6 +56,9 @@ class PingoLoginActivity : BaseActivity() {
 
     override fun onCreateEnd(savedInstanceState: Bundle?) {
         super.onCreateEnd(savedInstanceState)
+        bg_one_image=findViewById(R.id.bg_one_image)
+        bg_two_image=findViewById(R.id.bg_two_image)
+        bg_three_image=findViewById(R.id.bg_three_image)
 
         val alpha1 = PropertyValuesHolder.ofFloat(View.ALPHA, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 0.0f)
         val alpha2 = PropertyValuesHolder.ofFloat(View.ALPHA, 0.1f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f, 0.0f)

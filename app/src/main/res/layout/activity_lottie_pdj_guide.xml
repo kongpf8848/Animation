@@ -14,7 +14,7 @@
         app:layout_constraintRight_toRightOf="parent" />
 
     <com.tmall.ultraviewpager.UltraViewPager
-        android:id="@+id/viewpager"
+        android:id="@+id/view_pager"
         android:layout_width="0.0dip"
         android:layout_height="0.0dip"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -32,7 +32,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/ivJump"
+        android:id="@+id/iv_jump"
         android:layout_width="46.0dip"
         android:layout_height="0.0dip"
         android:layout_marginRight="20.0dip"

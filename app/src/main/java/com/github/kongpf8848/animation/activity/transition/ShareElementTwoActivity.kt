@@ -20,7 +20,7 @@ import com.github.kongpf8848.animation.utils.Constants
 import com.github.kongpf8848.animation.R
 import com.github.kongpf8848.animation.base.BaseActivity
 import com.github.kongpf8848.animation.bean.ImageBean
-import kotlinx.android.synthetic.main.activity_transition_share_element_two.*
+import com.github.kongpf8848.animation.views.CircleIndicatorView
 
 
 class ShareElementTwoActivity : BaseActivity() {
@@ -44,6 +44,9 @@ class ShareElementTwoActivity : BaseActivity() {
             }
         }
     }
+
+    lateinit var viewPager:ViewPager
+    lateinit var circle_indicator: CircleIndicatorView
 
 
     override fun getLayoutId(): Int {
@@ -73,7 +76,8 @@ class ShareElementTwoActivity : BaseActivity() {
 
     override fun onCreateEnd(savedInstanceState: Bundle?) {
         super.onCreateEnd(savedInstanceState)
-
+        viewPager=findViewById(R.id.viewPager)
+        circle_indicator=findViewById(R.id.circle_indicator)
 
         postponeEnterTransition()
         setEnterSharedElementCallback(mSharedElementCallback)
