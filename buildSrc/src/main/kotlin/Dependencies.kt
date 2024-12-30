@@ -6,16 +6,16 @@ object Config{
     const val applicationId="com.github.kongpf8848.animation"
     const val minSdkVersion = 21
     const val targetSdkVersion = 34
-    val sourceCompatibilityVersion = JavaVersion.VERSION_1_8
-    val targetCompatibilityVersion = JavaVersion.VERSION_1_8
+    val sourceCompatibilityVersion = JavaVersion.VERSION_17
+    val targetCompatibilityVersion = JavaVersion.VERSION_17
     const val versionCode = 21
     const val versionName = "1.2.1"
 }
 
 object Versions {
 
-    const val PLUGIN_GRADLE_VERSION="8.0.2"
-    const val KOTLIN_VERSION = "1.7.10"
+    const val PLUGIN_GRADLE_VERSION="8.7.2"
+    const val KOTLIN_VERSION = "1.8.21"
 
     const val ANDROIDX_APP_COMPAT_VERSION = "1.2.0"
     const val ANDROIDX_LEGACY_V4_VERSION = "1.0.0"
