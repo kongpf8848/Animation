@@ -9,7 +9,7 @@ import com.github.kongpf8848.animation.base.BaseToolbarActivity
 import com.github.kongpf8848.animation.glide.GlideApp
 
 
-class GiflibActivity:BaseToolbarActivity(){
+class GiflibActivity : BaseToolbarActivity() {
 
     lateinit var iv_gif: ImageView
 
@@ -19,16 +19,16 @@ class GiflibActivity:BaseToolbarActivity(){
 
     override fun onCreateEnd(savedInstanceState: Bundle?) {
         super.onCreateEnd(savedInstanceState)
-        iv_gif=findViewById(R.id.iv_gif)
+        iv_gif = findViewById(R.id.iv_gif)
         Looper.myQueue().addIdleHandler {
             loadImage()
             false
         }
     }
 
-    private fun loadImage(){
+    private fun loadImage() {
         GlideApp.with(this).asGif2()
-                .load(R.raw.test)
-                .into(iv_gif)
+            .load(R.raw.test)
+            .into(iv_gif)
     }
 }
