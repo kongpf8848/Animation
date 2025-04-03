@@ -27,7 +27,7 @@ class GiflibActivity:BaseToolbarActivity(){
     }
 
     private fun loadImage(){
-        GlideApp.with(this).`as`(FrameSequenceDrawable::class.java)
+        GlideApp.with(this).asGif2()
                 .load(R.raw.test)
                 .into(iv_gif)
     }
