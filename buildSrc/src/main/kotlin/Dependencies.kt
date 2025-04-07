@@ -41,6 +41,7 @@ object Versions {
     const val ANDROIDX_LIFECYCLE_ARCH_VERSION="2.1.0"
     const val ANDROIDX_VIEWPAGER_VERSION="1.1.0"
     const val ANDROIDX_NAVIGATION_VERSION="2.5.3"
+    const val ANDROIDX_STARTUP_VERSION="1.2.0"
 
     const val RXJAVA2_VERSION = "2.1.9"
     const val RXANDROID_VERSION = "2.0.2"
@@ -134,6 +135,7 @@ object AndroidX {
     const val arcCoreTesting="androidx.arch.core:core-testing:${Versions.ANDROIDX_LIFECYCLE_ARCH_VERSION}"
     const val navigationFragmentKtx="androidx.navigation:navigation-fragment-ktx:${Versions.ANDROIDX_NAVIGATION_VERSION}"
     const val navigationUiKtx ="androidx.navigation:navigation-ui-ktx:${Versions.ANDROIDX_NAVIGATION_VERSION}"
+    const val startUp="androidx.startup:startup-runtime:${Versions.ANDROIDX_STARTUP_VERSION}"
 }
 
 

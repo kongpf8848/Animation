@@ -114,6 +114,7 @@ dependencies {
     implementation AndroidX.lifecycleRuntimeKtx
     implementation AndroidX.navigationFragmentKtx
     implementation AndroidX.navigationUiKtx
+    implementation AndroidX.startUp
 
     implementation BuildDependencies.photoView
     implementation BuildDependencies.immersionbar
@@ -136,4 +137,5 @@ dependencies {
     implementation BuildDependencies.firebaseAnalytics
     implementation BuildDependencies.firebaseCrashlytics
     implementation BuildDependencies.googleAds
+    runtimeOnly 'androidx.startup:startup-runtime:1.2.0'
 }

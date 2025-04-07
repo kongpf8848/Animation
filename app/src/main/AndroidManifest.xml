@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.VIBRATE" />
@@ -9,223 +10,286 @@
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
 
     <application
+        android:name=".TKApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:supportsRtl="true"
-        android:theme="@style/AppTheme"
-        android:name=".TKApplication"
-        android:requestLegacyExternalStorage="true"
         android:largeHeap="true"
-        >
+        android:requestLegacyExternalStorage="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
             android:value="ca-app-pub-2515116623705756~7676003940" />
 
-        <activity android:name=".activity.SplashActivity" android:screenOrientation="portrait"
-            android:theme="@style/SplashActivityTheme"
+        <activity
+            android:name=".activity.SplashActivity"
             android:exported="true"
-            >
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashActivityTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.GuideActivity" android:screenOrientation="portrait"
-            />
-        <activity android:name=".activity.MainActivity" android:screenOrientation="portrait"
+        <activity
+            android:name=".activity.GuideActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MainActivity"
             android:label="动画"
-            />
-        <activity android:name=".activity.FrameAnimActivity" android:screenOrientation="portrait"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.FrameAnimActivity"
             android:label="逐帧动画"
-            />
-        <activity android:name=".activity.TweenAnimActivity" android:screenOrientation="portrait"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.TweenAnimActivity"
             android:label="补间动画"
-            />
-        <activity android:name=".activity.PropertyAnimActivity" android:screenOrientation="portrait"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PropertyAnimActivity"
             android:label="属性动画"
-            />
+            android:screenOrientation="portrait" />
 
-        <activity android:name=".activity.LottieAnimActivity" android:screenOrientation="portrait"
+        <activity
+            android:name=".activity.LottieAnimActivity"
             android:label="Lottie动画"
-            />
+            android:screenOrientation="portrait" />
 
         <!--逐帧动画-->
-        <activity android:name=".activity.frame.Frame_1_Activity" android:screenOrientation="portrait"
+        <activity
+            android:name=".activity.frame.Frame_1_Activity"
             android:label="打卡7"
-            />
-        <activity android:name=".activity.frame.Frame_2_Activity" android:screenOrientation="portrait"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.frame.Frame_2_Activity"
             android:label="橘子娱乐"
-            />
-        <activity android:name=".activity.frame.Frame_3_Activity" android:screenOrientation="portrait"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.frame.Frame_3_Activity"
             android:label="世纪佳缘"
-            />
-        <activity android:name=".activity.frame.Frame_4_Activity" android:screenOrientation="portrait"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.frame.Frame_4_Activity"
             android:label="loading"
-            />
-        <activity android:name=".activity.frame.Frame_5_Activity" android:screenOrientation="portrait"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.frame.Frame_5_Activity"
             android:label="bolo"
-            />
-        <activity android:name=".activity.frame.Frame_6_Activity" android:screenOrientation="portrait"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.frame.Frame_6_Activity"
             android:label="cross anim"
-            />
-        <activity android:name=".activity.frame.Frame_7_Activity" android:screenOrientation="portrait"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.frame.Frame_7_Activity"
             android:label="vision"
-            />
-        <activity android:name=".activity.frame.Frame_8_Activity" android:screenOrientation="portrait"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.frame.Frame_8_Activity"
             android:label="mouxiu"
-            />
-        <activity android:name=".activity.frame.Frame_9_Activity" android:screenOrientation="portrait"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.frame.Frame_9_Activity"
             android:label="dripper"
-            />
+            android:screenOrientation="portrait" />
 
 
         <!--渐变动画 -->
-        <activity android:name=".activity.tween.TweenAlphaActivity" android:screenOrientation="portrait"
-            android:label="渐变动画"   />
-        <activity android:name=".activity.tween.alpha.OtherActivity" android:screenOrientation="portrait" />
-        <activity android:name=".activity.tween.alpha.TranslateActivity" android:screenOrientation="portrait"
+        <activity
+            android:name=".activity.tween.TweenAlphaActivity"
+            android:label="渐变动画"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.tween.alpha.OtherActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.tween.alpha.TranslateActivity"
             android:label="翻译君"
-            />
+            android:screenOrientation="portrait" />
 
 
         <!--缩放动画-->
-        <activity android:name=".activity.tween.TweenScaleActivity" android:screenOrientation="portrait"
+        <activity
+            android:name=".activity.tween.TweenScaleActivity"
             android:label="缩放动画"
-            />
-        <activity android:name=".activity.tween.scale.CupidActivity" android:screenOrientation="portrait"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.tween.scale.CupidActivity"
             android:label="丘比特之箭"
-            />
-        <activity android:name=".activity.tween.scale.QimangxingActivity" android:screenOrientation="portrait"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.tween.scale.QimangxingActivity"
             android:label="启芒星"
-            />
-        <activity android:name=".activity.tween.scale.WeizhiActivity" android:screenOrientation="portrait"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.tween.scale.WeizhiActivity"
             android:label="微知"
-            />
+            android:screenOrientation="portrait" />
 
         <!--平移动画-->
-        <activity android:name=".activity.tween.TweenTranslateActivity" android:screenOrientation="portrait"
+        <activity
+            android:name=".activity.tween.TweenTranslateActivity"
             android:label="平移动画"
-            />
-        <activity android:name=".activity.tween.translate.ShakeActivity" android:screenOrientation="portrait"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.tween.translate.ShakeActivity"
             android:label="摇一摇"
-            />
-        <activity android:name=".activity.tween.translate.HeartActivity" android:screenOrientation="portrait"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.tween.translate.HeartActivity"
             android:label="飘心"
-            />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".activity.tween.translate.FidoActivity"
             android:configChanges="orientation|screenSize"
             android:excludeFromRecents="true"
-            android:theme="@style/fido"
             android:label="Fido"
-            />
+            android:theme="@style/fido" />
 
 
         <!--旋转动画-->
-        <activity android:name=".activity.tween.TweenRotateActivity" android:screenOrientation="portrait"
+        <activity
+            android:name=".activity.tween.TweenRotateActivity"
             android:label="旋转动画"
-            />
-        <activity android:name=".activity.tween.rotate.MusicActivity" android:screenOrientation="portrait"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.tween.rotate.MusicActivity"
             android:label="旋转动画"
-            />
-        <activity android:name=".activity.tween.rotate.RotateLoadingActivity" android:screenOrientation="portrait"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.tween.rotate.RotateLoadingActivity"
             android:label="RoateLoading动画"
-            />
+            android:screenOrientation="portrait" />
 
         <!---属性动画-->
-        <activity android:name=".activity.property.PropertyDemoActivity" android:screenOrientation="portrait"
+        <activity
+            android:name=".activity.property.PropertyDemoActivity"
             android:label="属性动画综合实例"
-            />
-        <activity android:name=".activity.property.BallActivity" android:screenOrientation="portrait"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.property.BallActivity"
             android:label="自定义估值器"
-            />
-        <activity android:name=".activity.property.PingoLoginActivity" android:screenOrientation="portrait"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.property.PingoLoginActivity"
             android:label="随遇"
-            />
+            android:screenOrientation="portrait" />
 
         <!---Lottie动画-->
-        <activity android:name=".activity.lottie.AutoHomeActivity" android:screenOrientation="portrait"
+        <activity
+            android:name=".activity.lottie.AutoHomeActivity"
             android:label="汽车之家"
-            />
-        <activity android:name=".activity.lottie.BossActivity" android:screenOrientation="portrait"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.lottie.BossActivity"
             android:label="BOSS直聘"
-            />
-        <activity android:name=".activity.lottie.CardActivity" android:screenOrientation="portrait"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.lottie.CardActivity"
             android:label="每日打卡"
-            />
-        <activity android:name=".activity.lottie.XhsActivity" android:screenOrientation="portrait"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.lottie.XhsActivity"
             android:label="小红书"
-            />
-        <activity android:name=".activity.lottie.PdjGuideActivity" android:screenOrientation="portrait"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.lottie.PdjGuideActivity"
             android:label="京东到家"
-            />
+            android:screenOrientation="portrait" />
 
-        <activity android:name=".activity.lottie.HuoChatActivity" android:screenOrientation="portrait"
+        <activity
+            android:name=".activity.lottie.HuoChatActivity"
             android:label="火信"
-            />
+            android:screenOrientation="portrait" />
 
-        <activity android:name=".activity.lottie.KMailActivity" android:screenOrientation="portrait"
+        <activity
+            android:name=".activity.lottie.KMailActivity"
             android:label="KMail"
-            />
+            android:screenOrientation="portrait" />
 
         <!---ViewPager动画-->
-        <activity android:name=".activity.ViewPagerActivity" android:screenOrientation="portrait"
+        <activity
+            android:name=".activity.ViewPagerActivity"
             android:label="ViewPager动画"
-            />
-        <activity android:name=".activity.viewpager.WeChatActivity" android:screenOrientation="portrait"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.viewpager.WeChatActivity"
             android:label="Wechat"
-            />
+            android:screenOrientation="portrait" />
         <!--Spark-->
-        <activity android:name=".activity.SparkSplashActivity" android:screenOrientation="portrait"
+        <activity
+            android:name=".activity.SparkSplashActivity"
             android:label="Spark"
-            />
+            android:screenOrientation="portrait" />
 
         <!-- 转场动画-->
-        <activity android:name=".activity.TransitionActivity" android:screenOrientation="portrait"
+        <activity
+            android:name=".activity.TransitionActivity"
             android:label="转场动画"
-            />
-        <activity android:name=".activity.transition.ShareElementOneActivity" android:screenOrientation="portrait"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.transition.ShareElementOneActivity"
             android:label="共享元素动画"
-            />
-        <activity android:name=".activity.transition.ShareElementTwoActivity" android:screenOrientation="portrait"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.transition.ShareElementTwoActivity"
             android:label="共享元素动画"
-            />
+            android:screenOrientation="portrait" />
 
         <!--GIF动画-->
-        <activity android:name=".activity.GifActivity" android:screenOrientation="portrait"
+        <activity
+            android:name=".activity.GifActivity"
             android:label="GIF动画"
-            />
-        <activity android:name=".activity.gif.GlideActivity" android:screenOrientation="portrait"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.gif.GlideActivity"
             android:label="Glide加载GIF"
-            />
-        <activity android:name=".activity.gif.GiflibActivity" android:screenOrientation="portrait"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.gif.GiflibActivity"
             android:label="giflib加载Gif"
-            />
-        <activity android:name=".activity.gif.FrameSequenceActivity" android:screenOrientation="portrait"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.gif.FrameSequenceActivity"
             android:label="FrameSequence加载Gif"
-            />
+            android:screenOrientation="portrait" />
 
         <!--SVGA动画-->
-        <activity android:name=".activity.SVGAActivity" android:screenOrientation="portrait"
+        <activity
+            android:name=".activity.SVGAActivity"
             android:label="SVGA动画"
-            />
+            android:screenOrientation="portrait" />
 
-        <activity android:name=".activity.svga.ZiroomActivity" android:screenOrientation="portrait"
+        <activity
+            android:name=".activity.svga.ZiroomActivity"
             android:label="Ziroom"
-            />
+            android:screenOrientation="portrait" />
 
         <!--Telegram动画-->
-        <activity android:name=".activity.TelegramActivity" android:screenOrientation="portrait"
+        <activity
+            android:name=".activity.TelegramActivity"
             android:label="Telegram"
-            />
-        <activity android:name=".activity.telegram.IntroActivity" android:screenOrientation="portrait"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.telegram.IntroActivity"
             android:label="Telegram Intro"
-            />
-        <activity android:name=".activity.telegram.TgsActivity" android:screenOrientation="portrait"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.telegram.TgsActivity"
             android:label="Telegram Sticker"
-            />
+            android:screenOrientation="portrait" />
 
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:authorities="${applicationId}.androidx-startup"
+            android:exported="false"
+            tools:node="merge">
+            <meta-data
+                android:name="com.github.kongpf8848.animation.StartInitializer"
+                android:value="androidx.startup" />
+        </provider>
 
     </application>
 
