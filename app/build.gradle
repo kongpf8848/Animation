@@ -7,7 +7,7 @@ plugins {
 }
 
 android {
-    namespace 'com.github.kongpf8848.animation'
+    namespace Config.applicationId
 
     compileSdk Config.compileSdkVersion
     ndkVersion Config.ndkVersion
@@ -137,5 +137,4 @@ dependencies {
     implementation BuildDependencies.firebaseAnalytics
     implementation BuildDependencies.firebaseCrashlytics
     implementation BuildDependencies.googleAds
-    runtimeOnly 'androidx.startup:startup-runtime:1.2.0'
 }
