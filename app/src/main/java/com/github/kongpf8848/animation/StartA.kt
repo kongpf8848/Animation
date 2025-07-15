@@ -8,11 +8,7 @@ import androidx.startup.Initializer
 class StartA : Initializer<Unit> {
     override fun create(context: Context) {
         Log.d("JACK9", "StartA create")
-        try {
-            System.loadLibrary("tmessages.40")
-        } catch (e: Exception) {
-            e.printStackTrace()
-        }
+
     }
 
     override fun dependencies(): MutableList<Class<out Initializer<*>>> {

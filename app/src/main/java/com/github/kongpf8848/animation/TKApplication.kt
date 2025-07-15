@@ -10,8 +10,14 @@ class TKApplication : Application() {
         super.onCreate()
         instance = this
 
-        LogUtils.init(this,BuildConfig.DEBUG)
+        LogUtils.init(this, BuildConfig.DEBUG)
         AndroidUtilities.init(this)
+
+        try {
+            System.loadLibrary("tmessages.40")
+        } catch (e: Exception) {
+            e.printStackTrace()
+        }
 
         LogUtils.d("JACK8", "initGoogleAds end")
     }

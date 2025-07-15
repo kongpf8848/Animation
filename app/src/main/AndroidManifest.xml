@@ -281,15 +281,15 @@
             android:label="Telegram Sticker"
             android:screenOrientation="portrait" />
 
-        <provider
-            android:name="androidx.startup.InitializationProvider"
-            android:authorities="${applicationId}.androidx-startup"
-            android:exported="false"
-            tools:node="merge">
-            <meta-data
-                android:name="com.github.kongpf8848.animation.StartInitializer"
-                android:value="androidx.startup" />
-        </provider>
+<!--        <provider-->
+<!--            android:name="androidx.startup.InitializationProvider"-->
+<!--            android:authorities="${applicationId}.androidx-startup"-->
+<!--            android:exported="false"-->
+<!--            tools:node="merge">-->
+<!--            <meta-data-->
+<!--                android:name="com.github.kongpf8848.animation.StartInitializer"-->
+<!--                android:value="androidx.startup" />-->
+<!--        </provider>-->
 
     </application>
 
