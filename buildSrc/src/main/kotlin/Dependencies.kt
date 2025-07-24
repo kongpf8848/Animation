@@ -54,7 +54,7 @@ object Versions {
     const val KOTLINX_COROUTINES_ANDROID_VERSION = "1.3.9"
     const val BUTTERKNIFE_VERSION="10.2.1"
     const val MAGIC_INDICATOR_VERSION="1.5.0"
-    const val LOTTIE_VERSION="3.4.0"
+    const val LOTTIE_VERSION="3.5.0"
     const val COMMON_HELPER_VERSION="1.0.21"
     const val CIRCLE_IMAGEVIEW_VERSION="2.1.0"
     const val TYPE_BUILDER_VERSION="1.0"
