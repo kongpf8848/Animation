@@ -41,7 +41,7 @@ object RxJavaUtils {
                     this.d = d
                 }
 
-                override fun onNext(result: T) {
+                override fun onNext(result: T & Any) {
                     onRxAndroidListener.onSuccess(result)
                     dispose()
                     onComplete()
