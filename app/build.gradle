@@ -133,8 +133,9 @@ dependencies {
     implementation(BuildDependencies.ultraViewpager) {
         transitive = true
     }
-    implementation BuildDependencies.SVGAPlayer
+    implementation BuildDependencies.svgaPlayer
     implementation BuildDependencies.firebaseAnalytics
     implementation BuildDependencies.firebaseCrashlytics
     implementation BuildDependencies.googleAds
+    implementation BuildDependencies.transformersTip
 }

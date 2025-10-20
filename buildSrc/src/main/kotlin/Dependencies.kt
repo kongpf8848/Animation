@@ -63,6 +63,7 @@ object Versions {
     const val GOOGLE_FIREBASE_ANALYTICS_VERSION="18.0.3"
     const val GOOGLE_FIREBASE_CRASHLYTICS_VERSION="18.0.1"
     const val GOOLGE_ADS_VERSION="20.6.0"
+    const val TRANSFORMERS_TIP_VERSION="1.0.8"
 }
 
 object BuildDependencies {
@@ -88,10 +89,12 @@ object BuildDependencies {
     const val rxjava2 = "io.reactivex.rxjava2:rxjava:${Versions.RXJAVA2_VERSION}"
     const val rxAndroid = "io.reactivex.rxjava2:rxandroid:${Versions.RXANDROID_VERSION}"
     const val ultraViewpager="com.alibaba.android:ultraviewpager:${Versions.ULTRA_VIEWPAGER_VERSION}@aar"
-    const val SVGAPlayer="com.github.svga:SVGAPlayer-Android:${Versions.SVGA_PLAYER_VERSION}"
+    const val svgaPlayer="com.github.svga:SVGAPlayer-Android:${Versions.SVGA_PLAYER_VERSION}"
     const val firebaseAnalytics="com.google.firebase:firebase-analytics:${Versions.GOOGLE_FIREBASE_ANALYTICS_VERSION}"
     const val firebaseCrashlytics ="com.google.firebase:firebase-crashlytics:${Versions.GOOGLE_FIREBASE_CRASHLYTICS_VERSION}"
     const val googleAds="com.google.android.gms:play-services-ads:${Versions.GOOLGE_ADS_VERSION}"
+    const val transformersTip="com.github.bingoogolapple.BGATransformersTip-Android:library:${Versions.TRANSFORMERS_TIP_VERSION}"
+
 }
 
 object AndroidX {
