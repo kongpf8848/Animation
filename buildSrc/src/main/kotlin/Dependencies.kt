@@ -8,8 +8,8 @@ object Config{
     const val targetSdkVersion = 35
     val sourceCompatibilityVersion = JavaVersion.VERSION_17
     val targetCompatibilityVersion = JavaVersion.VERSION_17
-    const val versionCode = 21
-    const val versionName = "1.2.1"
+    const val versionCode = 31
+    const val versionName = "1.3.1"
 }
 
 object Versions {
@@ -92,7 +92,6 @@ object BuildDependencies {
     const val svgaPlayer="com.github.svga:SVGAPlayer-Android:${Versions.SVGA_PLAYER_VERSION}"
     const val firebaseAnalytics="com.google.firebase:firebase-analytics:${Versions.GOOGLE_FIREBASE_ANALYTICS_VERSION}"
     const val firebaseCrashlytics ="com.google.firebase:firebase-crashlytics:${Versions.GOOGLE_FIREBASE_CRASHLYTICS_VERSION}"
-    const val googleAds="com.google.android.gms:play-services-ads:${Versions.GOOLGE_ADS_VERSION}"
     const val transformersTip="com.github.bingoogolapple.BGATransformersTip-Android:library:${Versions.TRANSFORMERS_TIP_VERSION}"
 
 }

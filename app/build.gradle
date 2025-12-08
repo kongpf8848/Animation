@@ -136,6 +136,5 @@ dependencies {
     implementation BuildDependencies.svgaPlayer
     implementation BuildDependencies.firebaseAnalytics
     implementation BuildDependencies.firebaseCrashlytics
-    implementation BuildDependencies.googleAds
     implementation BuildDependencies.transformersTip
 }

@@ -1,23 +1,17 @@
 package com.github.kongpf8848.animation.activity
 
 import android.os.Bundle
-import android.view.animation.*
+import android.view.animation.AlphaAnimation
+import android.view.animation.Animation
+import android.view.animation.AnimationSet
+import android.view.animation.LayoutAnimationController
+import android.view.animation.TranslateAnimation
 import android.widget.FrameLayout
-import android.widget.ImageView
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import androidx.viewpager.widget.ViewPager
-import com.github.kongpf8848.animation.BuildConfig
 import com.github.kongpf8848.animation.R
 import com.github.kongpf8848.animation.adapter.MainAdapter
 import com.github.kongpf8848.animation.base.BaseToolbarActivity
-import com.github.kongpf8848.animation.utils.LogUtils
-import com.github.kongpf8848.animation.views.CircleIndicatorView
-import com.google.android.gms.ads.AdListener
-import com.google.android.gms.ads.AdRequest
-import com.google.android.gms.ads.AdSize
-import com.google.android.gms.ads.AdView
-import com.google.android.gms.ads.LoadAdError
 
 
 class MainActivity : BaseToolbarActivity() {
