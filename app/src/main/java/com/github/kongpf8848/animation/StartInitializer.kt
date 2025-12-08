@@ -10,9 +10,9 @@ import com.google.android.gms.ads.MobileAds
 class StartInitializer : Initializer<Unit> {
     override fun create(context: Context) {
         LogUtils.d("JACK9", "StartInitializer create")
-        MobileAds.initialize(context) {
-            Log.d("JACK9", "initGoogleAds success called")
-        }
+//        MobileAds.initialize(context) {
+//            Log.d("JACK9", "initGoogleAds success called")
+//        }
     }
 
     override fun dependencies(): MutableList<Class<out Initializer<*>>> {

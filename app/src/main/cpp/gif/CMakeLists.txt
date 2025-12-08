@@ -32,5 +32,4 @@ list(APPEND LIBS
         GLESv2
         log
         )
-
-target_link_libraries(gifjni ${LIBS})
+target_link_libraries(gifjni ${LIBS} "-Wl,-z,max-page-size=16384")

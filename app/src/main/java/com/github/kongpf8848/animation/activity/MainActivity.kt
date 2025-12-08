@@ -49,7 +49,7 @@ class MainActivity : BaseToolbarActivity() {
         rv_main=findViewById(R.id.rv_main)
         ad_container=findViewById(R.id.ad_container)
         toolbar.navigationIcon = null
-        loadAd()
+
 
         rv_main.apply {
             layoutManager = GridLayoutManager(this@MainActivity, 2, GridLayoutManager.VERTICAL, false)
@@ -62,45 +62,5 @@ class MainActivity : BaseToolbarActivity() {
                 duration=500
             })
         }
-    }
-
-    private fun loadAd(){
-        if(BuildConfig.DEBUG){
-            return
-        }
-        val adView = AdView(this).apply {
-            adSize = AdSize.BANNER
-            adUnitId="ca-app-pub-2515116623705756/6112792218"
-        }
-        adView.adListener=object: AdListener() {
-            override fun onAdClicked() {
-                LogUtils.d("JACK8", "onAdClicked")
-            }
-
-            override fun onAdClosed() {
-                LogUtils.d("JACK8", "onAdClosed")
-            }
-
-            override fun onAdFailedToLoad(adError: LoadAdError) {
-                LogUtils.d("JACK8", "onAdFailedToLoad:$adError")
-            }
-
-            override fun onAdImpression() {
-                LogUtils.d("JACK8", "onAdClosed")
-            }
-
-            override fun onAdLoaded() {
-                LogUtils.d("JACK8", "onAdLoaded")
-                if (!isDestroyed && !isFinishing) {
-                    ad_container.removeAllViews()
-                    ad_container.addView(adView)
-                }
-            }
-
-            override fun onAdOpened() {
-                LogUtils.d("JACK8", "onAdOpened")
-            }
-        }
-        adView.loadAd(AdRequest.Builder().build())
     }
 }
