@@ -125,7 +125,7 @@ target_include_directories(${NATIVE_LIB} PUBLIC
         ${PROJECT_SOURCE_DIR}/sticker/rlottie/inc
         ${PROJECT_SOURCE_DIR}/sticker/lz4)
 target_link_libraries(${NATIVE_LIB}
-        -Wl,--whole-archive -Wl,--no-whole-archive -Wl,-z,max-page-size=16384
+        -Wl,--whole-archive -Wl,--no-whole-archive -Wl,-z,max-page-size=16384 -Wl,-z,common-page-size=16384
         lz4
         rlottie
         jnigraphics
