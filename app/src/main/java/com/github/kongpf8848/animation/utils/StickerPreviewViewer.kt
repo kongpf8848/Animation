@@ -84,7 +84,6 @@ class StickerPreviewViewer {
                     ScreenHelper.dp2px(context, 100f),
                     ScreenHelper.dp2px(context, 100f)
                 )
-                setArrowOffsetXDp((contentView.width-anchorView.width)/2)
             }
         }.setTipGravity(TipGravity.TO_TOP_CENTER)
             .setArrowGravity(ArrowGravity.TO_BOTTOM_CENTER)
