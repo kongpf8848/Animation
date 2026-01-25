@@ -18,7 +18,7 @@ Collection of various animation effects in Android😊😄😎
      height="80">](https://play.google.com/store/apps/details?id=com.github.kongpf8848.animation)
 [<img src="images/free-download.png"
      alt="Free Download"
-     height="80">](https://fir.xcxwo.com/animation)
+     height="80">](https://github.com/kongpf8848/Animation/releases/download/1.3.2/Animation_release_32_1.3.2.apk)
 
 ## Screenshots
 
