@@ -18,7 +18,7 @@ Android各种动画效果合集，项目包含了丰富的动画实例，体验�
      height="80">](https://play.google.com/store/apps/details?id=com.github.kongpf8848.animation)
 [<img src="https://github.com/kongpf8848/Animation/blob/master/images/free-download.png?raw=true"
      alt="Free Download"
-     height="80">](https://fir.xcxwo.com/animation)
+     height="80">](https://github.com/kongpf8848/Animation/releases/download/1.3.2/Animation_release_32_1.3.2.apk)
 
 ## 截图
 
