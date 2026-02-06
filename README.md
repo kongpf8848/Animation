@@ -13,11 +13,11 @@ Android各种动画效果合集，项目包含了丰富的动画实例，体验�
 
 ## 下载
 
-[<img src="https://github.com/kongpf8848/Animation/blob/master/images/google-play.png"
+[<img src="https://github.com/kongpf8848/Animation/blob/master/images/download_from_google_play.png"
      alt="Get it on Google Play" 
      height="80">](https://play.google.com/store/apps/details?id=com.github.kongpf8848.animation)
-[<img src="https://github.com/kongpf8848/Animation/blob/master/images/free-download.png?raw=true"
-     alt="Free Download"
+[<img src="https://github.com/kongpf8848/Animation/blob/master/images/download_from_github.png?raw=true"
+     alt="Download from Github"
      height="80">](https://github.com/kongpf8848/Animation/releases/download/1.3.2/Animation_release_32_1.3.2.apk)
 
 ## 截图

@@ -13,11 +13,11 @@ Collection of various animation effects in Android😊😄😎
 
 ## Download
 
-[<img src="images/google-play.png"
+[<img src="images/download_from_google_play.png"
      alt="Get it on Google Play" 
      height="80">](https://play.google.com/store/apps/details?id=com.github.kongpf8848.animation)
-[<img src="images/free-download.png"
-     alt="Free Download"
+[<img src="images/download_from_github.png"
+     alt="Download from Github"
      height="80">](https://github.com/kongpf8848/Animation/releases/download/1.3.2/Animation_release_32_1.3.2.apk)
 
 ## Screenshots
